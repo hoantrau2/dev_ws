@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:14 (ment_target_dependencies):
+  Unknown CMake command "ment_target_dependencies".
+
+[0m

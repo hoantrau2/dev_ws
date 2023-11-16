@@ -1,0 +1,396 @@
+[0.000000] (-) TimerEvent: {}
+[0.000091] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000159] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.000212] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.055533] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.099618] (-) TimerEvent: {}
+[0.109206] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[0.109558] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'build'}
+[0.110006] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/my_package', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/my_package', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ngochoan/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('OLDPWD', '/home/ngochoan'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2395'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ngochoan/dev_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2395,unix/linux:/tmp/.ICE-unix/2395'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f0a5ec2_885c_4a8f_b18f_8c7572b273d4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'vi_VN'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'vi_VN'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.214'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble'), ('ROS_DOMAIN_ID', '30'), ('LC_NAME', 'vi_VN'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ngochoan/dev_ws/build/my_package'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble')]), 'shell': False}
+[0.113672] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.114625] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'build'}
+[0.114879] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/turtlesim', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/turtlesim', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ngochoan/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('OLDPWD', '/home/ngochoan'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2395'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ngochoan/dev_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2395,unix/linux:/tmp/.ICE-unix/2395'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f0a5ec2_885c_4a8f_b18f_8c7572b273d4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'vi_VN'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'vi_VN'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.214'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble'), ('ROS_DOMAIN_ID', '30'), ('LC_NAME', 'vi_VN'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ngochoan/dev_ws/build/turtlesim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble')]), 'shell': False}
+[0.130541] (my_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.155390] (turtlesim) StdoutLine: {'line': b'[  1%] Built target turtlesim__cpp\n'}
+[0.155981] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target turtlesim__rosidl_generator_c\n'}
+[0.167029] (turtlesim) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_turtlesim\n'}
+[0.179171] (turtlesim) StdoutLine: {'line': b'[ 26%] Built target turtlesim__rosidl_typesupport_introspection_c\n'}
+[0.179403] (turtlesim) StdoutLine: {'line': b'[ 31%] Built target turtlesim__rosidl_typesupport_c\n'}
+[0.181163] (turtlesim) StdoutLine: {'line': b'[ 41%] Built target turtlesim__rosidl_typesupport_cpp\n'}
+[0.182004] (turtlesim) StdoutLine: {'line': b'[ 51%] Built target turtlesim__rosidl_typesupport_introspection_cpp\n'}
+[0.182417] (turtlesim) StdoutLine: {'line': b'[ 61%] Built target turtlesim__rosidl_typesupport_fastrtps_c\n'}
+[0.183053] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim__rosidl_typesupport_fastrtps_cpp\n'}
+[0.199722] (-) TimerEvent: {}
+[0.202961] (turtlesim) StdoutLine: {'line': b'[ 71%] Built target turtlesim\n'}
+[0.208974] (turtlesim) StdoutLine: {'line': b'[ 77%] Built target turtle_teleop_key\n'}
+[0.209178] (turtlesim) StdoutLine: {'line': b'[ 77%] Built target draw_square\n'}
+[0.209288] (turtlesim) StdoutLine: {'line': b'[ 77%] Built target mimic\n'}
+[0.214860] (turtlesim) StdoutLine: {'line': b'[ 83%] Built target turtlesim_node\n'}
+[0.218377] (turtlesim) StdoutLine: {'line': b'[ 84%] Built target turtlesim__py\n'}
+[0.237346] (turtlesim) StdoutLine: {'line': b'[ 93%] Built target turtlesim__rosidl_generator_py\n'}
+[0.254755] (turtlesim) StdoutLine: {'line': b'[ 95%] Built target turtlesim__rosidl_typesupport_c__pyext\n'}
+[0.256259] (turtlesim) StdoutLine: {'line': b'[ 97%] Built target turtlesim__rosidl_typesupport_introspection_c__pyext\n'}
+[0.260953] (turtlesim) StdoutLine: {'line': b'[100%] Built target turtlesim__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.269177] (my_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.299838] (-) TimerEvent: {}
+[0.321081] (my_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.321238] (my_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/ngochoan/dev_ws/src/my_package/include>\n'}
+[0.321300] (my_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.321558] (my_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.322003] (my_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.322132] (my_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.322338] (my_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.322824] (my_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.325402] (my_package) StdoutLine: {'line': b'-- Generating done\n'}
+[0.326061] (my_package) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/my_package\n'}
+[0.341319] (my_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_node\x1b[0m\n'}
+[0.349383] (my_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o\x1b[0m\n'}
+[0.370927] (my_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable my_node\x1b[0m\n'}
+[0.383411] (turtlesim) StdoutLine: {'line': b'running egg_info\n'}
+[0.383982] (turtlesim) StdoutLine: {'line': b'writing turtlesim.egg-info/PKG-INFO\n'}
+[0.384205] (turtlesim) StdoutLine: {'line': b'writing dependency_links to turtlesim.egg-info/dependency_links.txt\n'}
+[0.384410] (turtlesim) StdoutLine: {'line': b'writing top-level names to turtlesim.egg-info/top_level.txt\n'}
+[0.386238] (turtlesim) StdoutLine: {'line': b"reading manifest file 'turtlesim.egg-info/SOURCES.txt'\n"}
+[0.387013] (turtlesim) StdoutLine: {'line': b"writing manifest file 'turtlesim.egg-info/SOURCES.txt'\n"}
+[0.399930] (-) TimerEvent: {}
+[0.406678] (my_package) StdoutLine: {'line': b'[100%] Built target my_node\n'}
+[0.408702] (turtlesim) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_turtlesim_egg\n'}
+[0.414774] (my_package) CommandEnded: {'returncode': 0}
+[0.417471] (turtlesim) CommandEnded: {'returncode': 0}
+[0.430968] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'install'}
+[0.437789] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ngochoan/dev_ws/build/my_package'], 'cwd': '/home/ngochoan/dev_ws/build/my_package', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ngochoan/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('OLDPWD', '/home/ngochoan'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2395'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ngochoan/dev_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2395,unix/linux:/tmp/.ICE-unix/2395'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f0a5ec2_885c_4a8f_b18f_8c7572b273d4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'vi_VN'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'vi_VN'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.214'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble'), ('ROS_DOMAIN_ID', '30'), ('LC_NAME', 'vi_VN'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ngochoan/dev_ws/build/my_package'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble')]), 'shell': False}
+[0.443186] (my_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.443410] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/lib/my_package/my_node\n'}
+[0.443524] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package\n'}
+[0.443601] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package\n'}
+[0.443657] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh\n'}
+[0.443860] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv\n'}
+[0.443974] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/environment/path.sh\n'}
+[0.444032] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/my_package/environment/path.dsv\n'}
+[0.444083] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/local_setup.bash\n'}
+[0.444134] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/local_setup.sh\n'}
+[0.444217] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/local_setup.zsh\n'}
+[0.444278] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/my_package/local_setup.dsv\n'}
+[0.444338] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/my_package/package.dsv\n'}
+[0.444398] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package\n'}
+[0.444458] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake\n'}
+[0.444517] (my_package) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake\n'}
+[0.444577] (my_package) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/my_package/share/my_package/package.xml\n'}
+[0.445378] (my_package) CommandEnded: {'returncode': 0}
+[0.500010] (-) TimerEvent: {}
+[0.561730] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[0.562473] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'install'}
+[0.562718] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ngochoan/dev_ws/build/turtlesim'], 'cwd': '/home/ngochoan/dev_ws/build/turtlesim', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ngochoan/dev_ws/install/turtlesim/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('OLDPWD', '/home/ngochoan'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'vi_VN'), ('SYSTEMD_EXEC_PID', '2395'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ngochoan/dev_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2395,unix/linux:/tmp/.ICE-unix/2395'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6f0a5ec2_885c_4a8f_b18f_8c7572b273d4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'vi_VN'), ('DISPLAY', ':1'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'vi_VN'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.214'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble'), ('ROS_DOMAIN_ID', '30'), ('LC_NAME', 'vi_VN'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ngochoan/dev_ws/build/turtlesim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=358b606803bb7ac1a858b20b65424a0b'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/opt/ros/humble')]), 'shell': False}
+[0.569054] (turtlesim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.569188] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/ament_index/resource_index/rosidl_interfaces/turtlesim\n'}
+[0.569292] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.569351] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.569403] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.h\n'}
+[0.569473] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.h\n'}
+[0.569521] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.h\n'}
+[0.569570] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.h\n'}
+[0.569618] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.569666] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.h\n'}
+[0.569714] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.h\n'}
+[0.569763] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.h\n'}
+[0.569811] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.c\n'}
+[0.569888] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.h\n'}
+[0.570016] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.h\n'}
+[0.570088] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.h\n'}
+[0.570141] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.h\n'}
+[0.570270] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__functions.c\n'}
+[0.570382] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__functions.c\n'}
+[0.570430] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.h\n'}
+[0.570482] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.h\n'}
+[0.570530] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.h\n'}
+[0.570646] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.c\n'}
+[0.570777] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__functions.h\n'}
+[0.570903] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.h\n'}
+[0.571016] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.h\n'}
+[0.571091] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__functions.h\n'}
+[0.571178] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.h\n'}
+[0.571268] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__functions.c\n'}
+[0.571337] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.h\n'}
+[0.571384] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.571432] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.h\n'}
+[0.571481] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.571530] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.571579] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.h\n'}
+[0.571628] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.h\n'}
+[0.571677] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.h\n'}
+[0.571726] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.c\n'}
+[0.571774] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__functions.c\n'}
+[0.571822] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__functions.h\n'}
+[0.571871] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.h\n'}
+[0.571919] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.h\n'}
+[0.571967] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.h\n'}
+[0.572015] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.572064] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.h\n'}
+[0.572135] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.572183] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.h\n'}
+[0.572232] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.h\n'}
+[0.572280] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.h\n'}
+[0.572328] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__functions.c\n'}
+[0.572377] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.sh\n'}
+[0.572425] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/library_path.dsv\n'}
+[0.572556] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_c.so\n'}
+[0.572666] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.572729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.572797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.572920] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_c.h\n'}
+[0.572991] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573090] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573177] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573284] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573427] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.573547] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.573669] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573726] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573775] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.573824] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.573873] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.573921] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_c.h\n'}
+[0.573970] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_c.so\n'}
+[0.574018] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.574065] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.574158] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/spawn.hpp\n'}
+[0.574206] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_relative.hpp\n'}
+[0.574251] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/teleport_absolute.hpp\n'}
+[0.574296] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/kill.hpp\n'}
+[0.574341] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.574386] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__traits.hpp\n'}
+[0.574431] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__builder.hpp\n'}
+[0.574481] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__traits.hpp\n'}
+[0.574526] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__traits.hpp\n'}
+[0.574571] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__builder.hpp\n'}
+[0.574616] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__struct.hpp\n'}
+[0.574660] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__builder.hpp\n'}
+[0.574705] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__struct.hpp\n'}
+[0.574751] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__struct.hpp\n'}
+[0.574800] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__struct.hpp\n'}
+[0.574845] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__builder.hpp\n'}
+[0.574890] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__traits.hpp\n'}
+[0.574935] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__struct.hpp\n'}
+[0.574980] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__builder.hpp\n'}
+[0.575025] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__traits.hpp\n'}
+[0.575070] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/set_pen.hpp\n'}
+[0.575115] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.575160] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.575205] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__struct.hpp\n'}
+[0.575249] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__traits.hpp\n'}
+[0.575295] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__builder.hpp\n'}
+[0.575340] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__builder.hpp\n'}
+[0.575386] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__struct.hpp\n'}
+[0.575438] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__traits.hpp\n'}
+[0.575483] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/color.hpp\n'}
+[0.575529] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/pose.hpp\n'}
+[0.575574] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.575619] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/rotate_absolute.hpp\n'}
+[0.575667] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.575712] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__traits.hpp\n'}
+[0.575758] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__builder.hpp\n'}
+[0.575803] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__struct.hpp\n'}
+[0.575856] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.575929] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.575981] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.576026] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576073] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576118] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/dds_fastrtps\n'}
+[0.576210] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576255] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576300] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.576346] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.576395] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/dds_fastrtps\n'}
+[0.576441] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576487] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576533] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.576579] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.576624] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.576669] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.576714] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/dds_fastrtps\n'}
+[0.576759] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.576808] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.576853] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.576898] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.576943] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.c\n'}
+[0.576988] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_c.h\n'}
+[0.577033] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_c.h\n'}
+[0.577078] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.c\n'}
+[0.577128] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.c\n'}
+[0.577173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_c.h\n'}
+[0.577218] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_c.h\n'}
+[0.577263] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.c\n'}
+[0.577308] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.c\n'}
+[0.577352] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_c.h\n'}
+[0.577397] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.577441] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.577487] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.577531] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.c\n'}
+[0.577575] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_c.h\n'}
+[0.577620] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.c\n'}
+[0.577664] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_c.h\n'}
+[0.577709] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.577753] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.577797] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.c\n'}
+[0.577845] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_c.h\n'}
+[0.577894] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_c.so\n'}
+[0.577939] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_c.so\n'}
+[0.577984] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim\n'}
+[0.578028] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv\n'}
+[0.578073] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail\n'}
+[0.578137] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__type_support.cpp\n'}
+[0.578183] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__type_support.cpp\n'}
+[0.578228] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578274] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__type_support.cpp\n'}
+[0.578318] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_relative__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578363] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/teleport_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578408] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__type_support.cpp\n'}
+[0.578453] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/kill__type_support.cpp\n'}
+[0.578498] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/spawn__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578543] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/srv/detail/set_pen__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578587] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg\n'}
+[0.578632] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail\n'}
+[0.578684] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__type_support.cpp\n'}
+[0.578729] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__type_support.cpp\n'}
+[0.578774] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578819] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/msg/detail/color__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578864] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action\n'}
+[0.578909] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail\n'}
+[0.578954] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.578999] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/include/turtlesim/turtlesim/action/detail/rotate_absolute__type_support.cpp\n'}
+[0.579048] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_introspection_cpp.so\n'}
+[0.579094] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_typesupport_cpp.so\n'}
+[0.579140] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.sh\n'}
+[0.579185] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/pythonpath.dsv\n'}
+[0.579230] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info\n'}
+[0.579276] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/top_level.txt\n'}
+[0.579324] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/dependency_links.txt\n'}
+[0.579370] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/SOURCES.txt\n'}
+[0.579416] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim-1.4.2-py3.10.egg-info/PKG-INFO\n'}
+[0.579461] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim\n'}
+[0.579506] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv\n'}
+[0.579551] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_absolute_s.c\n'}
+[0.579597] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/__init__.py\n'}
+[0.579642] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_set_pen.py\n'}
+[0.579687] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_set_pen_s.c\n'}
+[0.579732] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_spawn_s.c\n'}
+[0.579776] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_spawn.py\n'}
+[0.579821] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_kill.py\n'}
+[0.579866] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_relative_s.c\n'}
+[0.579911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_kill_s.c\n'}
+[0.579955] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_relative.py\n'}
+[0.580000] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv/_teleport_absolute.py\n'}
+[0.580044] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.580089] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg\n'}
+[0.580136] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_color.py\n'}
+[0.580181] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_pose_s.c\n'}
+[0.580226] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/__init__.py\n'}
+[0.580275] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_pose.py\n'}
+[0.580319] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg/_color_s.c\n'}
+[0.580365] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/__init__.py\n'}
+[0.580410] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.580455] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.580501] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/_turtlesim_s.ep.rosidl_typesupport_c.c\n'}
+[0.580546] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.580593] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/libturtlesim__rosidl_generator_py.so\n'}
+[0.580638] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action\n'}
+[0.580683] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/_rotate_absolute.py\n'}
+[0.580731] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/__init__.py\n'}
+[0.580776] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action/_rotate_absolute_s.c\n'}
+[0.580822] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.597404] (turtlesim) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim'...\n"}
+[0.597535] (turtlesim) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/action'...\n"}
+[0.597600] (turtlesim) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/msg'...\n"}
+[0.597649] (turtlesim) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/srv'...\n"}
+[0.600077] (-) TimerEvent: {}
+[0.600843] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.600995] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.601171] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages/turtlesim/turtlesim_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.601372] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/libturtlesim__rosidl_generator_py.so\n'}
+[0.601451] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.idl\n'}
+[0.601550] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/msg/Color.idl\n'}
+[0.601653] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.idl\n'}
+[0.601759] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.idl\n'}
+[0.601864] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.idl\n'}
+[0.601970] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.idl\n'}
+[0.602076] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.idl\n'}
+[0.602164] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.idl\n'}
+[0.602211] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/action/RotateAbsolute.action\n'}
+[0.602276] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/msg/Color.msg\n'}
+[0.602323] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/msg/Pose.msg\n'}
+[0.602368] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Kill.srv\n'}
+[0.602432] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Request.msg\n'}
+[0.602479] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Kill_Response.msg\n'}
+[0.602532] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen.srv\n'}
+[0.602596] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Request.msg\n'}
+[0.602642] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/SetPen_Response.msg\n'}
+[0.602689] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn.srv\n'}
+[0.602739] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Request.msg\n'}
+[0.602785] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/Spawn_Response.msg\n'}
+[0.602831] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute.srv\n'}
+[0.602875] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Request.msg\n'}
+[0.602927] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportAbsolute_Response.msg\n'}
+[0.602975] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative.srv\n'}
+[0.603093] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Request.msg\n'}
+[0.603197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/srv/TeleportRelative_Response.msg\n'}
+[0.603290] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/turtlesim/turtlesim_node\n'}
+[0.603383] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/turtlesim/turtle_teleop_key\n'}
+[0.603432] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/turtlesim/draw_square\n'}
+[0.603480] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/lib/turtlesim/mimic\n'}
+[0.603527] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images\n'}
+[0.603574] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/crystal.png\n'}
+[0.603645] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/bouncy.png\n'}
+[0.603693] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/galactic.png\n'}
+[0.603741] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/foxy.png\n'}
+[0.603788] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/dashing.png\n'}
+[0.603836] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/humble.png\n'}
+[0.603885] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/eloquent.png\n'}
+[0.603932] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/rolling.png\n'}
+[0.603980] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/images/ardent.png\n'}
+[0.604028] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/launch\n'}
+[0.604076] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/launch/multisim.launch.py\n'}
+[0.604124] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/ament_index/resource_index/package_run_dependencies/turtlesim\n'}
+[0.604173] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/ament_index/resource_index/parent_prefix_path/turtlesim\n'}
+[0.604221] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.sh\n'}
+[0.604270] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/ament_prefix_path.dsv\n'}
+[0.604318] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/path.sh\n'}
+[0.604384] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/environment/path.dsv\n'}
+[0.604490] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/local_setup.bash\n'}
+[0.604541] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/local_setup.sh\n'}
+[0.604589] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/local_setup.zsh\n'}
+[0.604637] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/local_setup.dsv\n'}
+[0.604687] (turtlesim) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/package.dsv\n'}
+[0.604735] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/ament_index/resource_index/packages/turtlesim\n'}
+[0.604784] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport.cmake\n'}
+[0.604865] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.604911] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.604964] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.605011] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_cppExport.cmake\n'}
+[0.605058] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.605103] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.605149] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.605197] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.605244] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport.cmake\n'}
+[0.605289] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.605334] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.605379] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.605424] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport.cmake\n'}
+[0.605469] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesim__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.605514] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport.cmake\n'}
+[0.605559] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/export_turtlesim__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.605604] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake-extras.cmake\n'}
+[0.605649] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.605694] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.605739] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.605784] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.605829] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.605873] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.605922] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig.cmake\n'}
+[0.605967] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/cmake/turtlesimConfig-version.cmake\n'}
+[0.606015] (turtlesim) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/turtlesim/share/turtlesim/package.xml\n'}
+[0.606604] (turtlesim) CommandEnded: {'returncode': 0}
+[0.700186] (-) TimerEvent: {}
+[0.800504] (-) TimerEvent: {}
+[0.845870] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 0}
+[0.846529] (-) EventReactorShutdown: {}

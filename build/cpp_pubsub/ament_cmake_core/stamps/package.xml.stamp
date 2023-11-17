@@ -3,7 +3,7 @@
 <package format="3">
   <name>cpp_pubsub</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>C++ publisher subcriber tutorial</description>
   <maintainer email="hoan.duongmybk852002@hcmut.edu.vn">ngochoan</maintainer>
   <license>Apache License 2.0</license>
 

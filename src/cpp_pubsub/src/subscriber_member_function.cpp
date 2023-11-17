@@ -27,7 +27,7 @@ public:
   : Node("minimal_subscriber")
   {
     subscription_ = this->create_subscription<std_msgs::msg::String>(
-      "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+      "topic11", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
   }
 
 private:

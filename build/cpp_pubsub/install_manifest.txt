@@ -1,5 +1,6 @@
 /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
 /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+/home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico
 /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
 /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
 /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh

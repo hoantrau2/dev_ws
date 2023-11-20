@@ -1,0 +1,79 @@
+[0.056s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.094s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.105s] [ 66%] Built target talker
+[0.106s] [ 66%] Built target listener
+[0.112s] [ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[1.978s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:26:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+[1.978s]    26 |    void topic_callback(const [01;31m[Kstd_msgs[m[K::msg::Int32::SharedPtr msg) const // this funtion is called each having new message from toipc "topic"
+[1.978s]       |                              [01;31m[K^~~~~~~~[m[K
+[1.978s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:26:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[1.978s]    26 |    void topic_callback(const std_msgs::msg[01;31m[K::[m[KInt32::SharedPtr msg) const // this funtion is called each having new message from toipc "topic"
+[1.978s]       |                                           [01;31m[K^~[m[K
+[1.978s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:26:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[1.978s]    26 |    void topic_callback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KInt32::SharedPtr msg) const // this funtion is called each having new message from toipc "topic"
+[1.978s]       |                       [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[1.979s]       |                                           [32m[K)[m[K
+[1.979s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:26:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.979s]    26 |    void topic_callback(const std_msgs::[01;31m[Kmsg[m[K::Int32::SharedPtr msg) const // this funtion is called each having new message from toipc "topic"
+[1.979s]       |                                        [01;31m[K^~~[m[K
+[1.979s]       |                                           [32m[K;[m[K
+[1.979s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:26:45:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[1.979s]    26 |    void topic_callback(const std_msgs::msg::[01;31m[KInt32[m[K::SharedPtr msg) const // this funtion is called each having new message from toipc "topic"
+[1.979s]       |                                             [01;31m[K^~~~~[m[K
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[1.984s]    35 |   rclcpp::Subscription<[01;31m[Kstd_msgs[m[K::msg::Int32>::SharedPtr subscription_;
+[1.984s]       |                        [01;31m[K^~~~~~~~[m[K
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.984s]    35 |   rclcpp::Subscription<std_msgs::msg::Int32[01;31m[K>[m[K::SharedPtr subscription_;
+[1.984s]       |                                            [01;31m[K^[m[K
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[1.984s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.984s]    35 |   rclcpp::Subscription<std_msgs::msg::Int32>::[01;31m[KSharedPtr[m[K subscription_;
+[1.985s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[1.985s]       |                                                        [32m[K;[m[K
+[1.985s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:57:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[1.985s]    35 |   rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr [01;31m[Ksubscription_[m[K;
+[1.985s]       |                                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.985s]       |                                                         [32m[Krmw_subscription_t[m[K
+[1.991s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[1.991s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[1.991s]    15 |     [01;31m[Ksubscription_[m[K = this->create_subscription<std_msgs::msg::Int32>(
+[1.991s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.991s]       |     [32m[Krmw_subscription_t[m[K
+[1.995s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[1.995s]    15 |     subscription_ = this->create_subscription<[01;31m[Kstd_msgs[m[K::msg::Int32>(
+[1.995s]       |                                               [01;31m[K^~~~~~~~[m[K
+[1.996s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[1.996s]    15 |     subscription_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::Int32>[m[K(
+[1.996s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.999s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<<expression error> >(const char [21], int, std::_Bind_helper<false, void (MinimalSubscriber::*)(...), MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[1.999s]    15 |     subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Int32>([m[K
+[1.999s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[1.999s]    16 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+[1.999s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.999s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.999s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.999s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.000s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[2.000s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.000s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.000s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.000s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.000s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.000s]    15 |     subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Int32>([m[K
+[2.000s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.000s]    16 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+[2.000s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.003s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.003s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:50:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.003s]    50 | }
+[2.003s]       |  [01;31m[K^[m[K
+[2.003s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:39:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.003s]    39 | [01;36m[K{[m[K
+[2.003s]       | [01;36m[K^[m[K
+[2.379s] gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+[2.379s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+[2.379s] gmake: *** [Makefile:146: all] Error 2
+[2.381s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

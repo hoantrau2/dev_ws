@@ -223,6 +223,19 @@ listener/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
 .PHONY : listener/fast
 
+#=============================================================================
+# Target rules for targets named listener_pico
+
+# Build rule for target.
+listener_pico: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener_pico
+.PHONY : listener_pico
+
+# fast build rule for target.
+listener_pico/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_pico.dir/build.make CMakeFiles/listener_pico.dir/build
+.PHONY : listener_pico/fast
+
 src/publisher_member_function.o: src/publisher_member_function.cpp.o
 .PHONY : src/publisher_member_function.o
 
@@ -246,6 +259,30 @@ src/publisher_member_function.s: src/publisher_member_function.cpp.s
 src/publisher_member_function.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.s
 .PHONY : src/publisher_member_function.cpp.s
+
+src/read_date_picoW.o: src/read_date_picoW.cpp.o
+.PHONY : src/read_date_picoW.o
+
+# target to build an object file
+src/read_date_picoW.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_pico.dir/build.make CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o
+.PHONY : src/read_date_picoW.cpp.o
+
+src/read_date_picoW.i: src/read_date_picoW.cpp.i
+.PHONY : src/read_date_picoW.i
+
+# target to preprocess a source file
+src/read_date_picoW.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_pico.dir/build.make CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.i
+.PHONY : src/read_date_picoW.cpp.i
+
+src/read_date_picoW.s: src/read_date_picoW.cpp.s
+.PHONY : src/read_date_picoW.s
+
+# target to generate assembly for a file
+src/read_date_picoW.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_pico.dir/build.make CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.s
+.PHONY : src/read_date_picoW.cpp.s
 
 src/subscriber_member_function.o: src/subscriber_member_function.cpp.o
 .PHONY : src/subscriber_member_function.o
@@ -287,10 +324,14 @@ help:
 	@echo "... cpp_pubsub_uninstall"
 	@echo "... uninstall"
 	@echo "... listener"
+	@echo "... listener_pico"
 	@echo "... talker"
 	@echo "... src/publisher_member_function.o"
 	@echo "... src/publisher_member_function.i"
 	@echo "... src/publisher_member_function.s"
+	@echo "... src/read_date_picoW.o"
+	@echo "... src/read_date_picoW.i"
+	@echo "... src/read_date_picoW.s"
 	@echo "... src/subscriber_member_function.o"
 	@echo "... src/subscriber_member_function.i"
 	@echo "... src/subscriber_member_function.s"

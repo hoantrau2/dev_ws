@@ -1,0 +1,70 @@
+[35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[ 33%] Built target listener
+[ 66%] Built target talker
+[ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ does not name a type
+   20 |   void topic_callback(const [01;31m[Kstd_msgs[m[K::msg::Int32 & msg) const // this funtion is called each having new message from toipc "topic"
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:42:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   20 |   void topic_callback(const std_msgs::msg[01;31m[K::[m[KInt32 & msg) const // this funtion is called each having new message from toipc "topic"
+      |                                          [01;31m[K^~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:42:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   20 |   void topic_callback[34m[K([m[Kconst std_msgs::msg[01;31m[K:[m[K[32m[K:[m[KInt32 & msg) const // this funtion is called each having new message from toipc "topic"
+      |                      [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                          [32m[K)[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   20 |   void topic_callback(const std_msgs::[01;31m[Kmsg[m[K::Int32 & msg) const // this funtion is called each having new message from toipc "topic"
+      |                                       [01;31m[K^~~[m[K
+      |                                          [32m[K;[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:44:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   20 |   void topic_callback(const std_msgs::msg::[01;31m[KInt32[m[K & msg) const // this funtion is called each having new message from toipc "topic"
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+   24 |   rclcpp::Subscription<[01;31m[Kstd_msgs[m[K::msg::Int32>::SharedPtr subscription_;
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 |   rclcpp::Subscription<std_msgs::msg::Int32[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   24 |   rclcpp::Subscription<std_msgs::msg::Int32>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                               [01;31m[K^~~~~~~~~[m[K
+      |                                                        [32m[K;[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:57:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   24 |   rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                         [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                         [32m[Krmw_subscription_t[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   15 |     [01;31m[Ksubscription_[m[K = this->create_subscription<std_msgs::msg::Int32>(
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krmw_subscription_t[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+   15 |     subscription_ = this->create_subscription<[01;31m[Kstd_msgs[m[K::msg::Int32>(
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:27:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   15 |     subscription_ = this->[01;31m[Kcreate_subscription<std_msgs::msg::Int32>[m[K(
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<<expression error> >(const char [21], int, std::_Bind_helper<false, void (MinimalSubscriber::*)(...), MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+   15 |     subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Int32>([m[K
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   16 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:15:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   15 |     subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Int32>([m[K
+      |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   16 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

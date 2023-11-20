@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[ 83%] Built target talker
+[ 83%] Built target listener

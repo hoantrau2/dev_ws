@@ -1,0 +1,54 @@
+[0.060s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.103s] [ 66%] Built target talker
+[0.104s] [ 66%] Built target listener
+[0.109s] [ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[2.064s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.064s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.065s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.067s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.067s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[2.067s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr) const[m[K’:
+[2.067s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:31:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 5 has type ‘[01m[Kstd_msgs::msg::Int32_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.067s]    31 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"I heard: '%ld'"[m[K, [32m[Kmsg->data[m[K);
+[2.068s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~[m[K
+[2.068s]       |                                                              [32m[K|[m[K
+[2.068s]       |                                                              [32m[Kstd_msgs::msg::Int32_<std::allocator<void> >::_data_type {aka int}[m[K
+[2.068s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:31:52:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.069s]    31 |       RCLCPP_INFO(this->get_logger(), "I heard: '[01;36m[K%ld[m[K'", msg->data);
+[2.069s]       |                                                  [01;36m[K~~^[m[K
+[2.069s]       |                                                    [01;36m[K|[m[K
+[2.069s]       |                                                    [01;36m[Klong int[m[K
+[2.069s]       |                                                  [32m[K%d[m[K
+[6.965s] [100%] [32m[1mLinking CXX executable listener_pico[0m
+[7.295s] [100%] Built target listener_pico
+[7.304s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[7.333s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub
+[7.339s] -- Install configuration: ""
+[7.339s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[7.340s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[7.340s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico
+[7.343s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico" to ""
+[7.343s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[7.343s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[7.343s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[7.343s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[7.343s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[7.344s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[7.344s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[7.344s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[7.344s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[7.344s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[7.346s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub

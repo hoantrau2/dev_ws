@@ -1,0 +1,37 @@
+[35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[35m[1mConsolidate compiler generated dependencies of target listener[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[ 50%] Built target listener_pico
+[ 66%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktutorial_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+   34 |   rclcpp::Publisher<[01;31m[Ktutorial_interfaces[m[K::msg::Num>::SharedPtr publisher_;
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[Krcl_interfaces[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:50:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   34 |   rclcpp::Publisher<tutorial_interfaces::msg::Num[01;31m[K>[m[K::SharedPtr publisher_;
+      |                                                  [01;31m[K^[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   34 |   rclcpp::Publisher<tutorial_interfaces::msg::Num>::[01;31m[KSharedPtr[m[K publisher_;
+      |                                                     [01;31m[K^~~~~~~~~[m[K
+      |                                                              [32m[K;[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   34 |   rclcpp::Publisher<tutorial_interfaces::msg::Num>::SharedPtr [01;31m[Kpublisher_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~[m[K
+      |                                                               [32m[Krmw_publisher_t[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:20:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   20 |           [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::Float64>("topic", 10); // use create_publisher to create publisher
+      |           [01;31m[K^~~~~~~~~~[m[K
+      |           [32m[Krmw_publisher_t[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:31:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   31 |       [01;31m[Kpublisher_[m[K->publish(message);
+      |       [01;31m[K^~~~~~~~~~[m[K
+      |       [32m[Krmw_publisher_t[m[K
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 83%] [32m[1mLinking CXX executable listener[0m
+[ 83%] Built target listener
+gmake: *** [Makefile:146: all] Error 2

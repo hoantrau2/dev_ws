@@ -1,0 +1,14 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/msg/num.hpp: No such file or directory
+    6 | #include [01;31m[K"tutorial_interfaces/msg/num.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Ktutorial_interfaces/msg/num.hpp: No such file or directory
+    8 | #include [01;31m[K"tutorial_interfaces/msg/num.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

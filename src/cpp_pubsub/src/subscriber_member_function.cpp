@@ -13,7 +13,7 @@ public:
   {
     // Ensure that the necessary header is included
     subscription_ = this->create_subscription<std_msgs::msg::Float64>(
-      "transfer_to_pico_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
 
     if (subscription_ == nullptr) {
       // Check if subscription creation failed

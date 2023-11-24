@@ -1,0 +1,30 @@
+[0.069s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.102s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.113s] [ 33%] Built target listener_pico
+[0.113s] [ 66%] Built target talker
+[0.120s] [ 83%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[7.585s] [100%] [32m[1mLinking CXX executable listener[0m
+[7.959s] [100%] Built target listener
+[7.973s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[8.005s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub
+[8.012s] -- Install configuration: ""
+[8.012s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[8.012s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[8.016s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[8.016s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico
+[8.016s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[8.017s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[8.017s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[8.019s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub

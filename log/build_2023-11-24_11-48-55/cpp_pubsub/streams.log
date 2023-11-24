@@ -1,0 +1,81 @@
+[0.063s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.110s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.131s] [ 66%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.131s] [ 83%] Built target talker
+[0.131s] [ 83%] Built target listener_pico
+[2.228s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:7:10:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64[m[K’ does not name a type
+[2.228s]     7 |  typedef [01;31m[KStdMsgsMsgFloat64[m[K
+[2.228s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.230s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:10:5:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64[m[K’ does not name a type
+[2.231s]    10 |   } [01;31m[KStdMsgsMsgFloat64[m[K;
+[2.231s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.234s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:12:11:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64Sequence[m[K’ does not name a type
+[2.234s]    12 |   typedef [01;31m[KStdMsgsMsgFloat64Sequence[m[K
+[2.234s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.237s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64Sequence[m[K’ does not name a type
+[2.237s]    17 |   } [01;31m[KStdMsgsMsgFloat64Sequence[m[K;
+[2.237s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.251s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:29:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64Sequence[m[K’ does not name a type
+[2.251s]    39 |   void topic_callback(const [01;31m[KStdMsgsMsgFloat64Sequence[m[K::SharedPtr msg) const
+[2.251s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.251s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:66:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[2.251s]    39 |   void topic_callback(const StdMsgsMsgFloat64Sequence::SharedPtr [01;31m[Kmsg[m[K) const
+[2.251s]       |                                                                  [01;31m[K^~~[m[K
+[2.251s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:65:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[2.251s]    39 |   void topic_callback[34m[K([m[Kconst StdMsgsMsgFloat64Sequence::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K) const
+[2.251s]       |                      [34m[K~[m[K                                          [01;31m[K^[m[K[32m[K~~~[m[K
+[2.251s]       |                                                                 [32m[K)[m[K
+[2.252s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.252s]    39 |   void topic_callback(const StdMsgsMsgFloat64Sequence::[01;31m[KSharedPtr[m[K msg) const
+[2.252s]       |                                                        [01;31m[K^~~~~~~~~[m[K
+[2.252s]       |                                                                 [32m[K;[m[K
+[2.253s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[2.253s]    39 |   void topic_callback(const StdMsgsMsgFloat64Sequence::SharedPtr [01;31m[Kmsg[m[K) const
+[2.253s]       |                                                                  [01;31m[K^~~[m[K
+[2.263s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:24:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64Sequence[m[K’ was not declared in this scope
+[2.263s]    52 |   rclcpp::Subscription<[01;31m[KStdMsgsMsgFloat64Sequence[m[K>::SharedPtr subscription_;
+[2.264s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.264s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.264s]    52 |   rclcpp::Subscription<StdMsgsMsgFloat64Sequence[01;31m[K>[m[K::SharedPtr subscription_;
+[2.264s]       |                                                 [01;31m[K^[m[K
+[2.264s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.264s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.264s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.264s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.264s]    52 |   rclcpp::Subscription<StdMsgsMsgFloat64Sequence>::[01;31m[KSharedPtr[m[K subscription_;
+[2.264s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[2.264s]       |                                                             [32m[K;[m[K
+[2.266s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:52:62:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.266s]    52 |   rclcpp::Subscription<StdMsgsMsgFloat64Sequence>::SharedPtr [01;31m[Ksubscription_[m[K;
+[2.266s]       |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[2.266s]       |                                                              [32m[Krmw_subscription_t[m[K
+[2.273s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[2.273s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.273s]    28 |     [01;31m[Ksubscription_[m[K = this->create_subscription<StdMsgsMsgFloat64Sequence>(
+[2.273s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[2.273s]       |     [32m[Krmw_subscription_t[m[K
+[2.283s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:28:47:[m[K [01;31m[Kerror: [m[K‘[01m[KStdMsgsMsgFloat64Sequence[m[K’ was not declared in this scope
+[2.283s]    28 |     subscription_ = this->create_subscription<[01;31m[KStdMsgsMsgFloat64Sequence[m[K>(
+[2.283s]       |                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.287s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:28:73:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<<expression error> >(const char [21], int, std::_Bind_helper<false, void (MinimalSubscriber::*)(...), MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[2.287s]    28 |     subscription_ = [01;31m[Kthis->create_subscription<StdMsgsMsgFloat64Sequence>([m[K
+[2.287s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.287s]    29 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+[2.287s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.287s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.287s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:3[m[K:
+[2.287s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.288s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.288s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.288s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.288s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:28:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.288s]    28 |     subscription_ = [01;31m[Kthis->create_subscription<StdMsgsMsgFloat64Sequence>([m[K
+[2.288s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.288s]    29 | [01;31m[K      "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1))[m[K;
+[2.288s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.697s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[2.697s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+[2.698s] gmake: *** [Makefile:146: all] Error 2
+[2.700s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

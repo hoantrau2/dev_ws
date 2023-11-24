@@ -1,0 +1,13 @@
+[0.054s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.112s] [ 66%] Built target talker
+[0.112s] [ 66%] Built target listener_pico
+[0.116s] [ 83%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.358s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float64__sequence.hpp: No such file or directory
+[0.358s]     5 | #include [01;31m[K<std_msgs/msg/float64__sequence.hpp>[m[K
+[0.358s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.358s] compilation terminated.
+[0.360s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[0.360s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+[0.361s] gmake: *** [Makefile:146: all] Error 2
+[0.362s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

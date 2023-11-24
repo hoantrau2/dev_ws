@@ -1,0 +1,77 @@
+[0.055s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.101s] [ 66%] Built target listener_pico
+[0.101s] [ 66%] Built target talker
+[0.105s] [ 83%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.075s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(const StdMsgsMsgFloat64Sequence&) const[m[K’:
+[2.075s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:39:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Kconst StdMsgsMsgFloat64Sequence[m[K’ and ‘[01m[Kstd::nullptr_t[m[K’)
+[2.075s]    39 |     if ([01;31m[Kmsg != nullptr[m[K) {
+[2.075s]       |         [01;31m[K~~~~^~~~~~~~~~[m[K
+[2.075s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.076s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:3[m[K:
+[2.076s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:40:76:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst StdMsgsMsgFloat64Sequence[m[K’
+[2.076s]    40 |       RCLCPP_INFO(this->get_logger(), "Received sequence with size %u", msg[01;31m[K->[m[Ksize);
+[2.076s]       |                                                                            [01;31m[K^~[m[K
+[2.076s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:42:35:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst StdMsgsMsgFloat64Sequence[m[K’
+[2.076s]    42 |       for (uint32_t i = 0; i < msg[01;31m[K->[m[Ksize; ++i) {
+[2.076s]       |                                   [01;31m[K^~[m[K
+[2.076s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.076s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.077s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.077s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:3[m[K:
+[2.077s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:43:58:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst StdMsgsMsgFloat64Sequence[m[K’
+[2.077s]    43 |         RCLCPP_INFO(this->get_logger(), "  Item: %f", msg[01;31m[K->[m[Kdata[i].data);
+[2.077s]       |                                                          [01;31m[K^~[m[K
+[2.079s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K At global scope:
+[2.079s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:69:9:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[2.080s]    69 | CPP_INFO[01;31m[K([m[Kthis->get_logger(), "Received sequence with size %zu", msg.size);
+[2.080s]       |         [01;31m[K^[m[K
+[2.080s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:71:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+[2.080s]    71 |   [01;31m[Kfor[m[K (uint32_t i = 0; i < msg.size; ++i) {
+[2.080s]       |   [01;31m[K^~~[m[K
+[2.080s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:71:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+[2.080s]    71 |   for (uint32_t i = 0; [01;31m[Ki[m[K < msg.size; ++i) {
+[2.080s]       |                        [01;31m[K^[m[K
+[2.080s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:71:38:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K++[m[K’ token
+[2.081s]    71 |   for (uint32_t i = 0; i < msg.size; [01;31m[K++[m[Ki) {
+[2.081s]       |                                      [01;31m[K^~[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:74:5:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.081s]    74 |     [01;31m[K}[m[K else {
+[2.081s]       |     [01;31m[K^[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:74:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[2.081s]    74 |     } [01;31m[Kelse[m[K {
+[2.081s]       |       [01;31m[K^~~~[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:77:3:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.081s]    77 |   [01;31m[K}[m[K
+[2.081s]       |   [01;31m[K^[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:79:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.081s]    79 | [01;31m[K}[m[K;
+[2.081s]       | [01;31m[K^[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:81:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+[2.081s]    81 | int [01;31m[Kmain[m[K(int argc, char * argv[])
+[2.081s]       |     [01;31m[K^~~~[m[K
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:53:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+[2.081s]    53 | int [01;36m[Kmain[m[K(int argc, char * argv[])
+[2.081s]       |     [01;36m[K^~~~[m[K
+[4.254s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[4.254s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+[4.255s] gmake: *** [Makefile:146: all] Error 2
+[4.259s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

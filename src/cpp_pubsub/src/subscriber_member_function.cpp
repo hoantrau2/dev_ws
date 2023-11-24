@@ -1,7 +1,18 @@
 #include <functional>
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/float64.hpp"
+
+typedef struct StdMsgsMsgFloat64
+{
+  double data;
+} StdMsgsMsgFloat64;
+
+typedef struct StdMsgsMsgFloat64Sequence
+{
+  StdMsgsMsgFloat64 *data;
+  uint32_t size;
+  uint32_t capacity;
+} StdMsgsMsgFloat64Sequence;
 
 using std::placeholders::_1;
 
@@ -11,8 +22,8 @@ public:
   MinimalSubscriber()
   : Node("subscriber_from_pico")
   {
-    // Ensure that the necessary header is included
-    subscription_ = this->create_subscription<std_msgs::msg::Float64>(
+    // Create subscription
+    subscription_ = this->create_subscription<StdMsgsMsgFloat64Sequence>(
       "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
 
     if (subscription_ == nullptr) {
@@ -23,16 +34,18 @@ public:
 
 private:
   // Fix the type and add a default value for msg.data
-  void topic_callback(const std_msgs::msg::Float64::SharedPtr msg) const
+  void topic_callback(const StdMsgsMsgFloat64Sequence &msg) const
   {
-    if (msg != nullptr) {
-      // Use msg->data instead of msg.data
-      RCLCPP_INFO(this->get_logger(), "I heard: '%f'", msg->data);
-    } else {
-      RCLCPP_ERROR(this->get_logger(), "Received null message");
-    }
+   
+      RCLCPP_INFO(this->get_logger(), "Received sequence with size %u", msg.size);
+
+      for (uint32_t i = 0; i < msg.size; ++i) {
+        RCLCPP_INFO(this->get_logger(), "  Item: %f", msg.data[i].data);
+      }
+  
   }
-  rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr subscription_;
+
+  rclcpp::Subscription<StdMsgsMsgFloat64Sequence>::SharedPtr subscription_;
 };
 
 int main(int argc, char * argv[])

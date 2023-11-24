@@ -1,0 +1,52 @@
+[0.053s] Invoking command in '/home/ngochoan/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8
+[0.072s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.183s] -- Found rmw: 6.1.1 (/opt/ros/humble/share/rmw/cmake)
+[0.195s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.196s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.199s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.214s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.382s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.382s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[0.382s]   tutorial_interfaces --arguments-file
+[0.382s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[0.382s]   --output-dir
+[0.382s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[0.382s]   --output-file
+[0.382s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[0.382s]   returned error code 1:
+[0.382s] 
+[0.382s]   Error processing 'int32 Num' of 'tutorial_interfaces/Num': ''Num' is an
+[0.383s]   invalid field name.  It should have the pattern
+[0.383s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.383s] 
+[0.383s]   Traceback (most recent call last):
+[0.383s] 
+[0.383s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.383s]       return _run_code(code, main_globals, None,
+[0.383s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.383s]       exec(code, run_globals)
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.383s]       sys.exit(main())
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.383s]       abs_idl_file = convert_to_idl(
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.383s]       return convert_msg_to_idl(
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.383s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[0.383s]       fields.append(Field(
+[0.383s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[0.383s]       raise NameError(
+[0.384s] 
+[0.384s]   NameError: 'Num' is an invalid field name.  It should have the pattern
+[0.384s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.384s] 
+[0.384s] Call Stack (most recent call first):
+[0.384s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.384s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.384s] 
+[0.384s] [0m
+[0.384s] -- Configuring incomplete, errors occurred!
+[0.384s] See also "/home/ngochoan/dev_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.387s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.389s] Invoked command in '/home/ngochoan/dev_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8

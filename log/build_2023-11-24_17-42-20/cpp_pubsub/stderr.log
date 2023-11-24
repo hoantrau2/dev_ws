@@ -1,0 +1,53 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:77:25:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Krclc_support_init[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   77 |   if (rclc_support_init([01;35m[Kargc[m[K, argv, 0, &support, &allocator) != RCL_RET_OK) {
+      |                         [01;35m[K^~~~[m[K
+      |                         [01;35m[K|[m[K
+      |                         [01;35m[Kint[m[K
+In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[01m[K/opt/ros/humble/include/rclc/init.h:51:20:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krclc_support_t *[m[K’ but argument is of type ‘[01m[Kint[m[K’
+   51 |   [01;36m[Krclc_support_t * support[m[K,
+      |   [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:77:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Krclc_support_init[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   77 |   if (rclc_support_init(argc, [01;35m[Kargv[m[K, 0, &support, &allocator) != RCL_RET_OK) {
+      |                               [01;35m[K^~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar **[m[K
+In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[01m[K/opt/ros/humble/include/rclc/init.h:52:7:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kint[m[K’ but argument is of type ‘[01m[Kchar **[m[K’
+   52 |   [01;36m[Kint argc[m[K,
+      |   [01;36m[K~~~~^~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:77:40:[m[K [01;35m[Kwarning: [m[Kpassing argument 4 of ‘[01m[Krclc_support_init[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   77 |   if (rclc_support_init(argc, argv, 0, [01;35m[K&support[m[K, &allocator) != RCL_RET_OK) {
+      |                                        [01;35m[K^~~~~~~~[m[K
+      |                                        [01;35m[K|[m[K
+      |                                        [01;35m[Krclc_support_t *[m[K
+In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[01m[K/opt/ros/humble/include/rclc/init.h:54:21:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krcl_allocator_t *[m[K’ {aka ‘[01m[Kstruct rcutils_allocator_s *[m[K’} but argument is of type ‘[01m[Krclc_support_t *[m[K’
+   54 |   [01;36m[Krcl_allocator_t * allocator[m[K);
+      |   [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:77:7:[m[K [01;31m[Kerror: [m[Ktoo many arguments to function ‘[01m[Krclc_support_init[m[K’
+   77 |   if ([01;31m[Krclc_support_init[m[K(argc, argv, 0, &support, &allocator) != RCL_RET_OK) {
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[01m[K/opt/ros/humble/include/rclc/init.h:50:1:[m[K [01;36m[Knote: [m[Kdeclared here
+   50 | [01;36m[Krclc_support_init[m[K(
+      | [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:103:11:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_SUBSCRIPTION_QOS_DEFAULT[m[K’ undeclared (first use in this function); did you mean ‘[01m[KRCL_SUBSCRIPTION_MESSAGE_LOST[m[K’?
+  103 |           [01;31m[KRCL_SUBSCRIPTION_QOS_DEFAULT[m[K) != RCL_RET_OK) {
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |           [32m[KRCL_SUBSCRIPTION_MESSAGE_LOST[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:103:11:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:113:3:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krcl_subscription_fini[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  113 |   [01;35m[Krcl_subscription_fini(&subscription, &node)[m[K;
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:114:3:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krcl_node_fini[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  114 |   [01;35m[Krcl_node_fini(&node)[m[K;
+      |   [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

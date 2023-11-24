@@ -1,0 +1,55 @@
+[0.072s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.114s] [ 16%] [32mBuilding C object CMakeFiles/listener.dir/src/subscriber_member_function.c.o[0m
+[0.114s] [ 83%] Built target talker
+[0.114s] [ 83%] Built target listener_pico
+[0.148s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:[m[K In function ‘[01m[Kmain[m[K’:
+[0.148s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:75:21:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Krclc_support_init[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+[0.148s]    75 |   rclc_support_init([01;35m[Kargc[m[K, argv, &support, &allocator);
+[0.148s]       |                     [01;35m[K^~~~[m[K
+[0.148s]       |                     [01;35m[K|[m[K
+[0.148s]       |                     [01;35m[Kint[m[K
+[0.148s] In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+[0.148s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[0.149s] [01m[K/opt/ros/humble/include/rclc/init.h:51:20:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Krclc_support_t *[m[K’ but argument is of type ‘[01m[Kint[m[K’
+[0.149s]    51 |   [01;36m[Krclc_support_t * support[m[K,
+[0.149s]       |   [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[0.149s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:75:27:[m[K [01;35m[Kwarning: [m[Kpassing argument 2 of ‘[01m[Krclc_support_init[m[K’ makes integer from pointer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+[0.149s]    75 |   rclc_support_init(argc, [01;35m[Kargv[m[K, &support, &allocator);
+[0.149s]       |                           [01;35m[K^~~~[m[K
+[0.149s]       |                           [01;35m[K|[m[K
+[0.149s]       |                           [01;35m[Kchar **[m[K
+[0.149s] In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+[0.149s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[0.149s] [01m[K/opt/ros/humble/include/rclc/init.h:52:7:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kint[m[K’ but argument is of type ‘[01m[Kchar **[m[K’
+[0.149s]    52 |   [01;36m[Kint argc[m[K,
+[0.149s]       |   [01;36m[K~~~~^~~~[m[K
+[0.150s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:75:33:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Krclc_support_init[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+[0.150s]    75 |   rclc_support_init(argc, argv, [01;35m[K&support[m[K, &allocator);
+[0.150s]       |                                 [01;35m[K^~~~~~~~[m[K
+[0.150s]       |                                 [01;35m[K|[m[K
+[0.150s]       |                                 [01;35m[Krclc_support_t *[m[K
+[0.150s] In file included from [01m[K/opt/ros/humble/include/rclc/rclc.h:28[m[K,
+[0.150s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:55[m[K:
+[0.150s] [01m[K/opt/ros/humble/include/rclc/init.h:53:24:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * const*[m[K’ but argument is of type ‘[01m[Krclc_support_t *[m[K’
+[0.150s]    53 |   [01;36m[Kchar const * const * argv[m[K,
+[0.150s]       |   [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[0.150s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:78:7:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Krclc_init[m[K’; did you mean ‘[01m[Krcl_init[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+[0.150s]    78 |   if ([01;35m[Krclc_init[m[K(argc, argv, &support) != RCL_RET_OK) {
+[0.150s]       |       [01;35m[K^~~~~~~~~[m[K
+[0.150s]       |       [32m[Krcl_init[m[K
+[0.152s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:104:11:[m[K [01;31m[Kerror: [m[K‘[01m[KRCL_SUBSCRIPTION_QOS_DEFAULT[m[K’ undeclared (first use in this function); did you mean ‘[01m[KRCL_SUBSCRIPTION_MESSAGE_LOST[m[K’?
+[0.152s]   104 |           [01;31m[KRCL_SUBSCRIPTION_QOS_DEFAULT[m[K) != RCL_RET_OK) {
+[0.152s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.152s]       |           [32m[KRCL_SUBSCRIPTION_MESSAGE_LOST[m[K
+[0.152s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:104:11:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0.153s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:114:3:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krcl_subscription_fini[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[0.153s]   114 |   [01;35m[Krcl_subscription_fini(&subscription, &node)[m[K;
+[0.153s]       |   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.153s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:115:3:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Krcl_node_fini[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+[0.153s]   115 |   [01;35m[Krcl_node_fini(&node)[m[K;
+[0.153s]       |   [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.154s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.c.o] Error 1
+[0.154s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+[0.154s] gmake: *** [Makefile:146: all] Error 2
+[0.156s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

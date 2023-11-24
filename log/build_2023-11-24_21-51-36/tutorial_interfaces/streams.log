@@ -1,0 +1,287 @@
+[0.067s] Invoking command in '/home/ngochoan/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8
+[0.097s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.222s] -- Found rmw: 6.1.1 (/opt/ros/humble/share/rmw/cmake)
+[0.242s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.245s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.248s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.268s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.513s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.655s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.870s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.889s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.907s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.907s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.907s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.918s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.932s] -- Added test 'lint_cmake' to check CMake code style
+[0.933s] -- Added test 'xmllint' to check XML markup files
+[0.935s] -- Configuring done
+[0.973s] -- Generating done
+[0.975s] -- Build files have been written to: /home/ngochoan/dev_ws/build/tutorial_interfaces
+[0.994s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.001s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.012s] [  5%] Built target ament_cmake_python_copy_tutorial_interfaces
+[1.245s] running egg_info
+[1.246s] writing tutorial_interfaces.egg-info/PKG-INFO
+[1.246s] writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt
+[1.246s] writing top-level names to tutorial_interfaces.egg-info/top_level.txt
+[1.249s] reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+[1.250s] writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'
+[1.283s] [  5%] Built target ament_cmake_python_build_tutorial_interfaces_egg
+[1.290s] [  5%] Built target tutorial_interfaces__cpp
+[1.301s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.309s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.309s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.317s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_c[0m
+[1.327s] [ 15%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.c.o[0m
+[1.329s] [ 17%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.o[0m
+[1.400s] [ 20%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so[0m
+[1.436s] [ 20%] Built target tutorial_interfaces__rosidl_generator_c
+[1.446s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.448s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.448s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.677s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_cpp[0m
+[1.677s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.690s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.695s] [ 33%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/my_interface__type_support.cpp.o[0m
+[1.695s] [ 35%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[1.695s] [ 33%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp.o[0m
+[1.702s] [ 38%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/my_interface__type_support.cpp.o[0m
+[1.710s] [ 41%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/my_interface__type_support.cpp.o[0m
+[1.825s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c[0m
+[1.843s] [ 43%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/my_interface__type_support.cpp.o[0m
+[1.893s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c[0m
+[1.917s] [ 46%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/my_interface__type_support.c.o[0m
+[1.930s] [ 48%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o[0m
+[1.961s] [ 51%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o[0m
+[1.966s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.020s] [ 53%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/my_interface__type_support_c.cpp.o[0m
+[2.024s] [ 56%] [32m[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.034s] [ 58%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so[0m
+[2.073s] [ 58%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c
+[2.100s] [ 61%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__type_support_c.cpp.o[0m
+[2.122s] [ 61%] Built target tutorial_interfaces__rosidl_typesupport_c
+[2.134s] [ 64%] [32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o[0m
+[2.177s] [ 66%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so[0m
+[2.231s] [ 66%] Built target tutorial_interfaces__rosidl_typesupport_cpp
+[2.296s] [ 69%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.372s] [ 69%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp
+[2.549s] [ 71%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.561s] [ 74%] [32m[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.622s] [ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.636s] [ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c
+[2.652s] [ 74%] Built target tutorial_interfaces
+[2.668s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.957s] Member name 'pass' in the message 'MyInterface' is a reserved keyword in Python and is not supported at the moment. Please use a different name.
+[3.035s] [ 76%] Built target tutorial_interfaces__py
+[3.044s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_py[0m
+[3.056s] [ 82%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/msg/_my_interface_s.c.o[0m
+[3.056s] [ 82%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o[0m
+[3.163s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__rosidl_generator_py.so[0m
+[3.194s] [ 84%] Built target tutorial_interfaces__rosidl_generator_py
+[3.203s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.203s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c__pyext[0m
+[3.203s] [35m[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.214s] [ 89%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[3.214s] [ 89%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.215s] [ 92%] [32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.293s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.323s] [ 94%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext
+[3.336s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.339s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.363s] [100%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext
+[3.366s] [100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[3.375s] Invoked command in '/home/ngochoan/dev_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8
+[3.440s] Invoking command in '/home/ngochoan/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/tutorial_interfaces
+[3.448s] -- Install configuration: ""
+[3.448s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces
+[3.448s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.448s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.449s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.h
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.c
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.h
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.h
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.h
+[3.449s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.449s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/my_interface.h
+[3.449s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.h
+[3.449s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.449s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__functions.h
+[3.450s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.h
+[3.450s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.h
+[3.450s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__struct.h
+[3.450s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.h
+[3.450s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.c
+[3.450s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.h
+[3.450s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__functions.c
+[3.450s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh
+[3.450s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv
+[3.450s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so
+[3.451s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.451s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.451s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_fastrtps_c.h
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[3.451s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.452s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.452s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.452s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h
+[3.452s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.452s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.453s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.c
+[3.453s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_introspection_c.h
+[3.453s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[3.453s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c
+[3.453s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so
+[3.453s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[3.453s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so
+[3.454s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""
+[3.454s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.454s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.454s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.hpp
+[3.454s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.454s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp
+[3.454s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp
+[3.454s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp
+[3.454s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.454s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/my_interface.hpp
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.hpp
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__builder.hpp
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__traits.hpp
+[3.455s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__builder.hpp
+[3.455s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__traits.hpp
+[3.455s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__struct.hpp
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.hpp
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.455s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.456s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/dds_fastrtps
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[3.456s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_fastrtps_cpp.hpp
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/dds_fastrtps
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.456s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.456s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail
+[3.456s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp
+[3.456s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg
+[3.456s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail
+[3.457s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.cpp
+[3.457s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.cpp
+[3.457s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[3.457s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.457s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[3.457s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so
+[3.457s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""
+[3.457s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv
+[3.458s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[3.458s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.458s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints.py
+[3.458s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/__init__.py
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints_s.c
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.459s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg
+[3.459s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num_s.c
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/__init__.py
+[3.459s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num.py
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface.py
+[3.459s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface_s.c
+[3.460s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py
+[3.460s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.460s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/libtutorial_interfaces__rosidl_generator_py.so
+[3.460s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c
+[3.460s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.491s] Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces'...
+[3.492s] Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py'...
+[3.492s] Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg'...
+[3.492s] Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/__init__.py'...
+[3.492s] Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface.py'...
+[3.492s] ***   File "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface.py", line 78
+[3.492s]     self.pass = kwargs.get('pass', str())
+[3.492s]          ^^^^
+[3.492s] SyntaxError: invalid syntax
+[3.492s] 
+[3.492s] Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv'...
+[3.492s] Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/__init__.py'...
+[3.492s] Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints.py'...
+[3.496s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.496s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.497s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.497s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.497s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.497s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.498s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so
+[3.498s] -- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so" to ""
+[3.498s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MyInterface.idl
+[3.498s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl
+[3.498s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/MyInterface.msg
+[3.498s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv
+[3.498s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Request.msg
+[3.498s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Response.msg
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces
+[3.499s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh
+[3.499s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh
+[3.499s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh
+[3.499s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv
+[3.499s] -- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport.cmake
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake
+[3.499s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cppExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport.cmake
+[3.500s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake
+[3.501s] -- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml
+[3.502s] Invoked command in '/home/ngochoan/dev_ws/build/tutorial_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/tutorial_interfaces

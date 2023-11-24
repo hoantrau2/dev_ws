@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target listener[0m
+[ 83%] Built target listener_pico
+[ 66%] [32mBuilding C object CMakeFiles/listener.dir/src/subscriber_member_function.c.o[0m
+[ 83%] Built target talker

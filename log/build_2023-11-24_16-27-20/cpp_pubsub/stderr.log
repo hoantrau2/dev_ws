@@ -1,0 +1,10 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ does not name a type
+   22 | [01;31m[Kz[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:15:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ktopic_callback[m[K’ is not a member of ‘[01m[KMinimalSubscriber[m[K’
+   15 |       "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::[01;31m[Ktopic_callback[m[K, this, _1));
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,23 @@
+[0.066s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.084s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.206s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.206s]   By not providing "Findrclc.cmake" in CMAKE_MODULE_PATH this project has
+[0.207s]   asked CMake to find a package configuration file provided by "rclc", but
+[0.207s]   CMake did not find one.
+[0.207s] 
+[0.207s]   Could not find a package configuration file provided by "rclc" with any of
+[0.207s]   the following names:
+[0.207s] 
+[0.207s]     rclcConfig.cmake
+[0.207s]     rclc-config.cmake
+[0.207s] 
+[0.207s]   Add the installation prefix of "rclc" to CMAKE_PREFIX_PATH or set
+[0.207s]   "rclc_DIR" to a directory containing one of the above files.  If "rclc"
+[0.208s]   provides a separate development package or SDK, be sure it has been
+[0.208s]   installed.
+[0.208s] 
+[0.208s] [0m
+[0.208s] -- Configuring incomplete, errors occurred!
+[0.208s] See also "/home/ngochoan/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeOutput.log".
+[0.208s] gmake: *** [Makefile:349: cmake_check_build_system] Error 1
+[0.210s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

@@ -1,0 +1,10 @@
+[ 16%] [32mBuilding C object CMakeFiles/listener.dir/src/subscriber_member_function.c.o[0m
+[ 83%] Built target listener_pico
+[ 83%] Built target talker
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/subscriber_member_function.c:1:10:[m[K [01;31m[Kfatal error: [m[Kfunctional: No such file or directory
+    1 | #include [01;31m[K<functional>[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/listener.dir/build.make:76: CMakeFiles/listener.dir/src/subscriber_member_function.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

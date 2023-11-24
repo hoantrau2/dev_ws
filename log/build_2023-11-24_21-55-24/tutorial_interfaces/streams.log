@@ -1,0 +1,52 @@
+[0.209s] Invoking command in '/home/ngochoan/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8
+[0.235s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.381s] -- Found rmw: 6.1.1 (/opt/ros/humble/share/rmw/cmake)
+[0.395s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.399s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.587s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.587s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[0.587s]   tutorial_interfaces --arguments-file
+[0.587s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[0.587s]   --output-dir
+[0.587s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[0.587s]   --output-file
+[0.587s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[0.587s]   returned error code 1:
+[0.587s] 
+[0.587s]   Error processing 'string dataSub' of 'tutorial_interfaces/MyInterface':
+[0.587s]   ''dataSub' is an invalid field name.  It should have the pattern
+[0.587s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.587s] 
+[0.587s]   Traceback (most recent call last):
+[0.587s] 
+[0.587s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.587s]       return _run_code(code, main_globals, None,
+[0.588s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.588s]       exec(code, run_globals)
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.588s]       sys.exit(main())
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.588s]       abs_idl_file = convert_to_idl(
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.588s]       return convert_msg_to_idl(
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.588s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[0.588s]       fields.append(Field(
+[0.588s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[0.588s]       raise NameError(
+[0.588s] 
+[0.588s]   NameError: 'dataSub' is an invalid field name.  It should have the pattern
+[0.588s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.588s] 
+[0.588s] Call Stack (most recent call first):
+[0.588s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.588s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.589s] 
+[0.589s] [0m
+[0.589s] -- Configuring incomplete, errors occurred!
+[0.589s] See also "/home/ngochoan/dev_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.591s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.593s] Invoked command in '/home/ngochoan/dev_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8

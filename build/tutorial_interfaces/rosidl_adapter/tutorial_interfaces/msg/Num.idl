@@ -6,7 +6,7 @@
 module tutorial_interfaces {
   module msg {
     struct Num {
-      int64 num;
+      double data;
     };
   };
 };

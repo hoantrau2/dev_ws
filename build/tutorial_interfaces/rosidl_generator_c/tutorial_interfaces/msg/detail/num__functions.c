@@ -17,7 +17,7 @@ tutorial_interfaces__msg__Num__init(tutorial_interfaces__msg__Num * msg)
   if (!msg) {
     return false;
   }
-  // num
+  // data
   return true;
 }
 
@@ -27,7 +27,7 @@ tutorial_interfaces__msg__Num__fini(tutorial_interfaces__msg__Num * msg)
   if (!msg) {
     return;
   }
-  // num
+  // data
 }
 
 bool
@@ -36,8 +36,8 @@ tutorial_interfaces__msg__Num__are_equal(const tutorial_interfaces__msg__Num * l
   if (!lhs || !rhs) {
     return false;
   }
-  // num
-  if (lhs->num != rhs->num) {
+  // data
+  if (lhs->data != rhs->data) {
     return false;
   }
   return true;
@@ -51,8 +51,8 @@ tutorial_interfaces__msg__Num__copy(
   if (!input || !output) {
     return false;
   }
-  // num
-  output->num = input->num;
+  // data
+  output->data = input->data;
   return true;
 }
 

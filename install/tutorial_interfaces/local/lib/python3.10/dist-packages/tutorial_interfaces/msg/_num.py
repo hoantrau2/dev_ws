@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -55,22 +57,22 @@ class Num(metaclass=Metaclass_Num):
     """Message class 'Num'."""
 
     __slots__ = [
-        '_num',
+        '_data',
     ]
 
     _fields_and_field_types = {
-        'num': 'int64',
+        'data': 'double',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.num = kwargs.get('num', int())
+        self.data = kwargs.get('data', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -101,7 +103,7 @@ class Num(metaclass=Metaclass_Num):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.num != other.num:
+        if self.data != other.data:
             return False
         return True
 
@@ -111,16 +113,16 @@ class Num(metaclass=Metaclass_Num):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def num(self):
-        """Message field 'num'."""
-        return self._num
+    def data(self):
+        """Message field 'data'."""
+        return self._data
 
-    @num.setter
-    def num(self, value):
+    @data.setter
+    def data(self, value):
         if __debug__:
             assert \
-                isinstance(value, int), \
-                "The 'num' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'num' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._num = value
+                isinstance(value, float), \
+                "The 'data' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'data' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._data = value

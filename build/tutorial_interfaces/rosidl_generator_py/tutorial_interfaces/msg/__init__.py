@@ -1,1 +1,1 @@
-from tutorial_interfaces.msg._num import Num  # noqa: F401
+from tutorial_interfaces.msg._my_interface import MyInterface  # noqa: F401

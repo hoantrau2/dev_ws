@@ -33,14 +33,14 @@ void tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_fini
 
 static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_message_member_array[1] = {
   {
-    "num",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    "data",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(tutorial_interfaces__msg__Num, num),  // bytes offset in struct
+    offsetof(tutorial_interfaces__msg__Num, data),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

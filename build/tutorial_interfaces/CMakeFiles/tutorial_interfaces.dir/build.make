@@ -66,7 +66,7 @@ include CMakeFiles/tutorial_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/tutorial_interfaces.dir/progress.make
 
-CMakeFiles/tutorial_interfaces: /home/ngochoan/dev_ws/src/tutorial_interfaces/msg/Num.msg
+CMakeFiles/tutorial_interfaces: /home/ngochoan/dev_ws/src/tutorial_interfaces/msg/MyInterface.msg
 CMakeFiles/tutorial_interfaces: /home/ngochoan/dev_ws/src/tutorial_interfaces/srv/AddThreeInts.srv
 CMakeFiles/tutorial_interfaces: rosidl_cmake/srv/AddThreeInts_Request.msg
 CMakeFiles/tutorial_interfaces: rosidl_cmake/srv/AddThreeInts_Response.msg

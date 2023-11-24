@@ -49,9 +49,9 @@ static bool _Num__cdr_serialize(
     return false;
   }
   const _Num__ros_msg_type * ros_message = static_cast<const _Num__ros_msg_type *>(untyped_ros_message);
-  // Field name: num
+  // Field name: data
   {
-    cdr << ros_message->num;
+    cdr << ros_message->data;
   }
 
   return true;
@@ -66,9 +66,9 @@ static bool _Num__cdr_deserialize(
     return false;
   }
   _Num__ros_msg_type * ros_message = static_cast<_Num__ros_msg_type *>(untyped_ros_message);
-  // Field name: num
+  // Field name: data
   {
-    cdr >> ros_message->num;
+    cdr >> ros_message->data;
   }
 
   return true;
@@ -88,9 +88,9 @@ size_t get_serialized_size_tutorial_interfaces__msg__Num(
   (void)padding;
   (void)wchar_size;
 
-  // field.name num
+  // field.name data
   {
-    size_t item_size = sizeof(ros_message->num);
+    size_t item_size = sizeof(ros_message->data);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -121,7 +121,7 @@ size_t max_serialized_size_tutorial_interfaces__msg__Num(
   full_bounded = true;
   is_plain = true;
 
-  // member: num
+  // member: data
   {
     size_t array_size = 1;
 

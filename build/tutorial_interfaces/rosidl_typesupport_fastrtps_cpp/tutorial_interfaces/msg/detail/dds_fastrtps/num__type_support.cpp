@@ -32,8 +32,8 @@ cdr_serialize(
   const tutorial_interfaces::msg::Num & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: num
-  cdr << ros_message.num;
+  // Member: data
+  cdr << ros_message.data;
   return true;
 }
 
@@ -43,8 +43,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   tutorial_interfaces::msg::Num & ros_message)
 {
-  // Member: num
-  cdr >> ros_message.num;
+  // Member: data
+  cdr >> ros_message.data;
 
   return true;
 }
@@ -62,9 +62,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: num
+  // Member: data
   {
-    size_t item_size = sizeof(ros_message.num);
+    size_t item_size = sizeof(ros_message.data);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -90,7 +90,7 @@ max_serialized_size_Num(
   is_plain = true;
 
 
-  // Member: num
+  // Member: data
   {
     size_t array_size = 1;
 

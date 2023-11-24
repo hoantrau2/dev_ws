@@ -20,7 +20,7 @@ extern "C"
 /// Struct defined in msg/Num in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__msg__Num
 {
-  int64_t num;
+  double data;
 } tutorial_interfaces__msg__Num;
 
 // Struct for a sequence of tutorial_interfaces__msg__Num.

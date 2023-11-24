@@ -38,7 +38,7 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->num = 0ll;
+      this->data = 0.0;
     }
   }
 
@@ -48,20 +48,20 @@ struct Num_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->num = 0ll;
+      this->data = 0.0;
     }
   }
 
   // field types and members
-  using _num_type =
-    int64_t;
-  _num_type num;
+  using _data_type =
+    double;
+  _data_type data;
 
   // setters for named parameter idiom
-  Type & set__num(
-    const int64_t & _arg)
+  Type & set__data(
+    const double & _arg)
   {
-    this->num = _arg;
+    this->data = _arg;
     return *this;
   }
 
@@ -107,7 +107,7 @@ struct Num_
   // comparison operators
   bool operator==(const Num_ & other) const
   {
-    if (this->num != other.num) {
+    if (this->data != other.data) {
       return false;
     }
     return true;

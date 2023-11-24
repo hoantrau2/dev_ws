@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Num_num
+class Init_Num_data
 {
 public:
-  Init_Num_num()
+  Init_Num_data()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::tutorial_interfaces::msg::Num num(::tutorial_interfaces::msg::Num::_num_type arg)
+  ::tutorial_interfaces::msg::Num data(::tutorial_interfaces::msg::Num::_data_type arg)
   {
-    msg_.num = std::move(arg);
+    msg_.data = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::tutorial_interfaces::msg::Num>()
 {
-  return tutorial_interfaces::msg::builder::Init_Num_num();
+  return tutorial_interfaces::msg::builder::Init_Num_data();
 }
 
 }  // namespace tutorial_interfaces

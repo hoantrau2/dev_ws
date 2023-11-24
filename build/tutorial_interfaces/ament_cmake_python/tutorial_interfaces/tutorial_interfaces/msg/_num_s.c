@@ -50,13 +50,13 @@ bool tutorial_interfaces__msg__num__convert_from_py(PyObject * _pymsg, void * _r
     assert(strncmp("tutorial_interfaces.msg._num.Num", full_classname_dest, 32) == 0);
   }
   tutorial_interfaces__msg__Num * ros_message = _ros_message;
-  {  // num
-    PyObject * field = PyObject_GetAttrString(_pymsg, "num");
+  {  // data
+    PyObject * field = PyObject_GetAttrString(_pymsg, "data");
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->num = PyLong_AsLongLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->data = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -81,11 +81,11 @@ PyObject * tutorial_interfaces__msg__num__convert_to_py(void * raw_ros_message)
     }
   }
   tutorial_interfaces__msg__Num * ros_message = (tutorial_interfaces__msg__Num *)raw_ros_message;
-  {  // num
+  {  // data
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->num);
+    field = PyFloat_FromDouble(ros_message->data);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "num", field);
+      int rc = PyObject_SetAttrString(_pymessage, "data", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -17,7 +17,7 @@ find_package(tutorial_interfaces REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 add_executable(talker src/publisher_member_function.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
+ament_target_dependencies(talker rclcpp std_msgs tutorial_interfaces)
 add_executable(listener src/subscriber_member_function.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 

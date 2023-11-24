@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target talker[0m
+[ 33%] Built target listener_pico
+[ 66%] Built target listener
+[ 83%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m

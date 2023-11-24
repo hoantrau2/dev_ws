@@ -1,0 +1,19 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:3[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(tutorial_interfaces::msg::MyInterface_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:30:66:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((const std::__shared_ptr_access<tutorial_interfaces::msg::MyInterface_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<tutorial_interfaces::msg::MyInterface_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->tutorial_interfaces::msg::MyInterface_<std::allocator<void> >::data[m[K’, which is of non-class type ‘[01m[Ktutorial_interfaces::msg::MyInterface_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+   30 |       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.[01;31m[Kc_str[m[K());
+      |                                                                  [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

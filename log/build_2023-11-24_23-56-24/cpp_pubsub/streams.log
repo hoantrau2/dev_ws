@@ -1,0 +1,25 @@
+[0.070s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.113s] [ 33%] Built target listener
+[0.115s] [ 66%] Built target talker
+[0.117s] [ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[2.134s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.134s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.135s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.135s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:3[m[K:
+[2.135s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(tutorial_interfaces::msg::MyInterface_<std::allocator<void> >::SharedPtr) const[m[K’:
+[2.135s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:30:66:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((const std::__shared_ptr_access<tutorial_interfaces::msg::MyInterface_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<tutorial_interfaces::msg::MyInterface_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->tutorial_interfaces::msg::MyInterface_<std::allocator<void> >::data[m[K’, which is of non-class type ‘[01m[Ktutorial_interfaces::msg::MyInterface_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+[2.135s]    30 |       RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.[01;31m[Kc_str[m[K());
+[2.135s]       |                                                                  [01;31m[K^~~~~[m[K
+[4.326s] gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+[4.326s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+[4.326s] gmake: *** [Makefile:146: all] Error 2
+[4.328s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

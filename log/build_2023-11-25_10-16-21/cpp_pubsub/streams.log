@@ -1,0 +1,13 @@
+[0.066s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.098s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.108s] [ 33%] Built target listener
+[0.109s] [ 66%] Built target talker
+[0.114s] [ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[1.976s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[1.976s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:24:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstdio_init_all[m[K’ was not declared in this scope
+[1.976s]    24 |   [01;31m[Kstdio_init_all[m[K();
+[1.976s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.318s] gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+[2.319s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+[2.319s] gmake: *** [Makefile:146: all] Error 2
+[2.321s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

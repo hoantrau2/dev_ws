@@ -249,11 +249,10 @@ CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tuto
   /usr/include/python3.10/numpy/__multiarray_api.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h \
   rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o: rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c \
   /usr/include/stdc-predef.h \
@@ -507,11 +506,7 @@ CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tuto
   rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h
 
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
-
 rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h:
 
@@ -886,6 +881,8 @@ rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__struct.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 

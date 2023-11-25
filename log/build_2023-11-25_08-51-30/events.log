@@ -1,0 +1,362 @@
+[0.000000] (-) TimerEvent: {}
+[0.000230] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.000314] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000435] (-) JobUnselected: {'identifier': 'test_package'}
+[0.000465] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.000520] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.087696] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.088510] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'build'}
+[0.089308] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/tutorial_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/tutorial_interfaces', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/146/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/146/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/146/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/146/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9abc2c72911eb2868f2b686965614a41'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2402,unix/linux:/tmp/.ICE-unix/2402'), ('GTK_EXE_PREFIX', '/snap/code/146/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/33235a54_58c6_4194_b456_f57d1fb388f9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/146/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b46651725.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/146/.local/share/glib-2.0/schemas'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('NO_AT_BRIDGE', '1'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('PWD', '/home/ngochoan/dev_ws/build/tutorial_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9abc2c72911eb2868f2b686965614a41'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/146/.local/share:/home/ngochoan/snap/code/146:/snap/code/146/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098954] (-) TimerEvent: {}
+[0.117496] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199088] (-) TimerEvent: {}
+[0.276922] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rmw: 6.1.1 (/opt/ros/humble/share/rmw/cmake)\n'}
+[0.294766] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.296868] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.299192] (-) TimerEvent: {}
+[0.299988] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.323842] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399295] (-) TimerEvent: {}
+[0.499642] (-) TimerEvent: {}
+[0.599934] (-) TimerEvent: {}
+[0.620924] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700118] (-) TimerEvent: {}
+[0.800528] (-) TimerEvent: {}
+[0.811147] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.900649] (-) TimerEvent: {}
+[1.000977] (-) TimerEvent: {}
+[1.049795] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.074197] (tutorial_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.098323] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.098492] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.098573] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.101119] (-) TimerEvent: {}
+[1.111333] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.131357] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.133174] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.136702] (tutorial_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.175137] (tutorial_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.178035] (tutorial_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/tutorial_interfaces\n'}
+[1.201245] (-) TimerEvent: {}
+[1.202477] (tutorial_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.214592] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.230046] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_tutorial_interfaces\n'}
+[1.301350] (-) TimerEvent: {}
+[1.401752] (-) TimerEvent: {}
+[1.502148] (-) TimerEvent: {}
+[1.602492] (-) TimerEvent: {}
+[1.674195] (tutorial_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.675289] (tutorial_interfaces) StdoutLine: {'line': b'writing tutorial_interfaces.egg-info/PKG-INFO\n'}
+[1.675551] (tutorial_interfaces) StdoutLine: {'line': b'writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt\n'}
+[1.675811] (tutorial_interfaces) StdoutLine: {'line': b'writing top-level names to tutorial_interfaces.egg-info/top_level.txt\n'}
+[1.679503] (tutorial_interfaces) StdoutLine: {'line': b"reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[1.680570] (tutorial_interfaces) StdoutLine: {'line': b"writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[1.702594] (-) TimerEvent: {}
+[1.714153] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_tutorial_interfaces_egg\n'}
+[1.786553] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target tutorial_interfaces__cpp\n'}
+[1.797174] (tutorial_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.797536] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.799035] (tutorial_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.802698] (-) TimerEvent: {}
+[1.803593] (tutorial_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.811833] (tutorial_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/float64__functions.c.o\x1b[0m\n'}
+[1.817603] (tutorial_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.o\x1b[0m\n'}
+[1.902806] (-) TimerEvent: {}
+[1.907249] (tutorial_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[1.970860] (tutorial_interfaces) StdoutLine: {'line': b'[ 20%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[1.988531] (tutorial_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.988805] (tutorial_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.989186] (tutorial_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.002916] (-) TimerEvent: {}
+[2.103910] (-) TimerEvent: {}
+[2.204263] (-) TimerEvent: {}
+[2.273304] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.296262] (tutorial_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/float64__type_support.cpp.o\x1b[0m\n'}
+[2.299669] (tutorial_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.304369] (-) TimerEvent: {}
+[2.362144] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.390787] (tutorial_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/float64__type_support.cpp.o\x1b[0m\n'}
+[2.402107] (tutorial_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.404465] (-) TimerEvent: {}
+[2.504810] (-) TimerEvent: {}
+[2.514435] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.519542] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.543262] (tutorial_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/float64__type_support.cpp.o\x1b[0m\n'}
+[2.564877] (tutorial_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/float64__type_support.cpp.o\x1b[0m\n'}
+[2.604947] (-) TimerEvent: {}
+[2.664936] (tutorial_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.705071] (-) TimerEvent: {}
+[2.706801] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.731616] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.737659] (tutorial_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.756988] (tutorial_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/float64__type_support_c.cpp.o\x1b[0m\n'}
+[2.769389] (tutorial_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/float64__type_support.c.o\x1b[0m\n'}
+[2.805288] (-) TimerEvent: {}
+[2.845830] (tutorial_interfaces) StdoutLine: {'line': b'[ 53%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[2.873269] (tutorial_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.883605] (tutorial_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o\x1b[0m\n'}
+[2.905487] (-) TimerEvent: {}
+[3.006529] (-) TimerEvent: {}
+[3.016041] (tutorial_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.064132] (tutorial_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__type_support_c.cpp.o\x1b[0m\n'}
+[3.079636] (tutorial_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.095673] (tutorial_interfaces) StdoutLine: {'line': b'[ 66%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.106654] (-) TimerEvent: {}
+[3.198361] (tutorial_interfaces) StdoutLine: {'line': b'[ 66%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[3.206776] (-) TimerEvent: {}
+[3.297147] (tutorial_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.306910] (-) TimerEvent: {}
+[3.384023] (tutorial_interfaces) StdoutLine: {'line': b'[ 69%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.407030] (-) TimerEvent: {}
+[3.507436] (-) TimerEvent: {}
+[3.607841] (-) TimerEvent: {}
+[3.619116] (tutorial_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.635957] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.707963] (-) TimerEvent: {}
+[3.730567] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.746570] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.769569] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] Built target tutorial_interfaces\n'}
+[3.793290] (tutorial_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.808058] (-) TimerEvent: {}
+[3.908333] (-) TimerEvent: {}
+[4.008595] (-) TimerEvent: {}
+[4.108900] (-) TimerEvent: {}
+[4.209189] (-) TimerEvent: {}
+[4.309503] (-) TimerEvent: {}
+[4.376930] (tutorial_interfaces) StdoutLine: {'line': b'[ 76%] Built target tutorial_interfaces__py\n'}
+[4.389524] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_generator_py\x1b[0m\n'}
+[4.403314] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/msg/_float64_s.c.o\x1b[0m\n'}
+[4.403862] (tutorial_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o\x1b[0m\n'}
+[4.409629] (-) TimerEvent: {}
+[4.509986] (-) TimerEvent: {}
+[4.549776] (tutorial_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/libtutorial_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.590311] (tutorial_interfaces) StdoutLine: {'line': b'[ 84%] Built target tutorial_interfaces__rosidl_generator_py\n'}
+[4.602419] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.602675] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.606887] (tutorial_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tutorial_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.610181] (-) TimerEvent: {}
+[4.620274] (tutorial_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.623984] (tutorial_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.628968] (tutorial_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.710218] (-) TimerEvent: {}
+[4.755443] (tutorial_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.767560] (tutorial_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.792548] (tutorial_interfaces) StdoutLine: {'line': b'[ 97%] Built target tutorial_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.806255] (tutorial_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.806577] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.810293] (-) TimerEvent: {}
+[4.845370] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.859329] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[4.910377] (-) TimerEvent: {}
+[4.932151] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'install'}
+[4.941407] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ngochoan/dev_ws/build/tutorial_interfaces'], 'cwd': '/home/ngochoan/dev_ws/build/tutorial_interfaces', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/146/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/146/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/146/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/146/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9abc2c72911eb2868f2b686965614a41'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2402,unix/linux:/tmp/.ICE-unix/2402'), ('GTK_EXE_PREFIX', '/snap/code/146/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/33235a54_58c6_4194_b456_f57d1fb388f9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/146/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b46651725.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/146/.local/share/glib-2.0/schemas'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('NO_AT_BRIDGE', '1'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('PWD', '/home/ngochoan/dev_ws/build/tutorial_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=9abc2c72911eb2868f2b686965614a41'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/146/.local/share:/home/ngochoan/snap/code/146:/snap/code/146/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.951503] (tutorial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.951910] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces\n'}
+[4.952201] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.952426] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.952633] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.952795] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.h\n'}
+[4.953000] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.c\n'}
+[4.953187] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.h\n'}
+[4.953344] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.h\n'}
+[4.953537] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.h\n'}
+[4.953749] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.954128] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/float64.h\n'}
+[4.954422] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.954774] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/my_interface.h\n'}
+[4.954942] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.h\n'}
+[4.955158] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.955370] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__functions.h\n'}
+[4.955510] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.h\n'}
+[4.955703] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.h\n'}
+[4.955842] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__functions.c\n'}
+[4.956023] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__struct.h\n'}
+[4.956192] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__type_support.h\n'}
+[4.956335] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.h\n'}
+[4.956448] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__struct.h\n'}
+[4.956530] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.c\n'}
+[4.956608] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.h\n'}
+[4.956686] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__functions.h\n'}
+[4.956763] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__functions.c\n'}
+[4.956871] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh\n'}
+[4.956948] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv\n'}
+[4.967063] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so\n'}
+[4.967663] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.967997] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.968186] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.968356] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.968532] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[4.968698] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.968874] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.968994] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_fastrtps_c.h\n'}
+[4.969088] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__rosidl_typesupport_fastrtps_c.h\n'}
+[4.969192] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[4.969288] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.969596] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.970161] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.970375] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.970543] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.970694] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.970861] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[4.971005] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[4.971196] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.971381] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.971574] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.971737] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.c\n'}
+[4.971890] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_introspection_c.h\n'}
+[4.972022] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[4.972123] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[4.972216] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__type_support.c\n'}
+[4.972333] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__rosidl_typesupport_introspection_c.h\n'}
+[4.972495] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.972920] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.973315] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so\n'}
+[4.973712] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.973907] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.974078] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.974311] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.hpp\n'}
+[4.974495] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.974659] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp\n'}
+[4.974799] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp\n'}
+[4.974959] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp\n'}
+[4.975118] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.975292] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/my_interface.hpp\n'}
+[4.975466] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.975625] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.hpp\n'}
+[4.975785] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__builder.hpp\n'}
+[4.975952] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__traits.hpp\n'}
+[4.976091] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__builder.hpp\n'}
+[4.976396] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__builder.hpp\n'}
+[4.976584] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__struct.hpp\n'}
+[4.976763] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__traits.hpp\n'}
+[4.976926] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__traits.hpp\n'}
+[4.977088] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__struct.hpp\n'}
+[4.977264] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.hpp\n'}
+[4.977446] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/float64.hpp\n'}
+[4.977616] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.977783] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.977888] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.977993] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.978118] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/dds_fastrtps\n'}
+[4.978215] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.978343] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.978514] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.978661] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.978806] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.978949] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/dds_fastrtps\n'}
+[4.979128] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.979337] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.979510] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.979674] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[4.979821] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[4.979995] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[4.980167] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.980329] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp\n'}
+[4.980519] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[4.980682] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[4.980827] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__type_support.cpp\n'}
+[4.980928] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.cpp\n'}
+[4.981024] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.981136] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/my_interface__type_support.cpp\n'}
+[4.981256] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.981447] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/float64__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.981598] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.981927] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.982398] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.982881] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.983121] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh\n'}
+[4.983326] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv\n'}
+[4.983520] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info\n'}
+[4.983714] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.983901] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.984148] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.984430] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.984731] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces\n'}
+[4.984973] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.985197] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv\n'}
+[4.985391] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints.py\n'}
+[4.985599] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/__init__.py\n'}
+[4.985850] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints_s.c\n'}
+[4.986140] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.986462] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.986755] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg\n'}
+[4.987027] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num_s.c\n'}
+[4.987200] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/__init__.py\n'}
+[4.987414] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_num.py\n'}
+[4.987601] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_float64.py\n'}
+[4.987766] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_float64_s.c\n'}
+[4.987985] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface.py\n'}
+[4.988144] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_my_interface_s.c\n'}
+[4.988380] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py\n'}
+[4.988530] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.988689] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/libtutorial_interfaces__rosidl_generator_py.so\n'}
+[4.988909] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.989058] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.010511] (-) TimerEvent: {}
+[5.051589] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces'...\n"}
+[5.051911] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/__init__.py'...\n"}
+[5.052092] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg'...\n"}
+[5.052259] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/__init__.py'...\n"}
+[5.052462] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/msg/_float64.py'...\n"}
+[5.052606] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv'...\n"}
+[5.052778] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/__init__.py'...\n"}
+[5.052922] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/srv/_add_three_ints.py'...\n"}
+[5.058894] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.059251] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.059499] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.059963] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.060261] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.060685] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.061290] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so\n'}
+[5.061890] (tutorial_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/ngochoan/dev_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.062064] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Float64.idl\n'}
+[5.062297] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl\n'}
+[5.062457] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Float64.msg\n'}
+[5.062734] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv\n'}
+[5.062836] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Request.msg\n'}
+[5.062955] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts_Response.msg\n'}
+[5.063059] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces\n'}
+[5.063181] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces\n'}
+[5.063292] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh\n'}
+[5.063441] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.063540] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh\n'}
+[5.063682] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv\n'}
+[5.063834] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash\n'}
+[5.063955] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh\n'}
+[5.064053] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh\n'}
+[5.064191] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv\n'}
+[5.064304] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv\n'}
+[5.064446] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces\n'}
+[5.064663] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.064794] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.065021] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.065160] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.065359] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.065500] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.065701] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.065846] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.066025] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.066236] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.066375] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.066574] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.066710] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.066910] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.067042] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.067251] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.067387] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.067513] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.067652] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.067798] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.067973] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.068146] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.068274] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.068367] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.068459] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake\n'}
+[5.068549] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake\n'}
+[5.068641] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml\n'}
+[5.071105] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[5.110599] (-) TimerEvent: {}
+[5.211472] (-) TimerEvent: {}
+[5.312133] (-) TimerEvent: {}
+[5.393218] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 0}
+[5.394083] (-) EventReactorShutdown: {}

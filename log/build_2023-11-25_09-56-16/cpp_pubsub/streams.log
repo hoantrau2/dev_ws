@@ -1,0 +1,37 @@
+[0.054s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.096s] [ 33%] Built target listener
+[0.099s] [ 83%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.100s] [ 83%] Built target listener_pico
+[1.942s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:37:47:[m[K [01;31m[Kerror: [m[K‘[01m[KMyInterface[m[K’ is not a member of ‘[01m[Ktutorial_interfaces::msg[m[K’
+[1.942s]    37 |   rclcpp::Publisher<tutorial_interfaces::msg::[01;31m[KMyInterface[m[K>::SharedPtr publisher_;
+[1.942s]       |                                               [01;31m[K^~~~~~~~~~~[m[K
+[1.942s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:37:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.942s]    37 |   rclcpp::Publisher<tutorial_interfaces::msg::MyInterface[01;31m[K>[m[K::SharedPtr publisher_;
+[1.942s]       |                                                          [01;31m[K^[m[K
+[1.942s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:37:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.942s]    37 |   rclcpp::Publisher<tutorial_interfaces::msg::MyInterface>::[01;31m[KSharedPtr[m[K publisher_;
+[1.942s]       |                                                             [01;31m[K^~~~~~~~~[m[K
+[1.942s]       |                                                                      [32m[K;[m[K
+[1.943s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:37:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.943s]    37 |   rclcpp::Publisher<tutorial_interfaces::msg::MyInterface>::SharedPtr [01;31m[Kpublisher_[m[K;
+[1.943s]       |                                                                       [01;31m[K^~~~~~~~~~[m[K
+[1.943s]       |                                                                       [32m[Krmw_publisher_t[m[K
+[1.948s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[1.948s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:20:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.948s]    20 |           [01;31m[Kpublisher_[m[K = this->create_publisher<tutorial_interfaces::msg::Float64>("transfer_to_pico_topic", 10); // use create_publisher to create publisher
+[1.948s]       |           [01;31m[K^~~~~~~~~~[m[K
+[1.948s]       |           [32m[Krmw_publisher_t[m[K
+[1.960s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[1.960s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:28:48:[m[K [01;31m[Kerror: [m[K‘[01m[KMyInterface[m[K’ is not a member of ‘[01m[Ktutorial_interfaces::msg[m[K’
+[1.960s]    28 |       auto message = tutorial_interfaces::msg::[01;31m[KMyInterface[m[K();
+[1.960s]       |                                                [01;31m[K^~~~~~~~~~~[m[K
+[1.965s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:34:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.965s]    34 |       [01;31m[Kpublisher_[m[K->publish(message);
+[1.965s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.965s]       |       [32m[Krmw_publisher_t[m[K
+[2.528s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[2.529s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+[2.529s] gmake: *** [Makefile:146: all] Error 2
+[2.531s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

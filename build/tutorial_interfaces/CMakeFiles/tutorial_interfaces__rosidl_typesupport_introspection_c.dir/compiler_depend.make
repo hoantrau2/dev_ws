@@ -64,9 +64,8 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_ty
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o: rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c \
   /usr/include/stdc-predef.h \
@@ -149,8 +148,6 @@ rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_contro
 
 /usr/include/alloca.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
@@ -158,6 +155,8 @@ rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_contro
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -170,8 +169,6 @@ rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 

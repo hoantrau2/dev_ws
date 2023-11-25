@@ -25,17 +25,28 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: first_data
+  // member: data
   {
-    out << "first_data: ";
-    rosidl_generator_traits::value_to_yaml(msg.first_data, out);
+    if (msg.data.size() == 0) {
+      out << "data: []";
+    } else {
+      out << "data: [";
+      size_t pending_items = msg.data.size();
+      for (auto item : msg.data) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
     out << ", ";
   }
 
-  // member: data
+  // member: size
   {
-    out << "data: ";
-    rosidl_generator_traits::value_to_yaml(msg.data, out);
+    out << "size: ";
+    rosidl_generator_traits::value_to_yaml(msg.size, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -44,23 +55,33 @@ inline void to_block_style_yaml(
   const MyInterface & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: first_data
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "first_data: ";
-    rosidl_generator_traits::value_to_yaml(msg.first_data, out);
-    out << "\n";
-  }
-
   // member: data
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "data: ";
-    rosidl_generator_traits::value_to_yaml(msg.data, out);
+    if (msg.data.size() == 0) {
+      out << "data: []\n";
+    } else {
+      out << "data:\n";
+      for (auto item : msg.data) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: size
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "size: ";
+    rosidl_generator_traits::value_to_yaml(msg.size, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

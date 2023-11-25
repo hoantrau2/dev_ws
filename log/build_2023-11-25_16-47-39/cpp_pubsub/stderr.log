@@ -1,0 +1,7 @@
+/usr/bin/ld: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<tutorial_interfaces::msg::Float64_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<tutorial_interfaces::msg::Float64_<std::allocator<void> > >()':
+publisher_member_function.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN19tutorial_interfaces3msg8Float64_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN19tutorial_interfaces3msg8Float64_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<tutorial_interfaces::msg::Float64_<std::allocator<void> > >()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/talker.dir/build.make:167: talker] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -57,6 +57,5 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_ty
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

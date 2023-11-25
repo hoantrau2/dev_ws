@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'data'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -57,26 +60,26 @@ class MyInterface(metaclass=Metaclass_MyInterface):
     """Message class 'MyInterface'."""
 
     __slots__ = [
-        '_first_data',
         '_data',
+        '_size',
     ]
 
     _fields_and_field_types = {
-        'first_data': 'string',
-        'data': 'double',
+        'data': 'sequence<double>',
+        'size': 'int32',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.first_data = kwargs.get('first_data', str())
-        self.data = kwargs.get('data', float())
+        self.data = array.array('d', kwargs.get('data', []))
+        self.size = kwargs.get('size', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,9 +110,9 @@ class MyInterface(metaclass=Metaclass_MyInterface):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.first_data != other.first_data:
-            return False
         if self.data != other.data:
+            return False
+        if self.size != other.size:
             return False
         return True
 
@@ -119,29 +122,44 @@ class MyInterface(metaclass=Metaclass_MyInterface):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def first_data(self):
-        """Message field 'first_data'."""
-        return self._first_data
-
-    @first_data.setter
-    def first_data(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, str), \
-                "The 'first_data' field must be of type 'str'"
-        self._first_data = value
-
-    @builtins.property
     def data(self):
         """Message field 'data'."""
         return self._data
 
     @data.setter
     def data(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'd', \
+                "The 'data' array.array() must have the type code of 'd'"
+            self._data = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'data' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._data = array.array('d', value)
+
+    @builtins.property
+    def size(self):
+        """Message field 'size'."""
+        return self._size
+
+    @size.setter
+    def size(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'data' field must be of type 'float'"
-            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'data' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._data = value
+                isinstance(value, int), \
+                "The 'size' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'size' field must be an integer in [-2147483648, 2147483647]"
+        self._size = value

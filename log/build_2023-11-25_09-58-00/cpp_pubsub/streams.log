@@ -1,0 +1,20 @@
+[0.058s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.100s] [ 33%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.100s] [ 50%] Built target listener_pico
+[0.104s] [ 66%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.117s] [ 83%] [32m[1mLinking CXX executable listener[0m
+[0.120s] [100%] [32m[1mLinking CXX executable talker[0m
+[0.159s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.159s] (.text+0x1b): undefined reference to `main'
+[0.160s] collect2: error: ld returned 1 exit status
+[0.161s] gmake[2]: *** [CMakeFiles/listener.dir/build.make:159: listener] Error 1
+[0.162s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/listener.dir/all] Error 2
+[0.162s] gmake[1]: *** Waiting for unfinished jobs....
+[0.165s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.165s] (.text+0x1b): undefined reference to `main'
+[0.166s] collect2: error: ld returned 1 exit status
+[0.168s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:167: talker] Error 1
+[0.168s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+[0.168s] gmake: *** [Makefile:146: all] Error 2
+[0.169s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

@@ -13,8 +13,8 @@
 
 
 // Include directives for member types
-// Member `first_data`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `data`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -35,33 +35,88 @@ void tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__
   tutorial_interfaces__msg__MyInterface__fini(message_memory);
 }
 
+size_t tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__size_function__MyInterface__data(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__double__Sequence * member =
+    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_const_function__MyInterface__data(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__double__Sequence * member =
+    (const rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_function__MyInterface__data(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__double__Sequence * member =
+    (rosidl_runtime_c__double__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__fetch_function__MyInterface__data(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const double * item =
+    ((const double *)
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_const_function__MyInterface__data(untyped_member, index));
+  double * value =
+    (double *)(untyped_value);
+  *value = *item;
+}
+
+void tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__assign_function__MyInterface__data(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  double * item =
+    ((double *)
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_function__MyInterface__data(untyped_member, index));
+  const double * value =
+    (const double *)(untyped_value);
+  *item = *value;
+}
+
+bool tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__resize_function__MyInterface__data(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__double__Sequence * member =
+    (rosidl_runtime_c__double__Sequence *)(untyped_member);
+  rosidl_runtime_c__double__Sequence__fini(member);
+  return rosidl_runtime_c__double__Sequence__init(member, size);
+}
+
 static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__MyInterface_message_member_array[2] = {
-  {
-    "first_data",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(tutorial_interfaces__msg__MyInterface, first_data),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
-  },
   {
     "data",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(tutorial_interfaces__msg__MyInterface, data),  // bytes offset in struct
+    NULL,  // default value
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__size_function__MyInterface__data,  // size() function pointer
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_const_function__MyInterface__data,  // get_const(index) function pointer
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__get_function__MyInterface__data,  // get(index) function pointer
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__fetch_function__MyInterface__data,  // fetch(index, &value) function pointer
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__assign_function__MyInterface__data,  // assign(index, value) function pointer
+    tutorial_interfaces__msg__MyInterface__rosidl_typesupport_introspection_c__resize_function__MyInterface__data  // resize(index) function pointer
+  },
+  {
+    "size",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tutorial_interfaces__msg__MyInterface, size),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

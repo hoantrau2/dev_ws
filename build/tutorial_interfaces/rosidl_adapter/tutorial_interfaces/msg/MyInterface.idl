@@ -6,9 +6,9 @@
 module tutorial_interfaces {
   module msg {
     struct MyInterface {
-      string first_data;
+      sequence<double> data;
 
-      double data;
+      int32 size;
     };
   };
 };

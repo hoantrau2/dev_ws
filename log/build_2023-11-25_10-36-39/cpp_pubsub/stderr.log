@@ -1,0 +1,205 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:14:1:[m[K [01;31m[Kerror: [m[K‘[01m[Krcl_logger_t[m[K’ does not name a type; did you mean ‘[01m[Krcl_timer_t[m[K’?
+   14 | [01;31m[Krcl_logger_t[m[K global_logger;
+      | [01;31m[K^~~~~~~~~~~~[m[K
+      | [32m[Krcl_timer_t[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:16:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krcl_logger_t[m[K’ has not been declared
+   16 | void subscription_callback(const void *msgin, [01;31m[Krcl_logger_t[m[K logger)
+      |                                               [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kvoid subscription_callback(const void*, int)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   19 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "I heard: '%lf'", msgh->data[0].data);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[0].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[0].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[0].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[0].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[0].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   20 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "I heard: '%lf'", msgh->data[1].data);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[1].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   20 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[1].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[1].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   20 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[1].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:20:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[1].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   21 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "I heard: '%lf'", msgh->data[2].data);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[2].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   21 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[2].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[2].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   21 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[2].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:21:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   21 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[2].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   22 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "I heard: '%lf'", msgh->data[3].data);
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:4[m[K:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[3].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   22 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[3].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[3].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   22 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[3].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "I heard: '%lf'", msgh->data[3].data);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:16:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klogger[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   16 | void subscription_callback(const void *msgin, [01;35m[Krcl_logger_t logger[m[K)
+      |                                               [01;35m[K~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:40:104:[m[K [01;31m[Kerror: [m[K‘[01m[Kglobal_logger[m[K’ was not declared in this scope
+   40 |   rclc_executor_add_subscription(&executor, &subscription, &msgh, &subscription_callback, ON_NEW_DATA, [01;31m[Kglobal_logger[m[K);
+      |                                                                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

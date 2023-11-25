@@ -245,7 +245,6 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__type_support.h \
   rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h \
   rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.h \
@@ -254,8 +253,6 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_
 
 
 rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h:
 

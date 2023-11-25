@@ -18,14 +18,14 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'first_data'
-#include "rosidl_runtime_c/string.h"
+// Member 'data'
+#include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/MyInterface in the package tutorial_interfaces.
 typedef struct tutorial_interfaces__msg__MyInterface
 {
-  rosidl_runtime_c__String first_data;
-  double data;
+  rosidl_runtime_c__double__Sequence data;
+  int32_t size;
 } tutorial_interfaces__msg__MyInterface;
 
 // Struct for a sequence of tutorial_interfaces__msg__MyInterface.

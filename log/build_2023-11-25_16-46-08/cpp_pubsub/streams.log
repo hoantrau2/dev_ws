@@ -1,0 +1,15 @@
+[0.057s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.101s] [ 16%] [32m[1mLinking CXX executable talker[0m
+[0.102s] [ 50%] Built target listener
+[0.114s] [ 66%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[0.258s] /usr/bin/ld: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<tutorial_interfaces::msg::Float64_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<tutorial_interfaces::msg::Float64_<std::allocator<void> > >()':
+[0.258s] publisher_member_function.cpp:(.text._ZN6rclcpp31get_message_type_support_handleIN19tutorial_interfaces3msg8Float64_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv[_ZN6rclcpp31get_message_type_support_handleIN19tutorial_interfaces3msg8Float64_ISaIvEEEEENSt9enable_ifIXsrN23rosidl_generator_traits10is_messageIT_EE5valueERK29rosidl_message_type_support_tE4typeEv]+0x10): undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<tutorial_interfaces::msg::Float64_<std::allocator<void> > >()'
+[0.274s] collect2: error: ld returned 1 exit status
+[0.275s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:167: talker] Error 1
+[0.275s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+[0.275s] gmake[1]: *** Waiting for unfinished jobs....
+[7.398s] [ 83%] [32m[1mLinking CXX executable listener_pico[0m
+[7.782s] [ 83%] Built target listener_pico
+[7.783s] gmake: *** [Makefile:146: all] Error 2
+[7.784s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

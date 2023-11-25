@@ -38,41 +38,39 @@ struct MyInterface_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->first_data = "";
-      this->data = 0.0;
+      this->size = 0l;
     }
   }
 
   explicit MyInterface_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : first_data(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->first_data = "";
-      this->data = 0.0;
+      this->size = 0l;
     }
   }
 
   // field types and members
-  using _first_data_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _first_data_type first_data;
   using _data_type =
-    double;
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
   _data_type data;
+  using _size_type =
+    int32_t;
+  _size_type size;
 
   // setters for named parameter idiom
-  Type & set__first_data(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
-  {
-    this->first_data = _arg;
-    return *this;
-  }
   Type & set__data(
-    const double & _arg)
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
   {
     this->data = _arg;
+    return *this;
+  }
+  Type & set__size(
+    const int32_t & _arg)
+  {
+    this->size = _arg;
     return *this;
   }
 
@@ -118,10 +116,10 @@ struct MyInterface_
   // comparison operators
   bool operator==(const MyInterface_ & other) const
   {
-    if (this->first_data != other.first_data) {
+    if (this->data != other.data) {
       return false;
     }
-    if (this->data != other.data) {
+    if (this->size != other.size) {
       return false;
     }
     return true;

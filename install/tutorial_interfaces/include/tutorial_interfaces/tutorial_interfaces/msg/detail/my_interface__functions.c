@@ -12,8 +12,8 @@
 
 
 // Include directives for member types
-// Member `first_data`
-#include "rosidl_runtime_c/string_functions.h"
+// Member `data`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
 tutorial_interfaces__msg__MyInterface__init(tutorial_interfaces__msg__MyInterface * msg)
@@ -21,12 +21,12 @@ tutorial_interfaces__msg__MyInterface__init(tutorial_interfaces__msg__MyInterfac
   if (!msg) {
     return false;
   }
-  // first_data
-  if (!rosidl_runtime_c__String__init(&msg->first_data)) {
+  // data
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->data, 0)) {
     tutorial_interfaces__msg__MyInterface__fini(msg);
     return false;
   }
-  // data
+  // size
   return true;
 }
 
@@ -36,9 +36,9 @@ tutorial_interfaces__msg__MyInterface__fini(tutorial_interfaces__msg__MyInterfac
   if (!msg) {
     return;
   }
-  // first_data
-  rosidl_runtime_c__String__fini(&msg->first_data);
   // data
+  rosidl_runtime_c__double__Sequence__fini(&msg->data);
+  // size
 }
 
 bool
@@ -47,14 +47,14 @@ tutorial_interfaces__msg__MyInterface__are_equal(const tutorial_interfaces__msg_
   if (!lhs || !rhs) {
     return false;
   }
-  // first_data
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->first_data), &(rhs->first_data)))
+  // data
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->data), &(rhs->data)))
   {
     return false;
   }
-  // data
-  if (lhs->data != rhs->data) {
+  // size
+  if (lhs->size != rhs->size) {
     return false;
   }
   return true;
@@ -68,14 +68,14 @@ tutorial_interfaces__msg__MyInterface__copy(
   if (!input || !output) {
     return false;
   }
-  // first_data
-  if (!rosidl_runtime_c__String__copy(
-      &(input->first_data), &(output->first_data)))
+  // data
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->data), &(output->data)))
   {
     return false;
   }
-  // data
-  output->data = input->data;
+  // size
+  output->size = input->size;
   return true;
 }
 

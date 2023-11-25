@@ -1,0 +1,7 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kvoid subscription_callback(const void*)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:18:15:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   18 |     printf ("[01;35m[K%d[m[K", [32m[Kmsgh->size[m[K);
+      |              [01;35m[K~^[m[K   [32m[K~~~~~~~~~~[m[K
+      |               [01;35m[K|[m[K         [32m[K|[m[K
+      |               [01;35m[Kint[m[K       [32m[Klong unsigned int[m[K
+      |              [32m[K%ld[m[K

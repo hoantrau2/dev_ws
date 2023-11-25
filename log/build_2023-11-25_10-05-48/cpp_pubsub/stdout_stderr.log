@@ -1,0 +1,10 @@
+[ 66%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[ 83%] Built target listener
+[ 83%] Built target talker
+[01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krclc/rclc.h: No such file or directory
+    6 | #include [01;31m[K<rclc/rclc.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

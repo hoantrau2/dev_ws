@@ -1,0 +1,54 @@
+[0.224s] Invoking command in '/home/ngochoan/dev_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8
+[0.255s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.416s] -- Found rmw: 6.1.1 (/opt/ros/humble/share/rmw/cmake)
+[0.432s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.436s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.637s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.638s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[0.638s]   tutorial_interfaces --arguments-file
+[0.638s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[0.638s]   --output-dir
+[0.638s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[0.638s]   --output-file
+[0.638s]   /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[0.638s]   returned error code 1:
+[0.638s] 
+[0.638s]   Error processing 'double data' of 'tutorial_interfaces/MyInterface':
+[0.638s]   ''double' is an invalid message name.  It should have the pattern
+[0.638s]   '^[A-Z][A-Za-z0-9]*$''
+[0.638s] 
+[0.638s]   Traceback (most recent call last):
+[0.638s] 
+[0.638s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.638s]       return _run_code(code, main_globals, None,
+[0.638s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.639s]       exec(code, run_globals)
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.639s]       sys.exit(main())
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.639s]       abs_idl_file = convert_to_idl(
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.639s]       return convert_msg_to_idl(
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.639s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.639s]       Type(type_string, context_package_name=pkg_name),
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__
+[0.639s]       super(Type, self).__init__(
+[0.639s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[0.639s]       raise InvalidResourceName(
+[0.639s] 
+[0.639s]   rosidl_adapter.parser.InvalidResourceName: 'double' is an invalid message
+[0.639s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.639s] 
+[0.639s] Call Stack (most recent call first):
+[0.639s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.640s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.640s] 
+[0.640s] [0m
+[0.640s] -- Configuring incomplete, errors occurred!
+[0.640s] See also "/home/ngochoan/dev_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.641s] gmake: *** [Makefile:963: cmake_check_build_system] Error 1
+[0.643s] Invoked command in '/home/ngochoan/dev_ws/build/tutorial_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/tutorial_interfaces -- -j8 -l8

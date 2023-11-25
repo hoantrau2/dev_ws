@@ -16,8 +16,8 @@
 #include "tutorial_interfaces/msg/detail/my_interface__struct.h"
 #include "tutorial_interfaces/msg/detail/my_interface__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT
@@ -53,28 +53,75 @@ bool tutorial_interfaces__msg__my_interface__convert_from_py(PyObject * _pymsg, 
     assert(strncmp("tutorial_interfaces.msg._my_interface.MyInterface", full_classname_dest, 49) == 0);
   }
   tutorial_interfaces__msg__MyInterface * ros_message = _ros_message;
-  {  // first_data
-    PyObject * field = PyObject_GetAttrString(_pymsg, "first_data");
-    if (!field) {
-      return false;
-    }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->first_data, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
   {  // data
     PyObject * field = PyObject_GetAttrString(_pymsg, "data");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->data = PyFloat_AS_DOUBLE(field);
+    if (PyObject_CheckBuffer(field)) {
+      // Optimization for converting arrays of primitives
+      Py_buffer view;
+      int rc = PyObject_GetBuffer(field, &view, PyBUF_SIMPLE);
+      if (rc < 0) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = view.len / sizeof(double);
+      if (!rosidl_runtime_c__double__Sequence__init(&(ros_message->data), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create double__Sequence ros_message");
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      double * dest = ros_message->data.data;
+      rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
+      if (rc < 0) {
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      PyBuffer_Release(&view);
+    } else {
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'data'");
+      if (!seq_field) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = PySequence_Size(field);
+      if (-1 == size) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      if (!rosidl_runtime_c__double__Sequence__init(&(ros_message->data), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create double__Sequence ros_message");
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      double * dest = ros_message->data.data;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
+        if (!item) {
+          Py_DECREF(seq_field);
+          Py_DECREF(field);
+          return false;
+        }
+        assert(PyFloat_Check(item));
+        double tmp = PyFloat_AS_DOUBLE(item);
+        memcpy(&dest[i], &tmp, sizeof(double));
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
+  {  // size
+    PyObject * field = PyObject_GetAttrString(_pymsg, "size");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->size = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -99,28 +146,68 @@ PyObject * tutorial_interfaces__msg__my_interface__convert_to_py(void * raw_ros_
     }
   }
   tutorial_interfaces__msg__MyInterface * ros_message = (tutorial_interfaces__msg__MyInterface *)raw_ros_message;
-  {  // first_data
+  {  // data
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->first_data.data,
-      strlen(ros_message->first_data.data),
-      "replace");
+    field = PyObject_GetAttrString(_pymessage, "data");
     if (!field) {
       return NULL;
     }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "first_data", field);
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "array.array") == 0);
+    // ensure that itemsize matches the sizeof of the ROS message field
+    PyObject * itemsize_attr = PyObject_GetAttrString(field, "itemsize");
+    assert(itemsize_attr != NULL);
+    size_t itemsize = PyLong_AsSize_t(itemsize_attr);
+    Py_DECREF(itemsize_attr);
+    if (itemsize != sizeof(double)) {
+      PyErr_SetString(PyExc_RuntimeError, "itemsize doesn't match expectation");
       Py_DECREF(field);
-      if (rc) {
+      return NULL;
+    }
+    // clear the array, poor approach to remove potential default values
+    Py_ssize_t length = PyObject_Length(field);
+    if (-1 == length) {
+      Py_DECREF(field);
+      return NULL;
+    }
+    if (length > 0) {
+      PyObject * pop = PyObject_GetAttrString(field, "pop");
+      assert(pop != NULL);
+      for (Py_ssize_t i = 0; i < length; ++i) {
+        PyObject * ret = PyObject_CallFunctionObjArgs(pop, NULL);
+        if (!ret) {
+          Py_DECREF(pop);
+          Py_DECREF(field);
+          return NULL;
+        }
+        Py_DECREF(ret);
+      }
+      Py_DECREF(pop);
+    }
+    if (ros_message->data.size > 0) {
+      // populating the array.array using the frombytes method
+      PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
+      assert(frombytes != NULL);
+      double * src = &(ros_message->data.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->data.size * sizeof(double));
+      assert(data != NULL);
+      PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
+      Py_DECREF(data);
+      Py_DECREF(frombytes);
+      if (!ret) {
+        Py_DECREF(field);
         return NULL;
       }
+      Py_DECREF(ret);
     }
+    Py_DECREF(field);
   }
-  {  // data
+  {  // size
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->data);
+    field = PyLong_FromLong(ros_message->size);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "data", field);
+      int rc = PyObject_SetAttrString(_pymessage, "size", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

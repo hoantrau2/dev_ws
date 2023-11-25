@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // first_data
-#include "rosidl_runtime_c/string_functions.h"  // first_data
+#include "rosidl_runtime_c/primitives_sequence.h"  // data
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // data
 
 // forward declare type support functions
 
@@ -51,23 +51,17 @@ static bool _MyInterface__cdr_serialize(
     return false;
   }
   const _MyInterface__ros_msg_type * ros_message = static_cast<const _MyInterface__ros_msg_type *>(untyped_ros_message);
-  // Field name: first_data
-  {
-    const rosidl_runtime_c__String * str = &ros_message->first_data;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
-  }
-
   // Field name: data
   {
-    cdr << ros_message->data;
+    size_t size = ros_message->data.size;
+    auto array_ptr = ros_message->data.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: size
+  {
+    cdr << ros_message->size;
   }
 
   return true;
@@ -82,25 +76,25 @@ static bool _MyInterface__cdr_deserialize(
     return false;
   }
   _MyInterface__ros_msg_type * ros_message = static_cast<_MyInterface__ros_msg_type *>(untyped_ros_message);
-  // Field name: first_data
-  {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->first_data.data) {
-      rosidl_runtime_c__String__init(&ros_message->first_data);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->first_data,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'first_data'\n");
-      return false;
-    }
-  }
-
   // Field name: data
   {
-    cdr >> ros_message->data;
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->data.data) {
+      rosidl_runtime_c__double__Sequence__fini(&ros_message->data);
+    }
+    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->data, size)) {
+      fprintf(stderr, "failed to create array for field 'data'");
+      return false;
+    }
+    auto array_ptr = ros_message->data.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: size
+  {
+    cdr >> ros_message->size;
   }
 
   return true;
@@ -120,13 +114,20 @@ size_t get_serialized_size_tutorial_interfaces__msg__MyInterface(
   (void)padding;
   (void)wchar_size;
 
-  // field.name first_data
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->first_data.size + 1);
   // field.name data
   {
-    size_t item_size = sizeof(ros_message->data);
+    size_t array_size = ros_message->data.size;
+    auto array_ptr = ros_message->data.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name size
+  {
+    size_t item_size = sizeof(ros_message->size);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -157,24 +158,23 @@ size_t max_serialized_size_tutorial_interfaces__msg__MyInterface(
   full_bounded = true;
   is_plain = true;
 
-  // member: first_data
-  {
-    size_t array_size = 1;
-
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
   // member: data
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: size
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   return current_alignment - initial_alignment;

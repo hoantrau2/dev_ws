@@ -183,8 +183,7 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesup
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc /usr/include/malloc.h \
  /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h \
  /usr/include/c++/11/stdlib.h \
  /home/ngochoan/dev_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

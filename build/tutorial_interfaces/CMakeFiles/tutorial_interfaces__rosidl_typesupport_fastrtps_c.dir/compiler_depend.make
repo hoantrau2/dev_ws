@@ -223,11 +223,10 @@ CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesup
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h \
   /usr/include/c++/11/stdlib.h \
   rosidl_generator_c/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__type_support_c.cpp \
   /usr/include/stdc-predef.h \
@@ -635,10 +634,6 @@ rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/my_interface__type_
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
-
-/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/11/limits:
@@ -794,10 +789,6 @@ rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__functions.h:
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/c++/11/new:
 
@@ -965,6 +956,12 @@ rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h:
 
 /usr/include/c++/11/bits/ios_base.h:
 
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
+
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
@@ -1011,11 +1008,7 @@ rosidl_generator_c/tutorial_interfaces/msg/detail/my_interface__struct.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
-
 /usr/include/c++/11/stdlib.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h:
 
 /opt/ros/humble/include/rmw/rmw/init.h:
 
@@ -1044,3 +1037,7 @@ rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__struct.h:
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:

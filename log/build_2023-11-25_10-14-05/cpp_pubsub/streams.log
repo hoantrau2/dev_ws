@@ -1,0 +1,40 @@
+[0.077s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.122s] [ 66%] Built target talker
+[0.122s] [ 66%] Built target listener
+[0.128s] [ 83%] [32mBuilding CXX object CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o[0m
+[2.007s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:12:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs__msg__Float64[m[K’ does not name a type
+[2.007s]    12 | [01;31m[Kstd_msgs__msg__Float64[m[K msgh;
+[2.007s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.009s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kvoid subscription_callback(const void*)[m[K’:
+[2.009s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs__msg__Float64[m[K’ does not name a type
+[2.010s]    16 |   const [01;31m[Kstd_msgs__msg__Float64[m[K *msgh = (const std_msgs__msg__Float64 *)msgin;
+[2.010s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.012s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:17:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgh[m[K’ was not declared in this scope
+[2.012s]    17 |   printf("%f\n", [01;31m[Kmsgh[m[K->data);
+[2.012s]       |                  [01;31m[K^~~~[m[K
+[2.012s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:14:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsgin[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.012s]    14 | void subscription_callback([01;35m[Kconst void *msgin[m[K)
+[2.012s]       |                            [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[2.016s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[2.016s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:22:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstdio_init_all[m[K’ was not declared in this scope
+[2.016s]    22 |   [01;31m[Kstdio_init_all[m[K();
+[2.016s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.020s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:20[m[K,
+[2.020s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/client.h:25[m[K,
+[2.020s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/wait.h:28[m[K,
+[2.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:31[m[K,
+[2.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.021s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.021s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:3[m[K:
+[2.021s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:33:56:[m[K [01;31m[Kerror: [m[K‘[01m[Krosidl_typesupport_c__get_message_type_support_handle__std_msgs__msg__Float64[m[K’ was not declared in this scope; did you mean ‘[01m[Krosidl_typesupport_c__get_message_type_support_handle__action_msgs__msg__GoalStatus[m[K’?
+[2.021s]    33 |   rclc_subscription_init_default(&subscription, &node, [01;31m[KROSIDL_GET_MSG_TYPE_SUPPORT[m[K(std_msgs, msg, Float64), "transfer_to_pico_topic");
+[2.021s]       |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.023s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/read_date_picoW.cpp:35:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgh[m[K’ was not declared in this scope
+[2.023s]    35 |   rclc_executor_add_subscription(&executor, &subscription, &[01;31m[Kmsgh[m[K, &subscription_callback, ON_NEW_DATA);
+[2.024s]       |                                                             [01;31m[K^~~~[m[K
+[2.371s] gmake[2]: *** [CMakeFiles/listener_pico.dir/build.make:76: CMakeFiles/listener_pico.dir/src/read_date_picoW.cpp.o] Error 1
+[2.371s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/listener_pico.dir/all] Error 2
+[2.371s] gmake: *** [Makefile:146: all] Error 2
+[2.373s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

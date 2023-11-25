@@ -1,0 +1,3 @@
+[ 33%] Built target listener_pico
+[ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[ 83%] Built target listener

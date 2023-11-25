@@ -1,0 +1,65 @@
+[0.085s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.129s] [ 33%] Built target listener_pico
+[0.131s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.132s] [ 83%] Built target listener
+[2.132s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:35:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktutorial_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[2.132s]    35 |   rclcpp::Publisher<[01;31m[Ktutorial_interfaces[m[K::msg::Float64>::SharedPtr publisher_;
+[2.132s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.132s]       |                     [32m[Krcl_interfaces[m[K
+[2.132s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:35:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.132s]    35 |   rclcpp::Publisher<tutorial_interfaces::msg::Float64[01;31m[K>[m[K::SharedPtr publisher_;
+[2.132s]       |                                                      [01;31m[K^[m[K
+[2.133s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:35:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.133s]    35 |   rclcpp::Publisher<tutorial_interfaces::msg::Float64>::[01;31m[KSharedPtr[m[K publisher_;
+[2.133s]       |                                                         [01;31m[K^~~~~~~~~[m[K
+[2.133s]       |                                                                  [32m[K;[m[K
+[2.134s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:35:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.134s]    35 |   rclcpp::Publisher<tutorial_interfaces::msg::Float64>::SharedPtr [01;31m[Kpublisher_[m[K;
+[2.134s]       |                                                                   [01;31m[K^~~~~~~~~~[m[K
+[2.134s]       |                                                                   [32m[Krmw_publisher_t[m[K
+[2.139s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[2.139s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.140s]    18 |     [01;31m[Kpublisher_[m[K = this->create_publisher<tutorial_interfaces::msg::Float64>(
+[2.140s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.140s]       |     [32m[Krmw_publisher_t[m[K
+[2.147s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:18:41:[m[K [01;31m[Kerror: [m[K‘[01m[Ktutorial_interfaces[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_interfaces[m[K’?
+[2.147s]    18 |     publisher_ = this->create_publisher<[01;31m[Ktutorial_interfaces[m[K::msg::Float64>(
+[2.148s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.148s]       |                                         [32m[Krcl_interfaces[m[K
+[2.148s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:18:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.148s]    18 |     publisher_ = this->[01;31m[Kcreate_publisher<tutorial_interfaces::msg::Float64>[m[K(
+[2.148s]       |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.148s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:18:75:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalPublisher::create_publisher<<expression error> >(const char [23], int)[m[K’
+[2.148s]    18 |     publisher_ = [01;31m[Kthis->create_publisher<tutorial_interfaces::msg::Float64>([m[K
+[2.148s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.148s]    19 | [01;31m[K        "transfer_to_pico_topic",[m[K
+[2.148s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                          
+[2.148s]    20 | [01;31m[K        10)[m[K; // use create_publisher to create publisher
+[2.149s]       |         [01;31m[K~~~[m[K                                                                
+[2.149s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.149s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:5[m[K:
+[2.149s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.149s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[2.149s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.149s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.149s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:18:75:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.149s]    18 |     publisher_ = [01;31m[Kthis->create_publisher<tutorial_interfaces::msg::Float64>([m[K
+[2.149s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.150s]    19 | [01;31m[K        "transfer_to_pico_topic",[m[K
+[2.150s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                          
+[2.150s]    20 | [01;31m[K        10)[m[K; // use create_publisher to create publisher
+[2.150s]       |         [01;31m[K~~~[m[K                                                                
+[2.157s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[2.157s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:20:[m[K [01;31m[Kerror: [m[K‘[01m[Ktutorial_interfaces[m[K’ has not been declared
+[2.157s]    29 |     auto message = [01;31m[Ktutorial_interfaces[m[K::msg::Float64();
+[2.157s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.162s] [01m[K/home/ngochoan/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:32:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.162s]    32 |     [01;31m[Kpublisher_[m[K->publish(message);
+[2.162s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.162s]       |     [32m[Krmw_publisher_t[m[K
+[2.567s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[2.568s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/talker.dir/all] Error 2
+[2.568s] gmake: *** [Makefile:146: all] Error 2
+[2.569s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8

@@ -1,1 +1,0 @@
-/home/ngochoan/dev_ws/src/test_package/launch/turtlesim_mimic_launch.py

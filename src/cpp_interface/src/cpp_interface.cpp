@@ -19,18 +19,14 @@ public:
 private:
   void
   topic_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) const {
-     RCLCPP_INFO(this->get_logger(), "Data1: %lf",msg->data[0]);
-     RCLCPP_INFO(this->get_logger(), "Data2: %lf",msg->data[1]);
-     RCLCPP_INFO(this->get_logger(), "Data3: %lf",msg->data[2]);
-     RCLCPP_INFO(this->get_logger(), "Data4: %lf",msg->data[3]);
-     
-    // std::cout << "Data 1: " << msg->data[0] << std::endl;
-    // std::cout << "Data 2: " << msg->data[1] << std::endl;
-    // std::cout << "Data 3: " << msg->data[2] << std::endl;
-    // std::cout << "Data 4: " << msg->data[3] << std::endl;
+
+     RCLCPP_INFO(this->get_logger(), "voltage: %lf",msg->data[0]);
+     RCLCPP_INFO(this->get_logger(), "angular_pich: %lf",msg->data[1]);
+     RCLCPP_INFO(this->get_logger(), "encoder: %lf",msg->data[2]);
+     RCLCPP_INFO(this->get_logger(), "error: %lf",msg->data[3]);
+
   }
-  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr
-      subscription_;
+  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_;
 };
 
 int main(int argc, char *argv[]) {

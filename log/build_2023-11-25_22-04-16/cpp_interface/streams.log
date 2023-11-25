@@ -1,0 +1,26 @@
+[0.180s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.222s] [35m[1mConsolidate compiler generated dependencies of target cpp_interface[0m
+[0.254s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_interface.dir/src/cpp_interface.cpp.o[0m
+[7.360s] [100%] [32m[1mLinking CXX executable cpp_interface[0m
+[7.668s] [100%] Built target cpp_interface
+[7.682s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[7.700s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface
+[7.707s] -- Install configuration: ""
+[7.707s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/cpp_interface
+[7.710s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/cpp_interface" to ""
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.sh
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.dsv
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.sh
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.dsv
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.bash
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.sh
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.zsh
+[7.710s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.dsv
+[7.711s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.dsv
+[7.711s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/packages/cpp_interface
+[7.711s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig.cmake
+[7.711s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig-version.cmake
+[7.711s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.xml
+[7.712s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface

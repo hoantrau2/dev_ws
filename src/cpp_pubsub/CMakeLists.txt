@@ -9,18 +9,17 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED) 
-find_package(tutorial_interfaces REQUIRED) 
 # find_package(tutorial_interfaces REQUIRED) 
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 add_executable(talker src/publisher_member_function.cpp)
-ament_target_dependencies(talker rclcpp std_msgs tutorial_interfaces)
+ament_target_dependencies(talker rclcpp std_msgs)
 add_executable(listener src/subscriber_member_function.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 
 add_executable(listener_pico src/read_date_picoW.cpp)
-ament_target_dependencies(listener_pico rclcpp  std_msgs tutorial_interfaces)
+ament_target_dependencies(listener_pico rclcpp  std_msgs )
 
 install(TARGETS
 talker

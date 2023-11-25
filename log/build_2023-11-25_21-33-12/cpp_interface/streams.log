@@ -1,0 +1,5 @@
+[0.187s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target cpp_interface[0m
+[0.259s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_interface.dir/src/cpp_interface.cpp.o[0m
+[8.292s] [100%] [32m[1mLinking CXX executable cpp_interface[0m
+[8.809s] [100%] Built target cpp_interface

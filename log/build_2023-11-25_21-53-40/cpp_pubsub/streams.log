@@ -1,0 +1,32 @@
+[0.081s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.115s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.128s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.128s] [ 50%] Built target listener_pico
+[0.129s] [ 83%] Built target listener
+[3.742s] [100%] [32m[1mLinking CXX executable talker[0m
+[3.905s] [100%] Built target talker
+[3.918s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[3.940s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub
+[3.946s] -- Install configuration: ""
+[3.947s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[3.948s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[3.948s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[3.949s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico
+[3.950s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener_pico" to ""
+[3.950s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[3.950s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[3.950s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[3.950s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[3.950s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[3.950s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[3.951s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[3.951s] -- Installing: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[3.951s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[3.953s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/test_package:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/home/ngochoan/dev_ws/src/install/cpp_interface:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_pubsub

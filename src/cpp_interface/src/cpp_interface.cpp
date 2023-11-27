@@ -15,7 +15,6 @@ public:
         "transfer_to_pico_topic", 10,
         std::bind(&MinimalSubscriber::topic_callback, this, _1));
   }
-
 private:
   void
   topic_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) const {

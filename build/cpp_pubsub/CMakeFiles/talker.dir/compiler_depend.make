@@ -668,16 +668,8 @@ CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: /home/ngochoan/dev_ws
   /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp
 
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp:
 
@@ -950,8 +942,6 @@ CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: /home/ngochoan/dev_ws
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
@@ -2000,8 +1990,6 @@ CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: /home/ngochoan/dev_ws
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 

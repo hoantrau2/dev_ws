@@ -598,8 +598,4 @@ CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__traits.hpp

@@ -198,41 +198,78 @@ cpp_interface_uninstall/fast:
 .PHONY : cpp_interface_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named cpp_interface
+# Target rules for targets named read_parameters_pi
 
 # Build rule for target.
-cpp_interface: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_interface
-.PHONY : cpp_interface
+read_parameters_pi: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 read_parameters_pi
+.PHONY : read_parameters_pi
 
 # fast build rule for target.
-cpp_interface/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_interface.dir/build.make CMakeFiles/cpp_interface.dir/build
-.PHONY : cpp_interface/fast
+read_parameters_pi/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/build
+.PHONY : read_parameters_pi/fast
 
-src/cpp_interface.o: src/cpp_interface.cpp.o
-.PHONY : src/cpp_interface.o
+#=============================================================================
+# Target rules for targets named test_cmd_vel
+
+# Build rule for target.
+test_cmd_vel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cmd_vel
+.PHONY : test_cmd_vel
+
+# fast build rule for target.
+test_cmd_vel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
+.PHONY : test_cmd_vel/fast
+
+src/read_parameters_pi.o: src/read_parameters_pi.cpp.o
+.PHONY : src/read_parameters_pi.o
 
 # target to build an object file
-src/cpp_interface.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_interface.dir/build.make CMakeFiles/cpp_interface.dir/src/cpp_interface.cpp.o
-.PHONY : src/cpp_interface.cpp.o
+src/read_parameters_pi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.o
+.PHONY : src/read_parameters_pi.cpp.o
 
-src/cpp_interface.i: src/cpp_interface.cpp.i
-.PHONY : src/cpp_interface.i
+src/read_parameters_pi.i: src/read_parameters_pi.cpp.i
+.PHONY : src/read_parameters_pi.i
 
 # target to preprocess a source file
-src/cpp_interface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_interface.dir/build.make CMakeFiles/cpp_interface.dir/src/cpp_interface.cpp.i
-.PHONY : src/cpp_interface.cpp.i
+src/read_parameters_pi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.i
+.PHONY : src/read_parameters_pi.cpp.i
 
-src/cpp_interface.s: src/cpp_interface.cpp.s
-.PHONY : src/cpp_interface.s
+src/read_parameters_pi.s: src/read_parameters_pi.cpp.s
+.PHONY : src/read_parameters_pi.s
 
 # target to generate assembly for a file
-src/cpp_interface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_interface.dir/build.make CMakeFiles/cpp_interface.dir/src/cpp_interface.cpp.s
-.PHONY : src/cpp_interface.cpp.s
+src/read_parameters_pi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.s
+.PHONY : src/read_parameters_pi.cpp.s
+
+src/test_cmd_vel.o: src/test_cmd_vel.cpp.o
+.PHONY : src/test_cmd_vel.o
+
+# target to build an object file
+src/test_cmd_vel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/src/test_cmd_vel.cpp.o
+.PHONY : src/test_cmd_vel.cpp.o
+
+src/test_cmd_vel.i: src/test_cmd_vel.cpp.i
+.PHONY : src/test_cmd_vel.i
+
+# target to preprocess a source file
+src/test_cmd_vel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/src/test_cmd_vel.cpp.i
+.PHONY : src/test_cmd_vel.cpp.i
+
+src/test_cmd_vel.s: src/test_cmd_vel.cpp.s
+.PHONY : src/test_cmd_vel.s
+
+# target to generate assembly for a file
+src/test_cmd_vel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/src/test_cmd_vel.cpp.s
+.PHONY : src/test_cmd_vel.cpp.s
 
 # Help Target
 help:
@@ -249,10 +286,14 @@ help:
 	@echo "... test"
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
-	@echo "... cpp_interface"
-	@echo "... src/cpp_interface.o"
-	@echo "... src/cpp_interface.i"
-	@echo "... src/cpp_interface.s"
+	@echo "... read_parameters_pi"
+	@echo "... test_cmd_vel"
+	@echo "... src/read_parameters_pi.o"
+	@echo "... src/read_parameters_pi.i"
+	@echo "... src/read_parameters_pi.s"
+	@echo "... src/test_cmd_vel.o"
+	@echo "... src/test_cmd_vel.i"
+	@echo "... src/test_cmd_vel.s"
 .PHONY : help
 
 

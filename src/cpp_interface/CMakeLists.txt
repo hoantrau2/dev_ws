@@ -12,9 +12,12 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-add_executable(cpp_interface src/cpp_interface.cpp)
-ament_target_dependencies(cpp_interface rclcpp std_msgs)
+add_executable(read_parameters_pi src/read_parameters_pi.cpp)
+ament_target_dependencies(read_parameters_pi rclcpp std_msgs)
+add_executable(test_cmd_vel src/test_cmd_vel.cpp)
+ament_target_dependencies(test_cmd_vel rclcpp std_msgs geometry_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -29,7 +32,8 @@ if(BUILD_TESTING)
 endif()
 
 install(TARGETS
-  cpp_interface
+  read_parameters_pi
+  test_cmd_vel
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

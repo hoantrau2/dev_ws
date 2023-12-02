@@ -1,17 +1,18 @@
 #include <functional>
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/float64.hpp"
+#include "std_msgs/msg/int32.hpp"
 
 using std::placeholders::_1;
 
 class MinimalSubscriber : public rclcpp::Node
 {
 public:
-  MinimalSubscriber()  : Node("subscriber_from_pico_node")
+  MinimalSubscriber()
+  : Node("subscriber_from_pico")
   {
     // Ensure that the necessary header is included
-    subscription_ = this->create_subscription<std_msgs::msg::Float64>(
+    subscription_ = this->create_subscription<std_msgs::msg::Int32>(
       "pico_publisher_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
 
     if (subscription_ == nullptr) {
@@ -22,17 +23,16 @@ public:
 
 private:
   // Fix the type and add a default value for msg.data
-  void topic_callback(const std_msgs::msg::Float64::SharedPtr msg) const
+  void topic_callback(const std_msgs::msg::Int32::SharedPtr msg) const
   {
     if (msg != nullptr) {
       // Use msg->data instead of msg.data
-      RCLCPP_INFO(this->get_logger(), "I heard: '%f'", msg->data);
-
+      RCLCPP_INFO(this->get_logger(), "I heard: '%d'", msg->data);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Received null message");
     }
   }
-  rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr subscription_;
+  rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr subscription_;
 };
 
 int main(int argc, char * argv[])
@@ -47,6 +47,7 @@ int main(int argc, char * argv[])
   } else {
     RCLCPP_ERROR(rclcpp::get_logger("main"), "Failed to create node");
   }
+
   rclcpp::shutdown();
   return 0;
 }

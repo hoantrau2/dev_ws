@@ -1,0 +1,9 @@
+[0.090s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_pubsub': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_pubsub -- -j8 -l8
+[0.130s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.136s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.146s] [35m[1mConsolidate compiler generated dependencies of target listener_pico[0m
+[0.157s] [ 16%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.159s] [ 50%] Built target listener
+[0.173s] [ 83%] Built target listener_pico
+[7.109s] [100%] [32m[1mLinking CXX executable talker[0m
+[7.382s] [100%] Built target talker

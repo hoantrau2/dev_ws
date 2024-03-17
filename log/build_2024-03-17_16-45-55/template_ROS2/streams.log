@@ -1,0 +1,48 @@
+[0.106s] Invoking command in '/home/ngochoan/dev_ws/build/template_ROS2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/template_ROS2 -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/template_ROS2
+[0.268s] -- The C compiler identification is GNU 11.4.0
+[0.431s] -- The CXX compiler identification is GNU 11.4.0
+[0.451s] -- Detecting C compiler ABI info
+[0.572s] -- Detecting C compiler ABI info - done
+[0.580s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.580s] -- Detecting C compile features
+[0.584s] -- Detecting C compile features - done
+[0.593s] -- Detecting CXX compiler ABI info
+[0.762s] -- Detecting CXX compiler ABI info - done
+[0.775s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.775s] -- Detecting CXX compile features
+[0.776s] -- Detecting CXX compile features - done
+[0.783s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.154s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.344s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.423s] WARNING: Package name "template_ROS2" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.465s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.465s] -- Configured cppcheck include dirs: 
+[1.465s] -- Configured cppcheck exclude dirs and/or files: 
+[1.466s] -- Added test 'lint_cmake' to check CMake code style
+[1.467s] -- Added test 'uncrustify' to check C / C++ code style
+[1.468s] -- Configured uncrustify additional arguments: 
+[1.468s] -- Added test 'xmllint' to check XML markup files
+[1.470s] -- Configuring done
+[1.474s] -- Generating done
+[1.475s] -- Build files have been written to: /home/ngochoan/dev_ws/build/template_ROS2
+[1.486s] Invoked command in '/home/ngochoan/dev_ws/build/template_ROS2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/template_ROS2 -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/template_ROS2
+[1.489s] Invoking command in '/home/ngochoan/dev_ws/build/template_ROS2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/template_ROS2 -- -j8 -l8
+[1.549s] Invoked command in '/home/ngochoan/dev_ws/build/template_ROS2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/template_ROS2 -- -j8 -l8
+[1.587s] Invoking command in '/home/ngochoan/dev_ws/build/template_ROS2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/template_ROS2
+[1.596s] -- Install configuration: ""
+[1.597s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/ament_index/resource_index/package_run_dependencies/template_ROS2
+[1.597s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/ament_index/resource_index/parent_prefix_path/template_ROS2
+[1.598s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/environment/ament_prefix_path.sh
+[1.598s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/environment/ament_prefix_path.dsv
+[1.598s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/environment/path.sh
+[1.598s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/environment/path.dsv
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/local_setup.bash
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/local_setup.sh
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/local_setup.zsh
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/local_setup.dsv
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/package.dsv
+[1.599s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/ament_index/resource_index/packages/template_ROS2
+[1.600s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/cmake/template_ROS2Config.cmake
+[1.600s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/cmake/template_ROS2Config-version.cmake
+[1.600s] -- Installing: /home/ngochoan/dev_ws/install/template_ROS2/share/template_ROS2/package.xml
+[1.603s] Invoked command in '/home/ngochoan/dev_ws/build/template_ROS2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/template_ROS2

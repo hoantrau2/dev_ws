@@ -1,0 +1,16 @@
+[0.066s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.110s] [ 66%] Built target test_cmd_vel
+[0.111s] [ 66%] Built target read_parameters_pi
+[0.114s] [ 83%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.017s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KPIDNode::PIDNode()[m[K’:
+[2.017s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:16:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kactual_angle_callback[m[K’ is not a member of ‘[01m[KPIDNode[m[K’
+[2.017s]    16 |             std::bind(&PIDNode::[01;31m[Kactual_angle_callback[m[K, this,
+[2.017s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.017s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:22:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kvelocity_fuzzy_callback[m[K’ is not a member of ‘[01m[KPIDNode[m[K’
+[2.017s]    22 |             std::bind(&PIDNode::[01;31m[Kvelocity_fuzzy_callback[m[K, this,
+[2.017s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.717s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[2.717s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+[2.718s] gmake: *** [Makefile:146: all] Error 2
+[2.720s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

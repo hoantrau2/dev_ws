@@ -25,21 +25,21 @@ public:
     publisher_desired_angle_ =
         this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/desired_angle", 10);
-    timer_ = this->create_wall_timer(
-        500ms, std::bind(&PIDNode::timer_callback,
-                         this)); // use create_wall_timer to timer, timer 500ms
-                                 // call timer_callback
+    // timer_ = this->create_wall_timer(
+    //     500ms, std::bind(&PIDNode::timer_callback,
+    //                      this)); // use create_wall_timer to timer, timer 500ms
+    //                              // call timer_callback
   }
 
 private:
-  void timer_callback() {
-    auto message = std_msgs::msg::Float64MultiArray();
-    message.data.push_back(12.3);
-    message.data.push_back(12.3);
-    message.data.push_back(12.3);
-    message.data.push_back(12.3);
-    publisher_desired_angle_->publish(message);
-  }
+  // void timer_callback() {
+  //   auto message = std_msgs::msg::Float64MultiArray();
+  //   message.data[0] = 12.3;
+  //   message.data[1] = 14.3;
+  //   message.data[2] = 19.3;
+  //   message.data[3] = 30.3;
+  //   publisher_desired_angle_->publish(message);
+  // }
   void
   actual_angle_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
     // Handle actual angle data
@@ -60,8 +60,7 @@ private:
     // Handle fuzzy velocity data
     RCLCPP_INFO(this->get_logger(), "Received fuzzy velocity");
     // Your logic here
-    RCLCPP_INFO(this->get_logger(), "velocity fuzzy %f",
-                msg->data[0]);
+    RCLCPP_INFO(this->get_logger(), "velocity fuzzy %f", msg->data[0]);
   }
 
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr

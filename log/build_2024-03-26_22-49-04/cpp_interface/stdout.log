@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[ 66%] Built target read_parameters_pi
+[ 66%] Built target test_cmd_vel
+[ 83%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m

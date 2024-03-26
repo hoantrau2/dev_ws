@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 83%] Built target test_cmd_vel
+[ 83%] Built target read_parameters_pi
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:48:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMotorController[m[K’ was not declared in this scope
+   48 |     [01;31m[KMotorController[m[K motorController;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorController[m[K’ was not declared in this scope
+   50 |         [01;31m[KmotorController[m[K.updateMotors(setpoints, currentValues);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:106:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_pid[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_pid[m[K’?
+  106 |       [01;31m[Kinit_pid[m[K(&pid, Kp[i], Ki[i], Kd[i]);
+      |       [01;31m[K^~~~~~~~[m[K
+      |       [32m[Ksi_pid[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kstd::vector<float> MotorController::updateMotors(const std::vector<float>&, const std::vector<float>&)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:117:11:[m[K [01;31m[Kerror: [m[K‘[01m[KPID_controller[m[K’ was not declared in this scope; did you mean ‘[01m[Kpid_controllers[m[K’?
+  117 |           [01;31m[KPID_controller[m[K(setpoints[i], currentValues[i], &pid_controllers[i]));
+      |           [01;31m[K^~~~~~~~~~~~~~[m[K
+      |           [32m[Kpid_controllers[m[K
+gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

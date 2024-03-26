@@ -1,0 +1,13 @@
+[0.070s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.103s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.115s] [ 33%] Built target test_cmd_vel
+[0.117s] [ 66%] Built target read_parameters_pi
+[0.118s] [ 83%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::actual_angle_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.081s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _layout_type = struct std_msgs::msg::MultiArrayLayout_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::MultiArrayLayout_<std::allocator<void> >[m[K’} has no member named ‘[01m[Koffset[m[K’
+[2.081s]    47 |     if (msg->layout.[01;31m[Koffset[m[K = 222) {
+[2.081s]       |                     [01;31m[K^~~~~~[m[K
+[4.183s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[4.183s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+[4.184s] gmake: *** [Makefile:146: all] Error 2
+[4.186s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

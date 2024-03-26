@@ -1,0 +1,45 @@
+[0.055s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.096s] [ 66%] Built target test_cmd_vel
+[0.096s] [ 66%] Built target read_parameters_pi
+[0.100s] [ 83%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.014s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kinit_pid[m[K’ declared void
+[2.014s]    23 | void [01;31m[Kinit_pid[m[K(PID_t *pid, float kp, float ki, float kd);
+[2.014s]       |      [01;31m[K^~~~~~~~[m[K
+[2.018s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:15:[m[K [01;31m[Kerror: [m[K‘[01m[KPID_t[m[K’ was not declared in this scope
+[2.018s]    23 | void init_pid([01;31m[KPID_t[m[K *pid, float kp, float ki, float kd);
+[2.019s]       |               [01;31m[K^~~~~[m[K
+[2.023s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid[m[K’ was not declared in this scope
+[2.023s]    23 | void init_pid(PID_t *[01;31m[Kpid[m[K, float kp, float ki, float kd);
+[2.023s]       |                      [01;31m[K^~~[m[K
+[2.023s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:27:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[2.023s]    23 | void init_pid(PID_t *pid, [01;31m[Kfloat[m[K kp, float ki, float kd);
+[2.023s]       |                           [01;31m[K^~~~~[m[K
+[2.023s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[2.023s]    23 | void init_pid(PID_t *pid, float kp, [01;31m[Kfloat[m[K ki, float kd);
+[2.023s]       |                                     [01;31m[K^~~~~[m[K
+[2.023s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:23:47:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[2.023s]    23 | void init_pid(PID_t *pid, float kp, float ki, [01;31m[Kfloat[m[K kd);
+[2.024s]       |                                               [01;31m[K^~~~~[m[K
+[2.024s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:24:42:[m[K [01;31m[Kerror: [m[K‘[01m[KPID_t[m[K’ has not been declared
+[2.024s]    24 | float PID_controller(float sp, float pv, [01;31m[KPID_t[m[K *pid);
+[2.024s]       |                                          [01;31m[K^~~~~[m[K
+[2.072s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[2.073s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:53:21:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[KMotorController motorController[m[K’ has incomplete type and cannot be defined
+[2.073s]    53 |     MotorController [01;31m[KmotorController[m[K;
+[2.073s]       |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.083s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController()[m[K’:
+[2.083s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:111:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_pid[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_pid[m[K’?
+[2.083s]   111 |       [01;31m[Kinit_pid[m[K(&pid, Kp[i], Ki[i], Kd[i]);
+[2.083s]       |       [01;31m[K^~~~~~~~[m[K
+[2.083s]       |       [32m[Ksi_pid[m[K
+[2.083s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kstd::vector<float> MotorController::updateMotors(const std::vector<float>&, const std::vector<float>&)[m[K’:
+[2.083s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:122:58:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<PID_t>, PID_t>::value_type*[m[K’ {aka ‘[01m[KPID_t*[m[K’} to ‘[01m[Kint*[m[K’
+[2.083s]   122 |           PID_controller(setpoints[i], currentValues[i], &pid_controllers[i]));
+[2.083s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:24:49:[m[K [01;36m[Knote: [m[K  initializing argument 3 of ‘[01m[Kfloat PID_controller(float, float, int*)[m[K’
+[2.084s]    24 | float PID_controller(float sp, float pv, [01;36m[KPID_t *pid[m[K);
+[2.084s]       |                                          [01;36m[K~~~~~~~^~~[m[K
+[4.246s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[4.246s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+[4.246s] gmake: *** [Makefile:146: all] Error 2
+[4.248s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

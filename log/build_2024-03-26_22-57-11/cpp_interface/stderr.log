@@ -1,0 +1,7 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::actual_angle_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:47:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _layout_type = struct std_msgs::msg::MultiArrayLayout_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::MultiArrayLayout_<std::allocator<void> >[m[K’} has no member named ‘[01m[Koffset[m[K’
+   47 |     if (msg->layout.[01;31m[Koffset[m[K = 222) {
+      |                     [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,7 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:61:21:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[KMotorController motorController[m[K’ has incomplete type and cannot be defined
+   61 |     MotorController [01;31m[KmotorController[m[K;
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -223,6 +223,43 @@ test_cmd_vel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
 .PHONY : test_cmd_vel/fast
 
+#=============================================================================
+# Target rules for targets named pid_node
+
+# Build rule for target.
+pid_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pid_node
+.PHONY : pid_node
+
+# fast build rule for target.
+pid_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/build
+.PHONY : pid_node/fast
+
+src/pid_node.o: src/pid_node.cpp.o
+.PHONY : src/pid_node.o
+
+# target to build an object file
+src/pid_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/src/pid_node.cpp.o
+.PHONY : src/pid_node.cpp.o
+
+src/pid_node.i: src/pid_node.cpp.i
+.PHONY : src/pid_node.i
+
+# target to preprocess a source file
+src/pid_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/src/pid_node.cpp.i
+.PHONY : src/pid_node.cpp.i
+
+src/pid_node.s: src/pid_node.cpp.s
+.PHONY : src/pid_node.s
+
+# target to generate assembly for a file
+src/pid_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/src/pid_node.cpp.s
+.PHONY : src/pid_node.cpp.s
+
 src/read_parameters_pi.o: src/read_parameters_pi.cpp.o
 .PHONY : src/read_parameters_pi.o
 
@@ -286,8 +323,12 @@ help:
 	@echo "... test"
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
+	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... test_cmd_vel"
+	@echo "... src/pid_node.o"
+	@echo "... src/pid_node.i"
+	@echo "... src/pid_node.s"
 	@echo "... src/read_parameters_pi.o"
 	@echo "... src/read_parameters_pi.i"
 	@echo "... src/read_parameters_pi.s"

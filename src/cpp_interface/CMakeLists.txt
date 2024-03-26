@@ -18,6 +18,8 @@ add_executable(read_parameters_pi src/read_parameters_pi.cpp)
 ament_target_dependencies(read_parameters_pi rclcpp std_msgs)
 add_executable(test_cmd_vel src/test_cmd_vel.cpp)
 ament_target_dependencies(test_cmd_vel rclcpp std_msgs geometry_msgs)
+add_executable(pid_node src/pid_node.cpp)
+ament_target_dependencies(pid_node rclcpp std_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -34,6 +36,7 @@ endif()
 install(TARGETS
   read_parameters_pi
   test_cmd_vel
+  pid_node
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

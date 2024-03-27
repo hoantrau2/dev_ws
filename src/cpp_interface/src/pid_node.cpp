@@ -65,7 +65,8 @@ private:
   // Vector to store PID controllers for each motor
   std::vector<PID_t> pid_controllers;
 };
-    MotorController motorController;
+MotorController motorController; // global class variable
+
 // Function to calculate PID control signal
 double PID_controller(double sp, double pv, PID_t *pid) {
   double ek, uk; // uk: - UK_MAX->UK_MAX

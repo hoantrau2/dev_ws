@@ -6,6 +6,7 @@
  * @version 1
  * @date 2024-03-27
  */
+
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
 #include <algorithm>
@@ -13,6 +14,7 @@
 #include <functional>
 #include <memory>
 #include <string>
+
 #define CONST_VELOCITY 1
 #define SAMPLE_TIME 100
 
@@ -35,7 +37,9 @@ typedef struct {
   double ek_1;
   double ek_2;
 } PI_FUZZY_t;
-PI_FUZZY_t pi_fuzzy;
+
+PI_FUZZY_t pi_fuzzy; // global variable
+
 static double mfTriang(double x, double a, double b, double c);
 static double mfTrap(double x, double a, double b, double c, double d);
 double run_fuzzy(double x1, double x2);
@@ -71,7 +75,7 @@ public:
 private:
   void timer_callback() {
     double output_fuzzy = PI_fuzzy(deltaAngle, angleIMU);
-    // publish message with desired angles
+    // publish message with desired velocity
     auto message = std_msgs::msg::Float64MultiArray();
     message.data.resize(2);  // Set size of data vector to 4
     if (output_fuzzy >= 0) { // rotate in left
@@ -88,6 +92,7 @@ private:
   void
   angle_IMU_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
     if (msg->layout.data_offset == 222 && msg->data.size() == 1) {
+      RCLCPP_INFO(this->get_logger(), "Received angle of IMU");
       // Handle actual angle IMU
       angleIMU = msg->data[0];
     } else {
@@ -97,9 +102,9 @@ private:
 
   void
   delta_angle_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
-    // Handle fuzzy velocity data
-    RCLCPP_INFO(this->get_logger(), "Received fuzzy velocity");
+    // Handle delta angle
     if (msg->layout.data_offset == 222 && msg->data.size() == 1) {
+      RCLCPP_INFO(this->get_logger(), "Received fuzzy velocity");
       deltaAngle = msg->data[0];
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
@@ -117,7 +122,7 @@ private:
 };
 
 int main(int argc, char *argv[]) {
-  void init_PI_fuzzy(PI_FUZZY_t * pi_fuzzy);
+  void init_PI_fuzzy();
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<FuzzyNode>());
   rclcpp::shutdown();

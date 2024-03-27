@@ -1,0 +1,38 @@
+[0.055s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[0.088s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.099s] [ 25%] Built target test_cmd_vel
+[0.101s] [ 50%] Built target read_parameters_pi
+[0.102s] [ 62%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/pid_node.cpp.o[0m
+[0.105s] [ 75%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.510s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KPIDNode::PIDNode()[m[K’:
+[2.510s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:103:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPIDNode[m[K’ does not have any field named ‘[01m[KsetPoints[m[K’
+[2.510s]   103 |         [01;31m[KsetPoints[m[K({12.3, 14.3, 19.3, 30.3}) {
+[2.510s]       |         [01;31m[K^~~~~~~~~[m[K
+[2.533s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[2.533s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:38:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+[2.533s]   128 |         motorController.updateMotors([01;31m[KsetPoints[m[K, currentValues);
+[2.533s]       |                                      [01;31m[K^~~~~~~~~[m[K
+[2.544s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::velocity_fuzzy_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.544s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+[2.544s]   156 |       [01;31m[KsetPoints[m[K[0] = setPoints[1] = msg->data[0] / RADIUS; // Vlef/R
+[2.544s]       |       [01;31m[K^~~~~~~~~[m[K
+[2.558s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KPIDNode::PIDNode()[m[K’:
+[2.558s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:103:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPIDNode[m[K’ does not have any field named ‘[01m[KsetPoints[m[K’
+[2.558s]   103 |         [01;31m[KsetPoints[m[K({12.3, 14.3, 19.3, 30.3}) {
+[2.558s]       |         [01;31m[K^~~~~~~~~[m[K
+[2.579s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[2.579s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:38:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+[2.579s]   128 |         motorController.updateMotors([01;31m[KsetPoints[m[K, currentValues);
+[2.579s]       |                                      [01;31m[K^~~~~~~~~[m[K
+[2.588s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::velocity_fuzzy_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.588s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+[2.588s]   156 |       [01;31m[KsetPoints[m[K[0] = setPoints[1] = msg->data[0] / RADIUS; // Vlef/R
+[2.588s]       |       [01;31m[K^~~~~~~~~[m[K
+[5.053s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[5.053s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/pid_node.dir/all] Error 2
+[5.053s] gmake[1]: *** Waiting for unfinished jobs....
+[5.147s] gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/pid_node.cpp.o] Error 1
+[5.147s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/fuzzy_node.dir/all] Error 2
+[5.147s] gmake: *** [Makefile:146: all] Error 2
+[5.150s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

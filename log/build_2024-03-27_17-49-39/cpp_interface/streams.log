@@ -1,0 +1,15 @@
+[0.063s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.105s] [ 50%] Built target fuzzy_node
+[0.106s] [ 50%] Built target test_cmd_vel
+[0.106s] [ 75%] Built target read_parameters_pi
+[0.109s] [ 87%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.095s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[2.095s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorController[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorController[m[K’?
+[2.095s]   127 |         [01;31m[KmotorController[m[K.updateMotors(setPoints, currentValues);
+[2.095s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.095s]       |         [32m[KMotorController[m[K
+[4.207s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[4.207s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/pid_node.dir/all] Error 2
+[4.207s] gmake: *** [Makefile:146: all] Error 2
+[4.209s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

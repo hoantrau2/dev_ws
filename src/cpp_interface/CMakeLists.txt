@@ -20,6 +20,8 @@ add_executable(test_cmd_vel src/test_cmd_vel.cpp)
 ament_target_dependencies(test_cmd_vel rclcpp std_msgs geometry_msgs)
 add_executable(pid_node src/pid_node.cpp)
 ament_target_dependencies(pid_node rclcpp std_msgs)
+add_executable(fuzzy_node src/fuzzy_node.cpp)
+ament_target_dependencies(fuzzy_node rclcpp std_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -37,6 +39,7 @@ install(TARGETS
   read_parameters_pi
   test_cmd_vel
   pid_node
+  fuzzy_node
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

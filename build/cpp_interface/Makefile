@@ -236,6 +236,43 @@ pid_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/build
 .PHONY : pid_node/fast
 
+#=============================================================================
+# Target rules for targets named fuzzy_node
+
+# Build rule for target.
+fuzzy_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fuzzy_node
+.PHONY : fuzzy_node
+
+# fast build rule for target.
+fuzzy_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/build
+.PHONY : fuzzy_node/fast
+
+src/fuzzy_node.o: src/fuzzy_node.cpp.o
+.PHONY : src/fuzzy_node.o
+
+# target to build an object file
+src/fuzzy_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o
+.PHONY : src/fuzzy_node.cpp.o
+
+src/fuzzy_node.i: src/fuzzy_node.cpp.i
+.PHONY : src/fuzzy_node.i
+
+# target to preprocess a source file
+src/fuzzy_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.i
+.PHONY : src/fuzzy_node.cpp.i
+
+src/fuzzy_node.s: src/fuzzy_node.cpp.s
+.PHONY : src/fuzzy_node.s
+
+# target to generate assembly for a file
+src/fuzzy_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.s
+.PHONY : src/fuzzy_node.cpp.s
+
 src/pid_node.o: src/pid_node.cpp.o
 .PHONY : src/pid_node.o
 
@@ -323,9 +360,13 @@ help:
 	@echo "... test"
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
+	@echo "... fuzzy_node"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... test_cmd_vel"
+	@echo "... src/fuzzy_node.o"
+	@echo "... src/fuzzy_node.i"
+	@echo "... src/fuzzy_node.s"
 	@echo "... src/pid_node.o"
 	@echo "... src/pid_node.i"
 	@echo "... src/pid_node.s"

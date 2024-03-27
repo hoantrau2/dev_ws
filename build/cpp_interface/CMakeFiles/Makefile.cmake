@@ -673,4 +673,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/read_parameters_pi.dir/DependInfo.cmake"
   "CMakeFiles/test_cmd_vel.dir/DependInfo.cmake"
   "CMakeFiles/pid_node.dir/DependInfo.cmake"
+  "CMakeFiles/fuzzy_node.dir/DependInfo.cmake"
   )

@@ -1,0 +1,8 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[KmotorController[m[K’ was not declared in this scope; did you mean ‘[01m[KMotorController[m[K’?
+  127 |         [01;31m[KmotorController[m[K.updateMotors(setPoints, currentValues);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KMotorController[m[K
+gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/pid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

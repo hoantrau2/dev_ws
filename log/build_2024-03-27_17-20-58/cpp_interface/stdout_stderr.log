@@ -1,0 +1,36 @@
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[ 25%] Built target test_cmd_vel
+[ 50%] Built target read_parameters_pi
+[ 62%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/pid_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KPIDNode::PIDNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:103:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPIDNode[m[K’ does not have any field named ‘[01m[KsetPoints[m[K’
+  103 |         [01;31m[KsetPoints[m[K({12.3, 14.3, 19.3, 30.3}) {
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:38:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+  128 |         motorController.updateMotors([01;31m[KsetPoints[m[K, currentValues);
+      |                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::velocity_fuzzy_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+  156 |       [01;31m[KsetPoints[m[K[0] = setPoints[1] = msg->data[0] / RADIUS; // Vlef/R
+      |       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KPIDNode::PIDNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:103:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KPIDNode[m[K’ does not have any field named ‘[01m[KsetPoints[m[K’
+  103 |         [01;31m[KsetPoints[m[K({12.3, 14.3, 19.3, 30.3}) {
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:38:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+  128 |         motorController.updateMotors([01;31m[KsetPoints[m[K, currentValues);
+      |                                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::velocity_fuzzy_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:156:7:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoints[m[K’ was not declared in this scope
+  156 |       [01;31m[KsetPoints[m[K[0] = setPoints[1] = msg->data[0] / RADIUS; // Vlef/R
+      |       [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/pid_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/pid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/fuzzy_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

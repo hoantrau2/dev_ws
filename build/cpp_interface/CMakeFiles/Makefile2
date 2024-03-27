@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/ngochoan/dev_ws/build/cpp_interface
 all: CMakeFiles/read_parameters_pi.dir/all
 all: CMakeFiles/test_cmd_vel.dir/all
 all: CMakeFiles/pid_node.dir/all
+all: CMakeFiles/fuzzy_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,6 +79,7 @@ clean: CMakeFiles/cpp_interface_uninstall.dir/clean
 clean: CMakeFiles/read_parameters_pi.dir/clean
 clean: CMakeFiles/test_cmd_vel.dir/clean
 clean: CMakeFiles/pid_node.dir/clean
+clean: CMakeFiles/fuzzy_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -139,7 +141,7 @@ CMakeFiles/cpp_interface_uninstall.dir/clean:
 CMakeFiles/read_parameters_pi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=3,4 "Built target read_parameters_pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=5,6 "Built target read_parameters_pi"
 .PHONY : CMakeFiles/read_parameters_pi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -165,7 +167,7 @@ CMakeFiles/read_parameters_pi.dir/clean:
 CMakeFiles/test_cmd_vel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=5,6 "Built target test_cmd_vel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target test_cmd_vel"
 .PHONY : CMakeFiles/test_cmd_vel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +193,7 @@ CMakeFiles/test_cmd_vel.dir/clean:
 CMakeFiles/pid_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=1,2 "Built target pid_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=3,4 "Built target pid_node"
 .PHONY : CMakeFiles/pid_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -209,6 +211,32 @@ pid_node: CMakeFiles/pid_node.dir/rule
 CMakeFiles/pid_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/clean
 .PHONY : CMakeFiles/pid_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fuzzy_node.dir
+
+# All Build rule for target.
+CMakeFiles/fuzzy_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=1,2 "Built target fuzzy_node"
+.PHONY : CMakeFiles/fuzzy_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fuzzy_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fuzzy_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/fuzzy_node.dir/rule
+
+# Convenience name for target.
+fuzzy_node: CMakeFiles/fuzzy_node.dir/rule
+.PHONY : fuzzy_node
+
+# clean rule for target.
+CMakeFiles/fuzzy_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/clean
+.PHONY : CMakeFiles/fuzzy_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

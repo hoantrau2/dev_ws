@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[ 50%] Built target read_parameters_pi
+[ 50%] Built target test_cmd_vel
+[ 62%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 87%] Built target fuzzy_node

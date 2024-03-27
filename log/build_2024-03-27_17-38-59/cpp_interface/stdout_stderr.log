@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[ 50%] Built target test_cmd_vel
+[ 50%] Built target pid_node
+[ 75%] Built target read_parameters_pi
+[ 87%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:[m[K In function ‘[01m[Kdouble PI_fuzzy(double, double)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:255:23:[m[K [01;31m[Kerror: [m[Kvoid value not ignored as it ought to be
+  255 |   P_part = [01;31m[Klimit_range(&P_part)[m[K;
+      |            [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:257:23:[m[K [01;31m[Kerror: [m[Kvoid value not ignored as it ought to be
+  257 |   D_part = [01;31m[Klimit_range(&D_part)[m[K;
+      |            [01;31m[K~~~~~~~~~~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/fuzzy_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

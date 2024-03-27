@@ -1,6 +1,7 @@
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/read_parameters_pi
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/test_cmd_vel
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node
+/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_node
 /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
 /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface
 /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.sh

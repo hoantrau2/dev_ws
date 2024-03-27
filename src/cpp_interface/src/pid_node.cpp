@@ -13,24 +13,25 @@
 #include <memory>
 #include <string>
 
-#define UK_MAX 0.8
+#define UK_MAX 0.75
 #define SAMPLE_TIME 100 // in milliseconds
+#define RADIUS 0.03446
 
 using namespace std::chrono_literals;
 
 // Complete definition of PID_t structure
 typedef struct {
-  float Kp;
-  float Ki;
-  float Kd;
-  float ek_1;
-  float ek_2;
-  float uk_1;
+  double Kp;
+  double Ki;
+  double Kd;
+  double ek_1;
+  double ek_2;
+  double uk_1;
 } PID_t;
 
 // Function prototypes
-void init_pid(PID_t *pid, float kp, float ki, float kd);
-float PID_controller(float sp, float pv, PID_t *pid);
+void init_pid(PID_t *pid, double kp, double ki, double kd);
+double PID_controller(double sp, double pv, PID_t *pid);
 
 // Define a class for controlling motors using PID controllers
 class MotorController {
@@ -45,9 +46,9 @@ public:
   }
 
   // Method to update motor speeds based on setpoints and current values
-  std::vector<float> updateMotors(const std::vector<float> &setpoints,
-                                  const std::vector<float> &currentValues) {
-    std::vector<float> outputs;
+  std::vector<double> updateMotors(const std::vector<double> &setpoints,
+                                   const std::vector<double> &currentValues) {
+    std::vector<double> outputs;
     for (int i = 0; i < 4; ++i) {
       outputs.push_back(
           PID_controller(setpoints[i], currentValues[i], &pid_controllers[i]));
@@ -57,17 +58,17 @@ public:
 
 private:
   // Define PID parameters for each motor
-  const float Kp[4] = {0.2, 0.2, 0.2, 0.2};
-  const float Ki[4] = {0.7, 0.7, 0.7, 0.7};
-  const float Kd[4] = {0.0, 0.0, 0.0, 0.0};
+  const double Kp[4] = {0.2, 0.2, 0.2, 0.2};
+  const double Ki[4] = {0.7, 0.7, 0.7, 0.7};
+  const double Kd[4] = {0.0, 0.0, 0.0, 0.0};
 
   // Vector to store PID controllers for each motor
   std::vector<PID_t> pid_controllers;
 };
 
 // Function to calculate PID control signal
-float PID_controller(float sp, float pv, PID_t *pid) {
-  float ek, uk; // uk: - UK_MAX->UK_MAX
+double PID_controller(double sp, double pv, PID_t *pid) {
+  double ek, uk; // uk: - UK_MAX->UK_MAX
   ek = sp - pv;
   uk = pid->uk_1 + pid->Kp * (ek - pid->ek_1) +
        pid->Ki * SAMPLE_TIME * 1e-3 * (ek + pid->ek_1) * 0.5 +
@@ -79,14 +80,14 @@ float PID_controller(float sp, float pv, PID_t *pid) {
     uk = -UK_MAX;
 
   pid->uk_1 = uk;
-  pid->ek_1 = ek;
   pid->ek_2 = pid->ek_1;
+  pid->ek_1 = ek;
 
   return uk;
 }
 
 // Function to initialize PID controller parameters
-void init_pid(PID_t *pid, float kp, float ki, float kd) {
+void init_pid(PID_t *pid, double kp, double ki, double kd) {
   pid->Kp = kp;
   pid->Ki = ki;
   pid->Kd = kd;
@@ -97,7 +98,9 @@ void init_pid(PID_t *pid, float kp, float ki, float kd) {
 
 class PIDNode : public rclcpp::Node {
 public:
-  PIDNode() : Node("pid_node"), currentValues({4.0, 4.0, 4.0, 4.0}) {
+  PIDNode()
+      : Node("pid_node"), currentValues({4.0, 4.0, 4.0, 4.0}),
+        setPoints({12.3, 14.3, 19.3, 30.3}) {
     subscription_actual_angle_ =
         this->create_subscription<std_msgs::msg::Float64MultiArray>(
             "/actual_angle", 10,
@@ -120,11 +123,9 @@ public:
 
 private:
   void timer_callback() {
-    // Assume you have some way to get setpoints for each motor
-    std::vector<float> setpoints = {12.3, 14.3, 19.3, 30.3};
     MotorController motorController;
-    std::vector<float> desiredAngles =
-        motorController.updateMotors(setpoints, currentValues);
+    std::vector<double> desiredAngles =
+        motorController.updateMotors(setPoints, currentValues);
     // publish message with desired angles
     auto message = std_msgs::msg::Float64MultiArray();
     message.data.resize(4); // Set size of data vector to 4
@@ -151,10 +152,15 @@ private:
       const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
     // Handle fuzzy velocity data
     RCLCPP_INFO(this->get_logger(), "Received fuzzy velocity");
-    // Your logic here
-    RCLCPP_INFO(this->get_logger(), "velocity fuzzy %f", msg->data[0]);
+    if (msg->layout.data_offset == 222 && msg->data.size() == 2) {
+      setPoints[0] = setPoints[1] = msg->data[0] / RADIUS; // Vlef/R
+      setPoints[2] = setPoints[3] = msg->data[1] / RADIUS; // Vright/R
+    } else {
+      RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
+    }
   }
-  std::vector<float> currentValues;
+  std::vector<double> currentValues;
+  std::vector<double> setPoints;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr
       subscription_actual_angle_;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr

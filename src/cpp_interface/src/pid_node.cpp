@@ -65,7 +65,7 @@ private:
   // Vector to store PID controllers for each motor
   std::vector<PID_t> pid_controllers;
 };
-
+    MotorController motorController;
 // Function to calculate PID control signal
 double PID_controller(double sp, double pv, PID_t *pid) {
   double ek, uk; // uk: - UK_MAX->UK_MAX
@@ -123,7 +123,6 @@ public:
 
 private:
   void timer_callback() {
-    MotorController motorController;
     std::vector<double> desiredAngles =
         motorController.updateMotors(setPoints, currentValues);
     // publish message with desired angles

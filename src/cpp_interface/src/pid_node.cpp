@@ -13,7 +13,7 @@
 #include <memory>
 #include <string>
 
-#define UK_MAX 0.75
+#define UK_MAX 0.8
 #define SAMPLE_TIME 100 // in milliseconds
 
 using namespace std::chrono_literals;

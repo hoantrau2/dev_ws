@@ -67,6 +67,7 @@ all: CMakeFiles/read_parameters_pi.dir/all
 all: CMakeFiles/test_cmd_vel.dir/all
 all: CMakeFiles/pid_node.dir/all
 all: CMakeFiles/fuzzy_node.dir/all
+all: CMakeFiles/stanley_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +81,7 @@ clean: CMakeFiles/read_parameters_pi.dir/clean
 clean: CMakeFiles/test_cmd_vel.dir/clean
 clean: CMakeFiles/pid_node.dir/clean
 clean: CMakeFiles/fuzzy_node.dir/clean
+clean: CMakeFiles/stanley_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -167,7 +169,7 @@ CMakeFiles/read_parameters_pi.dir/clean:
 CMakeFiles/test_cmd_vel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target test_cmd_vel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target test_cmd_vel"
 .PHONY : CMakeFiles/test_cmd_vel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -237,6 +239,32 @@ fuzzy_node: CMakeFiles/fuzzy_node.dir/rule
 CMakeFiles/fuzzy_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/clean
 .PHONY : CMakeFiles/fuzzy_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/stanley_node.dir
+
+# All Build rule for target.
+CMakeFiles/stanley_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target stanley_node"
+.PHONY : CMakeFiles/stanley_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/stanley_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stanley_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/stanley_node.dir/rule
+
+# Convenience name for target.
+stanley_node: CMakeFiles/stanley_node.dir/rule
+.PHONY : stanley_node
+
+# clean rule for target.
+CMakeFiles/stanley_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/clean
+.PHONY : CMakeFiles/stanley_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

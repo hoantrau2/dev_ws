@@ -1,0 +1,11 @@
+[0.054s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.072s] [31mCMake Error at CMakeLists.txt:29:
+[0.072s]   Parse error.  Expected "(", got newline with text "
+[0.072s] 
+[0.072s]   ".
+[0.072s] 
+[0.072s] [0m
+[0.072s] -- Configuring incomplete, errors occurred!
+[0.072s] See also "/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/CMakeOutput.log".
+[0.074s] gmake: *** [Makefile:390: cmake_check_build_system] Error 1
+[0.075s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

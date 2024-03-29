@@ -1,0 +1,15 @@
+[0.055s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.099s] [ 20%] Built target pid_node
+[0.101s] [ 60%] Built target read_parameters_pi
+[0.101s] [ 60%] Built target fuzzy_node
+[0.102s] [ 80%] Built target test_cmd_vel
+[0.107s] [ 90%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[2.158s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[2.158s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:57:9:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[2.159s]    57 |         [01;31m[K500ms[m[K, std::bind(&StanleyNode::timer_callback,
+[2.159s]       |         [01;31m[K^~~~~[m[K
+[4.991s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[4.991s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/stanley_node.dir/all] Error 2
+[4.992s] gmake: *** [Makefile:146: all] Error 2
+[4.993s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

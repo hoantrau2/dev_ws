@@ -12,6 +12,7 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 add_executable(read_parameters_pi src/read_parameters_pi.cpp)
@@ -22,6 +23,8 @@ add_executable(pid_node src/pid_node.cpp)
 ament_target_dependencies(pid_node rclcpp std_msgs)
 add_executable(fuzzy_node src/fuzzy_node.cpp)
 ament_target_dependencies(fuzzy_node rclcpp std_msgs)
+add_executable(stanley_node src/stanley_node.cpp)
+ament_target_dependencies(stanley_node rclcpp std_msgs tf2_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -40,6 +43,7 @@ install(TARGETS
   test_cmd_vel
   pid_node
   fuzzy_node
+  stanley_node
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

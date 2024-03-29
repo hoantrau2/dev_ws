@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:29:
+  Parse error.  Expected "(", got newline with text "
+
+  ".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:390: cmake_check_build_system] Error 1

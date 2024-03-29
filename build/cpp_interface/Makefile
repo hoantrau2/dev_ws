@@ -249,6 +249,19 @@ fuzzy_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/build
 .PHONY : fuzzy_node/fast
 
+#=============================================================================
+# Target rules for targets named stanley_node
+
+# Build rule for target.
+stanley_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stanley_node
+.PHONY : stanley_node
+
+# fast build rule for target.
+stanley_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
+.PHONY : stanley_node/fast
+
 src/fuzzy_node.o: src/fuzzy_node.cpp.o
 .PHONY : src/fuzzy_node.o
 
@@ -321,6 +334,30 @@ src/read_parameters_pi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.s
 .PHONY : src/read_parameters_pi.cpp.s
 
+src/stanley_node.o: src/stanley_node.cpp.o
+.PHONY : src/stanley_node.o
+
+# target to build an object file
+src/stanley_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o
+.PHONY : src/stanley_node.cpp.o
+
+src/stanley_node.i: src/stanley_node.cpp.i
+.PHONY : src/stanley_node.i
+
+# target to preprocess a source file
+src/stanley_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.i
+.PHONY : src/stanley_node.cpp.i
+
+src/stanley_node.s: src/stanley_node.cpp.s
+.PHONY : src/stanley_node.s
+
+# target to generate assembly for a file
+src/stanley_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.s
+.PHONY : src/stanley_node.cpp.s
+
 src/test_cmd_vel.o: src/test_cmd_vel.cpp.o
 .PHONY : src/test_cmd_vel.o
 
@@ -363,6 +400,7 @@ help:
 	@echo "... fuzzy_node"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
+	@echo "... stanley_node"
 	@echo "... test_cmd_vel"
 	@echo "... src/fuzzy_node.o"
 	@echo "... src/fuzzy_node.i"
@@ -373,6 +411,9 @@ help:
 	@echo "... src/read_parameters_pi.o"
 	@echo "... src/read_parameters_pi.i"
 	@echo "... src/read_parameters_pi.s"
+	@echo "... src/stanley_node.o"
+	@echo "... src/stanley_node.i"
+	@echo "... src/stanley_node.s"
 	@echo "... src/test_cmd_vel.o"
 	@echo "... src/test_cmd_vel.i"
 	@echo "... src/test_cmd_vel.s"

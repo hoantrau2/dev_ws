@@ -1,0 +1,37 @@
+[0.063s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.107s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.122s] [ 20%] Built target read_parameters_pi
+[0.122s] [ 40%] Built target pid_node
+[0.125s] [ 60%] Built target test_cmd_vel
+[0.127s] [ 80%] Built target fuzzy_node
+[0.128s] [ 90%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[2.536s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[2.537s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:139:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KStanleyNode::desired_positon[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.537s]   139 |   std::vector<double> [01;35m[Kdesired_positon[m[K;
+[2.537s]       |                       [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.537s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:136:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble StanleyNode::linear_velocity[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.537s]   136 |   double [01;35m[Klinear_velocity[m[K;
+[2.537s]       |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.537s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:25:3:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[2.537s]    25 |   [01;35m[KStanleyNode[m[K()
+[2.537s]       |   [01;35m[K^~~~~~~~~~~[m[K
+[2.547s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:57:9:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
+[2.547s]    57 |         [01;31m[K500ms[m[K, std::bind(&StanleyNode::timer_callback,
+[2.548s]       |         [01;31m[K^~~~~[m[K
+[2.557s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::tf_callback(tf2_msgs::msg::TFMessage_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.557s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:124:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transforms_type = class std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kchild_frame_id[m[K’
+[2.557s]   124 |     if (msg->transforms.[01;31m[Kchild_frame_id[m[K = "base_footprint") {
+[2.557s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.557s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:127:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transforms_type = class std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Ktransform[m[K’
+[2.557s]   127 |       actual_position[0] = msg->transforms.[01;31m[Ktransform[m[K.translation.x;
+[2.557s]       |                                            [01;31m[K^~~~~~~~~[m[K
+[2.557s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:128:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transforms_type = class std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Ktransform[m[K’
+[2.557s]   128 |       actual_position[1] = msg->transforms.[01;31m[Ktransform[m[K.translation.y;
+[2.558s]       |                                            [01;31m[K^~~~~~~~~[m[K
+[2.558s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:129:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _transforms_type = class std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::vector<geometry_msgs::msg::TransformStamped_<std::allocator<void> >, std::allocator<geometry_msgs::msg::TransformStamped_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Ktransform[m[K’
+[2.558s]   129 |       actual_position[2] = msg->transforms.[01;31m[Ktransform[m[K.rotation.z;
+[2.558s]       |                                            [01;31m[K^~~~~~~~~[m[K
+[5.740s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[5.740s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/stanley_node.dir/all] Error 2
+[5.740s] gmake: *** [Makefile:146: all] Error 2
+[5.742s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

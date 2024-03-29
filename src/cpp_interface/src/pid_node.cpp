@@ -118,7 +118,7 @@ public:
         this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/desired_angle", 10);
     timer_ = this->create_wall_timer(
-        500ms, std::bind(&PIDNode::timer_callback,
+        std::chrono::milliseconds(500), std::bind(&PIDNode::timer_callback,
                          this)); // use create_wall_timer to timer 500ms
   }
 

@@ -68,8 +68,9 @@ public:
         this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/velocity_fuzzy", 10);
     timer_ = this->create_wall_timer(
-        500ms, std::bind(&FuzzyNode::timer_callback,
-                         this)); // use create_wall_timer to timer 500ms
+        std::chrono::milliseconds(500),
+        std::bind(&FuzzyNode::timer_callback,
+                  this)); // use create_wall_timer to timer 500ms
   }
 
 private:

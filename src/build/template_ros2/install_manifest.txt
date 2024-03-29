@@ -1,0 +1,15 @@
+/home/ngochoan/dev_ws/src/install/template_ros2/share/ament_index/resource_index/package_run_dependencies/template_ros2
+/home/ngochoan/dev_ws/src/install/template_ros2/share/ament_index/resource_index/parent_prefix_path/template_ros2
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/environment/ament_prefix_path.sh
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/environment/ament_prefix_path.dsv
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/environment/path.sh
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/environment/path.dsv
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/local_setup.bash
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/local_setup.sh
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/local_setup.zsh
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/local_setup.dsv
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.dsv
+/home/ngochoan/dev_ws/src/install/template_ros2/share/ament_index/resource_index/packages/template_ros2
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/cmake/template_ros2Config.cmake
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/cmake/template_ros2Config-version.cmake
+/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.xml

@@ -1,0 +1,2 @@
+Invoking command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher
+Invoked command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher

@@ -1,0 +1,3 @@
+[submodule "src/src/csm"]
+	path = src/src/csm
+	url = https://github.com/AlexKaravaev/csm.git

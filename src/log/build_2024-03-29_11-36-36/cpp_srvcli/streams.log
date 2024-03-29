@@ -1,0 +1,43 @@
+[0.218s] Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/cpp_srvcli
+[0.308s] -- The C compiler identification is GNU 11.4.0
+[0.367s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.453s] -- Detecting C compiler ABI info - done
+[0.464s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.464s] -- Detecting C compile features
+[0.464s] -- Detecting C compile features - done
+[0.468s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.564s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.564s] -- Detecting CXX compile features
+[0.565s] -- Detecting CXX compile features - done
+[0.569s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.809s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.932s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[1.000s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.009s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.023s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.041s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.061s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.166s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.171s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.277s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.299s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.342s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.352s] -- Looking for pthread.h
+[1.407s] -- Looking for pthread.h - found
+[1.408s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.470s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.471s] -- Found Threads: TRUE  
+[1.642s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.850s] -- Configuring done
+[1.863s] -- Generating done
+[1.865s] -- Build files have been written to: /home/ngochoan/dev_ws/src/build/cpp_srvcli
+[1.874s] Invoked command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/cpp_srvcli
+[1.876s] Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/cpp_srvcli -- -j8 -l8
+[1.916s] [ 50%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[1.916s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/add_two_ints_server.cpp.o[0m
+[4.986s] [ 75%] [32m[1mLinking CXX executable server[0m
+[5.136s] [100%] [32m[1mLinking CXX executable client[0m
+[5.138s] [100%] Built target server
+[5.278s] [100%] Built target client

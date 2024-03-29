@@ -1,0 +1,393 @@
+[0.976s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.976s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x78735bb78c10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x78735bb78ca0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x78735bb78ca0>>)
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.020s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.020s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ngochoan/dev_ws/src'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.029s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extension 'ignore'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extension 'ignore_ament_install'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extensions ['colcon_pkg']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extension 'colcon_pkg'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extensions ['colcon_meta']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extension 'colcon_meta'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extensions ['ros']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_interface) by extension 'ros'
+[1.032s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_interface' with type 'ros.ament_cmake' and name 'cpp_interface'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore_ament_install'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_pkg']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_pkg'
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_meta']
+[1.032s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_meta'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ros']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ros'
+[1.033s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_srvcli' with type 'ros.ament_cmake' and name 'cpp_srvcli'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['ignore', 'ignore_ament_install']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ignore'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ignore_ament_install'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['colcon_pkg']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'colcon_pkg'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['colcon_meta']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'colcon_meta'
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['ros']
+[1.033s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ros'
+[1.034s] DEBUG:colcon.colcon_core.package_identification:Package 'csm' with type 'ros.ament_cmake' and name 'csm'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.034s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ignore'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ignore_ament_install'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['colcon_pkg']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'colcon_pkg'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['colcon_meta']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'colcon_meta'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['ros']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ros'
+[1.035s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_laser_scan_matcher' with type 'ros.ament_cmake' and name 'ros2_laser_scan_matcher'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extension 'ignore_ament_install'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extensions ['colcon_pkg']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extension 'colcon_pkg'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extensions ['colcon_meta']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extension 'colcon_meta'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extensions ['ros']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(template_ros2) by extension 'ros'
+[1.036s] DEBUG:colcon.colcon_core.package_identification:Package 'template_ros2' with type 'ros.ament_cmake' and name 'template_ros2'
+[1.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.124s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.154s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/ngochoan/dev_ws/install
+[1.170s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 372 installed packages in /opt/ros/humble
+[1.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_target' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_clean_first' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'cmake_force_configure' from command line to 'False'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'ament_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[1.274s] Level 5:colcon.colcon_core.verb:set package 'cpp_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.274s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ngochoan/dev_ws/src/build/cpp_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ngochoan/dev_ws/src/install/cpp_interface', 'merge_install': False, 'path': '/home/ngochoan/dev_ws/src/cpp_interface', 'symlink_install': False, 'test_result_base': None}
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_args' from command line to 'None'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target' from command line to 'None'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[1.288s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.289s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ngochoan/dev_ws/src/build/cpp_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ngochoan/dev_ws/src/install/cpp_srvcli', 'merge_install': False, 'path': '/home/ngochoan/dev_ws/src/cpp_srvcli', 'symlink_install': False, 'test_result_base': None}
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_args' from command line to 'None'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target' from command line to 'None'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_cache' from command line to 'False'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_first' from command line to 'False'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_force_configure' from command line to 'False'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'ament_cmake_args' from command line to 'None'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_cmake_args' from command line to 'None'
+[1.303s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.303s] DEBUG:colcon.colcon_core.verb:Building package 'csm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ngochoan/dev_ws/src/build/csm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ngochoan/dev_ws/src/install/csm', 'merge_install': False, 'path': '/home/ngochoan/dev_ws/src/csm', 'symlink_install': False, 'test_result_base': None}
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_args' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_target' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[1.318s] Level 5:colcon.colcon_core.verb:set package 'template_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.319s] DEBUG:colcon.colcon_core.verb:Building package 'template_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ngochoan/dev_ws/src/build/template_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ngochoan/dev_ws/src/install/template_ros2', 'merge_install': False, 'path': '/home/ngochoan/dev_ws/src/template_ros2', 'symlink_install': False, 'test_result_base': None}
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_cache' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_first' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_force_configure' from command line to 'False'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'ament_cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_cmake_args' from command line to 'None'
+[1.333s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.333s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_laser_scan_matcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher', 'merge_install': False, 'path': '/home/ngochoan/dev_ws/src/ros2_laser_scan_matcher', 'symlink_install': False, 'test_result_base': None}
+[1.347s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.363s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ngochoan/dev_ws/src/csm' with build type 'ament_cmake'
+[1.363s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ngochoan/dev_ws/src/csm'
+[1.380s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.431s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ngochoan/dev_ws/src/cpp_interface' with build type 'ament_cmake'
+[1.431s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ngochoan/dev_ws/src/cpp_interface'
+[1.446s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.499s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ngochoan/dev_ws/src/cpp_srvcli' with build type 'ament_cmake'
+[1.499s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ngochoan/dev_ws/src/cpp_srvcli'
+[1.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.567s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ngochoan/dev_ws/src/template_ros2' with build type 'ament_cmake'
+[1.567s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ngochoan/dev_ws/src/template_ros2'
+[1.583s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.583s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.649s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/csm
+[1.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/cpp_interface -- -j8 -l8
+[1.667s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/cpp_srvcli -- -j8 -l8
+[1.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/template_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/template_ros2 -- -j8 -l8
+[1.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/template_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/template_ros2 -- -j8 -l8
+[1.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/template_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/template_ros2
+[1.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/cpp_interface -- -j8 -l8
+[1.768s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/cpp_srvcli -- -j8 -l8
+[1.775s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(template_ros2)
+[1.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/template_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/template_ros2
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2' for CMake module files
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2' for CMake config files
+[1.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('template_ros2', 'cmake_prefix_path')
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.ps1'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.dsv'
+[1.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.sh'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/bin'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/lib/pkgconfig/template_ros2.pc'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/lib/python3.10/site-packages'
+[1.822s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/bin'
+[1.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.ps1'
+[1.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.dsv'
+[1.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.sh'
+[1.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.bash'
+[1.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.zsh'
+[1.839s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/template_ros2/share/colcon-core/packages/template_ros2)
+[1.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/cpp_interface
+[1.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/cpp_srvcli
+[1.856s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_interface)
+[1.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/cpp_interface
+[1.877s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface' for CMake module files
+[1.877s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface' for CMake config files
+[1.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_interface', 'cmake_prefix_path')
+[1.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.ps1'
+[1.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.dsv'
+[1.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.sh'
+[1.896s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib'
+[1.896s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/bin'
+[1.896s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib/pkgconfig/cpp_interface.pc'
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib/python3.10/site-packages'
+[1.897s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/bin'
+[1.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.ps1'
+[1.912s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.dsv'
+[1.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.sh'
+[1.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.bash'
+[1.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.zsh'
+[1.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/cpp_interface/share/colcon-core/packages/cpp_interface)
+[1.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(template_ros2)
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2' for CMake module files
+[1.965s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2' for CMake config files
+[1.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('template_ros2', 'cmake_prefix_path')
+[1.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.ps1'
+[1.991s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.dsv'
+[1.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/hook/cmake_prefix_path.sh'
+[1.991s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/bin'
+[1.992s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/lib/pkgconfig/template_ros2.pc'
+[1.992s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/lib/python3.10/site-packages'
+[1.992s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/template_ros2/bin'
+[2.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.ps1'
+[2.017s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.dsv'
+[2.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.sh'
+[2.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.bash'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/template_ros2/share/template_ros2/package.zsh'
+[2.019s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/template_ros2/share/colcon-core/packages/template_ros2)
+[2.020s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[2.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/cpp_srvcli
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli' for CMake module files
+[2.046s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli' for CMake config files
+[2.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[2.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[2.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[2.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib'
+[2.073s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/bin'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib/python3.10/site-packages'
+[2.074s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/bin'
+[2.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[2.100s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[2.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[2.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[2.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[2.102s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[2.122s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_interface)
+[2.137s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface' for CMake module files
+[2.138s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface' for CMake config files
+[2.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_interface', 'cmake_prefix_path')
+[2.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.ps1'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.dsv'
+[2.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/hook/cmake_prefix_path.sh'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/bin'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib/pkgconfig/cpp_interface.pc'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/lib/python3.10/site-packages'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_interface/bin'
+[2.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.ps1'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.dsv'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.sh'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.bash'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_interface/share/cpp_interface/package.zsh'
+[2.171s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/cpp_interface/share/colcon-core/packages/cpp_interface)
+[2.191s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli' for CMake module files
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli' for CMake config files
+[2.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[2.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[2.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[2.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[2.227s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib'
+[2.227s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/bin'
+[2.227s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[2.227s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/lib/python3.10/site-packages'
+[2.228s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/cpp_srvcli/bin'
+[2.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[2.243s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[2.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[2.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[2.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[2.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[2.943s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/csm
+[2.944s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/csm -- -j8 -l8
+[18.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/csm -- -j8 -l8
+[18.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/csm
+[18.710s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[18.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/csm
+[18.731s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm' for CMake module files
+[18.731s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm' for CMake config files
+[18.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[18.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[18.749s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[18.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[18.749s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib'
+[18.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[18.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[18.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[18.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[18.765s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/bin'
+[18.766s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib/pkgconfig/csm.pc'
+[18.766s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib/python3.10/site-packages'
+[18.766s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/bin'
+[18.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.ps1'
+[18.782s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.dsv'
+[18.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.sh'
+[18.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.bash'
+[18.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.zsh'
+[18.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/csm/share/colcon-core/packages/csm)
+[18.863s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[18.879s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm' for CMake module files
+[18.879s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm' for CMake config files
+[18.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[18.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[18.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[18.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[18.897s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib'
+[18.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[18.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[18.912s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[18.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[18.913s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/bin'
+[18.913s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib/pkgconfig/csm.pc'
+[18.913s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/lib/python3.10/site-packages'
+[18.913s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/csm/bin'
+[18.929s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.ps1'
+[18.930s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.dsv'
+[18.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.sh'
+[18.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.bash'
+[18.931s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/csm/share/csm/package.zsh'
+[18.931s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/csm/share/colcon-core/packages/csm)
+[18.932s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ngochoan/dev_ws/src/ros2_laser_scan_matcher' with build type 'ament_cmake'
+[18.932s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ngochoan/dev_ws/src/ros2_laser_scan_matcher'
+[18.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.948s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ngochoan/dev_ws/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher
+[20.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/ngochoan/dev_ws/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher
+[20.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher -- -j8 -l8
+[31.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher -- -j8 -l8
+[31.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher
+[31.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[31.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/src/install/csm:/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/src/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/src/build/ros2_laser_scan_matcher
+[31.530s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher' for CMake module files
+[31.530s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher' for CMake config files
+[31.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[31.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[31.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[31.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[31.546s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib'
+[31.546s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/bin'
+[31.546s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[31.546s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[31.546s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/bin'
+[31.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[31.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[31.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[31.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[31.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[31.563s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[31.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[31.623s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher' for CMake module files
+[31.624s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher' for CMake config files
+[31.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[31.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[31.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[31.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[31.640s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib'
+[31.640s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/bin'
+[31.641s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[31.641s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[31.641s] Level 1:colcon.colcon_core.environment:checking '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/bin'
+[31.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[31.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[31.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[31.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[31.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[31.665s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ngochoan/dev_ws/src/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[31.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[31.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[31.666s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[31.666s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[31.686s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[31.686s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[31.686s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[31.698s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[31.714s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ngochoan/dev_ws/src/install/local_setup.ps1'
+[31.715s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ngochoan/dev_ws/src/install/_local_setup_util_ps1.py'
+[31.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ngochoan/dev_ws/src/install/setup.ps1'
+[31.733s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ngochoan/dev_ws/src/install/local_setup.sh'
+[31.734s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ngochoan/dev_ws/src/install/_local_setup_util_sh.py'
+[31.734s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ngochoan/dev_ws/src/install/setup.sh'
+[31.750s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ngochoan/dev_ws/src/install/local_setup.bash'
+[31.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ngochoan/dev_ws/src/install/setup.bash'
+[31.770s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ngochoan/dev_ws/src/install/local_setup.zsh'
+[31.770s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ngochoan/dev_ws/src/install/setup.zsh'

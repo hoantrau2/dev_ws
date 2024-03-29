@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    "clang-format.executable": "${workspaceRoot}/.vscode/.clang-format",
     "chrono": "cpp",
     "array": "cpp",
     "string": "cpp",

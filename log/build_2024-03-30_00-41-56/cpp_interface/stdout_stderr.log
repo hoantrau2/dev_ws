@@ -1,0 +1,20 @@
+[ 40%] Built target pid_node
+[ 50%] Built target read_parameters_pi
+[ 50%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[ 70%] Built target test_cmd_vel
+[ 90%] Built target stanley_node
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:22:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   22 |   double NB, NS, ZE, PS, [01;31m[KPB[m[K
+      |                          [01;31m[K^~[m[K
+      |                            [32m[K;[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:26:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   26 |   double NE, ZE, [01;31m[KPO[m[K
+      |                  [01;31m[K^~[m[K
+      |                    [32m[K;[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:30:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   30 |   double NB, NM, NS, ZE, PS, PM, [01;31m[KPB[m[K
+      |                                  [01;31m[K^~[m[K
+      |                                    [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/fuzzy_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

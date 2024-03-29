@@ -1,0 +1,22 @@
+[0.080s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.133s] [ 40%] Built target pid_node
+[0.133s] [ 50%] Built target read_parameters_pi
+[0.133s] [ 50%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[0.138s] [ 70%] Built target test_cmd_vel
+[0.140s] [ 90%] Built target stanley_node
+[2.177s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:22:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.177s]    22 |   double NB, NS, ZE, PS, [01;31m[KPB[m[K
+[2.177s]       |                          [01;31m[K^~[m[K
+[2.177s]       |                            [32m[K;[m[K
+[2.177s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:26:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.178s]    26 |   double NE, ZE, [01;31m[KPO[m[K
+[2.178s]       |                  [01;31m[K^~[m[K
+[2.178s]       |                    [32m[K;[m[K
+[2.178s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:30:34:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.178s]    30 |   double NB, NM, NS, ZE, PS, PM, [01;31m[KPB[m[K
+[2.178s]       |                                  [01;31m[K^~[m[K
+[2.178s]       |                                    [32m[K;[m[K
+[4.508s] gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1
+[4.508s] gmake[1]: *** [CMakeFiles/Makefile2:223: CMakeFiles/fuzzy_node.dir/all] Error 2
+[4.508s] gmake: *** [Makefile:146: all] Error 2
+[4.511s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

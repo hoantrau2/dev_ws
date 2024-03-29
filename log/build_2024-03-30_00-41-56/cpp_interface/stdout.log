@@ -1,0 +1,5 @@
+[ 40%] Built target pid_node
+[ 50%] Built target read_parameters_pi
+[ 50%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[ 70%] Built target test_cmd_vel
+[ 90%] Built target stanley_node

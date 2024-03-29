@@ -7,13 +7,13 @@
  * @date 2024-03-27
  */
 
-#include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/float64_multi_array.hpp"
 #include <algorithm>
 #include <chrono>
 #include <functional>
 #include <memory>
 #include <string>
+#include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/float64_multi_array.hpp"
 
 #define CONST_VELOCITY 1
 #define SAMPLE_TIME 100
@@ -29,14 +29,16 @@ struct Error_dot {
 struct U_dot {
   double NB, NM, NS, ZE, PS, PM, PB;
 };
-typedef struct {
+
+//  Structure for PI Fuzzy Controller Parameters
+struct PI_FUZZY_t {
   double Ke;
   double Ke_dot;
   double Ku;
   double uk_1;
   double ek_1;
   double ek_2;
-} PI_FUZZY_t;
+};
 
 PI_FUZZY_t pi_fuzzy; // global variable
 
@@ -48,32 +50,27 @@ void init_PI_fuzzy();
 double PI_fuzzy(double sp, double pv);
 
 using namespace std::chrono_literals;
-
+// Fuzzy Node Class
 class FuzzyNode : public rclcpp::Node {
-public:
+ public:
   FuzzyNode() : Node("fuzzy_node"), angleIMU(0.0), deltaAngle(0.0) {
-    subscription_angle_IMU_ =
-        this->create_subscription<std_msgs::msg::Float64MultiArray>(
-            "/angle_IMU", 10,
-            std::bind(&FuzzyNode::angle_IMU_callback, this,
-                      std::placeholders::_1));
+    // Subscription to Angle IMU Topic
+    subscription_angle_IMU_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+      "/angle_IMU", 10, std::bind(&FuzzyNode::angle_IMU_callback, this, std::placeholders::_1));
 
-    subscription_delta_angle_ =
-        this->create_subscription<std_msgs::msg::Float64MultiArray>(
-            "/delta_angle", 10,
-            std::bind(&FuzzyNode::delta_angle_callback, this,
-                      std::placeholders::_1));
+    // Subscription to Delta Angle Topic
+    subscription_delta_angle_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+      "/delta_angle", 10, std::bind(&FuzzyNode::delta_angle_callback, this, std::placeholders::_1));
 
-    publisher_velocity_fuzzy_ =
-        this->create_publisher<std_msgs::msg::Float64MultiArray>(
-            "/velocity_fuzzy", 10);
-    timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(500),
-        std::bind(&FuzzyNode::timer_callback,
-                  this)); // use create_wall_timer to timer 500ms
+    // Publisher for Fuzzy Velocity
+    publisher_velocity_fuzzy_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
+      "/velocity_fuzzy", 10);
+
+    // Timer for Periodic Execution
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&FuzzyNode::timer_callback, this)); // use create_wall_timer to timer 500ms
   }
 
-private:
+ private:
   void timer_callback() {
     double output_fuzzy = PI_fuzzy(deltaAngle, angleIMU);
     // publish message with desired velocity
@@ -90,8 +87,7 @@ private:
     publisher_velocity_fuzzy_->publish(message);
   }
 
-  void
-  angle_IMU_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+  void angle_IMU_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
     if (msg->layout.data_offset == 222 && msg->data.size() == 1) {
       RCLCPP_INFO(this->get_logger(), "Received angle of IMU");
       // Handle actual angle IMU
@@ -113,12 +109,9 @@ private:
   }
   double angleIMU;
   double deltaAngle;
-  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr
-      subscription_angle_IMU_;
-  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr
-      subscription_delta_angle_;
-  rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr
-      publisher_velocity_fuzzy_;
+  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_angle_IMU_;
+  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_delta_angle_;
+  rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_velocity_fuzzy_;
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
@@ -237,10 +230,8 @@ double run_fuzzy(double x1, double x2) {
   // weighted average defuzzification method
   double sum_beta;
   double sum_beta_y;
-  sum_beta = u_dot.NB + u_dot.NM + u_dot.NS + u_dot.ZE + u_dot.PS + u_dot.PM +
-             u_dot.PB;
-  sum_beta_y = -0.95 * u_dot.NB + -0.8 * u_dot.NM + -0.4 * u_dot.NS +
-               0 * u_dot.ZE + 0.4 * u_dot.PS + 0.8 * u_dot.PM + 0.95 * u_dot.PB;
+  sum_beta = u_dot.NB + u_dot.NM + u_dot.NS + u_dot.ZE + u_dot.PS + u_dot.PM + u_dot.PB;
+  sum_beta_y = -0.95 * u_dot.NB + -0.8 * u_dot.NM + -0.4 * u_dot.NS + 0 * u_dot.ZE + 0.4 * u_dot.PS + 0.8 * u_dot.PM + 0.95 * u_dot.PB;
   out = sum_beta_y / sum_beta;
 
   return out;

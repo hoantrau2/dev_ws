@@ -275,6 +275,43 @@ straight_line_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
 .PHONY : straight_line_node/fast
 
+#=============================================================================
+# Target rules for targets named circumference_node
+
+# Build rule for target.
+circumference_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 circumference_node
+.PHONY : circumference_node
+
+# fast build rule for target.
+circumference_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/build
+.PHONY : circumference_node/fast
+
+src/circumference_node.o: src/circumference_node.cpp.o
+.PHONY : src/circumference_node.o
+
+# target to build an object file
+src/circumference_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o
+.PHONY : src/circumference_node.cpp.o
+
+src/circumference_node.i: src/circumference_node.cpp.i
+.PHONY : src/circumference_node.i
+
+# target to preprocess a source file
+src/circumference_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/src/circumference_node.cpp.i
+.PHONY : src/circumference_node.cpp.i
+
+src/circumference_node.s: src/circumference_node.cpp.s
+.PHONY : src/circumference_node.s
+
+# target to generate assembly for a file
+src/circumference_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/src/circumference_node.cpp.s
+.PHONY : src/circumference_node.cpp.s
+
 src/fuzzy_node.o: src/fuzzy_node.cpp.o
 .PHONY : src/fuzzy_node.o
 
@@ -434,12 +471,16 @@ help:
 	@echo "... test"
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
+	@echo "... circumference_node"
 	@echo "... fuzzy_node"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... stanley_node"
 	@echo "... straight_line_node"
 	@echo "... test_cmd_vel"
+	@echo "... src/circumference_node.o"
+	@echo "... src/circumference_node.i"
+	@echo "... src/circumference_node.s"
 	@echo "... src/fuzzy_node.o"
 	@echo "... src/fuzzy_node.i"
 	@echo "... src/fuzzy_node.s"

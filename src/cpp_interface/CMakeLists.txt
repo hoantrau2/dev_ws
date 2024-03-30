@@ -33,6 +33,9 @@ ament_target_dependencies(stanley_node rclcpp std_msgs tf2_msgs)
 add_executable(straight_line_node src/straight_line_node.cpp)
 ament_target_dependencies(straight_line_node rclcpp std_msgs)
 
+add_executable(circumference_node src/circumference_node.cpp)
+ament_target_dependencies(circumference_node rclcpp std_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -52,6 +55,7 @@ install(TARGETS
   fuzzy_node
   stanley_node
   straight_line_node
+  circumference_node
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

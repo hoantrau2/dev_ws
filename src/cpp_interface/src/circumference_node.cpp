@@ -16,11 +16,12 @@
 #include "std_msgs/msg/float64_multi_array.hpp"
 
 #define LINEAR_VELOCITY 1.0
-#define YAW_ANGLE (3.14 / 4)
+#define RADIUS 1.5
+#define INITIAL_ANGLE 3.14 / 2
 
 class CircumferenceNode : public rclcpp::Node {
  public:
-  CircumferenceNode() : Node("circumference_node"), x_position(0.0), y_position(0.0), yaw_angle(YAW_ANGLE) {
+  CircumferenceNode() : Node("circumference_node"), x_position(0.0), y_position(0.0), yaw_angle(INITIAL_ANGLE) {
     start_time_ = std::chrono::steady_clock::now();
     publisher_reference_map_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/reference_map", 10);
     timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&CircumferenceNode::timer_callback, this));
@@ -32,8 +33,9 @@ class CircumferenceNode : public rclcpp::Node {
     auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(current_time - start_time_).count() / 1000.0; // convert ms to s
 
     // Calculate position based on time and velocity
-    double x_position = LINEAR_VELOCITY * std::cos(yaw_angle) * elapsed_time;
-    double y_position = LINEAR_VELOCITY * std::sin(yaw_angle) * elapsed_time;
+    x_position = RADIUS * std::cos((LINEAR_VELOCITY / RADIUS) * elapsed_time);
+    y_position = RADIUS * std::sin((LINEAR_VELOCITY / RADIUS) * elapsed_time);
+    yaw_angle = INITIAL_ANGLE + (LINEAR_VELOCITY / RADIUS) * elapsed_time;
 
     // Publish message with reference map
     auto message = std_msgs::msg::Float64MultiArray();

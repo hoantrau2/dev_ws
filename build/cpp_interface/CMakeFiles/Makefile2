@@ -69,6 +69,7 @@ all: CMakeFiles/pid_node.dir/all
 all: CMakeFiles/fuzzy_node.dir/all
 all: CMakeFiles/stanley_node.dir/all
 all: CMakeFiles/straight_line_node.dir/all
+all: CMakeFiles/circumference_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +85,7 @@ clean: CMakeFiles/pid_node.dir/clean
 clean: CMakeFiles/fuzzy_node.dir/clean
 clean: CMakeFiles/stanley_node.dir/clean
 clean: CMakeFiles/straight_line_node.dir/clean
+clean: CMakeFiles/circumference_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -145,7 +147,7 @@ CMakeFiles/cpp_interface_uninstall.dir/clean:
 CMakeFiles/read_parameters_pi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=5,6 "Built target read_parameters_pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target read_parameters_pi"
 .PHONY : CMakeFiles/read_parameters_pi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -171,7 +173,7 @@ CMakeFiles/read_parameters_pi.dir/clean:
 CMakeFiles/test_cmd_vel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target test_cmd_vel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=13,14 "Built target test_cmd_vel"
 .PHONY : CMakeFiles/test_cmd_vel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -197,7 +199,7 @@ CMakeFiles/test_cmd_vel.dir/clean:
 CMakeFiles/pid_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=3,4 "Built target pid_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=5,6 "Built target pid_node"
 .PHONY : CMakeFiles/pid_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -223,7 +225,7 @@ CMakeFiles/pid_node.dir/clean:
 CMakeFiles/fuzzy_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=1,2 "Built target fuzzy_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=3,4 "Built target fuzzy_node"
 .PHONY : CMakeFiles/fuzzy_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +251,7 @@ CMakeFiles/fuzzy_node.dir/clean:
 CMakeFiles/stanley_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target stanley_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target stanley_node"
 .PHONY : CMakeFiles/stanley_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -275,7 +277,7 @@ CMakeFiles/stanley_node.dir/clean:
 CMakeFiles/straight_line_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target straight_line_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target straight_line_node"
 .PHONY : CMakeFiles/straight_line_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -293,6 +295,32 @@ straight_line_node: CMakeFiles/straight_line_node.dir/rule
 CMakeFiles/straight_line_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/clean
 .PHONY : CMakeFiles/straight_line_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/circumference_node.dir
+
+# All Build rule for target.
+CMakeFiles/circumference_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=1,2 "Built target circumference_node"
+.PHONY : CMakeFiles/circumference_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/circumference_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/circumference_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/circumference_node.dir/rule
+
+# Convenience name for target.
+circumference_node: CMakeFiles/circumference_node.dir/rule
+.PHONY : circumference_node
+
+# clean rule for target.
+CMakeFiles/circumference_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/clean
+.PHONY : CMakeFiles/circumference_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

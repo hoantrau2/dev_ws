@@ -754,4 +754,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fuzzy_node.dir/DependInfo.cmake"
   "CMakeFiles/stanley_node.dir/DependInfo.cmake"
   "CMakeFiles/straight_line_node.dir/DependInfo.cmake"
+  "CMakeFiles/circumference_node.dir/DependInfo.cmake"
   )

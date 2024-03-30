@@ -262,6 +262,19 @@ stanley_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
 .PHONY : stanley_node/fast
 
+#=============================================================================
+# Target rules for targets named straight_line_node
+
+# Build rule for target.
+straight_line_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 straight_line_node
+.PHONY : straight_line_node
+
+# fast build rule for target.
+straight_line_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
+.PHONY : straight_line_node/fast
+
 src/fuzzy_node.o: src/fuzzy_node.cpp.o
 .PHONY : src/fuzzy_node.o
 
@@ -358,6 +371,30 @@ src/stanley_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.s
 .PHONY : src/stanley_node.cpp.s
 
+src/straight_line_node.o: src/straight_line_node.cpp.o
+.PHONY : src/straight_line_node.o
+
+# target to build an object file
+src/straight_line_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o
+.PHONY : src/straight_line_node.cpp.o
+
+src/straight_line_node.i: src/straight_line_node.cpp.i
+.PHONY : src/straight_line_node.i
+
+# target to preprocess a source file
+src/straight_line_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.i
+.PHONY : src/straight_line_node.cpp.i
+
+src/straight_line_node.s: src/straight_line_node.cpp.s
+.PHONY : src/straight_line_node.s
+
+# target to generate assembly for a file
+src/straight_line_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.s
+.PHONY : src/straight_line_node.cpp.s
+
 src/test_cmd_vel.o: src/test_cmd_vel.cpp.o
 .PHONY : src/test_cmd_vel.o
 
@@ -401,6 +438,7 @@ help:
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... stanley_node"
+	@echo "... straight_line_node"
 	@echo "... test_cmd_vel"
 	@echo "... src/fuzzy_node.o"
 	@echo "... src/fuzzy_node.i"
@@ -414,6 +452,9 @@ help:
 	@echo "... src/stanley_node.o"
 	@echo "... src/stanley_node.i"
 	@echo "... src/stanley_node.s"
+	@echo "... src/straight_line_node.o"
+	@echo "... src/straight_line_node.i"
+	@echo "... src/straight_line_node.s"
 	@echo "... src/test_cmd_vel.o"
 	@echo "... src/test_cmd_vel.i"
 	@echo "... src/test_cmd_vel.s"

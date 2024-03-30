@@ -1,0 +1,19 @@
+[0.098s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.165s] [35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[0.178s] [ 33%] Built target stanley_node
+[0.179s] [ 33%] Built target test_cmd_vel
+[0.179s] [ 50%] Built target read_parameters_pi
+[0.179s] [ 66%] Built target fuzzy_node
+[0.187s] [ 83%] Built target pid_node
+[0.197s] [ 91%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[2.834s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:[m[K In constructor ‘[01m[KStraightLineNode::StraightLineNode()[m[K’:
+[2.834s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:23:86:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+[2.834s]    23 |   StraightLineNode() : Node("straight_line_node"), x_position(0.0), y_position(0.0), [01;31m[K{[m[K
+[2.834s]       |                                                                                      [01;31m[K^[m[K
+[2.837s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:26:98:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_callback[m[K’ is not a member of ‘[01m[KStraightLineNode[m[K’
+[2.837s]    26 |     timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&StraightLineNode::[01;31m[Ktimer_callback[m[K, this));
+[2.837s]       |                                                                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.679s] gmake[2]: *** [CMakeFiles/straight_line_node.dir/build.make:76: CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o] Error 1
+[3.680s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/straight_line_node.dir/all] Error 2
+[3.680s] gmake: *** [Makefile:146: all] Error 2
+[3.683s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

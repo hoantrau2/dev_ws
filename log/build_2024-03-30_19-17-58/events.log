@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.001113] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.001199] (-) JobUnselected: {'identifier': 'csm'}
+[0.001359] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.001402] (-) JobUnselected: {'identifier': 'template_ros2'}
+[0.001443] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.001485] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.091767] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.092675] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'build'}
+[0.093434] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/cpp_interface', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ngochoan/dev_ws/install/tutorial_interfaces/lib:/home/ngochoan/dev_ws/install/turtlesim/lib:/home/ngochoan/dev_ws/install/csm/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/155/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/155/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2402'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d0e5a2b2318fd59fe7315e666607da95'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ngochoan/dev_ws/install'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2402,unix/linux:/tmp/.ICE-unix/2402'), ('GTK_EXE_PREFIX', '/snap/code/155/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c6f774c3_b530_48a3_9b6e_e078fb66ab33'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/155/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.134'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/155/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/ros2_laser_scan_matcher:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/csm:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('ROS_DOMAIN_ID', '0'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=d0e5a2b2318fd59fe7315e666607da95'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/155/.local/share:/home/ngochoan/snap/code/155:/snap/code/155/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/home/ngochoan/dev_ws/install/tutorial_interfaces/local/lib/python3.10/dist-packages:/home/ngochoan/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/home/ngochoan/dev_ws/install/cpp_pubsub:/home/ngochoan/dev_ws/install/tutorial_interfaces:/home/ngochoan/dev_ws/install/turtlesim:/home/ngochoan/dev_ws/install/template_ros2:/home/ngochoan/dev_ws/install/template_ROS2:/home/ngochoan/dev_ws/install/ros2_laser_scan_matcher:/home/ngochoan/dev_ws/install/my_package:/home/ngochoan/dev_ws/install/csm:/home/ngochoan/dev_ws/install/cpp_srvcli:/home/ngochoan/dev_ws/install/cpp_interface:/opt/ros/humble')]), 'shell': False}
+[0.099302] (-) TimerEvent: {}
+[0.124730] (cpp_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199442] (-) TimerEvent: {}
+[0.299835] (-) TimerEvent: {}
+[0.330752] (cpp_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.371345] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.374029] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.381519] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.393936] (cpp_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.399942] (-) TimerEvent: {}
+[0.412747] (cpp_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.497139] (cpp_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.499179] (cpp_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500013] (-) TimerEvent: {}
+[0.600268] (-) TimerEvent: {}
+[0.641993] (cpp_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700432] (-) TimerEvent: {}
+[0.800765] (-) TimerEvent: {}
+[0.827303] (cpp_interface) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.5 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[0.900886] (-) TimerEvent: {}
+[1.001208] (-) TimerEvent: {}
+[1.066457] (cpp_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.101293] (-) TimerEvent: {}
+[1.147577] (cpp_interface) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.147935] (cpp_interface) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.148072] (cpp_interface) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.148481] (cpp_interface) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.149100] (cpp_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.149611] (cpp_interface) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.150722] (cpp_interface) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.150855] (cpp_interface) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.151245] (cpp_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.152016] (cpp_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.176481] (cpp_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[1.178745] (cpp_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/cpp_interface\n'}
+[1.201417] (-) TimerEvent: {}
+[1.215167] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target fuzzy_node\x1b[0m\n'}
+[1.215438] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pid_node\x1b[0m\n'}
+[1.215617] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target read_parameters_pi\x1b[0m\n'}
+[1.215883] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_cmd_vel\x1b[0m\n'}
+[1.216010] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stanley_node\x1b[0m\n'}
+[1.230952] (cpp_interface) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o\x1b[0m\n'}
+[1.242062] (cpp_interface) StdoutLine: {'line': b'[ 25%] Built target fuzzy_node\n'}
+[1.242424] (cpp_interface) StdoutLine: {'line': b'[ 41%] Built target test_cmd_vel\n'}
+[1.243529] (cpp_interface) StdoutLine: {'line': b'[ 58%] Built target pid_node\n'}
+[1.245791] (cpp_interface) StdoutLine: {'line': b'[ 75%] Built target stanley_node\n'}
+[1.251532] (cpp_interface) StdoutLine: {'line': b'[ 91%] Built target read_parameters_pi\n'}
+[1.301534] (-) TimerEvent: {}
+[1.401863] (-) TimerEvent: {}
+[1.502162] (-) TimerEvent: {}
+[1.602430] (-) TimerEvent: {}
+[1.702705] (-) TimerEvent: {}
+[1.803055] (-) TimerEvent: {}
+[1.903360] (-) TimerEvent: {}
+[2.003732] (-) TimerEvent: {}
+[2.104084] (-) TimerEvent: {}
+[2.204453] (-) TimerEvent: {}
+[2.304806] (-) TimerEvent: {}
+[2.405147] (-) TimerEvent: {}
+[2.505506] (-) TimerEvent: {}
+[2.605853] (-) TimerEvent: {}
+[2.706173] (-) TimerEvent: {}
+[2.806498] (-) TimerEvent: {}
+[2.906856] (-) TimerEvent: {}
+[3.007200] (-) TimerEvent: {}
+[3.107523] (-) TimerEvent: {}
+[3.207871] (-) TimerEvent: {}
+[3.308174] (-) TimerEvent: {}
+[3.408588] (-) TimerEvent: {}
+[3.508918] (-) TimerEvent: {}
+[3.609283] (-) TimerEvent: {}
+[3.709615] (-) TimerEvent: {}
+[3.809958] (-) TimerEvent: {}
+[3.902523] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:23:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KCircumferenceNode\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.902824] (cpp_interface) StderrLine: {'line': b'   23 |   \x1b[01;31m\x1b[KCircumferenceNode\x1b[m\x1b[K() : Node("straight_line_node"), x_position(0.0), y_position(0.0), yaw_angle(YAW_ANGLE) {\n'}
+[3.903162] (cpp_interface) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.907269] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint StraightLineNode::CircumferenceNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.907466] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:23:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[3.907582] (cpp_interface) StderrLine: {'line': b'   23 |   CircumferenceNode() : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("straight_line_node"), x_position(0.0), y_position(0.0), yaw_angle(YAW_ANGLE) {\n'}
+[3.907689] (cpp_interface) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.910066] (-) TimerEvent: {}
+[3.920697] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:27:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.920945] (cpp_interface) StderrLine: {'line': b'   27 |   \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[3.921066] (cpp_interface) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.010184] (-) TimerEvent: {}
+[4.110512] (-) TimerEvent: {}
+[4.210874] (-) TimerEvent: {}
+[4.311219] (-) TimerEvent: {}
+[4.411567] (-) TimerEvent: {}
+[4.508738] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[4.509051] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[4.509332] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/unordered_map:40\x1b[m\x1b[K,\n'}
+[4.509470] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:61\x1b[m\x1b[K,\n'}
+[4.509589] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:12\x1b[m\x1b[K:\n'}
+[4.509706] (cpp_interface) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = StraightLineNode; _Args = {}; _Tp = StraightLineNode]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.509860] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = StraightLineNode; _Args = {}; _Tp = StraightLineNode; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<StraightLineNode>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.509997] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = StraightLineNode; _Alloc = std::allocator<StraightLineNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510168] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = StraightLineNode; _Alloc = std::allocator<StraightLineNode>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510312] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<StraightLineNode>; _Args = {}; _Tp = StraightLineNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510458] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<StraightLineNode>; _Args = {}; _Tp = StraightLineNode]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510599] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = StraightLineNode; _Alloc = std::allocator<StraightLineNode>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510739] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = StraightLineNode; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.510884] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:57:49:\x1b[m\x1b[K   required from here\n'}
+[4.511031] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KStraightLineNode::StraightLineNode()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.511170] (cpp_interface) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[4.511309] (cpp_interface) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.511452] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:21:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStraightLineNode::StraightLineNode()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[4.511583] (-) TimerEvent: {}
+[4.511766] (cpp_interface) StderrLine: {'line': b'   21 | class \x1b[01;36m\x1b[KStraightLineNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[4.511963] (cpp_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.512156] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:21:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.512294] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.512437] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.512580] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.512717] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/straight_line_node.cpp:15\x1b[m\x1b[K:\n'}
+[4.512855] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.512994] (cpp_interface) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[4.513132] (cpp_interface) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.513267] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[4.513404] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.513550] (cpp_interface) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[4.513684] (cpp_interface) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.513816] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[4.513981] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.514144] (cpp_interface) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[4.514312] (cpp_interface) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.514462] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[4.611716] (-) TimerEvent: {}
+[4.712065] (-) TimerEvent: {}
+[4.812450] (-) TimerEvent: {}
+[4.912857] (-) TimerEvent: {}
+[4.927456] (cpp_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/straight_line_node.dir/build.make:76: CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o] Error 1\n'}
+[4.927815] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/straight_line_node.dir/all] Error 2\n'}
+[4.928017] (cpp_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.931055] (cpp_interface) CommandEnded: {'returncode': 2}
+[5.013002] (-) TimerEvent: {}
+[5.095664] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 2}
+[5.106551] (-) EventReactorShutdown: {}

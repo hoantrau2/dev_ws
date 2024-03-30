@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[ 33%] Built target stanley_node
+[ 33%] Built target test_cmd_vel
+[ 50%] Built target read_parameters_pi
+[ 66%] Built target fuzzy_node
+[ 83%] Built target pid_node
+[ 91%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m

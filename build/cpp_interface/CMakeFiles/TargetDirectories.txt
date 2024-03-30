@@ -5,6 +5,7 @@
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/pid_node.dir
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/fuzzy_node.dir
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/stanley_node.dir
+/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/straight_line_node.dir
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/test.dir
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/edit_cache.dir
 /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles/rebuild_cache.dir

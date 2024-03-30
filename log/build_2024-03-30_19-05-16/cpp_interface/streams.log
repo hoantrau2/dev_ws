@@ -1,0 +1,23 @@
+[0.140s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.249s] [35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[0.257s] [ 16%] Built target test_cmd_vel
+[0.261s] [ 33%] Built target fuzzy_node
+[0.265s] [ 50%] Built target read_parameters_pi
+[0.271s] [ 66%] Built target pid_node
+[0.272s] [ 83%] Built target stanley_node
+[0.282s] [ 91%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[3.438s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:[m[K In member function ‘[01m[Kvoid circumferenceNode::timer_callback()[m[K’:
+[3.438s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:36:61:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K’ to ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+[3.438s]    36 |     message.data[0] = LINEAR_VELOCITY * std::cos(YAW_ANGLE) [01;31m[K*[m[K elapsed_time;
+[3.439s]       |                                                             [01;31m[K^[m[K
+[3.439s]       |                                                             [01;31m[K|[m[K
+[3.439s]       |                                                             [01;31m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K
+[3.439s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:37:61:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K’ to ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+[3.439s]    37 |     message.data[1] = LINEAR_VELOCITY * std::sin(YAW_ANGLE) [01;31m[K*[m[K elapsed_time;
+[3.439s]       |                                                             [01;31m[K^[m[K
+[3.439s]       |                                                             [01;31m[K|[m[K
+[3.440s]       |                                                             [01;31m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K
+[4.638s] gmake[2]: *** [CMakeFiles/circumference_node.dir/build.make:76: CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o] Error 1
+[4.638s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/circumference_node.dir/all] Error 2
+[4.638s] gmake: *** [Makefile:146: all] Error 2
+[4.641s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

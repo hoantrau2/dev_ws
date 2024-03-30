@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[ 16%] Built target test_cmd_vel
+[ 33%] Built target fuzzy_node
+[ 50%] Built target read_parameters_pi
+[ 66%] Built target pid_node
+[ 83%] Built target stanley_node
+[ 91%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:[m[K In member function ‘[01m[Kvoid circumferenceNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:36:61:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K’ to ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+   36 |     message.data[0] = LINEAR_VELOCITY * std::cos(YAW_ANGLE) [01;31m[K*[m[K elapsed_time;
+      |                                                             [01;31m[K^[m[K
+      |                                                             [01;31m[K|[m[K
+      |                                                             [01;31m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:37:61:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K’ to ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’} in assignment
+   37 |     message.data[1] = LINEAR_VELOCITY * std::sin(YAW_ANGLE) [01;31m[K*[m[K elapsed_time;
+      |                                                             [01;31m[K^[m[K
+      |                                                             [01;31m[K|[m[K
+      |                                                             [01;31m[Kstd::chrono::duration<double, std::ratio<1, 1000> >[m[K
+gmake[2]: *** [CMakeFiles/circumference_node.dir/build.make:76: CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/circumference_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

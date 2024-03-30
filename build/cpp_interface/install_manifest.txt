@@ -5,6 +5,7 @@
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node
+/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node
 /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/rplidar.launch.py
 /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
 /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface

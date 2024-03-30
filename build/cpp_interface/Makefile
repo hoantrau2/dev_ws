@@ -288,6 +288,19 @@ circumference_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/build
 .PHONY : circumference_node/fast
 
+#=============================================================================
+# Target rules for targets named sinusoidal_node
+
+# Build rule for target.
+sinusoidal_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sinusoidal_node
+.PHONY : sinusoidal_node
+
+# fast build rule for target.
+sinusoidal_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/build
+.PHONY : sinusoidal_node/fast
+
 src/circumference_node.o: src/circumference_node.cpp.o
 .PHONY : src/circumference_node.o
 
@@ -384,6 +397,30 @@ src/read_parameters_pi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.s
 .PHONY : src/read_parameters_pi.cpp.s
 
+src/sinusoidal_node.o: src/sinusoidal_node.cpp.o
+.PHONY : src/sinusoidal_node.o
+
+# target to build an object file
+src/sinusoidal_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.o
+.PHONY : src/sinusoidal_node.cpp.o
+
+src/sinusoidal_node.i: src/sinusoidal_node.cpp.i
+.PHONY : src/sinusoidal_node.i
+
+# target to preprocess a source file
+src/sinusoidal_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.i
+.PHONY : src/sinusoidal_node.cpp.i
+
+src/sinusoidal_node.s: src/sinusoidal_node.cpp.s
+.PHONY : src/sinusoidal_node.s
+
+# target to generate assembly for a file
+src/sinusoidal_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.s
+.PHONY : src/sinusoidal_node.cpp.s
+
 src/stanley_node.o: src/stanley_node.cpp.o
 .PHONY : src/stanley_node.o
 
@@ -475,6 +512,7 @@ help:
 	@echo "... fuzzy_node"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
+	@echo "... sinusoidal_node"
 	@echo "... stanley_node"
 	@echo "... straight_line_node"
 	@echo "... test_cmd_vel"
@@ -490,6 +528,9 @@ help:
 	@echo "... src/read_parameters_pi.o"
 	@echo "... src/read_parameters_pi.i"
 	@echo "... src/read_parameters_pi.s"
+	@echo "... src/sinusoidal_node.o"
+	@echo "... src/sinusoidal_node.i"
+	@echo "... src/sinusoidal_node.s"
 	@echo "... src/stanley_node.o"
 	@echo "... src/stanley_node.i"
 	@echo "... src/stanley_node.s"

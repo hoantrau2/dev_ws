@@ -36,6 +36,9 @@ ament_target_dependencies(straight_line_node rclcpp std_msgs)
 add_executable(circumference_node src/circumference_node.cpp)
 ament_target_dependencies(circumference_node rclcpp std_msgs)
 
+add_executable(sinusoidal_node src/sinusoidal_node.cpp)
+ament_target_dependencies(sinusoidal_node rclcpp std_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -56,6 +59,7 @@ install(TARGETS
   stanley_node
   straight_line_node
   circumference_node
+  sinusoidal_node
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

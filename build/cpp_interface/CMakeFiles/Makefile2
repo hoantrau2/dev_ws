@@ -70,6 +70,7 @@ all: CMakeFiles/fuzzy_node.dir/all
 all: CMakeFiles/stanley_node.dir/all
 all: CMakeFiles/straight_line_node.dir/all
 all: CMakeFiles/circumference_node.dir/all
+all: CMakeFiles/sinusoidal_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -86,6 +87,7 @@ clean: CMakeFiles/fuzzy_node.dir/clean
 clean: CMakeFiles/stanley_node.dir/clean
 clean: CMakeFiles/straight_line_node.dir/clean
 clean: CMakeFiles/circumference_node.dir/clean
+clean: CMakeFiles/sinusoidal_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -173,7 +175,7 @@ CMakeFiles/read_parameters_pi.dir/clean:
 CMakeFiles/test_cmd_vel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=13,14 "Built target test_cmd_vel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=15,16 "Built target test_cmd_vel"
 .PHONY : CMakeFiles/test_cmd_vel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -251,7 +253,7 @@ CMakeFiles/fuzzy_node.dir/clean:
 CMakeFiles/stanley_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target stanley_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target stanley_node"
 .PHONY : CMakeFiles/stanley_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -277,7 +279,7 @@ CMakeFiles/stanley_node.dir/clean:
 CMakeFiles/straight_line_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target straight_line_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=13,14 "Built target straight_line_node"
 .PHONY : CMakeFiles/straight_line_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -321,6 +323,32 @@ circumference_node: CMakeFiles/circumference_node.dir/rule
 CMakeFiles/circumference_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/clean
 .PHONY : CMakeFiles/circumference_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sinusoidal_node.dir
+
+# All Build rule for target.
+CMakeFiles/sinusoidal_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target sinusoidal_node"
+.PHONY : CMakeFiles/sinusoidal_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sinusoidal_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/sinusoidal_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/sinusoidal_node.dir/rule
+
+# Convenience name for target.
+sinusoidal_node: CMakeFiles/sinusoidal_node.dir/rule
+.PHONY : sinusoidal_node
+
+# clean rule for target.
+CMakeFiles/sinusoidal_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/clean
+.PHONY : CMakeFiles/sinusoidal_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

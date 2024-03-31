@@ -1,6 +1,6 @@
 /**
  * @file stanley_node.cpp
- * @author Hoan Duong
+ * @author Hoan Duong & Hien Nguyen
  * @brief the stanley_controller_node of my thesis at my university,
  *  Ho Chi Minh University of Technology.
  * @version 1

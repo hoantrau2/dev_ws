@@ -1,0 +1,558 @@
+[0.000000] (-) TimerEvent: {}
+[0.000232] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000440] (-) JobUnselected: {'identifier': 'csm'}
+[0.000460] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.000476] (-) JobUnselected: {'identifier': 'template_ros2'}
+[0.000492] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.000509] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.052277] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.052776] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'build'}
+[0.053590] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/cpp_interface', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/155/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/155/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2269'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f96a0b5f6819b69c768cbb8366098151'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2269,unix/linux:/tmp/.ICE-unix/2269'), ('GTK_EXE_PREFIX', '/snap/code/155/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6c9c0225_c30b_4b91_a246_6ed4a28fd39e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/155/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.252'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/155/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f96a0b5f6819b69c768cbb8366098151'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/155/.local/share:/home/ngochoan/snap/code/155:/snap/code/155/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.092500] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pid_node\x1b[0m\n'}
+[0.092751] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target fuzzy_node\x1b[0m\n'}
+[0.092895] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target circumference_node\x1b[0m\n'}
+[0.093079] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stanley_node\x1b[0m\n'}
+[0.093400] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target straight_line_node\x1b[0m\n'}
+[0.099768] (-) TimerEvent: {}
+[0.100375] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sinusoidal_node\x1b[0m\n'}
+[0.108893] (cpp_interface) StdoutLine: {'line': b'[ 12%] Built target read_parameters_pi\n'}
+[0.114786] (cpp_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o\x1b[0m\n'}
+[0.115072] (cpp_interface) StdoutLine: {'line': b'[ 31%] Built target test_cmd_vel\n'}
+[0.116730] (cpp_interface) StdoutLine: {'line': b'[ 43%] Built target fuzzy_node\n'}
+[0.117181] (cpp_interface) StdoutLine: {'line': b'[ 56%] Built target straight_line_node\n'}
+[0.117403] (cpp_interface) StdoutLine: {'line': b'[ 68%] Built target stanley_node\n'}
+[0.122418] (cpp_interface) StdoutLine: {'line': b'[ 81%] Built target circumference_node\n'}
+[0.124249] (cpp_interface) StdoutLine: {'line': b'[ 93%] Built target sinusoidal_node\n'}
+[0.199880] (-) TimerEvent: {}
+[0.300155] (-) TimerEvent: {}
+[0.400516] (-) TimerEvent: {}
+[0.500914] (-) TimerEvent: {}
+[0.601151] (-) TimerEvent: {}
+[0.701398] (-) TimerEvent: {}
+[0.801681] (-) TimerEvent: {}
+[0.901950] (-) TimerEvent: {}
+[1.002185] (-) TimerEvent: {}
+[1.102456] (-) TimerEvent: {}
+[1.202745] (-) TimerEvent: {}
+[1.303038] (-) TimerEvent: {}
+[1.403321] (-) TimerEvent: {}
+[1.503609] (-) TimerEvent: {}
+[1.603893] (-) TimerEvent: {}
+[1.704149] (-) TimerEvent: {}
+[1.804441] (-) TimerEvent: {}
+[1.904872] (-) TimerEvent: {}
+[2.005155] (-) TimerEvent: {}
+[2.028381] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfield \xe2\x80\x98\x1b[01m\x1b[KmotorController\x1b[m\x1b[K\xe2\x80\x99 has incomplete type \xe2\x80\x98\x1b[01m\x1b[KMotorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.028563] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.028625] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.028677] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:37:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass MotorController\x1b[m\x1b[K\xe2\x80\x99 is not complete until the closing brace\n'}
+[2.028729] (cpp_interface) StderrLine: {'line': b'   37 | class \x1b[01;36m\x1b[KMotorController\x1b[m\x1b[K {\n'}
+[2.028778] (cpp_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.061485] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:171:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[2.061629] (cpp_interface) StderrLine: {'line': b'  171 |   }\n'}
+[2.061684] (cpp_interface) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.061734] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:37:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.061785] (cpp_interface) StderrLine: {'line': b'   37 | class MotorController \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[2.061832] (cpp_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.075765] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMotorController::MotorController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.075903] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.075958] (cpp_interface) StderrLine: {'line': b'   43 |       init_pid(&pid, \x1b[01;31m\x1b[KKp\x1b[m\x1b[K[i], Ki[i], Kd[i]);\n'}
+[2.076008] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.078977] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKi\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.079087] (cpp_interface) StderrLine: {'line': b'   43 |       init_pid(&pid, Kp[i], \x1b[01;31m\x1b[KKi\x1b[m\x1b[K[i], Kd[i]);\n'}
+[2.079142] (cpp_interface) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.079191] (cpp_interface) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Ki\x1b[m\x1b[K\n'}
+[2.082122] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.082205] (cpp_interface) StderrLine: {'line': b'   43 |       init_pid(&pid, Kp[i], Ki[i], \x1b[01;31m\x1b[KKd\x1b[m\x1b[K[i]);\n'}
+[2.082258] (cpp_interface) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.085835] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:44:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_controllers\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPID_controller\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.085937] (cpp_interface) StderrLine: {'line': b'   44 |       \x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K.push_back(pid);\n'}
+[2.085992] (cpp_interface) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.086042] (cpp_interface) StderrLine: {'line': b'      |       \x1b[32m\x1b[KPID_controller\x1b[m\x1b[K\n'}
+[2.091815] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::getPIDControllers() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.091933] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:48:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpid_controllers\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPID_controller\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.091995] (cpp_interface) StderrLine: {'line': b'   48 |     return \x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[2.092065] (cpp_interface) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.092152] (cpp_interface) StderrLine: {'line': b'      |            \x1b[32m\x1b[KPID_controller\x1b[m\x1b[K\n'}
+[2.092239] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:51:118:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ka function-definition is not allowed here before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.092288] (cpp_interface) StderrLine: {'line': b'   51 |     std::vector<double> updateMotors(const std::vector<double> &setpoints, const std::vector<double> &currentValues) \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[2.092342] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.092389] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:59:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kprivate\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.092437] (cpp_interface) StderrLine: {'line': b'   59 |    \x1b[01;31m\x1b[Kprivate\x1b[m\x1b[K:\n'}
+[2.092483] (cpp_interface) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.092528] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:62:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KKi\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.092610] (cpp_interface) StderrLine: {'line': b'   62 |     const double \x1b[01;35m\x1b[KKi\x1b[m\x1b[K[4] = {0.1, 0.2, 0.3, 0.4};\n'}
+[2.092665] (cpp_interface) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.092710] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:63:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KKd\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.092757] (cpp_interface) StderrLine: {'line': b'   63 |     const double \x1b[01;35m\x1b[KKd\x1b[m\x1b[K[4] = {0.01, 0.02, 0.03, 0.04};\n'}
+[2.092803] (cpp_interface) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.105242] (-) TimerEvent: {}
+[2.106892] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MotorController::PIDNode::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.107028] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:117:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.107085] (cpp_interface) StderrLine: {'line': b'  117 |       std::vector<double> desiredAngles = \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.updateMotors(setPoints, currentValues);\n'}
+[2.107135] (cpp_interface) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.107183] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.107229] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.107275] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.108055] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.108138] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.108192] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.108241] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.108465] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.108752] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.108804] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.108999] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.109177] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.109227] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.109277] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.109398] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.109536] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.109710] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[2.109773] (cpp_interface) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.109823] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.109870] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.109919] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.109998] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.110077] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.110131] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.110179] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.110227] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.110273] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.110319] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.110366] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.110413] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.110468] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.110514] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.110561] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.110607] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:119:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.110655] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[2.110709] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.110756] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.110803] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.110849] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.110896] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.110942] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.110988] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.111035] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.111081] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.111127] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.111175] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.111221] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.111282] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.111353] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.111402] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.111451] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.111498] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:158:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.111546] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[2.111596] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.111644] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.111695] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.111745] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.111808] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.111862] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.111934] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.112010] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.112063] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.112111] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.112158] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.112220] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.112269] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.112339] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.112400] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.112448] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.112496] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:197:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.112575] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[2.112642] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.112693] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.112742] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.112790] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.112838] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.112885] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.112932] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.112987] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.113035] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.113082] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.113129] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.113175] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.113223] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.113270] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.113316] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.113362] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.113409] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:238:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.113457] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[2.113511] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.113561] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.113608] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.113655] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.113701] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.113748] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.113794] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.113844] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.113891] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.113938] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.114013] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.114097] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.114180] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.114258] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.114332] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.114407] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.114497] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:279:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.114582] (cpp_interface) StderrLine: {'line': b'  126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[0].ek_2);\n'}
+[2.114661] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.114722] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.114771] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.114817] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.114864] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.114911] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.114958] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.115007] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.115070] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.115118] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.115164] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.115211] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.115257] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.115305] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.115356] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.115403] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.115450] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.115502] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[2.115552] (cpp_interface) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.115601] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.115648] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.115694] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.115742] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.115795] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.115841] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.115887] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.115933] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.115980] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.116026] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.116072] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.116118] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.116165] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.116212] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.116258] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.116304] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:119:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.116355] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[2.116407] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.116472] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.116524] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.116610] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.116657] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.116704] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.116749] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.116794] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.116839] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.116885] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.116930] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.116976] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.117022] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.117068] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.117135] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.117245] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.117292] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:158:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.117344] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[2.117393] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.117439] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.117488] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.117536] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.117581] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.117626] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.117674] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.117732] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.117810] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.117899] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.117970] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.118043] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.118118] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.118197] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.118274] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.118370] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.118463] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:197:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.118552] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[2.118649] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.118758] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.118844] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.118910] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.118986] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.119056] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.119123] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.119202] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.119285] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.119344] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.119420] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.119493] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.119566] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.119619] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.119674] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.119731] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.119788] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:238:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.119859] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[2.119934] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.119998] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.120049] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.120097] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.120144] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.120191] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.120237] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.120288] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.120336] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.120398] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.120447] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.120497] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.120573] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.120626] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.120682] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.120744] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.120790] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:279:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.120836] (cpp_interface) StderrLine: {'line': b'  127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[1].ek_2);\n'}
+[2.120886] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.120933] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.120979] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.121024] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.121069] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.121135] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.121203] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.121249] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.121294] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.121340] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.121391] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.121436] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.121480] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.121525] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.121575] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.121620] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.121666] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.121716] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[2.121783] (cpp_interface) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.121848] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.121894] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.121938] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.121983] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.122028] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.122073] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.122117] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.122162] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.122206] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.122251] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.122296] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.122340] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.122385] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.122431] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.122476] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.122520] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:119:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.122566] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[2.122617] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.122662] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.122707] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.122751] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.122796] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.122841] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.122886] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.122930] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.122975] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.123023] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.123090] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.123151] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.123197] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.123242] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.123286] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.123331] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.123395] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:158:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.123462] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[2.123512] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.123557] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.123602] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.123670] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.123733] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.123795] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.123842] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.123888] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.123941] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.123988] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.124038] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.124085] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.124159] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.124206] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.124252] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.124298] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.124344] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:197:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.124391] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[2.124440] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124487] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.124534] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.124592] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124638] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.124685] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.124737] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.124787] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.124841] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.124902] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.124961] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.125007] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.125053] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.125103] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.125149] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.125199] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.125245] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:238:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.125293] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[2.125342] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.125390] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.125437] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.125482] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.125528] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.125574] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.125622] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.125680] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.125732] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.125778] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.125824] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.125874] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.125934] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.126008] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.126064] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.126111] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.126164] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:279:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.126215] (cpp_interface) StderrLine: {'line': b'  128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[2].ek_2);\n'}
+[2.126290] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.126343] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.126395] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.126442] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.126491] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.126538] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.126587] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.126633] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.126679] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.126725] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.126770] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.126821] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.126866] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.126912] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.126961] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.127006] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.127052] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.127099] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[2.127147] (cpp_interface) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.127192] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.127239] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.127286] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.127332] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.127378] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.127424] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.127469] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.127515] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.127561] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.127607] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.127652] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.127699] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.127745] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.127790] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.127835] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.127882] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:119:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.127928] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[2.127980] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.128031] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.128080] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.128126] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.128172] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.128217] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.128263] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.128308] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.128354] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.128400] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.128449] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.128494] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.128574] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.128626] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.128671] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.128715] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.128760] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:158:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.128805] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[2.128852] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.128898] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.128947] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.128992] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.129036] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.129081] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.129125] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.129192] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.129254] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.129299] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.129343] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.129388] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.129432] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.129477] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.129521] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.129566] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.129610] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:197:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.129655] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[2.129708] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.129755] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.129800] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.129845] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.129889] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.129934] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.129978] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.130028] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.130072] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.130117] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.130161] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.130206] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.130252] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.130297] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.130346] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.130391] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.130436] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:238:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.130482] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[2.130530] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.130577] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.130622] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.130666] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.130711] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.130756] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.130801] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.130846] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.130891] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.130936] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.130982] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.131030] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.131076] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.131143] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.131189] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.131235] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[2.131281] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:279:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static data member \xe2\x80\x98\x1b[01m\x1b[KMotorController::motorController\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.131330] (cpp_interface) StderrLine: {'line': b'  129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, \x1b[01;31m\x1b[KmotorController\x1b[m\x1b[K.pid_controllers[3].ek_2);\n'}
+[2.131385] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131433] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.131485] (cpp_interface) StderrLine: {'line': b'   68 |   MotorController \x1b[01;36m\x1b[KmotorController\x1b[m\x1b[K; // global class variable\n'}
+[2.131531] (cpp_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.131576] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.131621] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:171:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[2.131667] (cpp_interface) StderrLine: {'line': b'  171 |   }\n'}
+[2.131712] (cpp_interface) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.205363] (-) TimerEvent: {}
+[2.305633] (-) TimerEvent: {}
+[2.405956] (-) TimerEvent: {}
+[2.506242] (-) TimerEvent: {}
+[2.606504] (-) TimerEvent: {}
+[2.706789] (-) TimerEvent: {}
+[2.807021] (-) TimerEvent: {}
+[2.907335] (-) TimerEvent: {}
+[3.007619] (-) TimerEvent: {}
+[3.107982] (-) TimerEvent: {}
+[3.208239] (-) TimerEvent: {}
+[3.308529] (-) TimerEvent: {}
+[3.408804] (-) TimerEvent: {}
+[3.509055] (-) TimerEvent: {}
+[3.609322] (-) TimerEvent: {}
+[3.709604] (-) TimerEvent: {}
+[3.809955] (-) TimerEvent: {}
+[3.910278] (-) TimerEvent: {}
+[4.004489] (cpp_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1\n'}
+[4.004810] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/pid_node.dir/all] Error 2\n'}
+[4.005065] (cpp_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.006786] (cpp_interface) CommandEnded: {'returncode': 2}
+[4.010381] (-) TimerEvent: {}
+[4.102783] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 2}
+[4.110487] (-) TimerEvent: {}
+[4.113643] (-) EventReactorShutdown: {}

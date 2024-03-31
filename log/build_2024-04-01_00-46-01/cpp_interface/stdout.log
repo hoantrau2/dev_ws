@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[35m[1mConsolidate compiler generated dependencies of target sinusoidal_node[0m
+[ 12%] Built target read_parameters_pi
+[ 25%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 31%] Built target test_cmd_vel
+[ 43%] Built target fuzzy_node
+[ 56%] Built target straight_line_node
+[ 68%] Built target stanley_node
+[ 81%] Built target circumference_node
+[ 93%] Built target sinusoidal_node

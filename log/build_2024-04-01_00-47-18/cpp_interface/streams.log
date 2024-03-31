@@ -1,0 +1,447 @@
+[0.053s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.108s] [ 25%] Built target straight_line_node
+[0.108s] [ 31%] Built target fuzzy_node
+[0.109s] [ 37%] Built target sinusoidal_node
+[0.109s] [ 50%] Built target circumference_node
+[0.109s] [ 62%] Built target stanley_node
+[0.111s] [ 75%] Built target test_cmd_vel
+[0.114s] [ 93%] Built target read_parameters_pi
+[0.114s] [ 93%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[2.321s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.321s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.322s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.322s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::timer_callback()[m[K’:
+[2.322s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.322s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.[01;31m[Kpid_controllers[m[K[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.323s]       |                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.323s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.323s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.323s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.323s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.324s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.324s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:135:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.324s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.[01;31m[Kpid_controllers[m[K[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.324s]       |                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.324s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.324s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.324s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.324s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.324s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.325s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.325s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.325s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:174:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.325s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.[01;31m[Kpid_controllers[m[K[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.325s]       |                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.325s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.325s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.326s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.326s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.326s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.326s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.326s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:213:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.327s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.[01;31m[Kpid_controllers[m[K[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.327s]       |                                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.327s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.327s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.327s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.327s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.327s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.327s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.327s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:254:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.327s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.[01;31m[Kpid_controllers[m[K[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.328s]       |                                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.328s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.328s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.328s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.328s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.328s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.328s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.328s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:295:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.329s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.[01;31m[Kpid_controllers[m[K[0].ek_2);
+[2.329s]       |                                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.329s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.329s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.329s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.329s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.329s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.329s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.329s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.329s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.[01;31m[Kpid_controllers[m[K[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.329s]       |                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.329s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.330s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.330s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.330s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.330s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.330s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.330s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:135:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.330s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.[01;31m[Kpid_controllers[m[K[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.330s]       |                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.330s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.330s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.330s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.331s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.331s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.331s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.331s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:174:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.331s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.[01;31m[Kpid_controllers[m[K[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.331s]       |                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.331s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.331s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.331s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.332s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.332s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.332s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.332s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:213:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.333s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.[01;31m[Kpid_controllers[m[K[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.333s]       |                                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.333s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.333s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.333s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.333s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.333s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.333s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.333s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:254:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.333s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.[01;31m[Kpid_controllers[m[K[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.333s]       |                                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.333s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.334s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.334s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.334s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.334s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.334s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.334s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:295:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.334s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.[01;31m[Kpid_controllers[m[K[1].ek_2);
+[2.334s]       |                                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.334s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.334s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.334s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.335s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.335s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.335s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.335s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.[01;31m[Kpid_controllers[m[K[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.335s]       |                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.335s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.335s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.335s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.335s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.336s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.336s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:135:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.336s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.[01;31m[Kpid_controllers[m[K[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.336s]       |                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.336s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.336s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.336s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.336s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.337s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.337s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:174:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.337s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.[01;31m[Kpid_controllers[m[K[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.337s]       |                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.337s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.337s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.337s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.337s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.338s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.338s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:213:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.338s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.[01;31m[Kpid_controllers[m[K[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.338s]       |                                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.338s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.338s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.338s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.338s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.339s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.339s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:254:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.339s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.[01;31m[Kpid_controllers[m[K[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.339s]       |                                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.339s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.339s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.339s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.339s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.339s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.340s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.340s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:295:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.340s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.[01;31m[Kpid_controllers[m[K[2].ek_2);
+[2.340s]       |                                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.340s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.340s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.340s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.340s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.340s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.341s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.341s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:96:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.341s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.[01;31m[Kpid_controllers[m[K[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.341s]       |                                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.341s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.341s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.341s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.341s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.341s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.341s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.341s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:135:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.342s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.[01;31m[Kpid_controllers[m[K[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.342s]       |                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.342s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.342s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.342s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.342s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.342s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.342s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.342s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:174:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.342s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.[01;31m[Kpid_controllers[m[K[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.342s]       |                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.342s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.343s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.343s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.343s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.343s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.343s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:213:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.343s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.[01;31m[Kpid_controllers[m[K[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.343s]       |                                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.343s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.343s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.343s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.343s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.343s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.344s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.344s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:254:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.344s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.[01;31m[Kpid_controllers[m[K[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.344s]       |                                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.344s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.344s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.344s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.344s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.345s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.345s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.345s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:295:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<PID_t> MotorController::pid_controllers[m[K’ is private within this context
+[2.345s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.[01;31m[Kpid_controllers[m[K[3].ek_2);
+[2.345s]       |                                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.345s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:66:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.345s]    66 |     std::vector<PID_t> [01;36m[Kpid_controllers[m[K;
+[2.345s]       |                        [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.482s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[4.482s] gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/pid_node.dir/all] Error 2
+[4.482s] gmake: *** [Makefile:146: all] Error 2
+[4.484s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

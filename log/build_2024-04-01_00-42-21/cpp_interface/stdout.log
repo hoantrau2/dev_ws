@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.o[0m
+[ 50%] Built target test_cmd_vel
+[ 56%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[ 62%] Built target read_parameters_pi
+[ 50%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[ 68%] [32m[1mLinking CXX executable sinusoidal_node[0m
+[ 75%] [32m[1mLinking CXX executable straight_line_node[0m
+[ 75%] Built target straight_line_node
+[ 75%] Built target sinusoidal_node
+[ 81%] [32m[1mLinking CXX executable circumference_node[0m
+[ 81%] Built target circumference_node
+[ 87%] [32m[1mLinking CXX executable fuzzy_node[0m
+[ 87%] Built target fuzzy_node
+[ 93%] [32m[1mLinking CXX executable stanley_node[0m
+[ 93%] Built target stanley_node

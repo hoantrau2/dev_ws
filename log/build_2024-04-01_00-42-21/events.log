@@ -1,0 +1,590 @@
+[0.000000] (-) TimerEvent: {}
+[0.000429] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000505] (-) JobUnselected: {'identifier': 'csm'}
+[0.000689] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.000710] (-) JobUnselected: {'identifier': 'template_ros2'}
+[0.000752] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.000800] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.051629] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.052453] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'build'}
+[0.052967] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/cpp_interface', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/155/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/155/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2269'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f96a0b5f6819b69c768cbb8366098151'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2269,unix/linux:/tmp/.ICE-unix/2269'), ('GTK_EXE_PREFIX', '/snap/code/155/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6c9c0225_c30b_4b91_a246_6ed4a28fd39e'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/155/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.252'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/155/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=f96a0b5f6819b69c768cbb8366098151'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/155/.local/share:/home/ngochoan/snap/code/155:/snap/code/155/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099573] (-) TimerEvent: {}
+[0.105316] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pid_node\x1b[0m\n'}
+[0.126321] (cpp_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o\x1b[0m\n'}
+[0.126552] (cpp_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.o\x1b[0m\n'}
+[0.126651] (cpp_interface) StdoutLine: {'line': b'[ 50%] Built target test_cmd_vel\n'}
+[0.126739] (cpp_interface) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o\x1b[0m\n'}
+[0.126866] (cpp_interface) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o\x1b[0m\n'}
+[0.126958] (cpp_interface) StdoutLine: {'line': b'[ 62%] Built target read_parameters_pi\n'}
+[0.127090] (cpp_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o\x1b[0m\n'}
+[0.127413] (cpp_interface) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o\x1b[0m\n'}
+[0.199693] (-) TimerEvent: {}
+[0.299983] (-) TimerEvent: {}
+[0.400342] (-) TimerEvent: {}
+[0.500683] (-) TimerEvent: {}
+[0.601789] (-) TimerEvent: {}
+[0.702139] (-) TimerEvent: {}
+[0.802500] (-) TimerEvent: {}
+[0.902861] (-) TimerEvent: {}
+[1.003207] (-) TimerEvent: {}
+[1.103545] (-) TimerEvent: {}
+[1.203900] (-) TimerEvent: {}
+[1.304275] (-) TimerEvent: {}
+[1.404598] (-) TimerEvent: {}
+[1.504962] (-) TimerEvent: {}
+[1.605297] (-) TimerEvent: {}
+[1.705654] (-) TimerEvent: {}
+[1.806318] (-) TimerEvent: {}
+[1.906672] (-) TimerEvent: {}
+[2.006998] (-) TimerEvent: {}
+[2.107457] (-) TimerEvent: {}
+[2.207832] (-) TimerEvent: {}
+[2.308138] (-) TimerEvent: {}
+[2.408432] (-) TimerEvent: {}
+[2.508769] (-) TimerEvent: {}
+[2.609156] (-) TimerEvent: {}
+[2.709483] (-) TimerEvent: {}
+[2.809847] (-) TimerEvent: {}
+[2.910185] (-) TimerEvent: {}
+[3.010560] (-) TimerEvent: {}
+[3.110892] (-) TimerEvent: {}
+[3.211219] (-) TimerEvent: {}
+[3.312052] (-) TimerEvent: {}
+[3.412410] (-) TimerEvent: {}
+[3.513432] (-) TimerEvent: {}
+[3.583200] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.583567] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.583673] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.583749] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.583820] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.583888] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.583960] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.584029] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.584102] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.584180] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.584262] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.584347] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.584432] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PIDNode::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.584519] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.584608] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[3.584700] (cpp_interface) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.584796] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.584881] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.584955] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.585023] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.585094] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.585162] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.585315] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.585466] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.585618] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.585764] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.585906] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.586059] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.586197] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.586339] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.586485] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.586636] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:133:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.586800] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[3.586961] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.587157] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.587308] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.587458] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.587738] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.587893] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.588039] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.588182] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.588329] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.588473] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.588613] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.588753] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.588894] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.589037] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.589176] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.589317] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.589457] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:172:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.589575] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[3.589705] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.589852] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.589965] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.590076] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.590324] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.590470] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.590612] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.590758] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.590901] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.591042] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.591166] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.591280] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.591390] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.591516] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.591655] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.591802] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.591948] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:211:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.592097] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[3.592249] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.592428] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.592575] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.592720] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.593000] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.593163] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.593308] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.593455] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.593612] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.593763] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.593909] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.594056] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.594203] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.594346] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.594495] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.594636] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.594781] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:252:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.594929] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].ek_1, motorController.pid_controllers[0].ek_2);\n'}
+[3.595077] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.595246] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.595365] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.595476] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.595717] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.595840] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.595955] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.596078] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.596213] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.596350] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.596487] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.596634] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.596770] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.596886] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.596996] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.597103] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.597216] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:124:293:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.597364] (cpp_interface) StderrLine: {'line': b'  124 |     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[0].ek_2);\n'}
+[3.597515] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.597705] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.597852] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.597992] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.598801] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.599008] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.599166] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.599316] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.599462] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.599609] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.599756] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.599903] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.600046] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.600185] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.600323] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.600467] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.600683] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.600843] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[3.601004] (cpp_interface) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.601204] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.601355] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.601496] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.601786] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.601944] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.602094] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.602239] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.602388] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.602959] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.603076] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.603157] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.603231] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.603307] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.603389] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.603479] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.603564] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:133:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.603656] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[3.603751] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.603844] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.603935] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.604025] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.606859] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.607083] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.607187] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.607281] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.607380] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.607472] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.607559] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.607649] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.607753] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.607846] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.607938] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.608030] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.608125] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:172:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.608220] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[3.608317] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.608413] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.608507] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.608601] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.608693] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.608785] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.608886] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.608979] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.609076] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.609178] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.609272] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.609360] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.609451] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.609550] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.609655] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.609748] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.609843] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:211:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.609937] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[3.610034] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.610131] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.610223] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.610317] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.610411] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.610503] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.610604] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.610698] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.610791] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.610883] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.610977] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.611070] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.611162] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.611263] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.611355] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.611455] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.611549] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:252:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.611644] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].ek_1, motorController.pid_controllers[1].ek_2);\n'}
+[3.611740] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.611835] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.611937] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.612030] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.612130] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.612223] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.612314] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.612405] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.612492] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.612583] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.612686] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.612776] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.612865] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.612954] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.613043] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.613133] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.613224] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:125:293:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.613322] (cpp_interface) StderrLine: {'line': b'  125 |     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[1].ek_2);\n'}
+[3.613417] (-) TimerEvent: {}
+[3.632505] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.632733] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.632840] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.632934] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.633028] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.633118] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.633207] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.633298] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.633390] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.633474] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.633552] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.633640] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.635719] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.635950] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.636052] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.636146] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.636254] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.636345] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[3.636458] (cpp_interface) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.636549] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.636641] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.636729] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.637601] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.637777] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.637875] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.637980] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.638071] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.638163] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.638388] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.638482] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.638580] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.638673] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.638763] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.638855] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.638958] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:133:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.639054] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[3.640849] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.641050] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.641170] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.641264] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.641365] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.641452] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.641543] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.641646] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.641740] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.641832] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.641924] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.642014] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.642102] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.642194] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.642283] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.642375] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.642469] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:172:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.642566] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[3.642680] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.642772] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.642864] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.642951] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.643040] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.643140] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.643230] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.643321] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.643411] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.643514] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.643604] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.643701] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.643794] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.643892] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.643980] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.644069] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.644160] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:211:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.644252] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[3.644346] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.644435] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.644529] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.644617] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.644710] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.644801] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.644888] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.644978] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.645068] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.645160] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.645253] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.645340] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.645441] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.645534] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.645813] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.645907] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.645997] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:252:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.646099] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].ek_1, motorController.pid_controllers[2].ek_2);\n'}
+[3.646196] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.646296] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.646391] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.646480] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.646571] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.646668] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.646760] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.646852] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.646954] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.647041] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.647129] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.647218] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.647309] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.647397] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.647487] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.647576] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.647673] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:293:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.647768] (cpp_interface) StderrLine: {'line': b'  126 |     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[2].ek_2);\n'}
+[3.647864] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.647960] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.648052] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.648144] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.648235] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.648326] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.648420] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.648511] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.648601] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.648693] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.648782] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.648870] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.648959] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.649055] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.649142] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.649229] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.649316] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.649407] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[3.649519] (cpp_interface) StderrLine: {'line': b'      |                                                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.649625] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.649716] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.653622] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.653774] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.653898] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.653991] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.654085] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.654179] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.654271] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.654362] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.654456] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.654546] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.654638] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.654729] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.654822] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.654909] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:133:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.656731] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[3.656995] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.657114] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.657214] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.657704] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.657837] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.657930] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.658011] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.658102] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.658193] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.658283] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.658372] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.658461] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.658549] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.658641] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.658727] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.658815] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.658909] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:172:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.659009] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[3.659107] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.659201] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.659291] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.659386] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.659474] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.659562] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.659650] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.659738] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.659836] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.659927] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.660016] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.660108] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.660198] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.660290] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.660380] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.660472] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.660565] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:211:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.660656] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[3.660750] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.660845] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.660934] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.661023] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.661112] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.661202] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.661436] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.661533] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.661636] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.661733] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.661825] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.661923] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.662019] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.662108] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.662198] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.662289] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.662386] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:252:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.662479] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].ek_1, motorController.pid_controllers[3].ek_2);\n'}
+[3.662576] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.662672] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.662765] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.662858] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.662949] (cpp_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.663042] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.663137] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.663227] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.663320] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.663414] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.663509] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.663603] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.663706] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.663799] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.663891] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.663985] (cpp_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13\x1b[m\x1b[K:\n'}
+[3.664087] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:293:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PID_t> MotorController::pid_controllers\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[3.664180] (cpp_interface) StderrLine: {'line': b'  127 |     RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.\x1b[01;31m\x1b[Kpid_controllers\x1b[m\x1b[K[3].ek_2);\n'}
+[3.664280] (cpp_interface) StderrLine: {'line': b'      |                                                                                                                                                                                                                                                                                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.664373] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:64:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[3.664465] (cpp_interface) StderrLine: {'line': b'   64 |   std::vector<PID_t> \x1b[01;36m\x1b[Kpid_controllers\x1b[m\x1b[K;\n'}
+[3.664562] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.713536] (-) TimerEvent: {}
+[3.813858] (-) TimerEvent: {}
+[3.914197] (-) TimerEvent: {}
+[4.014524] (-) TimerEvent: {}
+[4.126399] (-) TimerEvent: {}
+[4.226877] (-) TimerEvent: {}
+[4.327187] (-) TimerEvent: {}
+[4.427510] (-) TimerEvent: {}
+[4.527823] (-) TimerEvent: {}
+[4.628558] (-) TimerEvent: {}
+[4.728898] (-) TimerEvent: {}
+[4.829314] (-) TimerEvent: {}
+[4.891003] (cpp_interface) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable sinusoidal_node\x1b[0m\n'}
+[4.905174] (cpp_interface) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable straight_line_node\x1b[0m\n'}
+[4.929437] (-) TimerEvent: {}
+[5.029826] (-) TimerEvent: {}
+[5.130605] (-) TimerEvent: {}
+[5.205262] (cpp_interface) StdoutLine: {'line': b'[ 75%] Built target straight_line_node\n'}
+[5.226702] (cpp_interface) StdoutLine: {'line': b'[ 75%] Built target sinusoidal_node\n'}
+[5.230989] (-) TimerEvent: {}
+[5.332754] (-) TimerEvent: {}
+[5.433123] (-) TimerEvent: {}
+[5.533378] (-) TimerEvent: {}
+[5.633652] (-) TimerEvent: {}
+[5.733962] (-) TimerEvent: {}
+[5.834390] (-) TimerEvent: {}
+[5.934805] (-) TimerEvent: {}
+[6.027361] (cpp_interface) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX executable circumference_node\x1b[0m\n'}
+[6.034882] (-) TimerEvent: {}
+[6.135284] (-) TimerEvent: {}
+[6.231914] (cpp_interface) StdoutLine: {'line': b'[ 81%] Built target circumference_node\n'}
+[6.235400] (-) TimerEvent: {}
+[6.335761] (-) TimerEvent: {}
+[6.436084] (-) TimerEvent: {}
+[6.536413] (-) TimerEvent: {}
+[6.636741] (-) TimerEvent: {}
+[6.675132] (cpp_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1\n'}
+[6.675496] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/pid_node.dir/all] Error 2\n'}
+[6.675602] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.736841] (-) TimerEvent: {}
+[6.837191] (-) TimerEvent: {}
+[6.937490] (-) TimerEvent: {}
+[7.037769] (-) TimerEvent: {}
+[7.137995] (-) TimerEvent: {}
+[7.238252] (-) TimerEvent: {}
+[7.338491] (-) TimerEvent: {}
+[7.438720] (-) TimerEvent: {}
+[7.538968] (-) TimerEvent: {}
+[7.639241] (-) TimerEvent: {}
+[7.739466] (-) TimerEvent: {}
+[7.839747] (-) TimerEvent: {}
+[7.939975] (-) TimerEvent: {}
+[8.040256] (-) TimerEvent: {}
+[8.140522] (-) TimerEvent: {}
+[8.240835] (-) TimerEvent: {}
+[8.341081] (-) TimerEvent: {}
+[8.441346] (-) TimerEvent: {}
+[8.541589] (-) TimerEvent: {}
+[8.641882] (-) TimerEvent: {}
+[8.742153] (-) TimerEvent: {}
+[8.842402] (-) TimerEvent: {}
+[8.942666] (-) TimerEvent: {}
+[9.042935] (-) TimerEvent: {}
+[9.143200] (-) TimerEvent: {}
+[9.243447] (-) TimerEvent: {}
+[9.343710] (-) TimerEvent: {}
+[9.443991] (-) TimerEvent: {}
+[9.515486] (cpp_interface) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable fuzzy_node\x1b[0m\n'}
+[9.544100] (-) TimerEvent: {}
+[9.644415] (-) TimerEvent: {}
+[9.744759] (-) TimerEvent: {}
+[9.845127] (-) TimerEvent: {}
+[9.905008] (cpp_interface) StdoutLine: {'line': b'[ 87%] Built target fuzzy_node\n'}
+[9.945231] (-) TimerEvent: {}
+[10.045488] (-) TimerEvent: {}
+[10.145806] (-) TimerEvent: {}
+[10.246141] (-) TimerEvent: {}
+[10.346434] (-) TimerEvent: {}
+[10.446725] (-) TimerEvent: {}
+[10.547048] (-) TimerEvent: {}
+[10.647352] (-) TimerEvent: {}
+[10.747644] (-) TimerEvent: {}
+[10.848008] (-) TimerEvent: {}
+[10.948311] (-) TimerEvent: {}
+[11.048640] (-) TimerEvent: {}
+[11.148898] (-) TimerEvent: {}
+[11.249176] (-) TimerEvent: {}
+[11.349448] (-) TimerEvent: {}
+[11.449746] (-) TimerEvent: {}
+[11.549980] (-) TimerEvent: {}
+[11.616423] (cpp_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable stanley_node\x1b[0m\n'}
+[11.650072] (-) TimerEvent: {}
+[11.750332] (-) TimerEvent: {}
+[11.850625] (-) TimerEvent: {}
+[11.950940] (-) TimerEvent: {}
+[12.051275] (-) TimerEvent: {}
+[12.136437] (cpp_interface) StdoutLine: {'line': b'[ 93%] Built target stanley_node\n'}
+[12.137303] (cpp_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.138858] (cpp_interface) CommandEnded: {'returncode': 2}
+[12.151347] (-) TimerEvent: {}
+[12.237820] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 2}
+[12.248489] (-) EventReactorShutdown: {}

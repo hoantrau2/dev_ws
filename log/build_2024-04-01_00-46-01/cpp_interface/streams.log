@@ -1,0 +1,506 @@
+[0.055s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[0.100s] [35m[1mConsolidate compiler generated dependencies of target sinusoidal_node[0m
+[0.109s] [ 12%] Built target read_parameters_pi
+[0.114s] [ 25%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[0.115s] [ 31%] Built target test_cmd_vel
+[0.116s] [ 43%] Built target fuzzy_node
+[0.117s] [ 56%] Built target straight_line_node
+[0.117s] [ 68%] Built target stanley_node
+[0.122s] [ 81%] Built target circumference_node
+[0.124s] [ 93%] Built target sinusoidal_node
+[2.028s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[KmotorController[m[K’ has incomplete type ‘[01m[KMotorController[m[K’
+[2.028s]    68 |   MotorController [01;31m[KmotorController[m[K; // global class variable
+[2.028s]       |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.028s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:37:7:[m[K [01;36m[Knote: [m[Kdefinition of ‘[01m[Kclass MotorController[m[K’ is not complete until the closing brace
+[2.028s]    37 | class [01;36m[KMotorController[m[K {
+[2.028s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.061s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:171:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.061s]   171 |   }
+[2.061s]       |    [01;31m[K^[m[K
+[2.061s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:37:23:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.061s]    37 | class MotorController [01;36m[K{[m[K
+[2.061s]       |                       [01;36m[K^[m[K
+[2.075s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In constructor ‘[01m[KMotorController::MotorController()[m[K’:
+[2.075s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:22:[m[K [01;31m[Kerror: [m[K‘[01m[KKp[m[K’ was not declared in this scope
+[2.075s]    43 |       init_pid(&pid, [01;31m[KKp[m[K[i], Ki[i], Kd[i]);
+[2.076s]       |                      [01;31m[K^~[m[K
+[2.079s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:29:[m[K [01;31m[Kerror: [m[K‘[01m[KKi[m[K’ was not declared in this scope; did you mean ‘[01m[Ki[m[K’?
+[2.079s]    43 |       init_pid(&pid, Kp[i], [01;31m[KKi[m[K[i], Kd[i]);
+[2.079s]       |                             [01;31m[K^~[m[K
+[2.079s]       |                             [32m[Ki[m[K
+[2.082s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:43:36:[m[K [01;31m[Kerror: [m[K‘[01m[KKd[m[K’ was not declared in this scope
+[2.082s]    43 |       init_pid(&pid, Kp[i], Ki[i], [01;31m[KKd[m[K[i]);
+[2.082s]       |                                    [01;31m[K^~[m[K
+[2.085s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:44:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_controllers[m[K’ was not declared in this scope; did you mean ‘[01m[KPID_controller[m[K’?
+[2.085s]    44 |       [01;31m[Kpid_controllers[m[K.push_back(pid);
+[2.086s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.086s]       |       [32m[KPID_controller[m[K
+[2.091s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kstd::vector<PID_t> MotorController::getPIDControllers() const[m[K’:
+[2.091s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:48:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kpid_controllers[m[K’ was not declared in this scope; did you mean ‘[01m[KPID_controller[m[K’?
+[2.092s]    48 |     return [01;31m[Kpid_controllers[m[K;
+[2.092s]       |            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.092s]       |            [32m[KPID_controller[m[K
+[2.092s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:51:118:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[2.092s]    51 |     std::vector<double> updateMotors(const std::vector<double> &setpoints, const std::vector<double> &currentValues) [01;31m[K{[m[K
+[2.092s]       |                                                                                                                      [01;31m[K^[m[K
+[2.092s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:59:4:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kprivate[m[K’
+[2.092s]    59 |    [01;31m[Kprivate[m[K:
+[2.092s]       |    [01;31m[K^~~~~~~[m[K
+[2.092s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:62:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KKi[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.092s]    62 |     const double [01;35m[KKi[m[K[4] = {0.1, 0.2, 0.3, 0.4};
+[2.092s]       |                  [01;35m[K^~[m[K
+[2.092s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:63:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KKd[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.092s]    63 |     const double [01;35m[KKd[m[K[4] = {0.01, 0.02, 0.03, 0.04};
+[2.092s]       |                  [01;35m[K^~[m[K
+[2.106s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid MotorController::PIDNode::timer_callback()[m[K’:
+[2.107s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:117:43:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.107s]   117 |       std::vector<double> desiredAngles = [01;31m[KmotorController[m[K.updateMotors(setPoints, currentValues);
+[2.107s]       |                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.107s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.107s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.107s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.108s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.109s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.109s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:80:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.109s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", [01;31m[KmotorController[m[K.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.109s]       |                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.109s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.109s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.109s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.110s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.110s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.110s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:119:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.110s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, [01;31m[KmotorController[m[K.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.110s]       |                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.110s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.110s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.110s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.110s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.110s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.111s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.111s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:158:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.111s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, [01;31m[KmotorController[m[K.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.111s]       |                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.111s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.111s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.111s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.111s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.111s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.112s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.112s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:197:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.112s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, [01;31m[KmotorController[m[K.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.112s]       |                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.112s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.112s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.112s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.112s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.113s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.113s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:238:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.113s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, [01;31m[KmotorController[m[K.pid_controllers[0].ek_1, motorController.pid_controllers[0].ek_2);
+[2.113s]       |                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.113s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.113s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.113s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.113s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.114s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.114s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:126:279:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.114s]   126 |       RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[0].Kp, motorController.pid_controllers[0].Ki, motorController.pid_controllers[0].Kd, motorController.pid_controllers[0].uk_1, motorController.pid_controllers[0].ek_1, [01;31m[KmotorController[m[K.pid_controllers[0].ek_2);
+[2.114s]       |                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.114s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.114s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.114s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.114s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.114s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.115s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.115s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:80:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.115s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", [01;31m[KmotorController[m[K.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.115s]       |                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.115s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.115s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.115s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.115s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.116s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.116s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:119:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.116s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, [01;31m[KmotorController[m[K.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.116s]       |                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.116s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.116s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.116s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.116s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.116s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.117s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.117s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:158:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.117s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, [01;31m[KmotorController[m[K.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.117s]       |                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.117s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.117s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.117s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.117s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.117s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.118s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.118s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.118s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.118s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.118s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.118s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.118s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:197:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.118s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, [01;31m[KmotorController[m[K.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.118s]       |                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.118s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.118s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.118s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.119s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.119s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.119s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.119s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:238:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.119s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, [01;31m[KmotorController[m[K.pid_controllers[1].ek_1, motorController.pid_controllers[1].ek_2);
+[2.119s]       |                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.120s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.120s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.120s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.120s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.120s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.120s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.120s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:127:279:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.120s]   127 |       RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[1].Kp, motorController.pid_controllers[1].Ki, motorController.pid_controllers[1].Kd, motorController.pid_controllers[1].uk_1, motorController.pid_controllers[1].ek_1, [01;31m[KmotorController[m[K.pid_controllers[1].ek_2);
+[2.120s]       |                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.120s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.120s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.121s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.121s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.121s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.121s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.121s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:80:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.121s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", [01;31m[KmotorController[m[K.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.121s]       |                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.121s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.121s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.121s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.121s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.122s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.122s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:119:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.122s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, [01;31m[KmotorController[m[K.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.122s]       |                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.122s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.122s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.122s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.122s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.122s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.123s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.123s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:158:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.123s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, [01;31m[KmotorController[m[K.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.123s]       |                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.123s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.123s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.123s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.123s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.123s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.124s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.124s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:197:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.124s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, [01;31m[KmotorController[m[K.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.124s]       |                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.124s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.124s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.124s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.124s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.124s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.125s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.125s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:238:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.125s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, [01;31m[KmotorController[m[K.pid_controllers[2].ek_1, motorController.pid_controllers[2].ek_2);
+[2.125s]       |                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.125s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.125s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.125s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.125s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.126s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.126s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:128:279:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.126s]   128 |       RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[2].Kp, motorController.pid_controllers[2].Ki, motorController.pid_controllers[2].Kd, motorController.pid_controllers[2].uk_1, motorController.pid_controllers[2].ek_1, [01;31m[KmotorController[m[K.pid_controllers[2].ek_2);
+[2.126s]       |                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.126s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.126s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.126s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.126s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.127s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.127s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:80:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.127s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", [01;31m[KmotorController[m[K.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.127s]       |                                                                                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.127s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.127s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.127s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.127s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.127s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.127s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.127s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:119:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.127s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, [01;31m[KmotorController[m[K.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.128s]       |                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.128s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.128s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.128s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.128s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.128s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.128s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.128s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:158:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.128s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, [01;31m[KmotorController[m[K.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.128s]       |                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.128s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.128s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.129s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.129s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.129s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.129s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:197:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.129s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, [01;31m[KmotorController[m[K.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.129s]       |                                                                                                                                                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.129s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.129s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.129s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.129s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.129s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.130s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.130s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:238:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.130s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, [01;31m[KmotorController[m[K.pid_controllers[3].ek_1, motorController.pid_controllers[3].ek_2);
+[2.130s]       |                                                                                                                                                                                                                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.130s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.130s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.130s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.130s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.130s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.131s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.131s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.131s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:129:279:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMotorController::motorController[m[K’
+[2.131s]   129 |       RCLCPP_INFO(this->get_logger(), " PID4  %lf  %lf  %lf   %lf  %lf   %lf", motorController.pid_controllers[3].Kp, motorController.pid_controllers[3].Ki, motorController.pid_controllers[3].Kd, motorController.pid_controllers[3].uk_1, motorController.pid_controllers[3].ek_1, [01;31m[KmotorController[m[K.pid_controllers[3].ek_2);
+[2.131s]       |                                                                                                                                                                                                                                                                                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.131s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:68:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.131s]    68 |   MotorController [01;36m[KmotorController[m[K; // global class variable
+[2.131s]       |                   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.131s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K At global scope:
+[2.131s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:171:4:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[2.131s]   171 |   }
+[2.131s]       |    [01;31m[K^[m[K
+[4.004s] gmake[2]: *** [CMakeFiles/pid_node.dir/build.make:76: CMakeFiles/pid_node.dir/src/pid_node.cpp.o] Error 1
+[4.004s] gmake[1]: *** [CMakeFiles/Makefile2:203: CMakeFiles/pid_node.dir/all] Error 2
+[4.005s] gmake: *** [Makefile:146: all] Error 2
+[4.007s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

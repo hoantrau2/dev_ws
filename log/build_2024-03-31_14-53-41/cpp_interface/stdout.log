@@ -1,0 +1,52 @@
+[  6%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.o[0m
+[ 31%] Built target test_cmd_vel
+[ 43%] Built target read_parameters_pi
+[ 50%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 68%] [32m[1mLinking CXX executable circumference_node[0m
+[ 75%] [32m[1mLinking CXX executable sinusoidal_node[0m
+[ 75%] Built target circumference_node
+[ 81%] [32m[1mLinking CXX executable straight_line_node[0m
+[ 81%] Built target sinusoidal_node
+[ 81%] Built target straight_line_node
+[ 87%] [32m[1mLinking CXX executable fuzzy_node[0m
+[ 93%] [32m[1mLinking CXX executable pid_node[0m
+[ 93%] Built target fuzzy_node
+[ 93%] Built target pid_node
+[100%] [32m[1mLinking CXX executable stanley_node[0m
+[100%] Built target stanley_node
+-- Install configuration: ""
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/read_parameters_pi
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/test_cmd_vel
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node" to ""
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_node" to ""
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node" to ""
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node" to ""
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node" to ""
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node
+-- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node" to ""
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/rplidar.launch.py
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.sh
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.dsv
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.bash
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.sh
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.zsh
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.dsv
+-- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.dsv
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/packages/cpp_interface
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig.cmake
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig-version.cmake
+-- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.xml

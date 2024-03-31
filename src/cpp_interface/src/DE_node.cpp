@@ -1,6 +1,6 @@
 /**
  * @file DE_node.cpp
- * @author Hoan Duong & Hien Nguyen
+ * @author Hoan Duong
  * @brief the DE node of my thesis at my university,
  * Ho Chi Minh University of Technology.
  * @version 1
@@ -193,10 +193,8 @@ int main() {
           trial[j] = x1[i][j];
         j = (j + 1) % D;
       }
-
       // evaluate trial vector
       score = evaluate(trial);
-
       // update x2 & the cost of vector
       if (score <= cost[i]) {
         for (j = 0; j < D; j++)
@@ -206,12 +204,10 @@ int main() {
         for (j = 0; j < D; j++)
           x2[i][j] = x1[i][j];
     }
-
     // copy x2 -> x1
     for (i = 0; i < NP; i++)
       for (j = 0; j < D; j++)
         x1[i][j] = x2[i][j];
-
     generation++;
 
     // choose best vector

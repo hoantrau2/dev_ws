@@ -1,0 +1,22 @@
+[0.097s] Invoking command in '/home/ngochoan/dev_ws/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/ros2_laser_scan_matcher -- -j8 -l8
+[0.197s] [100%] Built target laser_scan_matcher
+[0.217s] Invoked command in '/home/ngochoan/dev_ws/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ngochoan/dev_ws/build/ros2_laser_scan_matcher -- -j8 -l8
+[0.253s] Invoking command in '/home/ngochoan/dev_ws/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/build/ros2_laser_scan_matcher
+[0.267s] -- Install configuration: ""
+[0.281s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher
+[0.281s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/package_run_dependencies/ros2_laser_scan_matcher
+[0.282s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/parent_prefix_path/ros2_laser_scan_matcher
+[0.283s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.sh
+[0.284s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.dsv
+[0.285s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.sh
+[0.285s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.dsv
+[0.286s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.bash
+[0.287s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.sh
+[0.288s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.zsh
+[0.289s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.dsv
+[0.290s] -- Installing: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv
+[0.290s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ament_index/resource_index/packages/ros2_laser_scan_matcher
+[0.291s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig.cmake
+[0.292s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig-version.cmake
+[0.292s] -- Up-to-date: /home/ngochoan/dev_ws/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.xml
+[0.293s] Invoked command in '/home/ngochoan/dev_ws/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ngochoan/dev_ws/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/ngochoan/dev_ws/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ngochoan/dev_ws/build/ros2_laser_scan_matcher

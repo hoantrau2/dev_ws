@@ -1,0 +1,88 @@
+[0.154s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.211s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.229s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.257s] [35m[1mConsolidate compiler generated dependencies of target sinusoidal_node[0m
+[0.257s] [35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[0.293s] [35m[1mConsolidate compiler generated dependencies of target fuzzy_node[0m
+[0.293s] [ 12%] Built target test_cmd_vel
+[0.300s] [35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[0.300s] [ 25%] Built target stanley_node
+[0.300s] [ 31%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[0.305s] [ 43%] Built target read_parameters_pi
+[0.311s] [ 62%] Built target circumference_node
+[0.311s] [ 68%] Built target sinusoidal_node
+[0.332s] [ 81%] Built target fuzzy_node
+[0.333s] [ 93%] Built target straight_line_node
+[2.389s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.389s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.390s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.390s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.390s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:[m[K In member function ‘[01m[Kvoid PIDNode::velocity_fuzzy_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.391s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:150:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.391s]   150 |     RCLCPP_INFO(this->get_logger(), [01;35m[K" setPoints[1] = %f   setpoints[2] = %f   actual3 = %f   actual4 = %f "[m[K, setPoints[1], setPoints[2]);
+[2.391s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.391s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:150:90:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.391s]   150 |     RCLCPP_INFO(this->get_logger(), " setPoints[1] = %f   setpoints[2] = %f   actual3 = [01;36m[K%f[m[K   actual4 = %f ", setPoints[1], setPoints[2]);
+[2.391s]       |                                                                                         [01;36m[K~^[m[K
+[2.391s]       |                                                                                          [01;36m[K|[m[K
+[2.391s]       |                                                                                          [01;36m[Kdouble[m[K
+[2.391s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.391s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.391s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.391s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.392s]                  from [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:13[m[K:
+[2.392s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:150:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects a matching ‘[01m[Kdouble[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.392s]   150 |     RCLCPP_INFO(this->get_logger(), [01;35m[K" setPoints[1] = %f   setpoints[2] = %f   actual3 = %f   actual4 = %f "[m[K, setPoints[1], setPoints[2]);
+[2.392s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.393s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/pid_node.cpp:150:105:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.393s]   150 |     RCLCPP_INFO(this->get_logger(), " setPoints[1] = %f   setpoints[2] = %f   actual3 = %f   actual4 = [01;36m[K%f[m[K ", setPoints[1], setPoints[2]);
+[2.393s]       |                                                                                                        [01;36m[K~^[m[K
+[2.393s]       |                                                                                                         [01;36m[K|[m[K
+[2.393s]       |                                                                                                         [01;36m[Kdouble[m[K
+[7.535s] [100%] [32m[1mLinking CXX executable pid_node[0m
+[7.878s] [100%] Built target pid_node
+[7.892s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[7.924s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface
+[7.930s] -- Install configuration: ""
+[7.930s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/read_parameters_pi
+[7.930s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/test_cmd_vel
+[7.930s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node
+[7.933s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node" to ""
+[7.933s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_node
+[7.934s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node
+[7.934s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node
+[7.934s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node
+[7.934s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node
+[7.934s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/rplidar.launch.py
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.sh
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.dsv
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.sh
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.dsv
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.bash
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.sh
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.zsh
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.dsv
+[7.935s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.dsv
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/packages/cpp_interface
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig.cmake
+[7.935s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig-version.cmake
+[7.936s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.xml
+[7.937s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface

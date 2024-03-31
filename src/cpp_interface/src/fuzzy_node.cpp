@@ -1,7 +1,7 @@
 /**
  * @file fuzzy_node.cpp
- * @author Hoan Duong & Hien Nguyen
- * @brief the fuzzy_node of my thesis at my university, Ho Chi Minh University
+ * @author Hoan Duong
+ * @brief the fuzzy node of my thesis at my university, Ho Chi Minh University
  * of Technology.
  * @version 1
  * @date 2024-03-27

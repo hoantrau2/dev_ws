@@ -124,7 +124,8 @@ class PIDNode : public rclcpp::Node {
       message.data[i] = desiredAngles[i];
     }
     message.layout.data_offset = 111;
-        RCLCPP_INFO(this->get_logger(), " motor1 = %lf   motor2 = %lf   motor3 = %lf   motor4 = %lf ", message.data[0], message.data[1], message.data[2], message.data[3]);
+    // push values to debug
+    RCLCPP_INFO(this->get_logger(), " motor1 = %lf   motor2 = %lf   motor3 = %lf   motor4 = %lf ", message.data[0], message.data[1], message.data[2], message.data[3]);
     RCLCPP_INFO(this->get_logger(), " PID1  %lf  %lf  %lf   %lf  %lf   %lf", pid_controllers[0].Kp, pid_controllers[0].Ki, pid_controllers[0].Kd, pid_controllers[0].uk_1, pid_controllers[0].ek_1, pid_controllers[0].ek_2);
     RCLCPP_INFO(this->get_logger(), " PID2  %lf  %lf  %lf   %lf  %lf   %lf", pid_controllers[1].Kp, pid_controllers[1].Ki, pid_controllers[1].Kd, pid_controllers[1].uk_1, pid_controllers[1].ek_1, pid_controllers[1].ek_2);
     RCLCPP_INFO(this->get_logger(), " PID3  %lf  %lf  %lf   %lf  %lf   %lf", pid_controllers[2].Kp, pid_controllers[2].Ki, pid_controllers[2].Kd, pid_controllers[2].uk_1, pid_controllers[2].ek_1, pid_controllers[2].ek_2);
@@ -139,7 +140,8 @@ class PIDNode : public rclcpp::Node {
       for (size_t i = 0; i < 4; ++i) {
         currentValues[i] = msg->data[i];
       }
-      // RCLCPP_INFO(this->get_logger(), " actual1 = %lf   actual2 = %lf   actual3 = %lf   actual4 = %lf ", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
+      // push values to debug
+      RCLCPP_INFO(this->get_logger(), " actual1 = %lf   actual2 = %lf   actual3 = %lf   actual4 = %lf ", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
     }
@@ -155,7 +157,8 @@ class PIDNode : public rclcpp::Node {
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
     }
-    // RCLCPP_INFO(this->get_logger(), " setPoints[1] = %lf   setpoints[2] = %lf", setPoints[1], setPoints[2]);
+    // push values to debug
+    RCLCPP_INFO(this->get_logger(), " setPoints[1] = %lf   setpoints[2] = %lf", setPoints[1], setPoints[2]);
   }
   std::vector<double> currentValues;
   std::vector<double> setPoints;

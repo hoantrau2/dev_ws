@@ -1,0 +1,23 @@
+[0.082s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[0.166s] [ 43%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[0.166s] [ 50%] Built target straight_line_node
+[0.166s] [ 50%] Built target read_parameters_pi
+[0.167s] [ 43%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[0.167s] [ 68%] Built target sinusoidal_node
+[0.167s] [ 68%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[0.167s] [ 75%] Built target test_cmd_vel
+[0.167s] [ 81%] Built target circumference_node
+[2.415s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:[m[K In function ‘[01m[Kdouble PI_fuzzy(double, double)[m[K’:
+[2.416s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:263:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+[2.416s]   263 |   pi_fuzzy.ek_1 = ek;[01;31m[K/[m[K
+[2.416s]       |                      [01;31m[K^[m[K
+[4.830s] gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1
+[4.830s] gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/fuzzy_node.dir/all] Error 2
+[4.830s] gmake[1]: *** Waiting for unfinished jobs....
+[7.982s] [ 87%] [32m[1mLinking CXX executable pid_node[0m
+[8.396s] [ 87%] Built target pid_node
+[9.930s] [ 93%] [32m[1mLinking CXX executable stanley_node[0m
+[10.492s] [ 93%] Built target stanley_node
+[10.493s] gmake: *** [Makefile:146: all] Error 2
+[10.494s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

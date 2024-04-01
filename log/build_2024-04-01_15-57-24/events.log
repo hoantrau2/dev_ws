@@ -1,0 +1,139 @@
+[0.000000] (-) TimerEvent: {}
+[0.000227] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000259] (-) JobUnselected: {'identifier': 'csm'}
+[0.000291] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.000309] (-) JobUnselected: {'identifier': 'template_ros2'}
+[0.000327] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.000347] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.080782] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.081590] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'build'}
+[0.082132] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/cpp_interface', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ngochoan/dev_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/155/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '2082'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/155/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2607'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6469'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('JOURNAL_STREAM', '8:36412'), ('_', '/usr/bin/colcon'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2522,unix/linux:/tmp/.ICE-unix/2522'), ('GTK_EXE_PREFIX', '/snap/code/155/usr'), ('INVOCATION_ID', '0960cb85bc324ff39e8c06a425ebf6ea'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/155/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/155/.local/share/glib-2.0/schemas'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/155/.local/share:/home/ngochoan/snap/code/155:/snap/code/155/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('ZDOTDIR', '/home/ngochoan'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098847] (-) TimerEvent: {}
+[0.141114] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pid_node\x1b[0m\n'}
+[0.166449] (cpp_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o\x1b[0m\n'}
+[0.166676] (cpp_interface) StdoutLine: {'line': b'[ 50%] Built target straight_line_node\n'}
+[0.166774] (cpp_interface) StdoutLine: {'line': b'[ 50%] Built target read_parameters_pi\n'}
+[0.166890] (cpp_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o\x1b[0m\n'}
+[0.167004] (cpp_interface) StdoutLine: {'line': b'[ 68%] Built target sinusoidal_node\n'}
+[0.167089] (cpp_interface) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o\x1b[0m\n'}
+[0.167305] (cpp_interface) StdoutLine: {'line': b'[ 75%] Built target test_cmd_vel\n'}
+[0.167755] (cpp_interface) StdoutLine: {'line': b'[ 81%] Built target circumference_node\n'}
+[0.198946] (-) TimerEvent: {}
+[0.299239] (-) TimerEvent: {}
+[0.399538] (-) TimerEvent: {}
+[0.499856] (-) TimerEvent: {}
+[0.600202] (-) TimerEvent: {}
+[0.700539] (-) TimerEvent: {}
+[0.800908] (-) TimerEvent: {}
+[0.901254] (-) TimerEvent: {}
+[1.001609] (-) TimerEvent: {}
+[1.101985] (-) TimerEvent: {}
+[1.202339] (-) TimerEvent: {}
+[1.302699] (-) TimerEvent: {}
+[1.403010] (-) TimerEvent: {}
+[1.503385] (-) TimerEvent: {}
+[1.603895] (-) TimerEvent: {}
+[1.704343] (-) TimerEvent: {}
+[1.804702] (-) TimerEvent: {}
+[1.905052] (-) TimerEvent: {}
+[2.005588] (-) TimerEvent: {}
+[2.105982] (-) TimerEvent: {}
+[2.206330] (-) TimerEvent: {}
+[2.306749] (-) TimerEvent: {}
+[2.407086] (-) TimerEvent: {}
+[2.415684] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble PI_fuzzy(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.415971] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:263:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K/\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.416187] (cpp_interface) StderrLine: {'line': b'  263 |   pi_fuzzy.ek_1 = ek;\x1b[01;31m\x1b[K/\x1b[m\x1b[K\n'}
+[2.416316] (cpp_interface) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.507208] (-) TimerEvent: {}
+[2.607584] (-) TimerEvent: {}
+[2.707921] (-) TimerEvent: {}
+[2.808262] (-) TimerEvent: {}
+[2.908564] (-) TimerEvent: {}
+[3.008911] (-) TimerEvent: {}
+[3.109261] (-) TimerEvent: {}
+[3.209584] (-) TimerEvent: {}
+[3.309938] (-) TimerEvent: {}
+[3.410309] (-) TimerEvent: {}
+[3.510685] (-) TimerEvent: {}
+[3.611054] (-) TimerEvent: {}
+[3.711429] (-) TimerEvent: {}
+[3.811764] (-) TimerEvent: {}
+[3.912070] (-) TimerEvent: {}
+[4.012404] (-) TimerEvent: {}
+[4.112711] (-) TimerEvent: {}
+[4.212999] (-) TimerEvent: {}
+[4.313330] (-) TimerEvent: {}
+[4.413666] (-) TimerEvent: {}
+[4.514005] (-) TimerEvent: {}
+[4.614369] (-) TimerEvent: {}
+[4.714779] (-) TimerEvent: {}
+[4.815201] (-) TimerEvent: {}
+[4.830185] (cpp_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1\n'}
+[4.830462] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/fuzzy_node.dir/all] Error 2\n'}
+[4.830531] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.915307] (-) TimerEvent: {}
+[5.015576] (-) TimerEvent: {}
+[5.115832] (-) TimerEvent: {}
+[5.216097] (-) TimerEvent: {}
+[5.316363] (-) TimerEvent: {}
+[5.416625] (-) TimerEvent: {}
+[5.516878] (-) TimerEvent: {}
+[5.617112] (-) TimerEvent: {}
+[5.717418] (-) TimerEvent: {}
+[5.817718] (-) TimerEvent: {}
+[5.917993] (-) TimerEvent: {}
+[6.018246] (-) TimerEvent: {}
+[6.118491] (-) TimerEvent: {}
+[6.218735] (-) TimerEvent: {}
+[6.318982] (-) TimerEvent: {}
+[6.419207] (-) TimerEvent: {}
+[6.519451] (-) TimerEvent: {}
+[6.619725] (-) TimerEvent: {}
+[6.719960] (-) TimerEvent: {}
+[6.820209] (-) TimerEvent: {}
+[6.920433] (-) TimerEvent: {}
+[7.020631] (-) TimerEvent: {}
+[7.120887] (-) TimerEvent: {}
+[7.221112] (-) TimerEvent: {}
+[7.321359] (-) TimerEvent: {}
+[7.421601] (-) TimerEvent: {}
+[7.521838] (-) TimerEvent: {}
+[7.622127] (-) TimerEvent: {}
+[7.722431] (-) TimerEvent: {}
+[7.822742] (-) TimerEvent: {}
+[7.923047] (-) TimerEvent: {}
+[7.982538] (cpp_interface) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable pid_node\x1b[0m\n'}
+[8.023151] (-) TimerEvent: {}
+[8.123478] (-) TimerEvent: {}
+[8.223799] (-) TimerEvent: {}
+[8.324165] (-) TimerEvent: {}
+[8.396015] (cpp_interface) StdoutLine: {'line': b'[ 87%] Built target pid_node\n'}
+[8.424259] (-) TimerEvent: {}
+[8.524536] (-) TimerEvent: {}
+[8.624832] (-) TimerEvent: {}
+[8.725130] (-) TimerEvent: {}
+[8.825499] (-) TimerEvent: {}
+[8.925861] (-) TimerEvent: {}
+[9.026109] (-) TimerEvent: {}
+[9.126407] (-) TimerEvent: {}
+[9.226657] (-) TimerEvent: {}
+[9.326881] (-) TimerEvent: {}
+[9.427177] (-) TimerEvent: {}
+[9.527420] (-) TimerEvent: {}
+[9.627691] (-) TimerEvent: {}
+[9.727925] (-) TimerEvent: {}
+[9.828194] (-) TimerEvent: {}
+[9.928442] (-) TimerEvent: {}
+[9.930723] (cpp_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable stanley_node\x1b[0m\n'}
+[10.028560] (-) TimerEvent: {}
+[10.128884] (-) TimerEvent: {}
+[10.229238] (-) TimerEvent: {}
+[10.329590] (-) TimerEvent: {}
+[10.429857] (-) TimerEvent: {}
+[10.492195] (cpp_interface) StdoutLine: {'line': b'[ 93%] Built target stanley_node\n'}
+[10.493227] (cpp_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.494719] (cpp_interface) CommandEnded: {'returncode': 2}
+[10.529954] (-) TimerEvent: {}
+[10.596111] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 2}
+[10.606913] (-) EventReactorShutdown: {}

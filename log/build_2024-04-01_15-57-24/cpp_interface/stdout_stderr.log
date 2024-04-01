@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o[0m
+[ 50%] Built target straight_line_node
+[ 50%] Built target read_parameters_pi
+[ 43%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 68%] Built target sinusoidal_node
+[ 68%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 75%] Built target test_cmd_vel
+[ 81%] Built target circumference_node
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:[m[K In function ‘[01m[Kdouble PI_fuzzy(double, double)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/fuzzy_node.cpp:263:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+  263 |   pi_fuzzy.ek_1 = ek;[01;31m[K/[m[K
+      |                      [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/fuzzy_node.dir/build.make:76: CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/fuzzy_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] [32m[1mLinking CXX executable pid_node[0m
+[ 87%] Built target pid_node
+[ 93%] [32m[1mLinking CXX executable stanley_node[0m
+[ 93%] Built target stanley_node
+gmake: *** [Makefile:146: all] Error 2

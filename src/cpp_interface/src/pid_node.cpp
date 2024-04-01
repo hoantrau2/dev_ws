@@ -59,9 +59,10 @@ class MotorController {
 
  private:
   // Define PID parameters for each motor
-  const double Kp[4] = {0.1, 0.2, 0.3, 0.4};
-  const double Ki[4] = {0.1, 0.2, 0.3, 0.4};
-  const double Kd[4] = {0.01, 0.02, 0.03, 0.04};
+  const double Kp[4] = {0.2, 0.2, 0.2, 0.2};
+  const double Ki[4] = {0.7, 0.7, 0.7, 0.7};
+  const double Kd[4] = {0.0, 0.0, 0.0, 0.0};
+
 
   // Vector to store PID controllers for each motor
   std::vector<PID_t> pid_controllers;
@@ -143,7 +144,7 @@ class PIDNode : public rclcpp::Node {
         currentValues[i] = msg->data[i];
       }
       // push values to debug
-      RCLCPP_INFO(this->get_logger(), " actual1 = %lf   actual2 = %lf   actual3 = %lf   actual4 = %lf ", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
+      RCLCPP_INFO(this->get_logger(), " actual1_2 = %lf   actual2_2 = %lf   actual3_2 = %lf   actual4_2 = %lf ", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
     }
@@ -160,7 +161,7 @@ class PIDNode : public rclcpp::Node {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
     }
     // push values to debug
-    RCLCPP_INFO(this->get_logger(), " setPoints[1] = %lf   setpoints[2] = %lf", setPoints[1], setPoints[2]);
+    RCLCPP_INFO(this->get_logger(), " setPoints[1]_2 = %lf   setpoints[2]_2 = %lf", setPoints[1], setPoints[2]);
   }
   std::vector<double> currentValues;
   std::vector<double> setPoints;

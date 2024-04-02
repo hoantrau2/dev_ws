@@ -138,7 +138,7 @@ class PIDNode : public rclcpp::Node {
 
   void
   actual_angle_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
-    if (msg->layout.data_offset == 222 && msg->data.size() == 4) {
+    if (msg->layout.data_offset == 222 && msg->data.size() == 6) {
       // Handle actual angle data
       for (size_t i = 0; i < 4; ++i) {
         currentValues[i] = msg->data[i];

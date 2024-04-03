@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[ 12%] Built target fuzzy_node
+[ 25%] Built target read_parameters_pi
+[ 37%] Built target pid_node
+[ 50%] Built target straight_line_node
+[ 62%] Built target sinusoidal_node
+[ 75%] Built target circumference_node
+[ 81%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 93%] Built target test_cmd_vel

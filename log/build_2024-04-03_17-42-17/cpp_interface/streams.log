@@ -1,0 +1,23 @@
+[0.008s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.066s] [ 18%] Built target test_cmd_vel
+[0.067s] [ 31%] Built target read_parameters_pi
+[0.068s] [ 37%] Built target straight_line_node
+[0.071s] [ 62%] Built target sinusoidal_node
+[0.071s] [ 62%] Built target fuzzy_node
+[0.072s] [ 75%] Built target pid_node
+[0.072s] [ 87%] Built target circumference_node
+[0.073s] [ 93%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[2.132s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[2.132s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_positon[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position[m[K’?
+[2.132s]    42 |     if ((actual_position[1] - [01;31m[Kdesired_positon[m[K[2]) >= 0)
+[2.132s]       |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.132s]       |                               [32m[Kdesired_position[m[K
+[2.138s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:50:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_stenley_output[m[K’ was not declared in this scope; did you mean ‘[01m[Kangle_stanley_output[m[K’?
+[2.138s]    50 |     message.data[0] = [01;31m[Kangle_stenley_output[m[K;
+[2.138s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.138s]       |                       [32m[Kangle_stanley_output[m[K
+[5.045s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[5.045s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+[5.045s] gmake: *** [Makefile:146: all] Error 2
+[5.047s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

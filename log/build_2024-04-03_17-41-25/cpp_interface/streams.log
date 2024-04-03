@@ -1,0 +1,18 @@
+[0.009s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.069s] [ 12%] Built target read_parameters_pi
+[0.070s] [ 25%] Built target straight_line_node
+[0.070s] [ 37%] Built target pid_node
+[0.071s] [ 62%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[0.071s] [ 68%] Built target circumference_node
+[0.072s] [ 68%] Built target test_cmd_vel
+[0.072s] [ 81%] Built target sinusoidal_node
+[0.076s] [ 93%] Built target fuzzy_node
+[2.134s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[2.135s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[2.135s]    42 |     if ((actual_position[1] - desired_position[2]) > [01;31m[K=[m[K 0)
+[2.135s]       |                                                      [01;31m[K^[m[K
+[5.036s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[5.036s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+[5.036s] gmake: *** [Makefile:146: all] Error 2
+[5.037s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

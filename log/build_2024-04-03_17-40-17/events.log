@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000306] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000367] (-) JobUnselected: {'identifier': 'csm'}
+[0.000407] (-) JobUnselected: {'identifier': 'ros2_laser_scan_matcher'}
+[0.000443] (-) JobUnselected: {'identifier': 'template_ros2'}
+[0.000472] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.000500] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.006749] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.007340] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'build'}
+[0.007872] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/cpp_interface', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/ngochoan/dev_ws'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/155/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/155/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1771'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/155/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '2247'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8272'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('JOURNAL_STREAM', '8:35311'), ('_', '/usr/bin/colcon'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/2224,unix/linux:/tmp/.ICE-unix/2224'), ('GTK_EXE_PREFIX', '/snap/code/155/usr'), ('INVOCATION_ID', '41950db5847a42ab9bd1b5e17f810cc5'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/155/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/155/.local/share/glib-2.0/schemas'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/155/.local/share:/home/ngochoan/snap/code/155:/snap/code/155/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('ZDOTDIR', '/home/ngochoan'), ('LC_NUMERIC', 'vi_VN'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.051684] (cpp_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stanley_node\x1b[0m\n'}
+[0.066125] (cpp_interface) StdoutLine: {'line': b'[ 12%] Built target read_parameters_pi\n'}
+[0.067648] (cpp_interface) StdoutLine: {'line': b'[ 25%] Built target fuzzy_node\n'}
+[0.068254] (cpp_interface) StdoutLine: {'line': b'[ 37%] Built target pid_node\n'}
+[0.068503] (cpp_interface) StdoutLine: {'line': b'[ 50%] Built target test_cmd_vel\n'}
+[0.071147] (cpp_interface) StdoutLine: {'line': b'[ 62%] Built target circumference_node\n'}
+[0.072241] (cpp_interface) StdoutLine: {'line': b'[ 81%] Built target straight_line_node\n'}
+[0.072402] (cpp_interface) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o\x1b[0m\n'}
+[0.072741] (cpp_interface) StdoutLine: {'line': b'[ 93%] Built target sinusoidal_node\n'}
+[0.099615] (-) TimerEvent: {}
+[0.199890] (-) TimerEvent: {}
+[0.300164] (-) TimerEvent: {}
+[0.400617] (-) TimerEvent: {}
+[0.500979] (-) TimerEvent: {}
+[0.601310] (-) TimerEvent: {}
+[0.701609] (-) TimerEvent: {}
+[0.801927] (-) TimerEvent: {}
+[0.902231] (-) TimerEvent: {}
+[1.002517] (-) TimerEvent: {}
+[1.102828] (-) TimerEvent: {}
+[1.203158] (-) TimerEvent: {}
+[1.303538] (-) TimerEvent: {}
+[1.403842] (-) TimerEvent: {}
+[1.504174] (-) TimerEvent: {}
+[1.604480] (-) TimerEvent: {}
+[1.704776] (-) TimerEvent: {}
+[1.805077] (-) TimerEvent: {}
+[1.905376] (-) TimerEvent: {}
+[2.005648] (-) TimerEvent: {}
+[2.105990] (-) TimerEvent: {}
+[2.152856] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid StanleyNode::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.153071] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:41:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K=\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.153162] (cpp_interface) StderrLine: {'line': b'   41 |     if ((actual_position[1] - desired_position[2]) > \x1b[01;31m\x1b[K=\x1b[m\x1b[K 0)\n'}
+[2.153258] (cpp_interface) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.157858] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kerror_distace\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kerror_distance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.158002] (cpp_interface) StderrLine: {'line': b'   42 |       double angle_stenley_output = (actual_position[1] - desired_position[2]) + std::atan2(Kp * \x1b[01;31m\x1b[Kerror_distace\x1b[m\x1b[K, Ksoft + linear_velocity);\n'}
+[2.158080] (cpp_interface) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.158132] (cpp_interface) StderrLine: {'line': b'      |                                                                                                  \x1b[32m\x1b[Kerror_distance\x1b[m\x1b[K\n'}
+[2.158180] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_stenley_output\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.158230] (cpp_interface) StderrLine: {'line': b'   42 |       double \x1b[01;35m\x1b[Kangle_stenley_output\x1b[m\x1b[K = (actual_position[1] - desired_position[2]) + std::atan2(Kp * error_distace, Ksoft + linear_velocity);\n'}
+[2.158277] (cpp_interface) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.162371] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:44:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kerror_distace\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kerror_distance\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.162480] (cpp_interface) StderrLine: {'line': b'   44 |       double angle_stenley_output = (actual_position[1] - desired_position[2]) - std::atan2(Kp * \x1b[01;31m\x1b[Kerror_distace\x1b[m\x1b[K, Ksoft + linear_velocity);\n'}
+[2.162549] (cpp_interface) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.162599] (cpp_interface) StderrLine: {'line': b'      |                                                                                                  \x1b[32m\x1b[Kerror_distance\x1b[m\x1b[K\n'}
+[2.162648] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:44:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle_stenley_output\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.162707] (cpp_interface) StderrLine: {'line': b'   44 |       double \x1b[01;35m\x1b[Kangle_stenley_output\x1b[m\x1b[K = (actual_position[1] - desired_position[2]) - std::atan2(Kp * error_distace, Ksoft + linear_velocity);\n'}
+[2.162754] (cpp_interface) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.171196] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:48:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_stenley_output\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.171335] (cpp_interface) StderrLine: {'line': b'   48 |     message.data[0] = \x1b[01;31m\x1b[Kangle_stenley_output\x1b[m\x1b[K;\n'}
+[2.171430] (cpp_interface) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.171488] (cpp_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:40:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kerror_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.171580] (cpp_interface) StderrLine: {'line': b'   40 |     double \x1b[01;35m\x1b[Kerror_distance\x1b[m\x1b[K = sqrt(pow(actual_position[0] - desired_position[0], 2) + pow(actual_position[1] - desired_position[1], 2));\n'}
+[2.171631] (cpp_interface) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.206075] (-) TimerEvent: {}
+[2.306337] (-) TimerEvent: {}
+[2.406669] (-) TimerEvent: {}
+[2.506972] (-) TimerEvent: {}
+[2.607253] (-) TimerEvent: {}
+[2.707499] (-) TimerEvent: {}
+[2.807783] (-) TimerEvent: {}
+[2.908034] (-) TimerEvent: {}
+[3.008259] (-) TimerEvent: {}
+[3.108574] (-) TimerEvent: {}
+[3.208889] (-) TimerEvent: {}
+[3.309156] (-) TimerEvent: {}
+[3.409456] (-) TimerEvent: {}
+[3.509740] (-) TimerEvent: {}
+[3.610017] (-) TimerEvent: {}
+[3.710276] (-) TimerEvent: {}
+[3.810543] (-) TimerEvent: {}
+[3.910819] (-) TimerEvent: {}
+[4.011098] (-) TimerEvent: {}
+[4.111349] (-) TimerEvent: {}
+[4.211678] (-) TimerEvent: {}
+[4.312027] (-) TimerEvent: {}
+[4.412310] (-) TimerEvent: {}
+[4.512564] (-) TimerEvent: {}
+[4.612796] (-) TimerEvent: {}
+[4.713095] (-) TimerEvent: {}
+[4.813349] (-) TimerEvent: {}
+[4.913659] (-) TimerEvent: {}
+[5.013915] (-) TimerEvent: {}
+[5.076514] (cpp_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1\n'}
+[5.076758] (cpp_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2\n'}
+[5.076910] (cpp_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.078479] (cpp_interface) CommandEnded: {'returncode': 2}
+[5.114063] (-) TimerEvent: {}
+[5.116357] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 2}
+[5.126804] (-) EventReactorShutdown: {}

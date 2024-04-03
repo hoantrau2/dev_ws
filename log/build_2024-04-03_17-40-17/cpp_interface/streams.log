@@ -1,0 +1,38 @@
+[0.009s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[0.067s] [ 12%] Built target read_parameters_pi
+[0.068s] [ 25%] Built target fuzzy_node
+[0.068s] [ 37%] Built target pid_node
+[0.068s] [ 50%] Built target test_cmd_vel
+[0.071s] [ 62%] Built target circumference_node
+[0.072s] [ 81%] Built target straight_line_node
+[0.072s] [ 81%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[0.072s] [ 93%] Built target sinusoidal_node
+[2.152s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[2.153s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:41:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+[2.153s]    41 |     if ((actual_position[1] - desired_position[2]) > [01;31m[K=[m[K 0)
+[2.153s]       |                                                      [01;31m[K^[m[K
+[2.157s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:98:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_distace[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_distance[m[K’?
+[2.158s]    42 |       double angle_stenley_output = (actual_position[1] - desired_position[2]) + std::atan2(Kp * [01;31m[Kerror_distace[m[K, Ksoft + linear_velocity);
+[2.158s]       |                                                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[2.158s]       |                                                                                                  [32m[Kerror_distance[m[K
+[2.158s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:42:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_stenley_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.158s]    42 |       double [01;35m[Kangle_stenley_output[m[K = (actual_position[1] - desired_position[2]) + std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+[2.158s]       |              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.162s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:44:98:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_distace[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_distance[m[K’?
+[2.162s]    44 |       double angle_stenley_output = (actual_position[1] - desired_position[2]) - std::atan2(Kp * [01;31m[Kerror_distace[m[K, Ksoft + linear_velocity);
+[2.162s]       |                                                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[2.162s]       |                                                                                                  [32m[Kerror_distance[m[K
+[2.162s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:44:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_stenley_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.162s]    44 |       double [01;35m[Kangle_stenley_output[m[K = (actual_position[1] - desired_position[2]) - std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+[2.162s]       |              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.171s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_stenley_output[m[K’ was not declared in this scope
+[2.171s]    48 |     message.data[0] = [01;31m[Kangle_stenley_output[m[K;
+[2.171s]       |                       [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.171s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:40:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.171s]    40 |     double [01;35m[Kerror_distance[m[K = sqrt(pow(actual_position[0] - desired_position[0], 2) + pow(actual_position[1] - desired_position[1], 2));
+[2.171s]       |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[5.076s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[5.076s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+[5.076s] gmake: *** [Makefile:146: all] Error 2
+[5.078s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

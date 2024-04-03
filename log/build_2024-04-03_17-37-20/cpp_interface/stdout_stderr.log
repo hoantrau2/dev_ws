@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[ 12%] Built target fuzzy_node
+[ 25%] Built target read_parameters_pi
+[ 37%] Built target pid_node
+[ 50%] Built target straight_line_node
+[ 62%] Built target sinusoidal_node
+[ 75%] Built target circumference_node
+[ 81%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 93%] Built target test_cmd_vel
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:20:100:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStanleyNode[m[K’ does not have any field named ‘[01m[Kdesired_positon[m[K’
+   20 |     : Node("stanley_node"), linear_velocity(0.5), angleIMU(0.0), actual_position({0.0, 0.0, 0.0}), [01;31m[Kdesired_positon[m[K({0.0, 0.0, 0.0}) {
+      |                                                                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:45:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_positon[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position[m[K’?
+   45 |     double angle_stenley_output = (actual_position[1] - [01;31m[Kdesired_positon[m[K[2]) - std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+      |                                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                         [32m[Kdesired_position[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:45:95:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_distace[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_distance[m[K’?
+   45 |     double angle_stenley_output = (actual_position[1] - desired_positon[2]) - std::atan2(Kp * [01;31m[Kerror_distace[m[K, Ksoft + linear_velocity);
+      |                                                                                               [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                                               [32m[Kerror_distance[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:46:53:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K=[m[K’ token
+   46 |     if ((actual_position[1] - desired_positon[2]) > [01;31m[K=[m[K 0)
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:47:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_stenley_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   47 |       double [01;35m[Kangle_stenley_output[m[K = (actual_position[1] - desired_positon[2]) + std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+      |              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:49:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_stenley_output[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   49 |       double [01;35m[Kangle_stenley_output[m[K = (actual_position[1] - desired_positon[2]) - std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+      |              [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:44:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   44 |     double [01;35m[Kerror_distance[m[K = sqrt(pow(actual_position[0] - desired_position[0], 2) + pow(actual_position[1] - desired_position[1], 2));
+      |            [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::reference_map_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_positon[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position[m[K’?
+   83 |         [01;31m[Kdesired_positon[m[K[i] = msg->data[i];
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[Kdesired_position[m[K
+gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

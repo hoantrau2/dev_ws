@@ -1,0 +1,8 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:25:99:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStanleyNode[m[K’ does not have any field named ‘[01m[Kdesired_position[m[K’
+   25 |     : Node("stanley_node"), angleIMU(0.0), linearVelocity(0.0), actual_position({0.0, 0.0, 0.0}), [01;31m[Kdesired_position[m[K({0.0, 0.0, 0.0}) {
+      |                                                                                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

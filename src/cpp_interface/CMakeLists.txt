@@ -24,8 +24,8 @@ ament_target_dependencies(test_cmd_vel rclcpp std_msgs geometry_msgs)
 add_executable(pid_node src/pid_node.cpp)
 ament_target_dependencies(pid_node rclcpp std_msgs)
 
-add_executable(fuzzy_node src/fuzzy_node.cpp)
-ament_target_dependencies(fuzzy_node rclcpp std_msgs)
+add_executable(fuzzy_longitudinal_controllers src/fuzzy_longitudinal_controllers.cpp)
+ament_target_dependencies(fuzzy_longitudinal_controllers rclcpp std_msgs)
 
 add_executable(stanley_node src/stanley_node.cpp)
 ament_target_dependencies(stanley_node rclcpp std_msgs tf2_msgs)
@@ -55,7 +55,7 @@ install(TARGETS
   read_parameters_pi
   test_cmd_vel
   pid_node
-  fuzzy_node
+  fuzzy_longitudinal_controllers
   stanley_node
   straight_line_node
   circumference_node

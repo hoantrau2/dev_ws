@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_longitudinal_controllers[0m
+[  6%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[ 18%] Built target read_parameters_pi
+[ 37%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 37%] Built target test_cmd_vel
+[ 50%] Built target straight_line_node
+[ 62%] Built target circumference_node
+[ 75%] Built target sinusoidal_node
+[ 81%] [32mBuilding CXX object CMakeFiles/fuzzy_longitudinal_controllers.dir/src/fuzzy_longitudinal_controllers.cpp.o[0m
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:25:99:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KStanleyNode[m[K’ does not have any field named ‘[01m[Kdesired_position[m[K’
+   25 |     : Node("stanley_node"), angleIMU(0.0), linearVelocity(0.0), actual_position({0.0, 0.0, 0.0}), [01;31m[Kdesired_position[m[K({0.0, 0.0, 0.0}) {
+      |                                                                                                   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 87%] [32m[1mLinking CXX executable pid_node[0m
+[ 93%] [32m[1mLinking CXX executable fuzzy_longitudinal_controllers[0m
+[ 93%] Built target pid_node
+[ 93%] Built target fuzzy_longitudinal_controllers
+gmake: *** [Makefile:146: all] Error 2

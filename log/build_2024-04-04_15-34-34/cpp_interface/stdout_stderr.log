@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target stanley_node[0m
+[35m[1mConsolidate compiler generated dependencies of target pid_node[0m
+[35m[1mConsolidate compiler generated dependencies of target fuzzy_longitudinal_controllers[0m
+[ 31%] Built target circumference_node
+[ 37%] Built target read_parameters_pi
+[ 25%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[ 43%] Built target test_cmd_vel
+[ 56%] Built target fuzzy_longitudinal_controllers
+[ 68%] Built target pid_node
+[ 81%] Built target straight_line_node
+[ 93%] Built target sinusoidal_node
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:50:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_positon[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position[m[K’?
+   50 |     if (actual_position[2] - [01;31m[Kdesired_positon[m[K[2] >= 0)
+      |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                              [32m[Kdesired_position[m[K
+gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -237,17 +237,17 @@ pid_node/fast:
 .PHONY : pid_node/fast
 
 #=============================================================================
-# Target rules for targets named fuzzy_node
+# Target rules for targets named fuzzy_longitudinal_controllers
 
 # Build rule for target.
-fuzzy_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fuzzy_node
-.PHONY : fuzzy_node
+fuzzy_longitudinal_controllers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fuzzy_longitudinal_controllers
+.PHONY : fuzzy_longitudinal_controllers
 
 # fast build rule for target.
-fuzzy_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/build
-.PHONY : fuzzy_node/fast
+fuzzy_longitudinal_controllers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/build
+.PHONY : fuzzy_longitudinal_controllers/fast
 
 #=============================================================================
 # Target rules for targets named stanley_node
@@ -325,29 +325,29 @@ src/circumference_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/src/circumference_node.cpp.s
 .PHONY : src/circumference_node.cpp.s
 
-src/fuzzy_node.o: src/fuzzy_node.cpp.o
-.PHONY : src/fuzzy_node.o
+src/fuzzy_longitudinal_controllers.o: src/fuzzy_longitudinal_controllers.cpp.o
+.PHONY : src/fuzzy_longitudinal_controllers.o
 
 # target to build an object file
-src/fuzzy_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.o
-.PHONY : src/fuzzy_node.cpp.o
+src/fuzzy_longitudinal_controllers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/src/fuzzy_longitudinal_controllers.cpp.o
+.PHONY : src/fuzzy_longitudinal_controllers.cpp.o
 
-src/fuzzy_node.i: src/fuzzy_node.cpp.i
-.PHONY : src/fuzzy_node.i
+src/fuzzy_longitudinal_controllers.i: src/fuzzy_longitudinal_controllers.cpp.i
+.PHONY : src/fuzzy_longitudinal_controllers.i
 
 # target to preprocess a source file
-src/fuzzy_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.i
-.PHONY : src/fuzzy_node.cpp.i
+src/fuzzy_longitudinal_controllers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/src/fuzzy_longitudinal_controllers.cpp.i
+.PHONY : src/fuzzy_longitudinal_controllers.cpp.i
 
-src/fuzzy_node.s: src/fuzzy_node.cpp.s
-.PHONY : src/fuzzy_node.s
+src/fuzzy_longitudinal_controllers.s: src/fuzzy_longitudinal_controllers.cpp.s
+.PHONY : src/fuzzy_longitudinal_controllers.s
 
 # target to generate assembly for a file
-src/fuzzy_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_node.dir/build.make CMakeFiles/fuzzy_node.dir/src/fuzzy_node.cpp.s
-.PHONY : src/fuzzy_node.cpp.s
+src/fuzzy_longitudinal_controllers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/src/fuzzy_longitudinal_controllers.cpp.s
+.PHONY : src/fuzzy_longitudinal_controllers.cpp.s
 
 src/pid_node.o: src/pid_node.cpp.o
 .PHONY : src/pid_node.o
@@ -509,7 +509,7 @@ help:
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
 	@echo "... circumference_node"
-	@echo "... fuzzy_node"
+	@echo "... fuzzy_longitudinal_controllers"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... sinusoidal_node"
@@ -519,9 +519,9 @@ help:
 	@echo "... src/circumference_node.o"
 	@echo "... src/circumference_node.i"
 	@echo "... src/circumference_node.s"
-	@echo "... src/fuzzy_node.o"
-	@echo "... src/fuzzy_node.i"
-	@echo "... src/fuzzy_node.s"
+	@echo "... src/fuzzy_longitudinal_controllers.o"
+	@echo "... src/fuzzy_longitudinal_controllers.i"
+	@echo "... src/fuzzy_longitudinal_controllers.s"
 	@echo "... src/pid_node.o"
 	@echo "... src/pid_node.i"
 	@echo "... src/pid_node.s"

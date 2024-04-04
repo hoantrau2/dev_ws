@@ -1,22 +1,23 @@
 /**
- * @file fuzzy_node.cpp
+ * @file fuzzy_longitudinal_controllers.cpp
  * @author Hoan Duong & Hien Nguyen
- * @brief the fuzzy node of my thesis at my university, Ho Chi Minh University
- * of Technology.
+ * @brief the controller node of my thesis at my university, Ho Chi Minh University of Technology.
  * @version 1
- * @date 2024-03-27
+ * @date 2024-04-04
  */
 
 #include <algorithm>
 #include <chrono>
+#include <cmath>
 #include <functional>
 #include <memory>
 #include <string>
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
 
-#define CONST_VELOCITY 1
 #define SAMPLE_TIME 100
+#define VMAX 1.0
+#define DELTAMAX 100 * 3.14 / 180
 
 struct Error {
   double NB, NS, ZE, PS, PB;
@@ -51,54 +52,39 @@ double PI_fuzzy(double sp, double pv);
 
 using namespace std::chrono_literals;
 // Fuzzy Node Class
-class FuzzyNode : public rclcpp::Node {
+class FuzzyLongitudinalControllersNode : public rclcpp::Node {
  public:
-  FuzzyNode() : Node("fuzzy_node"), angleIMU(0.0), deltaAngle(0.0) {
-    // Subscription to Angle IMU Topic
-    subscription_angle_IMU_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-      "/angle_IMU", 10, std::bind(&FuzzyNode::angle_IMU_callback, this, std::placeholders::_1));
-
+  FuzzyLongitudinalControllersNode() : Node("controller_node"), deltaAngle(0.0) {
     // Subscription to Delta Angle Topic
     subscription_delta_angle_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-      "/delta_angle", 10, std::bind(&FuzzyNode::delta_angle_callback, this, std::placeholders::_1));
+      "/delta_angle", 10, std::bind(&FuzzyLongitudinalControllersNode::delta_angle_callback, this, std::placeholders::_1));
 
-    // Publisher for Fuzzy Velocity
-    publisher_velocity_fuzzy_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
-      "/velocity_fuzzy", 10);
+    // Publisher for desired velocities
+    publisher_desired_velocities_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
+      "/desired_velocities", 10);
 
     // Timer for Periodic Execution
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&FuzzyNode::timer_callback, this)); // use create_wall_timer to timer 500ms
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(SAMPLE_TIME), std::bind(&FuzzyLongitudinalControllersNode::timer_callback, this));
   }
 
  private:
   void timer_callback() {
-    double output_fuzzy = PI_fuzzy(deltaAngle, angleIMU);
+    double linearVelovity;
+    double omega = PI_fuzzy(deltaAngle, 0.0);
+    if (abs(deltaAngle) >= DELTAMAX)
+      linearVelovity = 0.0;
+    else
+      linearVelovity = VMAX * (1 - deltaAngle / DELTAMAX);
     // push values to debug
-    RCLCPP_INFO(this->get_logger(), "input of PI_fuzzy = %lf  %lf", deltaAngle, angleIMU);
-    RCLCPP_INFO(this->get_logger(), "pi_fuzzy = %lf  %lf  %lf  %lf  %lf  %lf", pi_fuzzy.Ke, pi_fuzzy.Ke_dot, pi_fuzzy.Ku, pi_fuzzy.uk_1, pi_fuzzy.ek_1, pi_fuzzy.ek_2);
+    // RCLCPP_INFO(this->get_logger(), "input of PI_fuzzy = %lf  %lf", deltaAngle, angleIMU);
+    // RCLCPP_INFO(this->get_logger(), "pi_fuzzy = %lf  %lf  %lf  %lf  %lf  %lf", pi_fuzzy.Ke, pi_fuzzy.Ke_dot, pi_fuzzy.Ku, pi_fuzzy.uk_1, pi_fuzzy.ek_1, pi_fuzzy.ek_2);
     // publish message with desired velocity
     auto message = std_msgs::msg::Float64MultiArray();
-    message.data.resize(2);  // Set size of data vector to 4
-    if (output_fuzzy >= 0) { // rotate in left
-      message.data[0] = (1 + output_fuzzy) * CONST_VELOCITY;
-      message.data[1] = (1 - output_fuzzy) * CONST_VELOCITY;
-    } else { // rotate in right
-      message.data[0] = (1 - output_fuzzy) * CONST_VELOCITY;
-      message.data[1] = (1 + output_fuzzy) * CONST_VELOCITY;
-    }
+    message.data.resize(2); // Set size of data vector to 4
+    message.data[0] = omega;
+    message.data[1] = linearVelovity;
     message.layout.data_offset = 333;
-    publisher_velocity_fuzzy_->publish(message);
-  }
-
-  void angle_IMU_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
-    if (msg->layout.data_offset == 444 && msg->data.size() == 1) {
-      // Handle actual angle IMU
-      angleIMU = msg->data[0];
-      // push values to debug
-      RCLCPP_INFO(this->get_logger(), "Received angle of IMU = %lf", msg->data[0]);
-    } else {
-      RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
-    }
+    publisher_desired_velocities_->publish(message);
   }
 
   void
@@ -106,23 +92,23 @@ class FuzzyNode : public rclcpp::Node {
     // Handle delta angle
     if (msg->layout.data_offset == 555 && msg->data.size() == 1) {
       deltaAngle = msg->data[0];
-      RCLCPP_INFO(this->get_logger(), "Received angle of stanley = %lf", msg->data[0]);
+      // push values to debug
+      // RCLCPP_INFO(this->get_logger(), "Received angle of stanley = %lf", msg->data[0]);
     } else {
-      RCLCPP_ERROR(this->get_logger(), "Invalid message format or size");
+      RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /delta_angle topic");
     }
   }
-  double angleIMU;
+
   double deltaAngle;
-  rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_angle_IMU_;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_delta_angle_;
-  rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_velocity_fuzzy_;
+  rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_desired_velocities_;
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
 int main(int argc, char *argv[]) {
   void init_PI_fuzzy();
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<FuzzyNode>());
+  rclcpp::spin(std::make_shared<FuzzyLongitudinalControllersNode>());
   rclcpp::shutdown();
   return 0;
 }

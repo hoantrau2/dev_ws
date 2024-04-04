@@ -1,8 +1,7 @@
 /**
  * @file sinusoidal_node.cpp
  * @author Hoan Duong & Hien Nguyen
- * @brief the sinusoidal node of my thesis at my university,
- * Ho Chi Minh University of Technology.
+ * @brief the sinusoidal node of my thesis at my university, Ho Chi Minh University of Technology.
  * @version 1
  * @date 2024-03-30
  */
@@ -17,13 +16,14 @@
 
 #define LINEAR_VELOCITY 1.0
 #define RADIUS 0.5
+#define SAMPLE_TIME 100
 
 class SinusoidalNode : public rclcpp::Node {
  public:
   SinusoidalNode() : Node("sinusoidal_node"), x_position(0.0), y_position(0.0), yaw_angle(0.0) {
     start_time_ = std::chrono::steady_clock::now();
     publisher_reference_map_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/reference_map", 10);
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&SinusoidalNode::timer_callback, this));
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(SAMPLE_TIME), std::bind(&SinusoidalNode::timer_callback, this));
   }
 
  private:
@@ -32,13 +32,13 @@ class SinusoidalNode : public rclcpp::Node {
     auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(current_time - start_time_).count() / 1000.0; // convert ms to s
 
     // Calculate position based on time and velocity
-    if (elapsed_time <= 1.5) {
+    if (elapsed_time <= 5.5) {
       x_position = LINEAR_VELOCITY * elapsed_time;
       y_position = 0.0;
       yaw_angle = 0.0;
     } else {
       x_position = LINEAR_VELOCITY * elapsed_time;
-      y_position = RADIUS * std::sin(0.1 * 3.14 * (elapsed_time - 1.5));
+      y_position = RADIUS * std::sin(0.1 * 3.14 * (elapsed_time - 5.5));
       yaw_angle = std::atan2(y_position, x_position);
     }
 
@@ -48,7 +48,7 @@ class SinusoidalNode : public rclcpp::Node {
     message.data[0] = x_position;
     message.data[1] = y_position;
     message.data[2] = yaw_angle;
-    message.layout.data_offset = 333;
+    message.layout.data_offset = 666;
     RCLCPP_INFO(this->get_logger(), "%lf   %lf    %lf   %lf", message.data[0], message.data[1], message.data[2], (double)elapsed_time);
     publisher_reference_map_->publish(message);
   }

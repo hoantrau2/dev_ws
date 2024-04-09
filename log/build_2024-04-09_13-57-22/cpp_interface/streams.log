@@ -1,0 +1,25 @@
+[0.009s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[0.082s] [ 12%] Built target read_parameters_pi
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target circumference_node[0m
+[0.089s] [ 25%] Built target pid_node
+[0.094s] [ 37%] Built target test_cmd_vel
+[0.096s] [ 50%] Built target straight_line_node
+[0.096s] [ 62%] Built target fuzzy_longitudinal_controllers
+[0.096s] [ 81%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[0.096s] [ 81%] Built target sinusoidal_node
+[0.102s] [ 93%] Built target circumference_node
+[2.285s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[2.285s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_flag_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_delta_angle_[m[K’?
+[2.285s]    38 |     [01;31m[Kpublisher_flag_[m[K = this->create_publisher<std_msgs::msg::Float64MultiArray>("/flag", 10);
+[2.286s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.286s]       |     [32m[Kpublisher_delta_angle_[m[K
+[2.301s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[2.301s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:68:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_flag_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_delta_angle_[m[K’?
+[2.301s]    68 |       [01;31m[Kpublisher_flag_[m[K->publish(message);
+[2.301s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.301s]       |       [32m[Kpublisher_delta_angle_[m[K
+[5.303s] gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+[5.303s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+[5.304s] gmake: *** [Makefile:146: all] Error 2
+[5.305s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

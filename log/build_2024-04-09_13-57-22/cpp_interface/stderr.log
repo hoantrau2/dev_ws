@@ -1,0 +1,13 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In constructor ‘[01m[KStanleyNode::StanleyNode()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_flag_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_delta_angle_[m[K’?
+   38 |     [01;31m[Kpublisher_flag_[m[K = this->create_publisher<std_msgs::msg::Float64MultiArray>("/flag", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[Kpublisher_delta_angle_[m[K
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:[m[K In member function ‘[01m[Kvoid StanleyNode::timer_callback()[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/stanley_node.cpp:68:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_flag_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_delta_angle_[m[K’?
+   68 |       [01;31m[Kpublisher_flag_[m[K->publish(message);
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |       [32m[Kpublisher_delta_angle_[m[K
+gmake[2]: *** [CMakeFiles/stanley_node.dir/build.make:76: CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/stanley_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

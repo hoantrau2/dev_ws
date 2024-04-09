@@ -23,6 +23,7 @@ class StanleyNode : public rclcpp::Node {
  public:
   StanleyNode()
     : Node("stanley_node"), angleIMU(0.0), linearVelocity(0.0), actual_position({0.0, 0.0, 0.0}), desired_position({0.0, 0.0, 0.0}) {
+
     subscription_angle_IMU_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
       "/angle_IMU", 10, std::bind(&StanleyNode::angle_IMU_callback, this, std::placeholders::_1));
 
@@ -37,7 +38,6 @@ class StanleyNode : public rclcpp::Node {
 
     publisher_delta_angle_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/delta_angle", 10);
     timer_ = this->create_wall_timer(std::chrono::milliseconds(SAMPLE_TIME), std::bind(&StanleyNode::timer_callback, this));
-    // use create_wall_timer to timer 500ms
   }
 
  private:
@@ -45,6 +45,7 @@ class StanleyNode : public rclcpp::Node {
     // double error_distace = -(actual_position[0] - desired_positon[0]) * std::cos(actual_position[2]) +
     //                        (actual_position[1] - desired_positon[1]) * std::sin(actual_position[2]);
     // double angle_stenley_output = desired_positon[2] - std::atan2(Kp * error_distace, Ksoft + linear_velocity);
+    
     double error_distace = sqrt(pow((actual_position[0] - desired_position[0]), 2) + pow((actual_position[1] - desired_position[1]), 2));
     double angle_stenley_output;
     if (actual_position[2] - desired_position[2] >= 0)

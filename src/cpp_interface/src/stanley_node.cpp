@@ -55,7 +55,7 @@ class StanleyNode : public rclcpp::Node {
     message.data.resize(1); // Set size of data vector to 4
     message.data[0] = angle_stenley_output;
     message.layout.data_offset = 555;
-    publisher_delta_angle_->publish(message);
+     publisher_delta_angle_->publish(message);
 
     if (error_distace < ACCEPTED_ERROR) {
       flag++;
@@ -63,7 +63,7 @@ class StanleyNode : public rclcpp::Node {
       message.data.resize(1); // Set size of data vector to 4
       message.data[0] = flag;
       message.layout.data_offset = 777;
-      publisher_flag_->publish(message);
+     publisher_flag_->publish(message);
     }
   }
 
@@ -80,7 +80,7 @@ class StanleyNode : public rclcpp::Node {
     if (msg->layout.data_offset == 444 && msg->data.size() == 1) {
       // RCLCPP_INFO(this->get_logger(), "Received angle of IMU");
       // Handle actual angle IMU
-      angleIMU = msg->data[0] * M_PI / 180.0;
+      angleIMU = - msg->data[0] * M_PI / 180.0;
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /angle_IMU topic");
     }
@@ -94,6 +94,7 @@ class StanleyNode : public rclcpp::Node {
       for (size_t i = 0; i < 2; ++i) {
         desired_position[i] = msg->data[i];
       }
+      // RCLCPP_INFO(this->get_logger(), "Reference map: x = %lf, y = %lf", desired_position[0], desired_position[1]);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /reference_map topic ");
     }
@@ -107,6 +108,7 @@ class StanleyNode : public rclcpp::Node {
         actual_position[0] = -transform.transform.translation.x;
         actual_position[1] = transform.transform.translation.y;
         actual_position[2] = transform.transform.rotation.z;
+        // RCLCPP_INFO(this->get_logger(), "tf: x = %lf, y = %lf, omega = %lf", actual_position[0], actual_position[1], actual_position[2]);
         break; // Exit loop after finding the desired transform
       }
     }

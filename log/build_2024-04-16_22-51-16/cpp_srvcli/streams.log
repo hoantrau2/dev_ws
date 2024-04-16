@@ -1,0 +1,26 @@
+[0.024s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_srvcli -- -j8 -l8
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target client[0m
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target server[0m
+[0.084s] [ 50%] Built target client
+[0.087s] [100%] Built target server
+[0.097s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_srvcli -- -j8 -l8
+[0.126s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_srvcli
+[0.135s] -- Install configuration: ""
+[0.135s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+[0.135s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+[0.136s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+[0.137s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+[0.137s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+[0.137s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+[0.137s] -- Installing: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+[0.138s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+[0.139s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+[0.139s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+[0.139s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+[0.147s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_srvcli

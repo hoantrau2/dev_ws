@@ -27,8 +27,8 @@ ament_target_dependencies(pid_node rclcpp std_msgs)
 add_executable(fuzzy_longitudinal_controllers src/fuzzy_longitudinal_controllers.cpp)
 ament_target_dependencies(fuzzy_longitudinal_controllers rclcpp std_msgs)
 
-add_executable(stanley_node src/stanley_node.cpp)
-ament_target_dependencies(stanley_node rclcpp std_msgs tf2_msgs)
+add_executable(data_processing_node src/data_processing_node.cpp)
+ament_target_dependencies(data_processing_node rclcpp std_msgs tf2_msgs)
 
 add_executable(straight_line_node src/straight_line_node.cpp)
 ament_target_dependencies(straight_line_node rclcpp std_msgs)
@@ -38,6 +38,9 @@ ament_target_dependencies(circumference_node rclcpp std_msgs)
 
 add_executable(sinusoidal_node src/sinusoidal_node.cpp)
 ament_target_dependencies(sinusoidal_node rclcpp std_msgs)
+
+add_executable(controllers_node src/controllers_node.cpp)
+ament_target_dependencies(controllers_node rclcpp std_msgs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -56,10 +59,11 @@ install(TARGETS
   test_cmd_vel
   pid_node
   fuzzy_longitudinal_controllers
-  stanley_node
+  data_processing_node
   straight_line_node
   circumference_node
   sinusoidal_node
+  controllers_node
   DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY
   launch

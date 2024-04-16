@@ -14,7 +14,7 @@
 #include "std_msgs/msg/float64_multi_array.hpp"
 
 #define YAW_ANGLE (45.0 * M_PI / 180.0)
-#define SAMPLE_OF_TRAJECTORY 0.1
+#define STEP 0.1
 #define NUMBER_OF_SAMPLE 30 // => distance = 3m
 
 class StraightLineNode : public rclcpp::Node {
@@ -38,8 +38,8 @@ class StraightLineNode : public rclcpp::Node {
       if (flag <= NUMBER_OF_SAMPLE) {
         auto message = std_msgs::msg::Float64MultiArray();
         message.data.resize(2);
-        message.data[0] = SAMPLE_OF_TRAJECTORY * flag * std::cos(YAW_ANGLE) ;
-        message.data[1] = SAMPLE_OF_TRAJECTORY * flag * std::sin(YAW_ANGLE) ;
+        message.data[0] = STEP * flag * std::cos(YAW_ANGLE) ;
+        message.data[1] = STEP * flag * std::sin(YAW_ANGLE) ;
         message.layout.data_offset = 666;
         // push values to debug
         RCLCPP_INFO(this->get_logger(), "Reference map: x = %lf, y = %lf", message.data[0], message.data[1]);

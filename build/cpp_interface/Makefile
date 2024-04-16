@@ -250,17 +250,17 @@ fuzzy_longitudinal_controllers/fast:
 .PHONY : fuzzy_longitudinal_controllers/fast
 
 #=============================================================================
-# Target rules for targets named stanley_node
+# Target rules for targets named data_processing_node
 
 # Build rule for target.
-stanley_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stanley_node
-.PHONY : stanley_node
+data_processing_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_processing_node
+.PHONY : data_processing_node
 
 # fast build rule for target.
-stanley_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/build
-.PHONY : stanley_node/fast
+data_processing_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/build
+.PHONY : data_processing_node/fast
 
 #=============================================================================
 # Target rules for targets named straight_line_node
@@ -301,6 +301,19 @@ sinusoidal_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/build
 .PHONY : sinusoidal_node/fast
 
+#=============================================================================
+# Target rules for targets named controllers_node
+
+# Build rule for target.
+controllers_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controllers_node
+.PHONY : controllers_node
+
+# fast build rule for target.
+controllers_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controllers_node.dir/build.make CMakeFiles/controllers_node.dir/build
+.PHONY : controllers_node/fast
+
 src/circumference_node.o: src/circumference_node.cpp.o
 .PHONY : src/circumference_node.o
 
@@ -324,6 +337,54 @@ src/circumference_node.s: src/circumference_node.cpp.s
 src/circumference_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/circumference_node.dir/build.make CMakeFiles/circumference_node.dir/src/circumference_node.cpp.s
 .PHONY : src/circumference_node.cpp.s
+
+src/controllers_node.o: src/controllers_node.cpp.o
+.PHONY : src/controllers_node.o
+
+# target to build an object file
+src/controllers_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controllers_node.dir/build.make CMakeFiles/controllers_node.dir/src/controllers_node.cpp.o
+.PHONY : src/controllers_node.cpp.o
+
+src/controllers_node.i: src/controllers_node.cpp.i
+.PHONY : src/controllers_node.i
+
+# target to preprocess a source file
+src/controllers_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controllers_node.dir/build.make CMakeFiles/controllers_node.dir/src/controllers_node.cpp.i
+.PHONY : src/controllers_node.cpp.i
+
+src/controllers_node.s: src/controllers_node.cpp.s
+.PHONY : src/controllers_node.s
+
+# target to generate assembly for a file
+src/controllers_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controllers_node.dir/build.make CMakeFiles/controllers_node.dir/src/controllers_node.cpp.s
+.PHONY : src/controllers_node.cpp.s
+
+src/data_processing_node.o: src/data_processing_node.cpp.o
+.PHONY : src/data_processing_node.o
+
+# target to build an object file
+src/data_processing_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.o
+.PHONY : src/data_processing_node.cpp.o
+
+src/data_processing_node.i: src/data_processing_node.cpp.i
+.PHONY : src/data_processing_node.i
+
+# target to preprocess a source file
+src/data_processing_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.i
+.PHONY : src/data_processing_node.cpp.i
+
+src/data_processing_node.s: src/data_processing_node.cpp.s
+.PHONY : src/data_processing_node.s
+
+# target to generate assembly for a file
+src/data_processing_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.s
+.PHONY : src/data_processing_node.cpp.s
 
 src/fuzzy_longitudinal_controllers.o: src/fuzzy_longitudinal_controllers.cpp.o
 .PHONY : src/fuzzy_longitudinal_controllers.o
@@ -421,30 +482,6 @@ src/sinusoidal_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.s
 .PHONY : src/sinusoidal_node.cpp.s
 
-src/stanley_node.o: src/stanley_node.cpp.o
-.PHONY : src/stanley_node.o
-
-# target to build an object file
-src/stanley_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o
-.PHONY : src/stanley_node.cpp.o
-
-src/stanley_node.i: src/stanley_node.cpp.i
-.PHONY : src/stanley_node.i
-
-# target to preprocess a source file
-src/stanley_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.i
-.PHONY : src/stanley_node.cpp.i
-
-src/stanley_node.s: src/stanley_node.cpp.s
-.PHONY : src/stanley_node.s
-
-# target to generate assembly for a file
-src/stanley_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stanley_node.dir/build.make CMakeFiles/stanley_node.dir/src/stanley_node.cpp.s
-.PHONY : src/stanley_node.cpp.s
-
 src/straight_line_node.o: src/straight_line_node.cpp.o
 .PHONY : src/straight_line_node.o
 
@@ -509,16 +546,23 @@ help:
 	@echo "... cpp_interface_uninstall"
 	@echo "... uninstall"
 	@echo "... circumference_node"
+	@echo "... controllers_node"
+	@echo "... data_processing_node"
 	@echo "... fuzzy_longitudinal_controllers"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
 	@echo "... sinusoidal_node"
-	@echo "... stanley_node"
 	@echo "... straight_line_node"
 	@echo "... test_cmd_vel"
 	@echo "... src/circumference_node.o"
 	@echo "... src/circumference_node.i"
 	@echo "... src/circumference_node.s"
+	@echo "... src/controllers_node.o"
+	@echo "... src/controllers_node.i"
+	@echo "... src/controllers_node.s"
+	@echo "... src/data_processing_node.o"
+	@echo "... src/data_processing_node.i"
+	@echo "... src/data_processing_node.s"
 	@echo "... src/fuzzy_longitudinal_controllers.o"
 	@echo "... src/fuzzy_longitudinal_controllers.i"
 	@echo "... src/fuzzy_longitudinal_controllers.s"
@@ -531,9 +575,6 @@ help:
 	@echo "... src/sinusoidal_node.o"
 	@echo "... src/sinusoidal_node.i"
 	@echo "... src/sinusoidal_node.s"
-	@echo "... src/stanley_node.o"
-	@echo "... src/stanley_node.i"
-	@echo "... src/stanley_node.s"
 	@echo "... src/straight_line_node.o"
 	@echo "... src/straight_line_node.i"
 	@echo "... src/straight_line_node.s"

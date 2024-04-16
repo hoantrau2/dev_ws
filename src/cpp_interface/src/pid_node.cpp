@@ -1,4 +1,4 @@
-// "" This module was completed ""
+// "" This module was completed ""/
 
 /**
  * @file pid_node.cpp
@@ -49,7 +49,7 @@ class MotorController {
   // std::vector<PID_t> &getPIDControllers() {
   //   return pid_controllers;
   // }
-
+  
   // Method to update motor speeds based on setpoints and current values
   std::vector<double> updateMotors(const std::vector<double> &setpoints, const std::vector<double> &currentValues) {
     std::vector<double> outputs;
@@ -103,7 +103,7 @@ void init_pid(PID_t *pid, double kp, double ki, double kd) {
 class PIDNode : public rclcpp::Node {
  public:
   PIDNode()
-    : Node("pid_node"), currentValues({0.0, 0.0, 0.0, 0.0}), setPoints({0.0, 0.0, 0.0, 0.0}) {
+       : Node("pid_node"), currentValues({0.0, 0.0, 0.0, 0.0}), setPoints({0.0, 0.0, 0.0, 0.0}) {
     subscription_actual_velocities_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
       "/actual_velocities", 10, std::bind(&PIDNode::actual_velocities_callback, this, std::placeholders::_1));
 
@@ -111,12 +111,12 @@ class PIDNode : public rclcpp::Node {
       "/desired_velocities", 10, std::bind(&PIDNode::desired_velocities_callback, this, std::placeholders::_1));
 
     publisher_pwm_signals_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/pwm_signals", 10);
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(SAMPLE_TIME), std::bind(&PIDNode::timer_callback, this));
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(SAMPLE_TIME), std::bind(&PIDNode::timer_callback, this)); 
   }
 
  private:
   void timer_callback() {
-    // std::vector<PID_t> &pid_controllers = motorController.getPIDControllers();
+  // std::vector<PID_t> &pid_controllers = motorController.getPIDControllers();
     std::vector<double> pwmSignals = motorController.updateMotors(setPoints, currentValues);
     // publish message with desired angles
     auto message = std_msgs::msg::Float64MultiArray();
@@ -136,14 +136,15 @@ class PIDNode : public rclcpp::Node {
     publisher_pwm_signals_->publish(message);
   }
 
-  void actual_velocities_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+  void
+  actual_velocities_callback(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
     if (msg->layout.data_offset == 222 && msg->data.size() == 4) {
       // Handle actual angle data
       for (size_t i = 0; i < 4; ++i) {
         currentValues[i] = msg->data[i];
       }
       // push values to debug
-      RCLCPP_INFO(this->get_logger(), " actual1 = %lf   actual2 = %lf   actual3 = %lf   actual4 = %lf", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
+        RCLCPP_INFO(this->get_logger(), " actual1 = %lf   actual2 = %lf   actual3 = %lf   actual4 = %lf", currentValues[0], currentValues[1], currentValues[2], currentValues[3]);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /actual_velocities topic");
     }
@@ -151,14 +152,14 @@ class PIDNode : public rclcpp::Node {
 
   void desired_velocities_callback(
     const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
-    // Handle desired velocities data
-    if (msg->layout.data_offset == 333 && msg->data.size() == 4) {
+    // Handle desired velocities data 
+    if (msg->layout.data_offset == 333 && msg->data.size() == 2) {
       // msg->data[0]: angular velovity
       // msg->data[0]: linear velovity
       setPoints[0] = setPoints[1] = (2 * msg->data[1] + msg->data[0] * WHEELBASE) / 2; // Vlef/R
       setPoints[2] = setPoints[3] = (2 * msg->data[1] - msg->data[0] * WHEELBASE) / 2; // Vright/R
       // push values to debug
-      // RCLCPP_INFO(this->get_logger(), " omega = %lf   linear velocity= %lf", msg->data[0], msg->data[1]);
+    // RCLCPP_INFO(this->get_logger(), " omega = %lf   linear velocity= %lf", msg->data[0], msg->data[1]);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /desired_velocities topic");
     }

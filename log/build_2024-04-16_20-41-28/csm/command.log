@@ -1,0 +1,3 @@
+Invoking command in '/home/ngochoan/dev_ws/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/csm
+Invoked command in '/home/ngochoan/dev_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/csm -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/csm
+Invoking command in '/home/ngochoan/dev_ws/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/csm -- -j8 -l8

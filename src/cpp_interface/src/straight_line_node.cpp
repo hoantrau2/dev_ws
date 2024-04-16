@@ -19,7 +19,7 @@
 
 class StraightLineNode : public rclcpp::Node {
  public:
-  StraightLineNode() : Node("straight_line_node"), flag(0.0), pre_flag(0.0) {
+  StraightLineNode() : Node("straight_line_node"), flag(0.0) {
     subscription_flag_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
       "/flag", 10, std::bind(&StraightLineNode::flag_callback, this, std::placeholders::_1));
 
@@ -35,13 +35,12 @@ class StraightLineNode : public rclcpp::Node {
       // push values to debug
       RCLCPP_INFO(this->get_logger(), "Received flag = %lf", flag);
 
-      if (flag != pre_flag && flag <= NUMBER_OF_SAMPLE) {
+      if (flag <= NUMBER_OF_SAMPLE) {
         auto message = std_msgs::msg::Float64MultiArray();
         message.data.resize(2);
         message.data[0] = SAMPLE_OF_TRAJECTORY * flag * std::cos(YAW_ANGLE) ;
         message.data[1] = SAMPLE_OF_TRAJECTORY * flag * std::sin(YAW_ANGLE) ;
         message.layout.data_offset = 666;
-        pre_flag = flag;
         // push values to debug
         RCLCPP_INFO(this->get_logger(), "Reference map: x = %lf, y = %lf", message.data[0], message.data[1]);
         publisher_reference_map_->publish(message);
@@ -50,7 +49,7 @@ class StraightLineNode : public rclcpp::Node {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /flag topic");
     }
   }
-  double flag, pre_flag;
+  double flag;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_flag_;
   rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_reference_map_;
 };

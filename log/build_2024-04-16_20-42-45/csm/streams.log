@@ -1,0 +1,41 @@
+[0.022s] Invoking command in '/home/ngochoan/dev_ws/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/csm -- -j8 -l8
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target csm[0m
+[0.167s] [100%] Built target csm
+[0.229s] Invoked command in '/home/ngochoan/dev_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/csm -- -j8 -l8
+[1.357s] Invoking command in '/home/ngochoan/dev_ws/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/csm
+[1.372s] -- Install configuration: ""
+[1.374s] -- Installing: /home/ngochoan/dev_ws/install/csm/lib/libcsm.so
+[1.405s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include
+[1.406s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm
+[1.407s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm/laser_data.h
+[1.408s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm/laser_data_inline.h
+[1.409s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm/csm.h
+[1.410s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm/restrict.h
+[1.411s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/csm/algos.h
+[1.413s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/gsl_eigen
+[1.414s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[1.415s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/resource
+[1.416s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/resource/csm
+[1.417s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/../gsl_eigen
+[1.426s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/include/../gsl_eigen/gsl_eigen.h
+[1.427s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/environment/library_path.sh
+[1.429s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/environment/library_path.dsv
+[1.431s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[1.434s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[1.436s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/environment/ament_prefix_path.sh
+[1.438s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/environment/ament_prefix_path.dsv
+[1.441s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/environment/path.sh
+[1.442s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/environment/path.dsv
+[1.444s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/local_setup.bash
+[1.446s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/local_setup.sh
+[1.449s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/local_setup.zsh
+[1.451s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/local_setup.dsv
+[1.453s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/package.dsv
+[1.455s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/ament_index/resource_index/packages/csm
+[1.457s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.459s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.462s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[1.465s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/cmake/csmConfig.cmake
+[1.467s] -- Installing: /home/ngochoan/dev_ws/install/csm/share/csm/cmake/csmConfig-version.cmake
+[1.470s] -- Up-to-date: /home/ngochoan/dev_ws/install/csm/share/csm/package.xml
+[1.487s] Invoked command in '/home/ngochoan/dev_ws/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/csm

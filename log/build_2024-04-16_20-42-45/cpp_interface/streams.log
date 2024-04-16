@@ -1,0 +1,62 @@
+[0.023s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.096s] [  6%] [32mBuilding CXX object CMakeFiles/test_cmd_vel.dir/src/test_cmd_vel.cpp.o[0m
+[0.101s] [ 12%] [32mBuilding CXX object CMakeFiles/pid_node.dir/src/pid_node.cpp.o[0m
+[0.108s] [ 18%] [32mBuilding CXX object CMakeFiles/stanley_node.dir/src/stanley_node.cpp.o[0m
+[0.111s] [ 25%] [32mBuilding CXX object CMakeFiles/read_parameters_pi.dir/src/read_parameters_pi.cpp.o[0m
+[0.115s] [ 31%] [32mBuilding CXX object CMakeFiles/sinusoidal_node.dir/src/sinusoidal_node.cpp.o[0m
+[0.155s] [ 37%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[0.159s] [ 43%] [32mBuilding CXX object CMakeFiles/fuzzy_longitudinal_controllers.dir/src/fuzzy_longitudinal_controllers.cpp.o[0m
+[0.173s] [ 50%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[15.742s] [ 56%] [32m[1mLinking CXX executable sinusoidal_node[0m
+[16.171s] [ 56%] Built target sinusoidal_node
+[21.999s] [ 62%] [32m[1mLinking CXX executable circumference_node[0m
+[22.135s] [ 68%] [32m[1mLinking CXX executable straight_line_node[0m
+[22.172s] [ 75%] [32m[1mLinking CXX executable read_parameters_pi[0m
+[23.358s] [ 81%] [32m[1mLinking CXX executable test_cmd_vel[0m
+[23.453s] [ 87%] [32m[1mLinking CXX executable pid_node[0m
+[23.843s] [ 87%] Built target read_parameters_pi
+[23.851s] [ 87%] Built target straight_line_node
+[23.858s] [ 87%] Built target circumference_node
+[24.231s] [ 87%] Built target test_cmd_vel
+[24.400s] [ 87%] Built target pid_node
+[24.693s] [ 93%] [32m[1mLinking CXX executable fuzzy_longitudinal_controllers[0m
+[24.909s] [100%] [32m[1mLinking CXX executable stanley_node[0m
+[25.402s] [100%] Built target fuzzy_longitudinal_controllers
+[25.607s] [100%] Built target stanley_node
+[25.627s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[25.678s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface
+[25.684s] -- Install configuration: ""
+[25.684s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/read_parameters_pi
+[25.687s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/read_parameters_pi" to ""
+[25.688s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/test_cmd_vel
+[25.691s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/test_cmd_vel" to ""
+[25.691s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node
+[25.694s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/pid_node" to ""
+[25.695s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_longitudinal_controllers
+[25.698s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/fuzzy_longitudinal_controllers" to ""
+[25.698s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node
+[25.703s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/stanley_node" to ""
+[25.704s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node
+[25.708s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/straight_line_node" to ""
+[25.708s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node
+[25.712s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node" to ""
+[25.712s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node
+[25.714s] -- Set runtime path of "/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node" to ""
+[25.714s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch
+[25.714s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/rplidar.launch.py
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/parent_prefix_path/cpp_interface
+[25.714s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.sh
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/ament_prefix_path.dsv
+[25.714s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.sh
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/environment/path.dsv
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.bash
+[25.714s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.sh
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.zsh
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/local_setup.dsv
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.dsv
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/packages/cpp_interface
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig.cmake
+[25.715s] -- Installing: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/cmake/cpp_interfaceConfig-version.cmake
+[25.715s] -- Up-to-date: /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/package.xml
+[25.718s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/cpp_interface

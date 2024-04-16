@@ -1,7 +1,0 @@
-{
-  "package_name": "tutorial_interfaces",
-  "non_idl_tuples": [
-    "/home/ngochoan/dev_ws/src/tutorial_interfaces:msg/MyInterface.msg",
-    "/home/ngochoan/dev_ws/src/tutorial_interfaces:srv/AddThreeInts.srv"
-  ]
-}

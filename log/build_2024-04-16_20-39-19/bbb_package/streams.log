@@ -1,0 +1,52 @@
+[0.027s] Invoking command in '/home/ngochoan/dev_ws/build/bbb_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/bbb_package -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/bbb_package
+[0.158s] -- The C compiler identification is GNU 11.4.0
+[0.258s] -- The CXX compiler identification is GNU 11.4.0
+[0.275s] -- Detecting C compiler ABI info
+[0.341s] -- Detecting C compiler ABI info - done
+[0.348s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.349s] -- Detecting C compile features
+[0.349s] -- Detecting C compile features - done
+[0.352s] -- Detecting CXX compiler ABI info
+[0.427s] -- Detecting CXX compiler ABI info - done
+[0.434s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.434s] -- Detecting CXX compile features
+[0.435s] -- Detecting CXX compile features - done
+[0.437s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.591s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.698s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.760s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.766s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.778s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.794s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.822s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.915s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.919s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.028s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.064s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.125s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.161s] -- Looking for pthread.h
+[1.244s] -- Looking for pthread.h - found
+[1.245s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.309s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.310s] -- Found Threads: TRUE  
+[1.466s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.515s] [31mCMake Error at CMakeLists.txt:23 (find_package):
+[1.515s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[1.515s]   asked CMake to find a package configuration file provided by "serial", but
+[1.515s]   CMake did not find one.
+[1.515s] 
+[1.515s]   Could not find a package configuration file provided by "serial" with any
+[1.516s]   of the following names:
+[1.516s] 
+[1.516s]     serialConfig.cmake
+[1.516s]     serial-config.cmake
+[1.516s] 
+[1.516s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[1.516s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[1.516s]   provides a separate development package or SDK, be sure it has been
+[1.516s]   installed.
+[1.516s] 
+[1.516s] [0m
+[1.516s] -- Configuring incomplete, errors occurred!
+[1.516s] See also "/home/ngochoan/dev_ws/build/bbb_package/CMakeFiles/CMakeOutput.log".
+[1.525s] Invoked command in '/home/ngochoan/dev_ws/build/bbb_package' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/bbb_package -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/bbb_package

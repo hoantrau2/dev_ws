@@ -1,0 +1,454 @@
+[0.000000] (-) TimerEvent: {}
+[0.000358] (bbb_package) JobQueued: {'identifier': 'bbb_package', 'dependencies': OrderedDict()}
+[0.000385] (cpp_interface) JobQueued: {'identifier': 'cpp_interface', 'dependencies': OrderedDict()}
+[0.000431] (cpp_srvcli) JobQueued: {'identifier': 'cpp_srvcli', 'dependencies': OrderedDict()}
+[0.000483] (csm) JobQueued: {'identifier': 'csm', 'dependencies': OrderedDict()}
+[0.000518] (template_ros2) JobQueued: {'identifier': 'template_ros2', 'dependencies': OrderedDict()}
+[0.000580] (ros2_laser_scan_matcher) JobQueued: {'identifier': 'ros2_laser_scan_matcher', 'dependencies': OrderedDict([('csm', '/home/ngochoan/dev_ws/install/csm')])}
+[0.000901] (csm) JobStarted: {'identifier': 'csm'}
+[0.005284] (bbb_package) JobStarted: {'identifier': 'bbb_package'}
+[0.008292] (cpp_interface) JobStarted: {'identifier': 'cpp_interface'}
+[0.011453] (cpp_srvcli) JobStarted: {'identifier': 'cpp_srvcli'}
+[0.016005] (template_ros2) JobStarted: {'identifier': 'template_ros2'}
+[0.022286] (csm) JobProgress: {'identifier': 'csm', 'progress': 'cmake'}
+[0.022486] (csm) Command: {'cmd': ['/usr/bin/cmake', '/home/ngochoan/dev_ws/src/csm', '-DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/csm'], 'cwd': '/home/ngochoan/dev_ws/build/csm', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/csm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.026255] (bbb_package) JobProgress: {'identifier': 'bbb_package', 'progress': 'cmake'}
+[0.026455] (bbb_package) Command: {'cmd': ['/usr/bin/cmake', '/home/ngochoan/dev_ws/src/bbb_package', '-DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/bbb_package'], 'cwd': '/home/ngochoan/dev_ws/build/bbb_package', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/bbb_package'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.029427] (cpp_interface) JobProgress: {'identifier': 'cpp_interface', 'progress': 'cmake'}
+[0.029817] (cpp_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ngochoan/dev_ws/src/cpp_interface', '-DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/cpp_interface'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_interface', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.035270] (cpp_srvcli) JobProgress: {'identifier': 'cpp_srvcli', 'progress': 'cmake'}
+[0.035450] (cpp_srvcli) Command: {'cmd': ['/usr/bin/cmake', '/home/ngochoan/dev_ws/src/cpp_srvcli', '-DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/cpp_srvcli'], 'cwd': '/home/ngochoan/dev_ws/build/cpp_srvcli', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/cpp_srvcli'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.042352] (template_ros2) JobProgress: {'identifier': 'template_ros2', 'progress': 'cmake'}
+[0.042835] (template_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/ngochoan/dev_ws/src/template_ros2', '-DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/template_ros2'], 'cwd': '/home/ngochoan/dev_ws/build/template_ros2', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/template_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100710] (-) TimerEvent: {}
+[0.114317] (cpp_srvcli) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.114598] (csm) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.117753] (bbb_package) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.132761] (cpp_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.144319] (template_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.185795] (csm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.188750] (cpp_srvcli) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.193222] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200807] (-) TimerEvent: {}
+[0.201598] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.206974] (bbb_package) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.211225] (cpp_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.213856] (template_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.215293] (bbb_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.230376] (cpp_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.230712] (template_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.281388] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.283002] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.292115] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.292656] (cpp_srvcli) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.292960] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.293103] (csm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.293417] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.293976] (csm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.297808] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300115] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300909] (-) TimerEvent: {}
+[0.304930] (bbb_package) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.308312] (template_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.310173] (cpp_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.316857] (bbb_package) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.317121] (bbb_package) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.317661] (bbb_package) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.318662] (template_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.318946] (template_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.319850] (template_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.324358] (template_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.325196] (bbb_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.326060] (cpp_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.326633] (cpp_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.327371] (cpp_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.332572] (cpp_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401056] (-) TimerEvent: {}
+[0.410509] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.417500] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.433818] (cpp_srvcli) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.434556] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.435018] (cpp_srvcli) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.436184] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.436484] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.437071] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.439373] (cpp_srvcli) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.441311] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.444066] (template_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.448240] (bbb_package) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.450190] (cpp_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.456745] (template_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.457345] (template_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.458202] (template_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.460059] (bbb_package) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.460722] (bbb_package) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.461207] (template_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.461837] (bbb_package) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.464033] (cpp_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.464412] (cpp_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.465129] (cpp_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.465768] (bbb_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.468961] (cpp_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.501494] (-) TimerEvent: {}
+[0.602975] (-) TimerEvent: {}
+[0.661112] (cpp_srvcli) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.676866] (csm) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.682540] (template_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.689622] (bbb_package) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.692804] (cpp_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.703081] (-) TimerEvent: {}
+[0.771051] (cpp_srvcli) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.784821] (csm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.803182] (-) TimerEvent: {}
+[0.807640] (bbb_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.810264] (cpp_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.812306] (cpp_srvcli) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.819567] (cpp_srvcli) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.821795] (template_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.829863] (cpp_srvcli) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.842265] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.846131] (cpp_srvcli) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.850484] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.862770] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.873626] (cpp_srvcli) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.884299] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.896029] (bbb_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.903302] (-) TimerEvent: {}
+[0.904092] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.910820] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.915176] (bbb_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.919182] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.934927] (cpp_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.935183] (bbb_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.951301] (bbb_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.959137] (cpp_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.967408] (template_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.967784] (template_ros2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.967913] (template_ros2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.977187] (template_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.979071] (template_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.979783] (bbb_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.980425] (template_ros2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.981933] (template_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.988984] (template_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.989187] (template_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[0.989968] (cpp_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.994265] (template_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/template_ros2\n'}
+[0.997991] (template_ros2) CommandEnded: {'returncode': 0}
+[0.999177] (template_ros2) JobProgress: {'identifier': 'template_ros2', 'progress': 'build'}
+[0.999220] (template_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/template_ros2', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/template_ros2', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/template_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.003379] (-) TimerEvent: {}
+[1.007176] (cpp_srvcli) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.009832] (cpp_srvcli) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.025497] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.029097] (csm) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.051166] (template_ros2) CommandEnded: {'returncode': 0}
+[1.067794] (bbb_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.070270] (bbb_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.074220] (template_ros2) JobProgress: {'identifier': 'template_ros2', 'progress': 'install'}
+[1.079474] (cpp_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.081850] (cpp_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.086385] (template_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ngochoan/dev_ws/build/template_ros2'], 'cwd': '/home/ngochoan/dev_ws/build/template_ros2', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/template_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.094599] (template_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.094844] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/ament_index/resource_index/package_run_dependencies/template_ros2\n'}
+[1.099469] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/ament_index/resource_index/parent_prefix_path/template_ros2\n'}
+[1.103938] (-) TimerEvent: {}
+[1.105500] (template_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/environment/ament_prefix_path.sh\n'}
+[1.105704] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/environment/ament_prefix_path.dsv\n'}
+[1.105869] (template_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/environment/path.sh\n'}
+[1.106990] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/environment/path.dsv\n'}
+[1.107158] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/local_setup.bash\n'}
+[1.107463] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/local_setup.sh\n'}
+[1.107564] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/local_setup.zsh\n'}
+[1.107659] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/local_setup.dsv\n'}
+[1.107752] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/package.dsv\n'}
+[1.107844] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/ament_index/resource_index/packages/template_ros2\n'}
+[1.107935] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/cmake/template_ros2Config.cmake\n'}
+[1.108039] (template_ros2) StdoutLine: {'line': b'-- Installing: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/cmake/template_ros2Config-version.cmake\n'}
+[1.108142] (template_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/ngochoan/dev_ws/install/template_ros2/share/template_ros2/package.xml\n'}
+[1.108238] (template_ros2) CommandEnded: {'returncode': 0}
+[1.138076] (cpp_srvcli) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.156972] (template_ros2) JobEnded: {'identifier': 'template_ros2', 'rc': 0}
+[1.166599] (csm) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.173494] (cpp_srvcli) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.206057] (-) TimerEvent: {}
+[1.209845] (bbb_package) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.212804] (csm) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.237556] (cpp_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.242183] (cpp_srvcli) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.248864] (bbb_package) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.256429] (cpp_srvcli) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.276035] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.288245] (csm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.293492] (cpp_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.306178] (-) TimerEvent: {}
+[1.311437] (bbb_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.324896] (bbb_package) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.361218] (cpp_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.371106] (cpp_interface) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.371378] (csm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.371683] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.372475] (cpp_srvcli) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.372986] (cpp_srvcli) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.406282] (-) TimerEvent: {}
+[1.406704] (bbb_package) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.407198] (bbb_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.447803] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.449110] (csm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.455657] (cpp_interface) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.456107] (cpp_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.457357] (cpp_srvcli) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.458463] (cpp_srvcli) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.487814] (bbb_package) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.488821] (bbb_package) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.506373] (-) TimerEvent: {}
+[1.531230] (cpp_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.532623] (cpp_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.606491] (-) TimerEvent: {}
+[1.656181] (cpp_srvcli) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[1.706579] (-) TimerEvent: {}
+[1.726450] (bbb_package) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.750660] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.762355] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[1.763903] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/csm\n'}
+[1.772491] (csm) CommandEnded: {'returncode': 0}
+[1.773295] (csm) JobProgress: {'identifier': 'csm', 'progress': 'build'}
+[1.773766] (csm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ngochoan/dev_ws/build/csm', '--', '-j8', '-l8'], 'cwd': '/home/ngochoan/dev_ws/build/csm', 'env': OrderedDict([('USER', 'ngochoan'), ('LC_TIME', 'vi_VN'), ('GIO_MODULE_DIR', '/home/ngochoan/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GIT_ASKPASS', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('LESS', '-R'), ('HOME', '/home/ngochoan'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/ngochoan/dev_ws'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/157/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('TERM_PROGRAM_VERSION', '1.88.1'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ZSH', '/home/ngochoan/.oh-my-zsh'), ('GTK_IM_MODULE_FILE', '/home/ngochoan/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('PAGER', 'less'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/157/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'vi_VN'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/157/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1971'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('COLORTERM', 'truecolor'), ('PICO_TOOLCHAIN_PATH', '...'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ngochoan'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USER_ZDOTDIR', '/home/ngochoan'), ('USERNAME', 'ngochoan'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('dissertation', '/media/ngochoan/Intermediate_memory/mobile_robot/Dissertation/Software'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1971,unix/linux:/tmp/.ICE-unix/1971'), ('GTK_EXE_PREFIX', '/snap/code/157/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/722bb608_5887_4a68_bc08_fa62a19c988f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/157/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'vi_VN'), ('VSCODE_INJECTION', '1'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.167'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2e04aac935.sock'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/ngochoan/snap/code/157/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'vi_VN'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ngochoan/dev_ws/build/csm'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PICO_SDK_PATH', '/home/ngochoan/micro_ros_ws/src/pico-sdk'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=bc713dc567e6c86c0fe7b52f661e71b9'), ('XDG_DATA_DIRS', '/home/ngochoan/snap/code/157/.local/share:/home/ngochoan/snap/code/157:/snap/code/157/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('ZDOTDIR', '/home/ngochoan'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('disk', '/media/ngochoan/Intermediate_memory'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.790782] (cpp_interface) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.6 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[1.806684] (-) TimerEvent: {}
+[1.808153] (bbb_package) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:23 (find_package):\n'}
+[1.808390] (bbb_package) StderrLine: {'line': b'  By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.808495] (bbb_package) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "serial", but\n'}
+[1.808587] (bbb_package) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.808684] (bbb_package) StderrLine: {'line': b'\n'}
+[1.808794] (bbb_package) StderrLine: {'line': b'  Could not find a package configuration file provided by "serial" with any\n'}
+[1.808884] (bbb_package) StderrLine: {'line': b'  of the following names:\n'}
+[1.808971] (bbb_package) StderrLine: {'line': b'\n'}
+[1.809057] (bbb_package) StderrLine: {'line': b'    serialConfig.cmake\n'}
+[1.809143] (bbb_package) StderrLine: {'line': b'    serial-config.cmake\n'}
+[1.809230] (bbb_package) StderrLine: {'line': b'\n'}
+[1.809314] (bbb_package) StderrLine: {'line': b'  Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set\n'}
+[1.809400] (bbb_package) StderrLine: {'line': b'  "serial_DIR" to a directory containing one of the above files.  If "serial"\n'}
+[1.809486] (bbb_package) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.809565] (bbb_package) StderrLine: {'line': b'  installed.\n'}
+[1.809671] (bbb_package) StderrLine: {'line': b'\n'}
+[1.809745] (bbb_package) StderrLine: {'line': b'\x1b[0m\n'}
+[1.809818] (bbb_package) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.809899] (bbb_package) StdoutLine: {'line': b'See also "/home/ngochoan/dev_ws/build/bbb_package/CMakeFiles/CMakeOutput.log".\n'}
+[1.823347] (bbb_package) CommandEnded: {'returncode': 1}
+[1.824061] (csm) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o\x1b[0m\n'}
+[1.826200] (csm) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o\x1b[0m\n'}
+[1.828116] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o\x1b[0m\n'}
+[1.837896] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o\x1b[0m\n'}
+[1.838273] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o\x1b[0m\n'}
+[1.842506] (csm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o\x1b[0m\n'}
+[1.844806] (csm) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o\x1b[0m\n'}
+[1.852222] (bbb_package) JobEnded: {'identifier': 'bbb_package', 'rc': 1}
+[1.868480] (csm) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o\x1b[0m\n'}
+[1.906789] (-) TimerEvent: {}
+[1.978220] (cpp_srvcli) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.008006] (-) TimerEvent: {}
+[2.011842] (cpp_srvcli) StdoutLine: {'line': b'-- Generating done\n'}
+[2.018558] (cpp_srvcli) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/cpp_srvcli\n'}
+[2.034754] (cpp_srvcli) JobEnded: {'identifier': 'cpp_srvcli', 'rc': 'SIGINT'}
+[2.108113] (-) TimerEvent: {}
+[2.208448] (-) TimerEvent: {}
+[2.254180] (cpp_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.308954] (-) TimerEvent: {}
+[2.409697] (-) TimerEvent: {}
+[2.510507] (-) TimerEvent: {}
+[2.530158] (cpp_interface) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.531537] (cpp_interface) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.532279] (cpp_interface) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.534608] (cpp_interface) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.536763] (cpp_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.538800] (cpp_interface) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.541611] (cpp_interface) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.542664] (cpp_interface) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.544438] (cpp_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.554715] (cpp_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.612526] (-) TimerEvent: {}
+[2.673416] (cpp_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[2.682121] (cpp_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ngochoan/dev_ws/build/cpp_interface\n'}
+[2.697521] (cpp_interface) JobEnded: {'identifier': 'cpp_interface', 'rc': 'SIGINT'}
+[2.712638] (-) TimerEvent: {}
+[2.813378] (-) TimerEvent: {}
+[2.914293] (-) TimerEvent: {}
+[3.014771] (-) TimerEvent: {}
+[3.115262] (-) TimerEvent: {}
+[3.215749] (-) TimerEvent: {}
+[3.316238] (-) TimerEvent: {}
+[3.416704] (-) TimerEvent: {}
+[3.517179] (-) TimerEvent: {}
+[3.617653] (-) TimerEvent: {}
+[3.723932] (-) TimerEvent: {}
+[3.825083] (-) TimerEvent: {}
+[3.851961] (csm) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o\x1b[0m\n'}
+[3.925188] (-) TimerEvent: {}
+[3.959922] (csm) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o\x1b[0m\n'}
+[3.978689] (csm) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o\x1b[0m\n'}
+[4.010426] (csm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o\x1b[0m\n'}
+[4.025564] (-) TimerEvent: {}
+[4.125905] (-) TimerEvent: {}
+[4.136266] (csm) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o\x1b[0m\n'}
+[4.220768] (csm) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o\x1b[0m\n'}
+[4.226153] (-) TimerEvent: {}
+[4.289825] (csm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o\x1b[0m\n'}
+[4.326260] (-) TimerEvent: {}
+[4.362609] (csm) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o\x1b[0m\n'}
+[4.426376] (-) TimerEvent: {}
+[4.526863] (-) TimerEvent: {}
+[4.627415] (-) TimerEvent: {}
+[4.728420] (-) TimerEvent: {}
+[4.829289] (-) TimerEvent: {}
+[4.930068] (-) TimerEvent: {}
+[5.030872] (-) TimerEvent: {}
+[5.131436] (-) TimerEvent: {}
+[5.232007] (-) TimerEvent: {}
+[5.332517] (-) TimerEvent: {}
+[5.433086] (-) TimerEvent: {}
+[5.533705] (-) TimerEvent: {}
+[5.634448] (-) TimerEvent: {}
+[5.735037] (-) TimerEvent: {}
+[5.835607] (-) TimerEvent: {}
+[5.853975] (csm) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o\x1b[0m\n'}
+[5.935957] (-) TimerEvent: {}
+[5.980788] (csm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o\x1b[0m\n'}
+[5.986699] (csm) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o\x1b[0m\n'}
+[6.036197] (-) TimerEvent: {}
+[6.137064] (-) TimerEvent: {}
+[6.193831] (csm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o\x1b[0m\n'}
+[6.237223] (-) TimerEvent: {}
+[6.338414] (-) TimerEvent: {}
+[6.442440] (-) TimerEvent: {}
+[6.505398] (csm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o\x1b[0m\n'}
+[6.543032] (-) TimerEvent: {}
+[6.644098] (-) TimerEvent: {}
+[6.672229] (csm) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o\x1b[0m\n'}
+[6.744213] (-) TimerEvent: {}
+[6.845167] (-) TimerEvent: {}
+[6.946410] (-) TimerEvent: {}
+[7.047212] (-) TimerEvent: {}
+[7.148066] (-) TimerEvent: {}
+[7.248861] (-) TimerEvent: {}
+[7.349656] (-) TimerEvent: {}
+[7.353081] (csm) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o\x1b[0m\n'}
+[7.449789] (-) TimerEvent: {}
+[7.550188] (-) TimerEvent: {}
+[7.650745] (-) TimerEvent: {}
+[7.751294] (-) TimerEvent: {}
+[7.851771] (-) TimerEvent: {}
+[7.952087] (-) TimerEvent: {}
+[8.052401] (-) TimerEvent: {}
+[8.152726] (-) TimerEvent: {}
+[8.253021] (-) TimerEvent: {}
+[8.353318] (-) TimerEvent: {}
+[8.453702] (-) TimerEvent: {}
+[8.554078] (-) TimerEvent: {}
+[8.654448] (-) TimerEvent: {}
+[8.754761] (-) TimerEvent: {}
+[8.855072] (-) TimerEvent: {}
+[8.955366] (-) TimerEvent: {}
+[9.055658] (-) TimerEvent: {}
+[9.155954] (-) TimerEvent: {}
+[9.256246] (-) TimerEvent: {}
+[9.356873] (-) TimerEvent: {}
+[9.457304] (-) TimerEvent: {}
+[9.557538] (-) TimerEvent: {}
+[9.657830] (-) TimerEvent: {}
+[9.758095] (-) TimerEvent: {}
+[9.858369] (-) TimerEvent: {}
+[9.958621] (-) TimerEvent: {}
+[10.058869] (-) TimerEvent: {}
+[10.159122] (-) TimerEvent: {}
+[10.259372] (-) TimerEvent: {}
+[10.359643] (-) TimerEvent: {}
+[10.459992] (-) TimerEvent: {}
+[10.560424] (-) TimerEvent: {}
+[10.660711] (-) TimerEvent: {}
+[10.761008] (-) TimerEvent: {}
+[10.861290] (-) TimerEvent: {}
+[10.961577] (-) TimerEvent: {}
+[11.061865] (-) TimerEvent: {}
+[11.162172] (-) TimerEvent: {}
+[11.262523] (-) TimerEvent: {}
+[11.362898] (-) TimerEvent: {}
+[11.463249] (-) TimerEvent: {}
+[11.563544] (-) TimerEvent: {}
+[11.663864] (-) TimerEvent: {}
+[11.764155] (-) TimerEvent: {}
+[11.864390] (-) TimerEvent: {}
+[11.964688] (-) TimerEvent: {}
+[12.065052] (-) TimerEvent: {}
+[12.165370] (-) TimerEvent: {}
+[12.265658] (-) TimerEvent: {}
+[12.366056] (-) TimerEvent: {}
+[12.466350] (-) TimerEvent: {}
+[12.566645] (-) TimerEvent: {}
+[12.666994] (-) TimerEvent: {}
+[12.767291] (-) TimerEvent: {}
+[12.867603] (-) TimerEvent: {}
+[12.967901] (-) TimerEvent: {}
+[13.068201] (-) TimerEvent: {}
+[13.168599] (-) TimerEvent: {}
+[13.269051] (-) TimerEvent: {}
+[13.369338] (-) TimerEvent: {}
+[13.469597] (-) TimerEvent: {}
+[13.569895] (-) TimerEvent: {}
+[13.670239] (-) TimerEvent: {}
+[13.770545] (-) TimerEvent: {}
+[13.870813] (-) TimerEvent: {}
+[13.971119] (-) TimerEvent: {}
+[14.071428] (-) TimerEvent: {}
+[14.171790] (-) TimerEvent: {}
+[14.272114] (-) TimerEvent: {}
+[14.372423] (-) TimerEvent: {}
+[14.472751] (-) TimerEvent: {}
+[14.573049] (-) TimerEvent: {}
+[14.673407] (-) TimerEvent: {}
+[14.773687] (-) TimerEvent: {}
+[14.874111] (-) TimerEvent: {}
+[14.974539] (-) TimerEvent: {}
+[15.074793] (-) TimerEvent: {}
+[15.175122] (-) TimerEvent: {}
+[15.275376] (-) TimerEvent: {}
+[15.375700] (-) TimerEvent: {}
+[15.476073] (-) TimerEvent: {}
+[15.576666] (-) TimerEvent: {}
+[15.676954] (-) TimerEvent: {}
+[15.777245] (-) TimerEvent: {}
+[15.877566] (-) TimerEvent: {}
+[15.977916] (-) TimerEvent: {}
+[16.078241] (-) TimerEvent: {}
+[16.178562] (-) TimerEvent: {}
+[16.278840] (-) TimerEvent: {}
+[16.379132] (-) TimerEvent: {}
+[16.479425] (-) TimerEvent: {}
+[16.579710] (-) TimerEvent: {}
+[16.680029] (-) TimerEvent: {}
+[16.780312] (-) TimerEvent: {}
+[16.880604] (-) TimerEvent: {}
+[16.980961] (-) TimerEvent: {}
+[17.081337] (-) TimerEvent: {}
+[17.181626] (-) TimerEvent: {}
+[17.281963] (-) TimerEvent: {}
+[17.382310] (-) TimerEvent: {}
+[17.482630] (-) TimerEvent: {}
+[17.582911] (-) TimerEvent: {}
+[17.683164] (-) TimerEvent: {}
+[17.783743] (-) TimerEvent: {}
+[17.884181] (-) TimerEvent: {}
+[17.984460] (-) TimerEvent: {}
+[18.084789] (-) TimerEvent: {}
+[18.185153] (-) TimerEvent: {}
+[18.285490] (-) TimerEvent: {}
+[18.357171] (csm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcsm.so\x1b[0m\n'}
+[18.385576] (-) TimerEvent: {}
+[18.485849] (-) TimerEvent: {}
+[18.586147] (-) TimerEvent: {}
+[18.686469] (-) TimerEvent: {}
+[18.786814] (-) TimerEvent: {}
+[18.805943] (csm) StdoutLine: {'line': b'[100%] Built target csm\n'}
+[18.816290] (csm) JobEnded: {'identifier': 'csm', 'rc': 'SIGINT'}
+[18.826841] (ros2_laser_scan_matcher) JobSkipped: {'identifier': 'ros2_laser_scan_matcher'}
+[18.826920] (-) EventReactorShutdown: {}

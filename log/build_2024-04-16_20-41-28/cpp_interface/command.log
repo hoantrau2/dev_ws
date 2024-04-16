@@ -1,0 +1,1 @@
+Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/cpp_interface -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/cpp_interface

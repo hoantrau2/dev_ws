@@ -14,7 +14,7 @@ def generate_launch_description():
                 'angle_compensate': True,
                 'scan_mode': 'Standard' }
             ]
-          ar  ),
+            ),
         Node(
             package='ros2_laser_scan_matcher', 
             executable='laser_scan_matcher', 

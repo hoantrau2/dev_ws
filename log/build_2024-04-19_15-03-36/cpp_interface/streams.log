@@ -1,0 +1,24 @@
+[0.010s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[0.085s] [ 38%] Built target test_cmd_vel
+[0.086s] [ 38%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[0.086s] [ 38%] [32mBuilding CXX object CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.o[0m
+[0.086s] [ 44%] Built target pid_node
+[0.087s] [ 44%] Built target read_parameters_pi
+[0.087s] [ 55%] Built target fuzzy_longitudinal_controllers
+[0.087s] [ 66%] Built target sinusoidal_node
+[0.091s] [ 72%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[0.111s] [ 83%] Built target controllers_node
+[2.683s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:[m[K In member function ‘[01m[Kvoid CircumferenceNode::flag_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.683s] [01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:39:74:[m[K [01;31m[Kerror: [m[K‘[01m[KSAMPLE_TIME[m[K’ was not declared in this scope
+[2.683s]    39 |         message.data[0] = RADIUS * std::cos((LINEAR_VELOCITY / RADIUS) * [01;31m[KSAMPLE_TIME[m[K * flag) - RADIUS;
+[2.683s]       |                                                                          [01;31m[K^~~~~~~~~~~[m[K
+[5.704s] gmake[2]: *** [CMakeFiles/circumference_node.dir/build.make:76: CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o] Error 1
+[5.704s] gmake[1]: *** [CMakeFiles/Makefile2:309: CMakeFiles/circumference_node.dir/all] Error 2
+[5.704s] gmake[1]: *** Waiting for unfinished jobs....
+[8.980s] [ 88%] [32m[1mLinking CXX executable straight_line_node[0m
+[9.442s] [ 88%] Built target straight_line_node
+[11.101s] [ 94%] [32m[1mLinking CXX executable data_processing_node[0m
+[11.694s] [ 94%] Built target data_processing_node
+[11.695s] gmake: *** [Makefile:146: all] Error 2
+[11.697s] Invoked command in '/home/ngochoan/dev_ws/build/cpp_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8

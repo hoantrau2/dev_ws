@@ -5,7 +5,6 @@
  * @version 1
  * @date 2024-03-30
  */
-
 #include <chrono>
 #include <cmath>
 #include <functional>
@@ -15,12 +14,12 @@
 #include "std_msgs/msg/float64_multi_array.hpp"
 
 #define LINEAR_VELOCITY 0.5
-#define RADIUS 1.0
-#define SAMPLE_TIME 0.1 // 100ms
+#define RADIUS 1.5
+#define SAMPLE_ANGLE (30.0 * M_PI / 180.0) // 100ms
 
 class CircumferenceNode : public rclcpp::Node {
  public:
-  CircumferenceNode() : Node("circumference_node"), flag(0.0), pre_flag(0.0) {
+  CircumferenceNode() : Node("circumference_node"), flag(0.0) {
     subscription_flag_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
       "/flag", 10, std::bind(&CircumferenceNode::flag_callback, this, std::placeholders::_1));
 
@@ -34,24 +33,21 @@ class CircumferenceNode : public rclcpp::Node {
     if (msg->layout.data_offset == 777 && msg->data.size() == 1) {
       flag = msg->data[0];
       // push values to debug
-      RCLCPP_INFO(this->get_logger(), "Received flag = %lf", flag);
+      // RCLCPP_INFO(this->get_logger(), "Received flag = %lf", flag);
 
-      if (flag != pre_flag) {
-        auto message = std_msgs::msg::Float64MultiArray();
-        message.data.resize(2);
-        message.data[0] = RADIUS * std::cos((LINEAR_VELOCITY / RADIUS) * SAMPLE_TIME * flag) - RADIUS;
-        message.data[1] = RADIUS * std::sin((LINEAR_VELOCITY / RADIUS) * SAMPLE_TIME * flag);
-        message.layout.data_offset = 666;
-        pre_flag = flag;
-        // push values to debug
-        RCLCPP_INFO(this->get_logger(), "Reference map: x = %lf, y = %lf", message.data[0], message.data[1]);
-        publisher_reference_map_->publish(message);
-      }
+      auto message = std_msgs::msg::Float64MultiArray();
+      message.data.resize(2);
+      message.data[0] = RADIUS * std::cos(SAMPLE_ANGLE * flag) - RADIUS;
+      message.data[1] = RADIUS * std::sin(SAMPLE_ANGLE * flag);
+      message.layout.data_offset = 666;
+      // push values to debug
+      // RCLCPP_INFO(this->get_logger(), "Reference map: x = %lf, y = %lf", message.data[0], message.data[1]);
+      publisher_reference_map_->publish(message);
     } else {
       RCLCPP_ERROR(this->get_logger(), "Invalid message format or size of /flag topic");
     }
   }
-  double flag, pre_flag;
+  double flag;
   rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr subscription_flag_;
   rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_reference_map_;
 };

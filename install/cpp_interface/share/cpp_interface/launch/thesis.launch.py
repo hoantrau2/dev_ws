@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
         Node(
-            package='bbb_package', 
+            package='cpp_interface', 
             executable='pid_node',
             output='screen',
             on_exit=[ExecuteProcess(
@@ -44,24 +44,23 @@ def generate_launch_description():
         ),
 
         # Delayed execution nodes
-        TimerAction(
-            actions=[
-                Node(
-                    package='bbb_package', 
-                    executable='read_IMU',
-                    output='screen',
-                    on_exit=[ExecuteProcess(
-                        cmd=["echo", "IMU_node initialized"],
-                        output='screen'
-                    )]
-                )
-            ],
-            period=6.0, 
-            oneshot=True
-        ),
+        # TimerAction(
+        #     actions=[
+        #         Node(
+        #             package='bbb_package', 
+        #             executable='read_IMU',
+        #             output='screen',
+        #             on_exit=[ExecuteProcess(
+        #                 cmd=["echo", "IMU_node initialized"],
+        #                 output='screen'
+        #             )]
+        #         )
+        #     ],
+        #     period=6.0
+        # ),
 
         Node(
-            package='bbb_package', 
+            package='cpp_interface', 
             executable='data_processing_node',
             output='screen',
             on_exit=[ExecuteProcess(
@@ -71,19 +70,19 @@ def generate_launch_description():
         ),
 
         Node(
-            package='bbb_package', 
+            package='cpp_interface', 
             executable='straight_line_node',
             output='screen',
             on_exit=[ExecuteProcess(
                 cmd=["echo", "straight_line_node initialized"],
                 output='screen'
             )]
-        )
+        ),
 
         TimerAction(
             actions=[
                 Node(
-                    package='bbb_package', 
+                    package='cpp_interface', 
                     executable='controllers_node',
                     output='screen',
                     on_exit=[ExecuteProcess(
@@ -93,10 +92,10 @@ def generate_launch_description():
                 )
             ],
             period=6.0, 
-            oneshot=True
         ),
 
     ])
+
 
 
 

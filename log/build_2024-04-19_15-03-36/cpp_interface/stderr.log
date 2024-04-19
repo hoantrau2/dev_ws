@@ -1,0 +1,8 @@
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:[m[K In member function ‘[01m[Kvoid CircumferenceNode::flag_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/ngochoan/dev_ws/src/cpp_interface/src/circumference_node.cpp:39:74:[m[K [01;31m[Kerror: [m[K‘[01m[KSAMPLE_TIME[m[K’ was not declared in this scope
+   39 |         message.data[0] = RADIUS * std::cos((LINEAR_VELOCITY / RADIUS) * [01;31m[KSAMPLE_TIME[m[K * flag) - RADIUS;
+      |                                                                          [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/circumference_node.dir/build.make:76: CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:309: CMakeFiles/circumference_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

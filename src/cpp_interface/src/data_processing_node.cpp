@@ -16,7 +16,7 @@
 #include "tf2_msgs/msg/tf_message.hpp"
 
 #define SAMPLE_TIME 100
-#define ACCEPTED_ERROR 0.02
+#define ACCEPTED_ERROR 0.2
 
 class DataProcessingNode : public rclcpp::Node {
  public:

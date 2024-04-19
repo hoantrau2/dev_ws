@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target straight_line_node[0m
+[ 38%] Built target test_cmd_vel
+[ 38%] [32mBuilding CXX object CMakeFiles/circumference_node.dir/src/circumference_node.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.o[0m
+[ 44%] Built target pid_node
+[ 44%] Built target read_parameters_pi
+[ 55%] Built target fuzzy_longitudinal_controllers
+[ 66%] Built target sinusoidal_node
+[ 72%] [32mBuilding CXX object CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o[0m
+[ 83%] Built target controllers_node
+[ 88%] [32m[1mLinking CXX executable straight_line_node[0m
+[ 88%] Built target straight_line_node
+[ 94%] [32m[1mLinking CXX executable data_processing_node[0m
+[ 94%] Built target data_processing_node

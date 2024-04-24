@@ -198,78 +198,78 @@ cpp_srvcli_uninstall/fast:
 .PHONY : cpp_srvcli_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named server
+# Target rules for targets named data_processing_node
 
 # Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
+data_processing_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_processing_node
+.PHONY : data_processing_node
 
 # fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-.PHONY : server/fast
+data_processing_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/build
+.PHONY : data_processing_node/fast
 
 #=============================================================================
-# Target rules for targets named client
+# Target rules for targets named straight_line_node
 
 # Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
-.PHONY : client
+straight_line_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 straight_line_node
+.PHONY : straight_line_node
 
 # fast build rule for target.
-client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-.PHONY : client/fast
+straight_line_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
+.PHONY : straight_line_node/fast
 
-src/add_two_ints_client.o: src/add_two_ints_client.cpp.o
-.PHONY : src/add_two_ints_client.o
-
-# target to build an object file
-src/add_two_ints_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/add_two_ints_client.cpp.o
-.PHONY : src/add_two_ints_client.cpp.o
-
-src/add_two_ints_client.i: src/add_two_ints_client.cpp.i
-.PHONY : src/add_two_ints_client.i
-
-# target to preprocess a source file
-src/add_two_ints_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/add_two_ints_client.cpp.i
-.PHONY : src/add_two_ints_client.cpp.i
-
-src/add_two_ints_client.s: src/add_two_ints_client.cpp.s
-.PHONY : src/add_two_ints_client.s
-
-# target to generate assembly for a file
-src/add_two_ints_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/add_two_ints_client.cpp.s
-.PHONY : src/add_two_ints_client.cpp.s
-
-src/add_two_ints_server.o: src/add_two_ints_server.cpp.o
-.PHONY : src/add_two_ints_server.o
+src/data_processing_node.o: src/data_processing_node.cpp.o
+.PHONY : src/data_processing_node.o
 
 # target to build an object file
-src/add_two_ints_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/add_two_ints_server.cpp.o
-.PHONY : src/add_two_ints_server.cpp.o
+src/data_processing_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.o
+.PHONY : src/data_processing_node.cpp.o
 
-src/add_two_ints_server.i: src/add_two_ints_server.cpp.i
-.PHONY : src/add_two_ints_server.i
+src/data_processing_node.i: src/data_processing_node.cpp.i
+.PHONY : src/data_processing_node.i
 
 # target to preprocess a source file
-src/add_two_ints_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/add_two_ints_server.cpp.i
-.PHONY : src/add_two_ints_server.cpp.i
+src/data_processing_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.i
+.PHONY : src/data_processing_node.cpp.i
 
-src/add_two_ints_server.s: src/add_two_ints_server.cpp.s
-.PHONY : src/add_two_ints_server.s
+src/data_processing_node.s: src/data_processing_node.cpp.s
+.PHONY : src/data_processing_node.s
 
 # target to generate assembly for a file
-src/add_two_ints_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/add_two_ints_server.cpp.s
-.PHONY : src/add_two_ints_server.cpp.s
+src/data_processing_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.s
+.PHONY : src/data_processing_node.cpp.s
+
+src/straight_line_node.o: src/straight_line_node.cpp.o
+.PHONY : src/straight_line_node.o
+
+# target to build an object file
+src/straight_line_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.o
+.PHONY : src/straight_line_node.cpp.o
+
+src/straight_line_node.i: src/straight_line_node.cpp.i
+.PHONY : src/straight_line_node.i
+
+# target to preprocess a source file
+src/straight_line_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.i
+.PHONY : src/straight_line_node.cpp.i
+
+src/straight_line_node.s: src/straight_line_node.cpp.s
+.PHONY : src/straight_line_node.s
+
+# target to generate assembly for a file
+src/straight_line_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.s
+.PHONY : src/straight_line_node.cpp.s
 
 # Help Target
 help:
@@ -286,14 +286,14 @@ help:
 	@echo "... test"
 	@echo "... cpp_srvcli_uninstall"
 	@echo "... uninstall"
-	@echo "... client"
-	@echo "... server"
-	@echo "... src/add_two_ints_client.o"
-	@echo "... src/add_two_ints_client.i"
-	@echo "... src/add_two_ints_client.s"
-	@echo "... src/add_two_ints_server.o"
-	@echo "... src/add_two_ints_server.i"
-	@echo "... src/add_two_ints_server.s"
+	@echo "... data_processing_node"
+	@echo "... straight_line_node"
+	@echo "... src/data_processing_node.o"
+	@echo "... src/data_processing_node.i"
+	@echo "... src/data_processing_node.s"
+	@echo "... src/straight_line_node.o"
+	@echo "... src/straight_line_node.i"
+	@echo "... src/straight_line_node.s"
 .PHONY : help
 
 

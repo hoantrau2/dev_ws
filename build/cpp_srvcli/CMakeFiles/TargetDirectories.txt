@@ -1,7 +1,7 @@
 /home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/uninstall.dir
 /home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/cpp_srvcli_uninstall.dir
-/home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/server.dir
-/home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/client.dir
+/home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/data_processing_node.dir
+/home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/straight_line_node.dir
 /home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/test.dir
 /home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/edit_cache.dir
 /home/ngochoan/dev_ws/build/cpp_srvcli/CMakeFiles/rebuild_cache.dir

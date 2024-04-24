@@ -8,18 +8,18 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(example_interfaces REQUIRED)
+# find_package(example_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(tf2_msgs REQUIRED)
 
-add_executable(server src/add_two_ints_server.cpp)
-ament_target_dependencies(server
-rclcpp example_interfaces)
+add_executable(data_processing_node src/data_processing_node.cpp)
+ament_target_dependencies(data_processing_node rclcpp std_msgs tf2_msgs)
 
-add_executable(client src/add_two_ints_client.cpp)
-ament_target_dependencies(client
-rclcpp example_interfaces)
+add_executable(straight_line_node src/straight_line_node.cpp)
+ament_target_dependencies(straight_line_node rclcpp std_msgs)
 
 install(TARGETS
-server
-client
+data_processing_node
+straight_line_node
 DESTINATION lib/${PROJECT_NAME})
 ament_package()

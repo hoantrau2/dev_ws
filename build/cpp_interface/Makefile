@@ -263,6 +263,32 @@ data_processing_node/fast:
 .PHONY : data_processing_node/fast
 
 #=============================================================================
+# Target rules for targets named data_processing_node_straight
+
+# Build rule for target.
+data_processing_node_straight: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_processing_node_straight
+.PHONY : data_processing_node_straight
+
+# fast build rule for target.
+data_processing_node_straight/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/build
+.PHONY : data_processing_node_straight/fast
+
+#=============================================================================
+# Target rules for targets named data_processing_node_zz
+
+# Build rule for target.
+data_processing_node_zz: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 data_processing_node_zz
+.PHONY : data_processing_node_zz
+
+# fast build rule for target.
+data_processing_node_zz/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/build
+.PHONY : data_processing_node_zz/fast
+
+#=============================================================================
 # Target rules for targets named straight_line_node
 
 # Build rule for target.
@@ -385,6 +411,54 @@ src/data_processing_node.s: src/data_processing_node.cpp.s
 src/data_processing_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node.dir/build.make CMakeFiles/data_processing_node.dir/src/data_processing_node.cpp.s
 .PHONY : src/data_processing_node.cpp.s
+
+src/data_processing_node_straight.o: src/data_processing_node_straight.cpp.o
+.PHONY : src/data_processing_node_straight.o
+
+# target to build an object file
+src/data_processing_node_straight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/src/data_processing_node_straight.cpp.o
+.PHONY : src/data_processing_node_straight.cpp.o
+
+src/data_processing_node_straight.i: src/data_processing_node_straight.cpp.i
+.PHONY : src/data_processing_node_straight.i
+
+# target to preprocess a source file
+src/data_processing_node_straight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/src/data_processing_node_straight.cpp.i
+.PHONY : src/data_processing_node_straight.cpp.i
+
+src/data_processing_node_straight.s: src/data_processing_node_straight.cpp.s
+.PHONY : src/data_processing_node_straight.s
+
+# target to generate assembly for a file
+src/data_processing_node_straight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/src/data_processing_node_straight.cpp.s
+.PHONY : src/data_processing_node_straight.cpp.s
+
+src/data_processing_node_zz.o: src/data_processing_node_zz.cpp.o
+.PHONY : src/data_processing_node_zz.o
+
+# target to build an object file
+src/data_processing_node_zz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/src/data_processing_node_zz.cpp.o
+.PHONY : src/data_processing_node_zz.cpp.o
+
+src/data_processing_node_zz.i: src/data_processing_node_zz.cpp.i
+.PHONY : src/data_processing_node_zz.i
+
+# target to preprocess a source file
+src/data_processing_node_zz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/src/data_processing_node_zz.cpp.i
+.PHONY : src/data_processing_node_zz.cpp.i
+
+src/data_processing_node_zz.s: src/data_processing_node_zz.cpp.s
+.PHONY : src/data_processing_node_zz.s
+
+# target to generate assembly for a file
+src/data_processing_node_zz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/src/data_processing_node_zz.cpp.s
+.PHONY : src/data_processing_node_zz.cpp.s
 
 src/fuzzy_longitudinal_controllers.o: src/fuzzy_longitudinal_controllers.cpp.o
 .PHONY : src/fuzzy_longitudinal_controllers.o
@@ -548,6 +622,8 @@ help:
 	@echo "... circumference_node"
 	@echo "... controllers_node"
 	@echo "... data_processing_node"
+	@echo "... data_processing_node_straight"
+	@echo "... data_processing_node_zz"
 	@echo "... fuzzy_longitudinal_controllers"
 	@echo "... pid_node"
 	@echo "... read_parameters_pi"
@@ -563,6 +639,12 @@ help:
 	@echo "... src/data_processing_node.o"
 	@echo "... src/data_processing_node.i"
 	@echo "... src/data_processing_node.s"
+	@echo "... src/data_processing_node_straight.o"
+	@echo "... src/data_processing_node_straight.i"
+	@echo "... src/data_processing_node_straight.s"
+	@echo "... src/data_processing_node_zz.o"
+	@echo "... src/data_processing_node_zz.i"
+	@echo "... src/data_processing_node_zz.s"
 	@echo "... src/fuzzy_longitudinal_controllers.o"
 	@echo "... src/fuzzy_longitudinal_controllers.i"
 	@echo "... src/fuzzy_longitudinal_controllers.s"

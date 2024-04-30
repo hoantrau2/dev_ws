@@ -36,7 +36,7 @@ class DataProcessingNode : public rclcpp::Node {
   double angleIMU;
   std::vector<double> actual_position;
   int index;
-  double d ;
+  double d;
   double x[COUNTER];
   double y[COUNTER];
   double theta[COUNTER];
@@ -51,7 +51,7 @@ class DataProcessingNode : public rclcpp::Node {
     y[0] = 0;
     theta[0] = std::atan2(A, 1);
     RCLCPP_INFO(this->get_logger(), "Initializing arrays...");
-    for (int i = 1; i <= COUNTER; i++) {
+    for (int i = 1; i < COUNTER; i++) {
       x[i] = x[i - 1] + STEP_DISTANCE;
       y[i] = A * x[i] + B;
       theta[i] = std::atan2(A, 1);
@@ -75,15 +75,16 @@ class DataProcessingNode : public rclcpp::Node {
   }
 
   void timer_callback() {
-    double d_min = std::sqrt(std::pow((actual_position[0] - x[index]), 2) + std::pow((actual_position[1] - y[index]), 2));;
-    for (int i = index+1; i < std::min(index + 10, COUNTER); i++) {
-       d = std::sqrt(std::pow((actual_position[0] - x[i]), 2) + std::pow((actual_position[1] - y[i]), 2));
+    double d_min = std::sqrt(std::pow((actual_position[0] - x[index]), 2) + std::pow((actual_position[1] - y[index]), 2));
+    ;
+    for (int i = index + 1; i < std::min(index + 10, COUNTER); i++) {
+      d = std::sqrt(std::pow((actual_position[0] - x[i]), 2) + std::pow((actual_position[1] - y[i]), 2));
       if (d < d_min) {
         d_min = d;
         index = i;
       }
     }
-      double arctann = std::atan2(Kp * d_min, Ksoft + 0.4);
+    double arctann = std::atan2(Kp * d_min, Ksoft + 0.4);
     if (arctann > 20 * M_PI / 180)
       arctann = 20 * M_PI / 180;
     else if (arctann < -20 * M_PI / 180)
@@ -92,14 +93,12 @@ class DataProcessingNode : public rclcpp::Node {
     auto message = std_msgs::msg::Float64MultiArray();
     message.data.resize(2);
     if (std::atan2(actual_position[1], actual_position[0]) - theta[int(index)] >= 0)
-      message.data[0] = theta[int(index)]- angleIMU - arctann;
-      // message.data[0] = 45 * M_PI / 180- angleIMU - arctann;
+      message.data[0] = theta[int(index)] - angleIMU - arctann;
+    // message.data[0] = 45 * M_PI / 180- angleIMU - arctann;
     else
       message.data[0] = theta[int(index)] - angleIMU + arctann;
-      // message.data[0] = 45 * M_PI / 180- angleIMU - arctann;
-// message.data[0] = theta[int(index)] - angleIMU ;
-// message.data[0] = 45 * M_PI / 180- angleIMU ;
-    message.data[1] = d_min ;
+    // message.data[0] = 45 * M_PI / 180- angleIMU - arctann;
+    message.data[1] = d_min;
     message.layout.data_offset = 555;
     publisher_delta_->publish(message);
   }
@@ -118,13 +117,12 @@ class DataProcessingNode : public rclcpp::Node {
         actual_position[0] = -transform.transform.translation.x;
         actual_position[1] = transform.transform.translation.y;
         auto message2 = std_msgs::msg::Float64MultiArray();
-        message2.data.resize(6); // Set size of data vector to 4
+        message2.data.resize(5); // Set size of data vector to 4
         message2.data[0] = actual_position[0];
-        message2.data[1] = actual_position[1];
+        message2.data[1] = actual_position[1];  
         message2.data[2] = angleIMU;
         message2.data[3] = d;
-        message2.data[4] = index;
-        message2.data[5]  = theta[int(index)];
+        message2.data[4] = theta[int(index)];
         message2.layout.data_offset = 888;
         publisher_position_->publish(message2);
         break; // Exit loop after finding the desired transform

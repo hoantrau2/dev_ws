@@ -68,6 +68,8 @@ all: CMakeFiles/test_cmd_vel.dir/all
 all: CMakeFiles/pid_node.dir/all
 all: CMakeFiles/fuzzy_longitudinal_controllers.dir/all
 all: CMakeFiles/data_processing_node.dir/all
+all: CMakeFiles/data_processing_node_straight.dir/all
+all: CMakeFiles/data_processing_node_zz.dir/all
 all: CMakeFiles/straight_line_node.dir/all
 all: CMakeFiles/circumference_node.dir/all
 all: CMakeFiles/sinusoidal_node.dir/all
@@ -86,6 +88,8 @@ clean: CMakeFiles/test_cmd_vel.dir/clean
 clean: CMakeFiles/pid_node.dir/clean
 clean: CMakeFiles/fuzzy_longitudinal_controllers.dir/clean
 clean: CMakeFiles/data_processing_node.dir/clean
+clean: CMakeFiles/data_processing_node_straight.dir/clean
+clean: CMakeFiles/data_processing_node_zz.dir/clean
 clean: CMakeFiles/straight_line_node.dir/clean
 clean: CMakeFiles/circumference_node.dir/clean
 clean: CMakeFiles/sinusoidal_node.dir/clean
@@ -151,7 +155,7 @@ CMakeFiles/cpp_interface_uninstall.dir/clean:
 CMakeFiles/read_parameters_pi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/read_parameters_pi.dir/build.make CMakeFiles/read_parameters_pi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target read_parameters_pi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=15,16 "Built target read_parameters_pi"
 .PHONY : CMakeFiles/read_parameters_pi.dir/all
 
 # Build rule for subdir invocation for target.
@@ -177,7 +181,7 @@ CMakeFiles/read_parameters_pi.dir/clean:
 CMakeFiles/test_cmd_vel.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_cmd_vel.dir/build.make CMakeFiles/test_cmd_vel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=17,18 "Built target test_cmd_vel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=21,22 "Built target test_cmd_vel"
 .PHONY : CMakeFiles/test_cmd_vel.dir/all
 
 # Build rule for subdir invocation for target.
@@ -203,7 +207,7 @@ CMakeFiles/test_cmd_vel.dir/clean:
 CMakeFiles/pid_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target pid_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=13,14 "Built target pid_node"
 .PHONY : CMakeFiles/pid_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -229,7 +233,7 @@ CMakeFiles/pid_node.dir/clean:
 CMakeFiles/fuzzy_longitudinal_controllers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fuzzy_longitudinal_controllers.dir/build.make CMakeFiles/fuzzy_longitudinal_controllers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target fuzzy_longitudinal_controllers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=11,12 "Built target fuzzy_longitudinal_controllers"
 .PHONY : CMakeFiles/fuzzy_longitudinal_controllers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -275,13 +279,65 @@ CMakeFiles/data_processing_node.dir/clean:
 .PHONY : CMakeFiles/data_processing_node.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/data_processing_node_straight.dir
+
+# All Build rule for target.
+CMakeFiles/data_processing_node_straight.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=7,8 "Built target data_processing_node_straight"
+.PHONY : CMakeFiles/data_processing_node_straight.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/data_processing_node_straight.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data_processing_node_straight.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/data_processing_node_straight.dir/rule
+
+# Convenience name for target.
+data_processing_node_straight: CMakeFiles/data_processing_node_straight.dir/rule
+.PHONY : data_processing_node_straight
+
+# clean rule for target.
+CMakeFiles/data_processing_node_straight.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_straight.dir/build.make CMakeFiles/data_processing_node_straight.dir/clean
+.PHONY : CMakeFiles/data_processing_node_straight.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/data_processing_node_zz.dir
+
+# All Build rule for target.
+CMakeFiles/data_processing_node_zz.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=9,10 "Built target data_processing_node_zz"
+.PHONY : CMakeFiles/data_processing_node_zz.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/data_processing_node_zz.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/data_processing_node_zz.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles 0
+.PHONY : CMakeFiles/data_processing_node_zz.dir/rule
+
+# Convenience name for target.
+data_processing_node_zz: CMakeFiles/data_processing_node_zz.dir/rule
+.PHONY : data_processing_node_zz
+
+# clean rule for target.
+CMakeFiles/data_processing_node_zz.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/data_processing_node_zz.dir/build.make CMakeFiles/data_processing_node_zz.dir/clean
+.PHONY : CMakeFiles/data_processing_node_zz.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/straight_line_node.dir
 
 # All Build rule for target.
 CMakeFiles/straight_line_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=15,16 "Built target straight_line_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=19,20 "Built target straight_line_node"
 .PHONY : CMakeFiles/straight_line_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -333,7 +389,7 @@ CMakeFiles/circumference_node.dir/clean:
 CMakeFiles/sinusoidal_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sinusoidal_node.dir/build.make CMakeFiles/sinusoidal_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=13,14 "Built target sinusoidal_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ngochoan/dev_ws/build/cpp_interface/CMakeFiles --progress-num=17,18 "Built target sinusoidal_node"
 .PHONY : CMakeFiles/sinusoidal_node.dir/all
 
 # Build rule for subdir invocation for target.

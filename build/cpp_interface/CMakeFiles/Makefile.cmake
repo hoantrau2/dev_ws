@@ -753,6 +753,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pid_node.dir/DependInfo.cmake"
   "CMakeFiles/fuzzy_longitudinal_controllers.dir/DependInfo.cmake"
   "CMakeFiles/data_processing_node.dir/DependInfo.cmake"
+  "CMakeFiles/data_processing_node_straight.dir/DependInfo.cmake"
+  "CMakeFiles/data_processing_node_zz.dir/DependInfo.cmake"
   "CMakeFiles/straight_line_node.dir/DependInfo.cmake"
   "CMakeFiles/circumference_node.dir/DependInfo.cmake"
   "CMakeFiles/sinusoidal_node.dir/DependInfo.cmake"

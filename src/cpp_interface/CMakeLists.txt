@@ -29,6 +29,10 @@ ament_target_dependencies(fuzzy_longitudinal_controllers rclcpp std_msgs)
 
 add_executable(data_processing_node src/data_processing_node.cpp)
 ament_target_dependencies(data_processing_node rclcpp std_msgs tf2_msgs)
+add_executable(data_processing_node_straight src/data_processing_node_straight.cpp)
+ament_target_dependencies(data_processing_node_straight rclcpp std_msgs tf2_msgs)
+add_executable(data_processing_node_zz src/data_processing_node_zz.cpp)
+ament_target_dependencies(data_processing_node_zz rclcpp std_msgs tf2_msgs)
 
 add_executable(straight_line_node src/straight_line_node.cpp)
 ament_target_dependencies(straight_line_node rclcpp std_msgs)
@@ -60,6 +64,8 @@ install(TARGETS
   pid_node
   fuzzy_longitudinal_controllers
   data_processing_node
+  data_processing_node_straight
+  data_processing_node_zz
   straight_line_node
   circumference_node
   sinusoidal_node

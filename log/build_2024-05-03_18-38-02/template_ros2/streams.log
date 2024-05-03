@@ -1,0 +1,2 @@
+[0.026s] Invoking command in '/home/ngochoan/dev_ws/build/template_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/template_ros2 -- -j8 -l8
+[0.082s] Invoked command in '/home/ngochoan/dev_ws/build/template_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/template_ros2 -- -j8 -l8

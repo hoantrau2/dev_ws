@@ -1,0 +1,14 @@
+[0.027s] Invoking command in '/home/ngochoan/dev_ws/build/cpp_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/cpp_interface -- -j8 -l8
+[0.111s] [  7%] Built target test_cmd_vel
+[0.122s] [ 15%] Built target read_parameters_pi
+[0.125s] [ 23%] Built target pid_node
+[0.130s] [ 30%] Built target fuzzy_longitudinal_controllers
+[0.131s] [ 38%] Built target data_processing_node_straight
+[0.132s] [ 46%] Built target data_processing_node_zz
+[0.133s] [ 53%] Built target data_processing_node
+[0.134s] [ 61%] Built target straight_line_node
+[0.153s] [ 69%] Built target sinusoidal_node
+[0.155s] [ 76%] Built target circumference_node
+[0.158s] [ 84%] Built target publisher_ROS2
+[0.159s] [ 92%] Built target controllers_node
+[0.162s] [100%] Built target subscriber_ROS2

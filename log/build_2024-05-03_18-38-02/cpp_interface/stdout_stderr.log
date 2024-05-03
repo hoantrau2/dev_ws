@@ -1,0 +1,13 @@
+[  7%] Built target test_cmd_vel
+[ 15%] Built target read_parameters_pi
+[ 23%] Built target pid_node
+[ 30%] Built target fuzzy_longitudinal_controllers
+[ 38%] Built target data_processing_node_straight
+[ 46%] Built target data_processing_node_zz
+[ 53%] Built target data_processing_node
+[ 61%] Built target straight_line_node
+[ 69%] Built target sinusoidal_node
+[ 76%] Built target circumference_node
+[ 84%] Built target publisher_ROS2
+[ 92%] Built target controllers_node
+[100%] Built target subscriber_ROS2

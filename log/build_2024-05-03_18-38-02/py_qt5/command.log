@@ -1,0 +1,2 @@
+Invoking command in '/home/ngochoan/dev_ws/build/py_qt5': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8
+Invoked command in '/home/ngochoan/dev_ws/build/py_qt5' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8

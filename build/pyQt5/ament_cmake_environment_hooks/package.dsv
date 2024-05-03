@@ -1,0 +1,4 @@
+source;share/pyQt5/local_setup.bash
+source;share/pyQt5/local_setup.dsv
+source;share/pyQt5/local_setup.sh
+source;share/pyQt5/local_setup.zsh

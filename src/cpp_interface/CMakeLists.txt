@@ -46,6 +46,12 @@ ament_target_dependencies(sinusoidal_node rclcpp std_msgs)
 add_executable(controllers_node src/controllers_node.cpp)
 ament_target_dependencies(controllers_node rclcpp std_msgs)
 
+add_executable(publisher_ROS2 src/publisher_ROS2.cpp)
+ament_target_dependencies(publisher_ROS2 rclcpp std_msgs)
+
+add_executable(subscriber_ROS2 src/subscriber_ROS2.cpp)
+ament_target_dependencies(subscriber_ROS2 rclcpp std_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -70,6 +76,8 @@ install(TARGETS
   circumference_node
   sinusoidal_node
   controllers_node
+  publisher_ROS2
+  subscriber_ROS2
   DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY
   launch

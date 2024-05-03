@@ -1,0 +1,6 @@
+Invoking command in '/home/ngochoan/dev_ws/build/py_qt5': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/pyQt5 -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/py_qt5
+Invoked command in '/home/ngochoan/dev_ws/build/py_qt5' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ngochoan/dev_ws/src/pyQt5 -DCMAKE_INSTALL_PREFIX=/home/ngochoan/dev_ws/install/py_qt5
+Invoking command in '/home/ngochoan/dev_ws/build/py_qt5': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8
+Invoked command in '/home/ngochoan/dev_ws/build/py_qt5' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8
+Invoking command in '/home/ngochoan/dev_ws/build/py_qt5': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/py_qt5
+Invoked command in '/home/ngochoan/dev_ws/build/py_qt5' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ngochoan/dev_ws/build/py_qt5

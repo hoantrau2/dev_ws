@@ -1,0 +1,2 @@
+[0.025s] Invoking command in '/home/ngochoan/dev_ws/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/csm -- -j8 -l8
+[0.123s] [100%] Built target csm

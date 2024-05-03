@@ -759,4 +759,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/circumference_node.dir/DependInfo.cmake"
   "CMakeFiles/sinusoidal_node.dir/DependInfo.cmake"
   "CMakeFiles/controllers_node.dir/DependInfo.cmake"
+  "CMakeFiles/publisher_ROS2.dir/DependInfo.cmake"
+  "CMakeFiles/subscriber_ROS2.dir/DependInfo.cmake"
   )

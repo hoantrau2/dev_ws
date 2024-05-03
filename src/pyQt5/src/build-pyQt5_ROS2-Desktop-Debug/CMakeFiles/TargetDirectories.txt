@@ -1,0 +1,4 @@
+/home/ngochoan/dev_ws/src/pyQt5/src/build-pyQt5_ROS2-Desktop-Debug/CMakeFiles/pyQt5_ROS2.dir
+/home/ngochoan/dev_ws/src/pyQt5/src/build-pyQt5_ROS2-Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/ngochoan/dev_ws/src/pyQt5/src/build-pyQt5_ROS2-Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/ngochoan/dev_ws/src/pyQt5/src/build-pyQt5_ROS2-Desktop-Debug/CMakeFiles/pyQt5_ROS2_autogen.dir

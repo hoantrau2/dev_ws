@@ -1,0 +1,5 @@
+[0.028s] Invoking command in '/home/ngochoan/dev_ws/build/py_qt5': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8
+[0.044s] [0mCMake Error: The source directory "/home/ngochoan/dev_ws/src/pyQt5" does not exist.
+[0.044s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.045s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.047s] Invoked command in '/home/ngochoan/dev_ws/build/py_qt5' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ngochoan/dev_ws/build/py_qt5 -- -j8 -l8

@@ -340,6 +340,32 @@ controllers_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controllers_node.dir/build.make CMakeFiles/controllers_node.dir/build
 .PHONY : controllers_node/fast
 
+#=============================================================================
+# Target rules for targets named publisher_ROS2
+
+# Build rule for target.
+publisher_ROS2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher_ROS2
+.PHONY : publisher_ROS2
+
+# fast build rule for target.
+publisher_ROS2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher_ROS2.dir/build.make CMakeFiles/publisher_ROS2.dir/build
+.PHONY : publisher_ROS2/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_ROS2
+
+# Build rule for target.
+subscriber_ROS2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subscriber_ROS2
+.PHONY : subscriber_ROS2
+
+# fast build rule for target.
+subscriber_ROS2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_ROS2.dir/build.make CMakeFiles/subscriber_ROS2.dir/build
+.PHONY : subscriber_ROS2/fast
+
 src/circumference_node.o: src/circumference_node.cpp.o
 .PHONY : src/circumference_node.o
 
@@ -508,6 +534,30 @@ src/pid_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_node.dir/build.make CMakeFiles/pid_node.dir/src/pid_node.cpp.s
 .PHONY : src/pid_node.cpp.s
 
+src/publisher_ROS2.o: src/publisher_ROS2.cpp.o
+.PHONY : src/publisher_ROS2.o
+
+# target to build an object file
+src/publisher_ROS2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher_ROS2.dir/build.make CMakeFiles/publisher_ROS2.dir/src/publisher_ROS2.cpp.o
+.PHONY : src/publisher_ROS2.cpp.o
+
+src/publisher_ROS2.i: src/publisher_ROS2.cpp.i
+.PHONY : src/publisher_ROS2.i
+
+# target to preprocess a source file
+src/publisher_ROS2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher_ROS2.dir/build.make CMakeFiles/publisher_ROS2.dir/src/publisher_ROS2.cpp.i
+.PHONY : src/publisher_ROS2.cpp.i
+
+src/publisher_ROS2.s: src/publisher_ROS2.cpp.s
+.PHONY : src/publisher_ROS2.s
+
+# target to generate assembly for a file
+src/publisher_ROS2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher_ROS2.dir/build.make CMakeFiles/publisher_ROS2.dir/src/publisher_ROS2.cpp.s
+.PHONY : src/publisher_ROS2.cpp.s
+
 src/read_parameters_pi.o: src/read_parameters_pi.cpp.o
 .PHONY : src/read_parameters_pi.o
 
@@ -580,6 +630,30 @@ src/straight_line_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/straight_line_node.dir/build.make CMakeFiles/straight_line_node.dir/src/straight_line_node.cpp.s
 .PHONY : src/straight_line_node.cpp.s
 
+src/subscriber_ROS2.o: src/subscriber_ROS2.cpp.o
+.PHONY : src/subscriber_ROS2.o
+
+# target to build an object file
+src/subscriber_ROS2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_ROS2.dir/build.make CMakeFiles/subscriber_ROS2.dir/src/subscriber_ROS2.cpp.o
+.PHONY : src/subscriber_ROS2.cpp.o
+
+src/subscriber_ROS2.i: src/subscriber_ROS2.cpp.i
+.PHONY : src/subscriber_ROS2.i
+
+# target to preprocess a source file
+src/subscriber_ROS2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_ROS2.dir/build.make CMakeFiles/subscriber_ROS2.dir/src/subscriber_ROS2.cpp.i
+.PHONY : src/subscriber_ROS2.cpp.i
+
+src/subscriber_ROS2.s: src/subscriber_ROS2.cpp.s
+.PHONY : src/subscriber_ROS2.s
+
+# target to generate assembly for a file
+src/subscriber_ROS2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subscriber_ROS2.dir/build.make CMakeFiles/subscriber_ROS2.dir/src/subscriber_ROS2.cpp.s
+.PHONY : src/subscriber_ROS2.cpp.s
+
 src/test_cmd_vel.o: src/test_cmd_vel.cpp.o
 .PHONY : src/test_cmd_vel.o
 
@@ -626,9 +700,11 @@ help:
 	@echo "... data_processing_node_zz"
 	@echo "... fuzzy_longitudinal_controllers"
 	@echo "... pid_node"
+	@echo "... publisher_ROS2"
 	@echo "... read_parameters_pi"
 	@echo "... sinusoidal_node"
 	@echo "... straight_line_node"
+	@echo "... subscriber_ROS2"
 	@echo "... test_cmd_vel"
 	@echo "... src/circumference_node.o"
 	@echo "... src/circumference_node.i"
@@ -651,6 +727,9 @@ help:
 	@echo "... src/pid_node.o"
 	@echo "... src/pid_node.i"
 	@echo "... src/pid_node.s"
+	@echo "... src/publisher_ROS2.o"
+	@echo "... src/publisher_ROS2.i"
+	@echo "... src/publisher_ROS2.s"
 	@echo "... src/read_parameters_pi.o"
 	@echo "... src/read_parameters_pi.i"
 	@echo "... src/read_parameters_pi.s"
@@ -660,6 +739,9 @@ help:
 	@echo "... src/straight_line_node.o"
 	@echo "... src/straight_line_node.i"
 	@echo "... src/straight_line_node.s"
+	@echo "... src/subscriber_ROS2.o"
+	@echo "... src/subscriber_ROS2.i"
+	@echo "... src/subscriber_ROS2.s"
 	@echo "... src/test_cmd_vel.o"
 	@echo "... src/test_cmd_vel.i"
 	@echo "... src/test_cmd_vel.s"

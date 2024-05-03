@@ -1,0 +1,9 @@
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/uninstall.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/py_qt5_uninstall.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/test.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/edit_cache.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/rebuild_cache.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/list_install_components.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/install.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/install/local.dir
+/home/ngochoan/dev_ws/build/py_qt5/CMakeFiles/install/strip.dir

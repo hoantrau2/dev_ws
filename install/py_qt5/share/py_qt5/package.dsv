@@ -1,0 +1,8 @@
+source;share/py_qt5/hook/cmake_prefix_path.ps1
+source;share/py_qt5/hook/cmake_prefix_path.dsv
+source;share/py_qt5/hook/cmake_prefix_path.sh
+source;share/py_qt5/local_setup.bash
+source;share/py_qt5/local_setup.dsv
+source;share/py_qt5/local_setup.ps1
+source;share/py_qt5/local_setup.sh
+source;share/py_qt5/local_setup.zsh

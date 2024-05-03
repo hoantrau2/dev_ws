@@ -9,6 +9,8 @@
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/circumference_node
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/sinusoidal_node
 /home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/controllers_node
+/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/publisher_ROS2
+/home/ngochoan/dev_ws/install/cpp_interface/lib/cpp_interface/subscriber_ROS2
 /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/rplidar.launch.py
 /home/ngochoan/dev_ws/install/cpp_interface/share/cpp_interface/launch/thesis.launch.py
 /home/ngochoan/dev_ws/install/cpp_interface/share/ament_index/resource_index/package_run_dependencies/cpp_interface
